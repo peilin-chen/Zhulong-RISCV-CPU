@@ -4,9 +4,6 @@
 lappend search_path ../ref/db ../ref/tlup
 set_app_var target_library "/home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db"
 set_app_var link_library "* /home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db"
-#set_min_library sc_max.db -min_version sc_min.db
-#set_min_library io_max.db -min_version io_min.db
-#set_min_library ram16x128_max.db -min_version ram16x128_min.db
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # TOP_RISCV setup variables
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

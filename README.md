@@ -28,6 +28,8 @@ Use Synopsys's EDA tools for logic synthesis, static timing analysis, formal ver
              |--- debug_netlist/
              |                 |--- Makefile
              |
+             |--- figures
+             |
              |--- modelsim_simulation_win11/
              |                             |--- rtl
              |                             |--- sim

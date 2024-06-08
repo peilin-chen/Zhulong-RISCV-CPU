@@ -8,7 +8,16 @@ The microarchitecture of Zhulong CPU:
   <img src="/figures/zhulong_cpu_arch.png" alt="architecture" width="65%">
 </p>
 
+Features:
 
+1) Five-stage Pipeline;
+2) 64-bit Processor;
+3) RV64IM ISA (contain 62 instructions);
+4) 512 bytes Instruction Cache and 1024 bytes Data Cache;
+5) AXI4-Lite Bus;
+6) 64-bit Multiplier and Divider.
+
+Use Synopsys's EDA tools for logic synthesis, static timing analysis, formal verification, and physical synthesis of Zhulong RISCV Core. It achieves a working frequency of 200MHz on TSMC 130nm process, with a total power consumption and chip area of 26.6073mW and 821967.86µm² respectively.
 
 ## Directory structure
 ```

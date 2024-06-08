@@ -54,13 +54,13 @@ module CLINT
 				int_state = S_INT_IDLE;
 			end
 			else begin
-				if(inst_i == `ysyx_22050698_INST_ECALL || inst_i == `ysyx_22050698_INST_EBREAK) begin
+				if(inst_i == `INST_ECALL || inst_i == `INST_EBREAK) begin
 					int_state = S_INT_IDLE;
 				end
 				else if(global_int_en_i == 1'b1) begin
 					int_state = S_INT_ASYNC_ASSERT;
 				end
-				else if(inst_i == `ysyx_22050698_INST_MRET) begin
+				else if(inst_i == `INST_MRET) begin
 					int_state = S_INT_MRET;
 				end
 				else begin
@@ -89,10 +89,10 @@ module CLINT
 								inst_addr <= inst_addr_i;
 							end
 							case(inst_i)
-								`ysyx_22050698_INST_ECALL:begin
+								`INST_ECALL:begin
 									cause <= 64'd11;
 								end
-								`ysyx_22050698_INST_EBREAK:begin
+								`INST_EBREAK:begin
 									cause <= 64'd3;
 								end
 								default:begin
@@ -136,25 +136,25 @@ module CLINT
 					//将mepc寄存器的值设为当前指令地址
 					S_CSR_MEPC:begin
 						we_o    <= 1'b1                                ;
-						waddr_o <= {52'b0,`ysyx_22050698_INST_CSR_MEPC};
+						waddr_o <= {52'b0,`INST_CSR_MEPC};
 						data_o  <= inst_addr                           ;
 					end
 					//写中断产生的原因
 					S_CSR_MCAUSE:begin
 						we_o    <= 1'b1                                  ;
-						waddr_o <= {52'b0,`ysyx_22050698_INST_CSR_MCAUSE};
+						waddr_o <= {52'b0,`INST_CSR_MCAUSE};
 						data_o  <= cause                                 ;
 					end
 					//关闭全局中断
 					S_CSR_MSTATUS:begin
 						we_o    <= 1'b1                                       ;
-						waddr_o <= {52'b0,`ysyx_22050698_INST_CSR_MSTATUS}    ; 
+						waddr_o <= {52'b0,`INST_CSR_MSTATUS}    ; 
 						data_o  <= {csr_mstatus[63:4], 1'b0, csr_mstatus[2:0]};
 					end
 					//中断返回
 					S_CSR_MSTATUS_MRET:begin
 						we_o    <= 1'b1                                                 ;
-						waddr_o <= {52'b0,`ysyx_22050698_INST_CSR_MSTATUS}              ;
+						waddr_o <= {52'b0,`INST_CSR_MSTATUS}              ;
 						data_o  <= {csr_mstatus[63:4], csr_mstatus[7], csr_mstatus[2:0]};
 					end
 					default:begin

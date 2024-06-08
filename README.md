@@ -22,7 +22,7 @@ Use Synopsys's EDA tools for logic synthesis, static timing analysis, formal ver
 The layout of Zhulong CPU:
 
 <p float="middle">
-  <img src="/figures/zhulong_cpu_layout.png" alt="layout" width="65%">
+  <img src="/figures/zhulong_cpu_layout.png" alt="layout" width="50%">
 </p>
 
 ## Directory structure

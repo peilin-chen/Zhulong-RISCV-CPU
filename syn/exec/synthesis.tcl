@@ -20,10 +20,6 @@ define_design_lib DEFAULT -path 		../temp/
 ######################################################
 #    SYNTHESIS LIBRARY VARIABLES DEFINE
 ######################################################
-#set target_library      "../lib/scc28nhkcp_hsc35p140_rvt_ss_v0p81_125c_basic.db"
-#set target_library "/home/IC/Desktop/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_dlvl_ff0p85v25c_i0p85v.db"
-#set target_library "/opt/Foundary_Library/TSMC90/fe_TSMCHOME_tpdn90g2_130a/digital/Front_End/timing_power/tpdn90g2_130a/tpdn90g2bc.db"
-#set target_library "/home/IC/Desktop/smic180/digital/sc/synopsys/fast.db"
 set target_library /home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db
 
 set synthetic_library [list \

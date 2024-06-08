@@ -62,22 +62,22 @@ module CSR_REGS
 			else begin
 				if(we_i == 1'b1) begin
 					case(waddr_i[11:0])
-						`ysyx_22050698_INST_CSR_MTVEC:begin
+						`INST_CSR_MTVEC:begin
 							mtvec    <= data_i;
 						end
-						`ysyx_22050698_INST_CSR_MCAUSE:begin
+						`INST_CSR_MCAUSE:begin
 							mcause   <= data_i;
 						end
-						`ysyx_22050698_INST_CSR_MEPC:begin
+						`INST_CSR_MEPC:begin
 							mepc     <= data_i;
 						end
-						`ysyx_22050698_INST_CSR_MIE:begin
+						`INST_CSR_MIE:begin
 							mie      <= data_i;
 						end
-						`ysyx_22050698_INST_CSR_MSTATUS:begin
+						`INST_CSR_MSTATUS:begin
 							mstatus  <= data_i;
 						end
-						`ysyx_22050698_INST_CSR_MSCRATCH:begin
+						`INST_CSR_MSCRATCH:begin
 							mscratch <= data_i;
 						end
 						default:begin
@@ -87,22 +87,22 @@ module CSR_REGS
 				end
 				else if(clint_we_i == 1'b1) begin
 					case(clint_waddr_i[11:0])
-						`ysyx_22050698_INST_CSR_MTVEC:begin
+						`INST_CSR_MTVEC:begin
 							mtvec    <= clint_data_i;
 						end
-						`ysyx_22050698_INST_CSR_MCAUSE:begin
+						`INST_CSR_MCAUSE:begin
 							mcause   <= clint_data_i;
 						end
-						`ysyx_22050698_INST_CSR_MEPC:begin
+						`INST_CSR_MEPC:begin
 							mepc     <= clint_data_i;
 						end
-						`ysyx_22050698_INST_CSR_MIE:begin
+						`INST_CSR_MIE:begin
 							mie      <= clint_data_i;
 						end
-						`ysyx_22050698_INST_CSR_MSTATUS:begin
+						`INST_CSR_MSTATUS:begin
 							mstatus  <= clint_data_i;
 						end
-						`ysyx_22050698_INST_CSR_MSCRATCH:begin
+						`INST_CSR_MSCRATCH:begin
 							mscratch <= clint_data_i;
 						end
 						default:begin
@@ -121,28 +121,28 @@ module CSR_REGS
 			end
 			else begin
 				case(raddr_i[11:0])
-					/*`ysyx_22050698_INST_CSR_CYCLE:begin
+					/*`INST_CSR_CYCLE:begin
 						data_o = cycle[63:0];
 					end
-					`ysyx_22050698_INST_CSR_CYCLEH:begin
+					`INST_CSR_CYCLEH:begin
 						data_o = cycle[127:64];
 					end*/
-					`ysyx_22050698_INST_CSR_MTVEC:begin
+					`INST_CSR_MTVEC:begin
 						data_o = mtvec;
 					end
-					`ysyx_22050698_INST_CSR_MCAUSE:begin
+					`INST_CSR_MCAUSE:begin
 						data_o = mcause;
 					end
-					`ysyx_22050698_INST_CSR_MEPC:begin
+					`INST_CSR_MEPC:begin
 						data_o = mepc;
 					end
-					`ysyx_22050698_INST_CSR_MIE:begin
+					`INST_CSR_MIE:begin
 						data_o = mie;
 					end
-					`ysyx_22050698_INST_CSR_MSTATUS:begin
+					`INST_CSR_MSTATUS:begin
 						data_o = mstatus;
 					end
-					`ysyx_22050698_INST_CSR_MSCRATCH:begin
+					`INST_CSR_MSCRATCH:begin
 						data_o = mscratch;
 					end
 					default:begin
@@ -161,28 +161,28 @@ module CSR_REGS
 			end
 			else begin
 				case(clint_raddr_i[11:0])
-					/*`ysyx_22050698_INST_CSR_CYCLE:begin
+					/*`INST_CSR_CYCLE:begin
 						clint_data_o = cycle[63:0];
 					end
-					`ysyx_22050698_INST_CSR_CYCLEH:begin
+					`INST_CSR_CYCLEH:begin
 						clint_data_o = cycle[127:64];
 					end*/
-					`ysyx_22050698_INST_CSR_MTVEC:begin
+					`INST_CSR_MTVEC:begin
 						clint_data_o = mtvec;
 					end
-					`ysyx_22050698_INST_CSR_MCAUSE:begin
+					`INST_CSR_MCAUSE:begin
 						clint_data_o = mcause;
 					end
-					`ysyx_22050698_INST_CSR_MEPC:begin
+					`INST_CSR_MEPC:begin
 						clint_data_o = mepc;
 					end
-					`ysyx_22050698_INST_CSR_MIE:begin
+					`INST_CSR_MIE:begin
 						clint_data_o = mie;
 					end
-					`ysyx_22050698_INST_CSR_MSTATUS:begin
+					`INST_CSR_MSTATUS:begin
 						clint_data_o = mstatus;
 					end
-					`ysyx_22050698_INST_CSR_MSCRATCH:begin
+					`INST_CSR_MSCRATCH:begin
 						clint_data_o = mscratch;
 					end
 					default:begin

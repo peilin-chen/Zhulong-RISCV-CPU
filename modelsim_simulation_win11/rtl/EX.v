@@ -209,7 +209,7 @@ module EX
 	assign jump_addr_o = (int_assert_i == 1'b1) ? int_addr_i : (jump_addr | div_jump_addr | mult_jump_addr)    ;
 	
 	always @ (*) begin
-		if((opcode == `ysyx_22050698_INST_TYPE_R_M) && (funct7 == 7'b0000001)) begin
+		if((opcode == `INST_TYPE_R_M) && (funct7 == 7'b0000001)) begin
 			div_we         = 1'b0            ;
 			div_wdata      = 64'b0           ;
 			div_waddr      = 5'b0            ;
@@ -218,7 +218,7 @@ module EX
 			div_op_o       = {opcode, funct3};
 			div_reg_waddr  = rd_addr_i       ;
 			case (funct3)
-				`ysyx_22050698_INST_DIV, `ysyx_22050698_INST_DIVU, `ysyx_22050698_INST_REM, `ysyx_22050698_INST_REMU:begin
+				`INST_DIV, `INST_DIVU, `INST_REM, `INST_REMU:begin
 					div_ready_o   = 1'b1                     ;
 					div_jump_flag = 1'b1                     ;
 					div_hold_flag = 1'b1                     ;
@@ -232,7 +232,7 @@ module EX
 				end
 			endcase
 		end   
-		else if((opcode == `ysyx_22050698_INST_TYPE_R_M_64W) && (funct7 == 7'b0000001)) begin
+		else if((opcode == `INST_TYPE_R_M_64W) && (funct7 == 7'b0000001)) begin
 			div_we         = 1'b0            ;
 			div_wdata      = 64'b0           ;
 			div_waddr      = 5'b0            ;
@@ -241,7 +241,7 @@ module EX
 			div_op_o       = {opcode, funct3};
 			div_reg_waddr  = rd_addr_i       ;
 			case (funct3)
-				`ysyx_22050698_INST_DIVW, `ysyx_22050698_INST_DIVUW, `ysyx_22050698_INST_REMW, `ysyx_22050698_INST_REMUW:begin
+				`INST_DIVW, `INST_DIVUW, `INST_REMW, `INST_REMUW:begin
 					div_ready_o   = 1'b1                     ;
 					div_jump_flag = 1'b1                     ;
 					div_hold_flag = 1'b1                     ;
@@ -283,7 +283,7 @@ module EX
 	end
 	
 	always @ (*) begin
-		if((opcode == `ysyx_22050698_INST_TYPE_R_M) && (funct7 == 7'b0000001)) begin
+		if((opcode == `INST_TYPE_R_M) && (funct7 == 7'b0000001)) begin
 			mult_we        = 1'b0            ;
 			mult_wdata     = 64'b0           ;
 			mult_waddr     = 5'b0            ;
@@ -292,7 +292,7 @@ module EX
 			mult_op_o      = {opcode, funct3};
 			mult_reg_waddr = rd_addr_i       ;
 			case (funct3)
-				`ysyx_22050698_INST_MUL, `ysyx_22050698_INST_MULHU, `ysyx_22050698_INST_MULHSU, `ysyx_22050698_INST_MULH: begin
+				`INST_MUL, `INST_MULHU, `INST_MULHSU, `INST_MULH: begin
 					mult_ready_o   = 1'b1                     ;
 					mult_jump_flag = 1'b1                     ;
 					mult_hold_flag = 1'b1                     ;
@@ -306,7 +306,7 @@ module EX
 				end
 			endcase
 		end
-		else if((opcode == `ysyx_22050698_INST_TYPE_R_M_64W) && (funct3 == `ysyx_22050698_INST_ADD_SUB_MULW) && (funct7 == 7'b0000001)) begin
+		else if((opcode == `INST_TYPE_R_M_64W) && (funct3 == `INST_ADD_SUB_MULW) && (funct7 == 7'b0000001)) begin
 			mult_we        = 1'b0                     ;
 			mult_wdata     = 64'b0                    ;
 			mult_waddr     = 5'b0                     ;
@@ -348,7 +348,7 @@ module EX
 	
 	always @(*) begin
 		case(opcode)
-			`ysyx_22050698_INST_TYPE_I:begin
+			`INST_TYPE_I:begin
 				jump_addr       = 64'b0;
 				jump_flag       = 1'b0 ;
 				hold_flag       = 1'b0 ;
@@ -360,42 +360,42 @@ module EX
 				//check_ram_req_o = 1'b0 ;
 				//ex_axi_arvalid  = 1'b0 ;
 				case(funct3)
-					`ysyx_22050698_INST_ADDI:begin
+					`INST_ADDI:begin
 						reg_wdata = op1_i_add_op2_i;
 						reg_waddr = rd_addr_i      ;
 						reg_we    = 1'b1           ;
 					end
-					`ysyx_22050698_INST_SLTI:begin
+					`INST_SLTI:begin
 						reg_wdata = {63'b0,op1_i_less_op2_i_signed};
 						reg_waddr = rd_addr_i                      ;
 						reg_we    = 1'b1                           ;
 					end
-					`ysyx_22050698_INST_SLTIU:begin
+					`INST_SLTIU:begin
 						reg_wdata = {63'b0,op1_i_less_op2_i_unsigned};
 						reg_waddr = rd_addr_i                        ;
 						reg_we    = 1'b1                             ;
 					end
-					`ysyx_22050698_INST_XORI:begin
+					`INST_XORI:begin
 						reg_wdata = op1_i_xor_op2_i;
 						reg_waddr = rd_addr_i      ;
 						reg_we    = 1'b1           ;
 					end
-					`ysyx_22050698_INST_ORI:begin
+					`INST_ORI:begin
 						reg_wdata = op1_i_or_op2_i;
 						reg_waddr = rd_addr_i     ;
 						reg_we    = 1'b1          ;
 					end
-					`ysyx_22050698_INST_ANDI:begin
+					`INST_ANDI:begin
 						reg_wdata = op1_i_and_op2_i;
 						reg_waddr = rd_addr_i      ;
 						reg_we    = 1'b1           ;
 					end
-					`ysyx_22050698_INST_SLLI:begin
+					`INST_SLLI:begin
 						reg_wdata = op1_i_shift_left_op2_i;
 						reg_waddr = rd_addr_i             ;
 						reg_we    = 1'b1                  ;
 					end
-					`ysyx_22050698_INST_SRI:begin
+					`INST_SRI:begin
 						if(funct7[5] == 1'b1) begin
 							reg_wdata = ((op1_i_shift_right_op2_i) & SRA_mask) | ({64{op1_i[31]}} & (~SRA_mask));
 							reg_waddr = rd_addr_i                                                               ;
@@ -414,7 +414,7 @@ module EX
 					end
 				endcase
 			end
-			/*`ysyx_22050698_INST_TYPE_S:begin
+			/*`INST_TYPE_S:begin
 				jump_addr       = 64'b0;
 				jump_flag       = 1'b0 ;
 				hold_flag       = 1'b0 ;
@@ -425,13 +425,13 @@ module EX
 				check_ram_req_o = 1'b0 ;
 				//ex_axi_arvalid  = 1'b0 ;
 				case(funct3)
-					`ysyx_22050698_INST_SD:begin
+					`INST_SD:begin
 						ram_we_o   = 1'b1                     ;
 						ram_addr_o = base_addr_add_addr_offset;
 						ram_req_o  = 1'b1                     ;
 						ram_data_o = op2_i                    ;
 					end
-					`ysyx_22050698_INST_SW:begin
+					`INST_SW:begin
 						ram_we_o   = 1'b1                     ;
 						ram_addr_o = base_addr_add_addr_offset;
 						ram_req_o  = 1'b1                     ;
@@ -444,7 +444,7 @@ module EX
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_SH:begin
+					`INST_SH:begin
 						ram_we_o   = 1'b1                     ;
 						ram_addr_o = base_addr_add_addr_offset;
 						ram_req_o  = 1'b1                     ;
@@ -463,7 +463,7 @@ module EX
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_SB:begin
+					`INST_SB:begin
 						ram_we_o   = 1'b1                     ;
 						ram_addr_o = base_addr_add_addr_offset;
 						ram_req_o  = 1'b1                     ;
@@ -502,7 +502,7 @@ module EX
 					end
 				endcase
 			end
-			`ysyx_22050698_INST_TYPE_L:begin
+			`INST_TYPE_L:begin
 				jump_addr       = 64'b0          ;
 				jump_flag       = 1'b0           ;
 				hold_flag       = 1'b0           ;
@@ -515,12 +515,12 @@ module EX
 				id_axi_araddr_o = id_axi_araddr_i;
 				//ex_axi_arvalid  = 1'b1 ;
 				case(funct3)
-					`ysyx_22050698_INST_LD:begin
+					`INST_LD:begin
 						reg_wdata = ram_data_i;
 						reg_waddr = rd_addr_i ;
 						reg_we    = 1'b1      ;
 					end
-					`ysyx_22050698_INST_LW:begin
+					`INST_LW:begin
 						reg_waddr = rd_addr_i;
 						reg_we    = 1'b1     ;
 						case(load_index[2])
@@ -532,7 +532,7 @@ module EX
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_LH:begin
+					`INST_LH:begin
 						reg_waddr = rd_addr_i;
 						reg_we    = 1'b1     ;
 						case(load_index[2:1])
@@ -550,7 +550,7 @@ module EX
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_LB:begin
+					`INST_LB:begin
 						reg_waddr = rd_addr_i;
 						reg_we    = 1'b1     ;
 						case(load_index[2:0])
@@ -580,7 +580,7 @@ module EX
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_LBU:begin
+					`INST_LBU:begin
 						reg_waddr = rd_addr_i;
 						reg_we    = 1'b1     ;
 						case(load_index[2:0])
@@ -610,7 +610,7 @@ module EX
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_LHU:begin
+					`INST_LHU:begin
 						reg_waddr = rd_addr_i;
 						reg_we    = 1'b1     ;
 						case(load_index[2:1])
@@ -628,7 +628,7 @@ module EX
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_LWU:begin
+					`INST_LWU:begin
 						reg_waddr = rd_addr_i;
 						reg_we    = 1'b1     ;
 						case(load_index[2])
@@ -647,7 +647,7 @@ module EX
 					end
 				endcase
 			end*/
-			`ysyx_22050698_INST_TYPE_B:begin
+			`INST_TYPE_B:begin
 				reg_wdata       = 64'b0;
 				reg_waddr       = 5'b0 ;
 				reg_we          = 1'b0 ;
@@ -659,32 +659,32 @@ module EX
 				//check_ram_req_o = 1'b0 ;
 				//ex_axi_arvalid  = 1'b0 ;
 				case(funct3)
-					`ysyx_22050698_INST_BNE:begin
+					`INST_BNE:begin
 						jump_addr = base_addr_add_addr_offset;
 						jump_flag = ~op1_i_equal_op2_i       ;
 						hold_flag = 1'b0                     ;
 					end
-					`ysyx_22050698_INST_BEQ:begin
+					`INST_BEQ:begin
 						jump_addr = base_addr_add_addr_offset;
 						jump_flag = op1_i_equal_op2_i        ;
 						hold_flag = 1'b0                     ;
 					end
-					`ysyx_22050698_INST_BLT:begin
+					`INST_BLT:begin
 						jump_addr = base_addr_add_addr_offset;
 						jump_flag = op1_i_less_op2_i_signed  ;
 						hold_flag = 1'b0                     ;
 					end
-					`ysyx_22050698_INST_BGE:begin
+					`INST_BGE:begin
 						jump_addr = base_addr_add_addr_offset;
 						jump_flag = ~op1_i_less_op2_i_signed ;
 						hold_flag = 1'b0                     ;
 					end
-					`ysyx_22050698_INST_BLTU:begin
+					`INST_BLTU:begin
 						jump_addr = base_addr_add_addr_offset;
 						jump_flag = op1_i_less_op2_i_unsigned;
 						hold_flag = 1'b0                     ;
 					end
-					`ysyx_22050698_INST_BGEU:begin
+					`INST_BGEU:begin
 						jump_addr = base_addr_add_addr_offset ;
 						jump_flag = ~op1_i_less_op2_i_unsigned;
 						hold_flag = 1'b0                      ;
@@ -696,7 +696,7 @@ module EX
 					end
 				endcase
 			end
-			`ysyx_22050698_INST_TYPE_64IW:begin
+			`INST_TYPE_64IW:begin
 				jump_addr       = 64'b0;
 				jump_flag       = 1'b0 ;
 				hold_flag       = 1'b0 ;
@@ -708,17 +708,17 @@ module EX
 				//check_ram_req_o = 1'b0 ;
 				//ex_axi_arvalid  = 1'b0 ;
 				case(funct3)
-					`ysyx_22050698_INST_ADDIW:begin
+					`INST_ADDIW:begin
 						reg_wdata = {{32{op1_i_add_op2_i[31]}},op1_i_add_op2_i[31:0]};
 						reg_waddr = rd_addr_i                                        ;
 						reg_we    = 1'b1                                             ;
 					end
-					`ysyx_22050698_INST_SLLIW:begin
+					`INST_SLLIW:begin
 						reg_wdata = {{32{sli_shift[31]}},sli_shift[31:0]};
 						reg_waddr = rd_addr_i                            ;
 						reg_we    = 1'b1                                 ;
 					end
-					`ysyx_22050698_INST_SRIW:begin
+					`INST_SRIW:begin
 						if(funct7[5] == 1'b1) begin
 							reg_wdata = {{32{op1_lower32bit_rashift[31]}},op1_lower32bit_rashift};
 							reg_waddr = rd_addr_i                                                ;
@@ -737,7 +737,7 @@ module EX
 					end
 				endcase
 			end
-			`ysyx_22050698_INST_TYPE_R_M_64W:begin
+			`INST_TYPE_R_M_64W:begin
 				jump_addr       = 64'b0;
 				jump_flag       = 1'b0 ;
 				hold_flag       = 1'b0 ;
@@ -749,7 +749,7 @@ module EX
 				//check_ram_req_o = 1'b0 ;
 				//ex_axi_arvalid  = 1'b0 ;
 				case(funct3)
-					`ysyx_22050698_INST_ADD_SUB_MULW:begin
+					`INST_ADD_SUB_MULW:begin
 						if(funct7 == 7'b0100000) begin     //-
 							reg_wdata = {{32{op1_i_sub_op2_i[31]}},op1_i_sub_op2_i[31:0]};
 							reg_waddr = rd_addr_i                                        ;
@@ -766,12 +766,12 @@ module EX
 							reg_we    = 1'b0 ;
 						end
 					end
-					`ysyx_22050698_INST_SLLW:begin
+					`INST_SLLW:begin
 						reg_wdata = {{32{sllw_temp[31]}},sllw_temp};
 						reg_waddr = rd_addr_i                      ;
 						reg_we    = 1'b1                           ;
 					end
-					`ysyx_22050698_INST_SRW_DIVUW:begin
+					`INST_SRW_DIVUW:begin
 						if(funct7 == 7'b0100000) begin
 							reg_wdata = {{32{op1_lower32bit_srawshift[31]}},op1_lower32bit_srawshift[31:0]};
 							reg_waddr = rd_addr_i                                                          ;
@@ -795,7 +795,7 @@ module EX
 					end
 				endcase
 			end
-			`ysyx_22050698_INST_TYPE_R_M:begin
+			`INST_TYPE_R_M:begin
 				jump_addr       = 64'b0;
 				jump_flag       = 1'b0 ;
 				hold_flag       = 1'b0 ;
@@ -808,7 +808,7 @@ module EX
 				//ex_axi_arvalid  = 1'b0 ;
 				if((funct7 == 7'b0000000) || (funct7 == 7'b0100000)) begin
 					case(funct3)
-						`ysyx_22050698_INST_ADD_SUB:begin
+						`INST_ADD_SUB:begin
 							if(funct7 == 7'b000_0000) begin
 								reg_wdata = op1_i_add_op2_i;
 								reg_waddr = rd_addr_i      ;
@@ -820,37 +820,37 @@ module EX
 								reg_we    = 1'b1           ;
 							end
 						end
-						`ysyx_22050698_INST_SLL:begin
+						`INST_SLL:begin
 							reg_wdata = op1_i_shift_left_op2_i;
 							reg_waddr = rd_addr_i             ;
 							reg_we    = 1'b1                  ;
 						end
-						`ysyx_22050698_INST_SLT:begin
+						`INST_SLT:begin
 							reg_wdata = {63'b0,op1_i_less_op2_i_signed};
 							reg_waddr = rd_addr_i                      ;
 							reg_we    = 1'b1                           ;
 						end
-						`ysyx_22050698_INST_SLTU:begin
+						`INST_SLTU:begin
 							reg_wdata = {63'b0,op1_i_less_op2_i_unsigned};
 							reg_waddr = rd_addr_i                        ;
 							reg_we    = 1'b1                             ;
 						end
-						`ysyx_22050698_INST_XOR:begin
+						`INST_XOR:begin
 							reg_wdata = op1_i_xor_op2_i;
 							reg_waddr = rd_addr_i      ;
 							reg_we    = 1'b1           ;
 						end
-						`ysyx_22050698_INST_OR:begin
+						`INST_OR:begin
 							reg_wdata = op1_i_or_op2_i;
 							reg_waddr = rd_addr_i     ;
 							reg_we    = 1'b1          ;
 						end
-						`ysyx_22050698_INST_AND:begin
+						`INST_AND:begin
 							reg_wdata = op1_i_and_op2_i;
 							reg_waddr = rd_addr_i      ;
 							reg_we    = 1'b1           ;
 						end
-						`ysyx_22050698_INST_SR:begin
+						`INST_SR:begin
 							if(funct7[5] == 1'b1) begin //sra
 								reg_wdata = ((op1_i_shift_right_op2_i) & SRA_mask) | ({64{op1_i[31]}} & (~SRA_mask));
 								reg_waddr = rd_addr_i                                                               ;
@@ -875,7 +875,7 @@ module EX
 					reg_we    = 1'b0 ;
 				end
 			end
-			`ysyx_22050698_INST_JAL:begin
+			`INST_JAL:begin
 				reg_wdata       = op1_i_add_op2_i          ;
 				reg_waddr       = rd_addr_i                ;
 				reg_we          = 1'b1                     ;
@@ -890,7 +890,7 @@ module EX
 				//check_ram_req_o = 1'b0                     ;
 				//ex_axi_arvalid  = 1'b0                     ;
 			end
-			`ysyx_22050698_INST_JALR:begin
+			`INST_JALR:begin
 				reg_wdata       = op1_i_add_op2_i          ;
 				reg_waddr       = rd_addr_i                ;
 				reg_we          = 1'b1                     ;
@@ -905,7 +905,7 @@ module EX
 				//check_ram_req_o = 1'b0                     ;
 				//ex_axi_arvalid  = 1'b0                     ;
 			end
-			`ysyx_22050698_INST_LUI:begin
+			`INST_LUI:begin
 				reg_wdata       = op1_i    ;
 				reg_waddr       = rd_addr_i;
 				reg_we          = 1'b1     ;
@@ -920,7 +920,7 @@ module EX
 				//check_ram_req_o = 1'b0     ;
 				//ex_axi_arvalid  = 1'b0     ;
 			end
-			`ysyx_22050698_INST_AUIPC:begin
+			`INST_AUIPC:begin
 				reg_wdata       = op1_i_add_op2_i;
 				reg_waddr       = rd_addr_i      ;
 				reg_we          = 1'b1           ;
@@ -935,7 +935,7 @@ module EX
 				//check_ram_req_o = 1'b0           ;
 				//ex_axi_arvalid  = 1'b0           ;
 			end
-			`ysyx_22050698_INST_CSR:begin
+			`INST_CSR:begin
 				jump_addr       = 64'b0;
 				jump_flag       = 1'b0 ;
 				hold_flag       = 1'b0 ;
@@ -946,37 +946,37 @@ module EX
 				//check_ram_req_o = 1'b0 ;
 				//ex_axi_arvalid  = 1'b0 ;
 				case(funct3)
-					`ysyx_22050698_INST_CSRRW:begin
+					`INST_CSRRW:begin
 						csr_wdata_o = op1_i      ;
 						reg_wdata   = csr_rdata_i;
 						reg_waddr   = rd_addr_i  ;
 						reg_we      = 1'b1       ;
 					end
-					`ysyx_22050698_INST_CSRRS:begin
+					`INST_CSRRS:begin
 						csr_wdata_o = op1_i | csr_rdata_i;
 						reg_wdata   = csr_rdata_i        ;
 						reg_waddr   = rd_addr_i          ;
 						reg_we      = 1'b1               ;
 					end
-					`ysyx_22050698_INST_CSRRC:begin
+					`INST_CSRRC:begin
 						csr_wdata_o = op1_i & (~csr_rdata_i);
 						reg_wdata   = csr_rdata_i           ;
 						reg_waddr   = rd_addr_i             ;
 						reg_we      = 1'b1                  ;
 					end
-					`ysyx_22050698_INST_CSRRWI:begin
+					`INST_CSRRWI:begin
 						csr_wdata_o = {59'b0,uimm};
 						reg_wdata   = csr_rdata_i ;
 						reg_waddr   = rd_addr_i   ;
 						reg_we      = 1'b1        ;
 					end
-					`ysyx_22050698_INST_CSRRSI:begin
+					`INST_CSRRSI:begin
 						csr_wdata_o = {59'b0,uimm} | csr_rdata_i;
 						reg_wdata   = csr_rdata_i               ;
 						reg_waddr   = rd_addr_i                 ;
 						reg_we      = 1'b1                      ;
 					end
-					`ysyx_22050698_INST_CSRRCI:begin
+					`INST_CSRRCI:begin
 						csr_wdata_o = (~{59'b0,uimm}) & csr_rdata_i;
 						reg_wdata   = csr_rdata_i                  ;
 						reg_waddr   = rd_addr_i                    ;

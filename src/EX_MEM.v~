@@ -133,7 +133,7 @@ module EX_MEM
 		.clk        (clk                    ),
 		.rst        (rst                    ),
 		.hold_flag_i((mem_en==1'b1) ? 2'b10:2'b00),
-		.set_data   (`ysyx_22050698_INST_NOP),
+		.set_data   (`INST_NOP),
 	    .data_i     (inst_i                 ),
         .data_o     (inst_o                 )
 	);

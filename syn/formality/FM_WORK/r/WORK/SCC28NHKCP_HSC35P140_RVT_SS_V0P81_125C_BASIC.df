@@ -1,0 +1,422 @@
+CLKLAHAQV0_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLAHAQV1_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLAHAQV2_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLAHAQV4_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLAHAQV8_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLAHQV0_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLAHQV1_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLAHQV2_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLAHQV4_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLAHQV8_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANAQV0_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANAQV1_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANAQV2_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANAQV4_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANAQV8_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANQV0_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANQV12_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANQV16_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANQV1_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANQV20_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANQV24_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANQV2_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANQV3_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANQV4_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANQV6_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+CLKLANQV8_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+DGRNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DGRNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DGRNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DGRNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DGRSNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DGRSNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DGRSNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DGRSNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DQNV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DQV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DQV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DQV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DQV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DQV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRNQNV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRNQV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRNQV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRNQV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRNQV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRNQV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRQV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRQV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRQV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRQV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRQV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRSNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRSNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRSNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRSNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRSNQNV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRSNQV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRSNQV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRSNQV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRSNQV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DRSNQV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DSNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DSNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DSNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DSNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DSNQNV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DSNQV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DSNQV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DSNQV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DSNQV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+DSNQV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+EDGRNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+EDGRNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+EDGRNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+EDGRNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+EDQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+EDQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+EDQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+EDQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+EDRNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+EDRNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+EDRNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+EDRNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+LAHQV0_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHQV1_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHQV2_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHQV4_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHQV8_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHRNQV0_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHRNQV1_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHRNQV2_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHRNQV4_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHRNQV8_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHRSNQV0_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHRSNQV1_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHRSNQV2_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHRSNQV4_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LAHRSNQV8_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LALQV0_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LALQV1_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LALQV2_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LALQV4_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LALRNQV0_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LALRNQV1_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LALRNQV2_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+LALRNQV4_140P9T35R#PWR
+  cell *lat.00* : no power_down_function : copied from Q/QN
+NDQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+NDQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+NDQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+NDQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+NDRNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+NDRNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+NDRNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+NDRNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+NDRSNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+NDRSNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+NDRSNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+NDRSNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDGRNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDGRNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDGRNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDGRNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDGRSNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDGRSNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDGRSNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDGRSNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDQNV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDQV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDQV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDQV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDQV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDQV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRNQNV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRNQV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRNQV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRNQV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRNQV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRNQV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRQV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRQV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRQV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRQV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRQV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRSNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRSNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRSNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRSNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRSNQNV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRSNQV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRSNQV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRSNQV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRSNQV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDRSNQV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDSNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDSNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDSNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDSNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDSNQNV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDSNQV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDSNQV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDSNQV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDSNQV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SDSNQV8_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SEDGRNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SEDGRNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SEDGRNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SEDGRNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SEDQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SEDQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SEDQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SEDQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SEDRNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SEDRNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SEDRNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SEDRNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SNDQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SNDQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SNDQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SNDQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SNDRNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SNDRNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SNDRNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SNDRNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SNDRSNQNV0_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SNDRSNQNV1_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SNDRSNQNV2_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN
+SNDRSNQNV4_140P9T35R#PWR
+  cell *dff.00* : no power_down_function : copied from Q/QN

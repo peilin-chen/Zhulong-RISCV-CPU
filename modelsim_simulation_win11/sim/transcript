@@ -1,0 +1,169 @@
+# do simulate.do
+# G:/download/pipeline_riscv_cpu/sim/rtl/*.v
+# Start time: 20:37:06 on May 21,2024
+# vlog G:/download/pipeline_riscv_cpu/sim/rtl/AXI4_Lite.v G:/download/pipeline_riscv_cpu/sim/rtl/CHECK.v G:/download/pipeline_riscv_cpu/sim/rtl/CLINT.v G:/download/pipeline_riscv_cpu/sim/rtl/CSR_REGS.v G:/download/pipeline_riscv_cpu/sim/rtl/CTRL.v G:/download/pipeline_riscv_cpu/sim/rtl/DCache.v G:/download/pipeline_riscv_cpu/sim/rtl/DFF_SET.v G:/download/pipeline_riscv_cpu/sim/rtl/Divider.v G:/download/pipeline_riscv_cpu/sim/rtl/EX.v G:/download/pipeline_riscv_cpu/sim/rtl/EX_MEM.v G:/download/pipeline_riscv_cpu/sim/rtl/ICache.v G:/download/pipeline_riscv_cpu/sim/rtl/ID.v G:/download/pipeline_riscv_cpu/sim/rtl/ID_EX.v G:/download/pipeline_riscv_cpu/sim/rtl/IF.v G:/download/pipeline_riscv_cpu/sim/rtl/IF_ID.v G:/download/pipeline_riscv_cpu/sim/rtl/MEM.v G:/download/pipeline_riscv_cpu/sim/rtl/MEM_WB.v G:/download/pipeline_riscv_cpu/sim/rtl/Multiplier.v G:/download/pipeline_riscv_cpu/sim/rtl/PC.v G:/download/pipeline_riscv_cpu/sim/rtl/RAM.v G:/download/pipeline_riscv_cpu/sim/rtl/REGS.v G:/download/pipeline_riscv_cpu/sim/rtl/RISCV_SOC.v G:/download/pipeline_riscv_cpu/sim/rtl/ROM.v G:/download/pipeline_riscv_cpu/sim/rtl/TOP_RISCV.v G:/download/pipeline_riscv_cpu/sim/rtl/WB.v G:/download/pipeline_riscv_cpu/sim/rtl/defines.v G:/download/pipeline_riscv_cpu/sim/rtl/tb.v 
+# Model Technology ModelSim DE-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# -- Compiling module AXI4_Lite
+# -- Compiling module CHECK
+# -- Compiling module CLINT
+# -- Compiling module CSR_REGS
+# -- Compiling module CTRL
+# -- Compiling module DCache
+# -- Compiling module DFF_SET
+# -- Compiling module Divider
+# -- Compiling module EX
+# -- Compiling module EX_MEM
+# -- Compiling module ICache
+# -- Compiling module ID
+# -- Compiling module ID_EX
+# -- Compiling module IF
+# -- Compiling module IF_ID
+# -- Compiling module MEM
+# -- Compiling module MEM_WB
+# -- Compiling module Multiplier
+# -- Compiling module PC
+# -- Compiling module RAM
+# -- Compiling module REGS
+# -- Compiling module RISCV_SOC
+# -- Compiling module ROM
+# -- Compiling module TOP_RISCV
+# -- Compiling module WB
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 20:37:06 on May 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim tb 
+# Start time: 20:37:06 on May 21,2024
+# //  ModelSim DE-64 10.6c Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.tb
+# Loading work.RISCV_SOC
+# Loading work.TOP_RISCV
+# Loading work.Multiplier
+# Loading work.Divider
+# Loading work.CHECK
+# Loading work.PC
+# Loading work.DFF_SET
+# Loading work.IF
+# Loading work.IF_ID
+# Loading work.ID
+# Loading work.REGS
+# Loading work.ID_EX
+# Loading work.EX
+# Loading work.CTRL
+# Loading work.EX_MEM
+# Loading work.MEM
+# Loading work.MEM_WB
+# Loading work.WB
+# Loading work.CSR_REGS
+# Loading work.CLINT
+# Loading work.ICache
+# Loading work.DCache
+# Loading work.AXI4_Lite
+# Loading work.RAM
+# Loading work.ROM
+# pass
+# ** Note: $stop    : G:/download/pipeline_riscv_cpu/sim/rtl/tb.v(51)
+#    Time: 19700 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at G:/download/pipeline_riscv_cpu/sim/rtl/tb.v line 51
+# Stopped at G:/download/pipeline_riscv_cpu/sim/rtl/tb.v line 51
+# file6c00a60
+# do simulate.do
+# G:/download/pipeline_riscv_cpu/sim/rtl/*.v
+# Start time: 20:37:06 on May 21,2024
+# vlog G:/download/pipeline_riscv_cpu/sim/rtl/AXI4_Lite.v G:/download/pipeline_riscv_cpu/sim/rtl/CHECK.v G:/download/pipeline_riscv_cpu/sim/rtl/CLINT.v G:/download/pipeline_riscv_cpu/sim/rtl/CSR_REGS.v G:/download/pipeline_riscv_cpu/sim/rtl/CTRL.v G:/download/pipeline_riscv_cpu/sim/rtl/DCache.v G:/download/pipeline_riscv_cpu/sim/rtl/DFF_SET.v G:/download/pipeline_riscv_cpu/sim/rtl/Divider.v G:/download/pipeline_riscv_cpu/sim/rtl/EX.v G:/download/pipeline_riscv_cpu/sim/rtl/EX_MEM.v G:/download/pipeline_riscv_cpu/sim/rtl/ICache.v G:/download/pipeline_riscv_cpu/sim/rtl/ID.v G:/download/pipeline_riscv_cpu/sim/rtl/ID_EX.v G:/download/pipeline_riscv_cpu/sim/rtl/IF.v G:/download/pipeline_riscv_cpu/sim/rtl/IF_ID.v G:/download/pipeline_riscv_cpu/sim/rtl/MEM.v G:/download/pipeline_riscv_cpu/sim/rtl/MEM_WB.v G:/download/pipeline_riscv_cpu/sim/rtl/Multiplier.v G:/download/pipeline_riscv_cpu/sim/rtl/PC.v G:/download/pipeline_riscv_cpu/sim/rtl/RAM.v G:/download/pipeline_riscv_cpu/sim/rtl/REGS.v G:/download/pipeline_riscv_cpu/sim/rtl/RISCV_SOC.v G:/download/pipeline_riscv_cpu/sim/rtl/ROM.v G:/download/pipeline_riscv_cpu/sim/rtl/TOP_RISCV.v G:/download/pipeline_riscv_cpu/sim/rtl/WB.v G:/download/pipeline_riscv_cpu/sim/rtl/defines.v G:/download/pipeline_riscv_cpu/sim/rtl/tb.v 
+# Model Technology ModelSim DE-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# -- Compiling module AXI4_Lite
+# -- Compiling module CHECK
+# -- Compiling module CLINT
+# -- Compiling module CSR_REGS
+# -- Compiling module CTRL
+# -- Compiling module DCache
+# -- Compiling module DFF_SET
+# -- Compiling module Divider
+# -- Compiling module EX
+# -- Compiling module EX_MEM
+# -- Compiling module ICache
+# -- Compiling module ID
+# -- Compiling module ID_EX
+# -- Compiling module IF
+# -- Compiling module IF_ID
+# -- Compiling module MEM
+# -- Compiling module MEM_WB
+# -- Compiling module Multiplier
+# -- Compiling module PC
+# -- Compiling module RAM
+# -- Compiling module REGS
+# -- Compiling module RISCV_SOC
+# -- Compiling module ROM
+# -- Compiling module TOP_RISCV
+# -- Compiling module WB
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 20:37:06 on May 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim tb 
+# Start time: 20:37:06 on May 21,2024
+# //  ModelSim DE-64 10.6c Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.tb
+# Loading work.RISCV_SOC
+# Loading work.TOP_RISCV
+# Loading work.Multiplier
+# Loading work.Divider
+# Loading work.CHECK
+# Loading work.PC
+# Loading work.DFF_SET
+# Loading work.IF
+# Loading work.IF_ID
+# Loading work.ID
+# Loading work.REGS
+# Loading work.ID_EX
+# Loading work.EX
+# Loading work.CTRL
+# Loading work.EX_MEM
+# Loading work.MEM
+# Loading work.MEM_WB
+# Loading work.WB
+# Loading work.CSR_REGS
+# Loading work.CLINT
+# Loading work.ICache
+# Loading work.DCache
+# Loading work.AXI4_Lite
+# Loading work.RAM
+# Loading work.ROM
+# pass
+# ** Note: $stop    : G:/download/pipeline_riscv_cpu/sim/rtl/tb.v(51)
+#    Time: 19700 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at G:/download/pipeline_riscv_cpu/sim/rtl/tb.v line 51
+# Stopped at G:/download/pipeline_riscv_cpu/sim/rtl/tb.v line 51
+# file6c00a60
+# 
+# End time: 20:37:07 on May 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

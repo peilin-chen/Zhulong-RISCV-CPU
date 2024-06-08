@@ -1,0 +1,3 @@
+Command Line: /opt/Synopsys/Verdi2015/platform/LINUXAMD64/bin/Novas +v2k -sverilog -top RISCV_SOC -f ../scripts/FileList.f -ssf RISCV_SOC.fsdb
+uname(Linux IC 2.6.32-573.el6.x86_64 #1 SMP Wed Jul 1 18:23:37 EDT 2015 x86_64)
+au time 5.049980 0.983850 1.224813 delta 223182848 223182848 total 598319104 598319104

@@ -1,0 +1,178 @@
+0 
+53
+
+
++cli+4
++cli+4
++define+DUMP_FSDB
++define+DUMP_VPD
++itf+/opt/Synopsys/VCS2014/amd64/lib/vcsdp.tab
++memcbk
++nospecify
++notimingcheck
++v2k
++vcs+flush+all
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/opt/Synopsys/VCS2014/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=
+-Mobjects= /opt/Synopsys/VCS2014/amd64/lib/libvirsim.so /opt/Synopsys/VCS2014/amd64/lib/liberrorinf.so /opt/Synopsys/VCS2014/amd64/lib/libsnpsmalloc.so /opt/Synopsys/Verdi2015/share/PLI/VCS/LINUXAMD64/pli.a
+-Mout=cpu_verification
+-Msaverestoreobj=/opt/Synopsys/VCS2014/amd64/lib/vcs_save_restore_new.o
+-Msyslibs=/opt/Synopsys/Verdi2015/share/PLI/VCS/LINUX64/pli.a -ldl -lm -lm
+-Mvcsaceobjs=
+-P
+-P
+-Xcbug=0x1
+-Xcbug=0x1
+-cm
+-debug=4
+-debug_all
+-debug_obj
+-f ../scripts/FileList.f
+-fsdb
+-full64
+-gen_obj
+-lca
+-line
+-o cpu_verification
+-picarchive
+-pp_used
+-sverilog
+-timescale=1ns/1ps
+-v
+../scc28nhkcp_hsc35p140_rvt.v
+/opt/Synopsys/VCS2014/amd64/bin/vcs1
+/opt/Synopsys/Verdi2015/share/PLI/VCS/LINUX64/novas.tab
+/opt/Synopsys/Verdi2015/share/PLI/VCS/LINUXAMD64/novas.tab
+line+cond+fsm+tgl
+80
+sysc_uni_pwd=/home/IC/Desktop/risc_cpu/debug
+XMODIFIERS=@im=ibus
+XDG_SESSION_COOKIE=a0bfd28e837df0a07240a6770000000b-1712282727.121963-479965931
+XAUTHORITY=/var/run/gdm/auth-for-IC-B83iBI/database
+WINDOWPATH=1
+Virtuoso_HOME=/opt/Cadence/IC617
+Verdi_HOME=/opt/Synopsys/Verdi2015
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LCAMSG_PRINT_OFF=1
+VCS_HOME=/opt/Synopsys/VCS2014
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=amd64
+USERNAME=IC
+UNAME=/bin/uname
+TOOL_HOME=/opt/Synopsys/VCS2014/amd64
+Synplify_HOME=/opt/Synopsys/Synplify2015
+Synopsys_Dir=/opt/Synopsys
+StarRC_HOME=/opt/Synopsys/StarRC2015
+SSH_AUTH_SOCK=/tmp/keyring-Ru8sAe/socket.ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SNPSLMD_LICENSE_FILE=27000@IC:/opt/Synopsys/VCS2014/flexlm//license.dat
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3253,unix/unix:/tmp/.ICE-unix/3253
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SCL_HOME=/opt/Synopsys/SCL11.11
+RC_HOME=/opt/Cadence/RC11
+QT_IM_MODULE=ibus
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PrimeTime_HOME=/opt/Synopsys/PrimeTime2015
+OVA_UUM=0
+ORBIT_SOCKETDIR=/tmp/orbit-IC
+OA_HOME=/opt/Cadence/IC617/oa_v22.50.043
+NOVAS_HOME=/opt/Synopsys/Verdi2015
+Mentor_Dir=/opt/Mentor
+MMSIM_HOME=/opt/Cadence/MMSIM15
+MGLS_LICENSE_FILE=/opt/Mentor/License/License.dat
+MGC_HOME=/opt/Mentor/Calibre2015/ixl_cal_2015.4_16.11
+MFLAGS=
+MDS_HOME=/opt/Mentor/ModelSim/modeltech/bin:/opt/Cadence/INNOVUS15/bin:/opt/Cadence/RC11/bin:/opt/Cadence/Incisive14//tools/bin:/opt/Cadence/MMSIM15/tools/spectre/bin:/opt/Cadence/MMSIM15/tools/dfII/bin:/opt/Cadence/MMSIM15/tools/bin:/opt/Cadence/MMSIM15/bin:/opt/Cadence/IC617/tools/plot/bin:/opt/Cadence/IC617/tools/iccraft/bin:/opt/Cadence/IC617/tools/dracula/bin:/opt/Cadence/IC617/tools/dfII/bin:/opt/Cadence/IC617/tools/bin:/opt/Cadence/IC617/share/bin:/opt/Synopsys/Verdi2015/bin:/opt/Synopsys/VCS2014/bin:/opt/Synopsys/Synplify2015/bin:/opt/Synopsys/StarRC2015/bin:/opt/Synopsys/PrimeTime2015/bin:/opt/Synopsys/Laker_OA2015/bin:/opt/Synopsys/ICC2016/bin:/opt/Synopsys/Hspice2016/hspice/bin:/opt/Synopsys/Formality2016/bin:/opt/Synopsys/SCL11.11/linux64/bin:/opt/KeySight/ADS2015/bin:/opt/Concept/Symutils/linux23.x86_64:/opt/Concept/SpiceVision:/opt/Concept/SGvision:/opt/Concept/RTLvision:/opt/Concept/Gatevision:/opt/Mentor/Calibre2015/ixl_cal_2015.4_16.11/bin:/opt/Mentor/Tessent2013//bin:/opt/Mentor/ModelSim/modeltech/linux:/opt/Cadence/INNOVUS15/bin:/opt/Cadence/RC11/bin:/opt/Cadence/Incisive14//tools/bin:/opt/Cadence/MMSIM15/tools/spectre/bin:/opt/Cadence/MMSIM15/tools/dfII/bin:/opt/Cadence/MMSIM15/tools/bin:/opt/Cadence/MMSIM15/bin:/opt/Cadence/IC617/tools/plot/bin:/opt/Cadence/IC617/tools/iccraft/bin:/opt/Cadence/IC617/tools/dracula/bin:/opt/Cadence/IC617/tools/dfII/bin:/opt/Cadence/IC617/tools/bin:/opt/Cadence/IC617/share/bin:/opt/Synopsys/Verdi2015/bin:/opt/Synopsys/VCS2014/bin:/opt/Synopsys/Synplify2015/bin:/opt/Synopsys/StarRC2015/bin:/opt/Synopsys/PrimeTime2015/bin:/opt/Synopsys/Laker_OA2015/bin:/opt/Synopsys/ICC2016/bin:/opt/Synopsys/Hspice2016/hspice/bin:/opt/Synopsys/Formality2016/bin:/opt/Synopsys/SCL11.11/linux64/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/IC/bin
+MAKELEVEL=1
+MAKEFLAGS=
+Laker_HOME=/opt/Synopsys/Laker_OA2015
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+Incisive_HOME=/opt/Cadence/Incisive14/
+IMSETTINGS_MODULE=IBus
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+ICC_HOME=/opt/Synopsys/ICC2016
+Hspice_HOME=/opt/Synopsys/Hspice2016
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/IC/.gtkrc-1.2-gnome2
+GNOME_KEYRING_SOCKET=/tmp/keyring-Ru8sAe/socket
+GNOME_KEYRING_PID=3241
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDM_LANG=en_US.UTF-8
+GDM_KEYBOARD_LAYOUT=us
+GDMSESSION=gnome
+Formality_HOME=/opt/Synopsys/Formality2016
+Encounter_HOME=/opt/Cadence/INNOVUS15
+DFT_HOME=/opt/Mentor/Tessent2013/
+DESKTOP_SESSION=gnome
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-HPDLPCqtTh,guid=0e07f9cfce69946a6b44cbe900000012
+Concept_dir=/opt/Concept
+Cadence_Dir=/opt/Cadence
+CVS_RSH=ssh
+COLORTERM=gnome-terminal
+CDS_Netlisting_Mode=Digital
+CDS_LOAD_ENV=CSF
+CDS_LIC_FILE=/opt/Cadence/License/License.dat
+CDS_AUTO_64BIT=ALL
+CALIBRE_HOME=/opt/Mentor/Calibre2015/ixl_cal_2015.4_16.11
+CALIBRE_2013_4_ALLOW_IXL_ON_RHEL6=101010
+AGILEESOFD_LICENSE_FILE=/opt/KeySight/ADS2015/License/license.lic
+ADS_HOME=/opt/KeySight/ADS2015
+0
+33
+1712242145 /home/IC/Desktop/risc_cpu/src/defines.v
+1624048064 ../scc28nhkcp_hsc35p140_rvt.v
+1712288739 ../src/RISCV_SOC.v
+1711208219 ../src/RAM.v
+1711208206 ../src/ROM.v
+1711538635 ../src/ICache.v
+1711538649 ../src/DCache.v
+1711184899 ../src/AXI4_Lite.v
+1711185222 ../src/WB.v
+1711185166 ../src/REGS.v
+1711185205 ../src/PC.v
+1711185180 ../src/Multiplier.v
+1711185129 ../src/MEM_WB.v
+1712244422 ../src/MEM.v
+1712244395 ../src/IF_ID.v
+1711184704 ../src/IF.v
+1712244408 ../src/ID_EX.v
+1712244404 ../src/ID.v
+1712244418 ../src/EX_MEM.v
+1712244413 ../src/EX.v
+1711184990 ../src/Divider.v
+1711185259 ../src/DFF_SET.v
+1711184978 ../src/CTRL.v
+1712244427 ../src/CSR_REGS.v
+1712244431 ../src/CLINT.v
+1711184921 ../src/CHECK.v
+1712242145 ../src/defines.v
+1711184763 ../src/TOP_RISCV.v
+1393560710 /opt/Synopsys/VCS2014/include/cm_vcsd.tab
+1712242676 ../scripts/FileList.f
+1393560725 /opt/Synopsys/VCS2014/amd64/lib/vcsdp.tab
+1453442056 /opt/Synopsys/Verdi2015/share/PLI/VCS/LINUXAMD64/novas.tab
+1453442056 /opt/Synopsys/Verdi2015/share/PLI/VCS/LINUX64/novas.tab
+5
+0 
+1393562378 /opt/Synopsys/VCS2014/amd64/lib/libvirsim.so
+1393562197 /opt/Synopsys/VCS2014/amd64/lib/liberrorinf.so
+1393562054 /opt/Synopsys/VCS2014/amd64/lib/libsnpsmalloc.so
+1453442056 /opt/Synopsys/Verdi2015/share/PLI/VCS/LINUXAMD64/pli.a
+1712293133 cpu_verification.daidir

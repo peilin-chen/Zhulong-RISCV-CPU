@@ -1,0 +1,98 @@
+ 
+****************************************
+Report : design
+Design : TOP_RISCV
+Version: K-2015.06
+Date   : Fri Apr  5 13:05:24 2024
+****************************************
+
+Design allows ideal nets on clock nets.
+Design allows ideal nets on constant nets.
+
+Library(s) Used:
+
+    cb13fs120_tsmc_max (File: /home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db)
+
+Local Link Library:
+
+    {/home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : cb13fs120_tsmc_max
+    Library : cb13fs120_tsmc_max
+    Process :   1.20
+    Temperature : 125.00
+    Voltage :   1.08
+    Interconnect Model : worst_case_tree
+
+Wire Loading Model:
+
+    Selected automatically from the total cell area.
+
+Name           :   140000
+Location       :   cb13fs120_tsmc_max
+Resistance     :   0.000331
+Capacitance    :   8.6e-05
+Area           :   0.01
+Slope          :   93.7215
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1    14.15
+     2    32.31
+     3    52.48
+     4    74.91
+     5    99.86
+     6   127.60
+     7   158.37
+     8   192.44
+     9   230.06
+    10   271.50
+    11   317.00
+    12   366.83
+    13   421.25
+    14   480.50
+    15   544.86
+    16   614.57
+    17   689.90
+    18   771.11
+    19   858.44
+    20   952.16
+
+
+
+Wire Loading Model Mode: enclosed.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1

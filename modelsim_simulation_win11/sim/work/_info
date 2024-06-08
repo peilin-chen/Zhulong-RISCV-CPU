@@ -1,0 +1,1059 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/download/pipeline_riscv_cpu/sim
+vAXI4_Lite
+Z1 !s110 1716295026
+!i10b 1
+!s100 R62GU<BG3;no2X;23g`2G0
+Ie80:58hV4Tbn6DfYmAEHL3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1711184899
+8G:/download/pipeline_riscv_cpu/sim/rtl/AXI4_Lite.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/AXI4_Lite.v
+L0 1
+Z3 OP;L;10.6c;65
+r1
+!s85 0
+31
+Z4 !s108 1716295026.000000
+!s107 G:\download\pipeline_riscv_cpu\sim\rtl\defines.v|G:/download/pipeline_riscv_cpu/sim/rtl/tb.v|G:/download/pipeline_riscv_cpu/sim/rtl/defines.v|G:/download/pipeline_riscv_cpu/sim/rtl/WB.v|G:/download/pipeline_riscv_cpu/sim/rtl/TOP_RISCV.v|G:/download/pipeline_riscv_cpu/sim/rtl/ROM.v|G:/download/pipeline_riscv_cpu/sim/rtl/RISCV_SOC.v|G:/download/pipeline_riscv_cpu/sim/rtl/REGS.v|G:/download/pipeline_riscv_cpu/sim/rtl/RAM.v|G:/download/pipeline_riscv_cpu/sim/rtl/PC.v|G:/download/pipeline_riscv_cpu/sim/rtl/Multiplier.v|G:/download/pipeline_riscv_cpu/sim/rtl/MEM_WB.v|G:/download/pipeline_riscv_cpu/sim/rtl/MEM.v|G:/download/pipeline_riscv_cpu/sim/rtl/IF_ID.v|G:/download/pipeline_riscv_cpu/sim/rtl/IF.v|G:/download/pipeline_riscv_cpu/sim/rtl/ID_EX.v|G:/download/pipeline_riscv_cpu/sim/rtl/ID.v|G:/download/pipeline_riscv_cpu/sim/rtl/ICache.v|G:/download/pipeline_riscv_cpu/sim/rtl/EX_MEM.v|G:/download/pipeline_riscv_cpu/sim/rtl/EX.v|G:/download/pipeline_riscv_cpu/sim/rtl/Divider.v|G:/download/pipeline_riscv_cpu/sim/rtl/DFF_SET.v|G:/download/pipeline_riscv_cpu/sim/rtl/DCache.v|G:/download/pipeline_riscv_cpu/sim/rtl/CTRL.v|G:/download/pipeline_riscv_cpu/sim/rtl/CSR_REGS.v|G:/download/pipeline_riscv_cpu/sim/rtl/CLINT.v|G:/download/pipeline_riscv_cpu/sim/rtl/CHECK.v|G:/download/pipeline_riscv_cpu/sim/rtl/AXI4_Lite.v|
+Z5 !s90 G:/download/pipeline_riscv_cpu/sim/rtl/AXI4_Lite.v|G:/download/pipeline_riscv_cpu/sim/rtl/CHECK.v|G:/download/pipeline_riscv_cpu/sim/rtl/CLINT.v|G:/download/pipeline_riscv_cpu/sim/rtl/CSR_REGS.v|G:/download/pipeline_riscv_cpu/sim/rtl/CTRL.v|G:/download/pipeline_riscv_cpu/sim/rtl/DCache.v|G:/download/pipeline_riscv_cpu/sim/rtl/DFF_SET.v|G:/download/pipeline_riscv_cpu/sim/rtl/Divider.v|G:/download/pipeline_riscv_cpu/sim/rtl/EX.v|G:/download/pipeline_riscv_cpu/sim/rtl/EX_MEM.v|G:/download/pipeline_riscv_cpu/sim/rtl/ICache.v|G:/download/pipeline_riscv_cpu/sim/rtl/ID.v|G:/download/pipeline_riscv_cpu/sim/rtl/ID_EX.v|G:/download/pipeline_riscv_cpu/sim/rtl/IF.v|G:/download/pipeline_riscv_cpu/sim/rtl/IF_ID.v|G:/download/pipeline_riscv_cpu/sim/rtl/MEM.v|G:/download/pipeline_riscv_cpu/sim/rtl/MEM_WB.v|G:/download/pipeline_riscv_cpu/sim/rtl/Multiplier.v|G:/download/pipeline_riscv_cpu/sim/rtl/PC.v|G:/download/pipeline_riscv_cpu/sim/rtl/RAM.v|G:/download/pipeline_riscv_cpu/sim/rtl/REGS.v|G:/download/pipeline_riscv_cpu/sim/rtl/RISCV_SOC.v|G:/download/pipeline_riscv_cpu/sim/rtl/ROM.v|G:/download/pipeline_riscv_cpu/sim/rtl/TOP_RISCV.v|G:/download/pipeline_riscv_cpu/sim/rtl/WB.v|G:/download/pipeline_riscv_cpu/sim/rtl/defines.v|G:/download/pipeline_riscv_cpu/sim/rtl/tb.v|
+!i113 1
+Z6 tCvgOpt 0
+n@a@x@i4_@lite
+vCHECK
+R1
+!i10b 1
+!s100 `m?16eN2ePV6WD[zmIA@d3
+IVCB?NlcFV[BAH0MJfXZ3@1
+R2
+R0
+w1711184921
+8G:/download/pipeline_riscv_cpu/sim/rtl/CHECK.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/CHECK.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z7 !s107 G:\download\pipeline_riscv_cpu\sim\rtl\defines.v|G:/download/pipeline_riscv_cpu/sim/rtl/tb.v|G:/download/pipeline_riscv_cpu/sim/rtl/defines.v|G:/download/pipeline_riscv_cpu/sim/rtl/WB.v|G:/download/pipeline_riscv_cpu/sim/rtl/TOP_RISCV.v|G:/download/pipeline_riscv_cpu/sim/rtl/ROM.v|G:/download/pipeline_riscv_cpu/sim/rtl/RISCV_SOC.v|G:/download/pipeline_riscv_cpu/sim/rtl/REGS.v|G:/download/pipeline_riscv_cpu/sim/rtl/RAM.v|G:/download/pipeline_riscv_cpu/sim/rtl/PC.v|G:/download/pipeline_riscv_cpu/sim/rtl/Multiplier.v|G:/download/pipeline_riscv_cpu/sim/rtl/MEM_WB.v|G:/download/pipeline_riscv_cpu/sim/rtl/MEM.v|G:/download/pipeline_riscv_cpu/sim/rtl/IF_ID.v|G:/download/pipeline_riscv_cpu/sim/rtl/IF.v|G:/download/pipeline_riscv_cpu/sim/rtl/ID_EX.v|G:/download/pipeline_riscv_cpu/sim/rtl/ID.v|G:/download/pipeline_riscv_cpu/sim/rtl/ICache.v|G:/download/pipeline_riscv_cpu/sim/rtl/EX_MEM.v|G:/download/pipeline_riscv_cpu/sim/rtl/EX.v|G:/download/pipeline_riscv_cpu/sim/rtl/Divider.v|G:/download/pipeline_riscv_cpu/sim/rtl/DFF_SET.v|G:/download/pipeline_riscv_cpu/sim/rtl/DCache.v|G:/download/pipeline_riscv_cpu/sim/rtl/CTRL.v|G:/download/pipeline_riscv_cpu/sim/rtl/CSR_REGS.v|G:/download/pipeline_riscv_cpu/sim/rtl/CLINT.v|G:/download/pipeline_riscv_cpu/sim/rtl/CHECK.v|G:/download/pipeline_riscv_cpu/sim/rtl/AXI4_Lite.v|
+R5
+!i113 1
+R6
+n@c@h@e@c@k
+vCLINT
+R1
+!i10b 1
+!s100 4BUG9zJDN7`9B_Uh:mV;>3
+IYkm>FZJf:c@=SSB7PUQf42
+R2
+R0
+w1711184939
+8G:/download/pipeline_riscv_cpu/sim/rtl/CLINT.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/CLINT.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@c@l@i@n@t
+vCSR_REGS
+R1
+!i10b 1
+!s100 OHbOXMz6dNJY8KkB2<YQX1
+I1Q84?PHgHkJFNG<5Vl9?b0
+R2
+R0
+w1711184959
+8G:/download/pipeline_riscv_cpu/sim/rtl/CSR_REGS.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/CSR_REGS.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@c@s@r_@r@e@g@s
+vCTRL
+R1
+!i10b 1
+!s100 UncVjAZYagD=9;EL1nG7G3
+I<zA^PdN5H267Nc08X4cBA1
+R2
+R0
+w1711184978
+8G:/download/pipeline_riscv_cpu/sim/rtl/CTRL.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/CTRL.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@c@t@r@l
+vDCache
+R1
+!i10b 1
+!s100 :?2:;e:VJBcbeoKEalE@C1
+IEmfh_E:lzQ6KAfnoWFF:;0
+R2
+R0
+w1711538649
+8G:/download/pipeline_riscv_cpu/sim/rtl/DCache.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/DCache.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@d@cache
+vDFF_SET
+R1
+!i10b 1
+!s100 I`l4DIAD3b91Uc@ck@mR91
+IMIhn0QMK^b4LJ4HcP`m8l1
+R2
+R0
+w1711185259
+8G:/download/pipeline_riscv_cpu/sim/rtl/DFF_SET.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/DFF_SET.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@d@f@f_@s@e@t
+vDivider
+R1
+!i10b 1
+!s100 agmF3[TR:Bl?U?5zaT>D@0
+I5Jk9nOa8:lcko_FPQnN>03
+R2
+R0
+w1711184990
+8G:/download/pipeline_riscv_cpu/sim/rtl/Divider.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/Divider.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@divider
+vEX
+R1
+!i10b 1
+!s100 UiKN7L^gSZT;o=`POBDnl0
+I^z70S_IGK<7OJ?imY3>Gi3
+R2
+R0
+w1711184650
+8G:/download/pipeline_riscv_cpu/sim/rtl/EX.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/EX.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@e@x
+vEX_MEM
+R1
+!i10b 1
+!s100 @<Azfh^honaFFd8@F9SD>0
+I]eloK?o5HhAo=?oO=ai?_2
+R2
+R0
+w1711185083
+8G:/download/pipeline_riscv_cpu/sim/rtl/EX_MEM.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/EX_MEM.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@e@x_@m@e@m
+vICache
+R1
+!i10b 1
+!s100 ]lXV=:lFcl_XM3Qakz5Oe3
+Ic2jE77KIOV8X_9A_MD>A_1
+R2
+R0
+w1711538635
+8G:/download/pipeline_riscv_cpu/sim/rtl/ICache.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ICache.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@i@cache
+vID
+R1
+!i10b 1
+!s100 K1VIGY475WmXN@ZE_Ql1_1
+IYAGTUO>cMdE9M9>Z78d=:2
+R2
+R0
+w1711185142
+8G:/download/pipeline_riscv_cpu/sim/rtl/ID.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ID.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@i@d
+vID_EX
+R1
+!i10b 1
+!s100 I=mVe8Y7D@>D_`fWnL`o^1
+IZCZcE;k79dA5EoS[BQRCE3
+R2
+R0
+w1711185055
+8G:/download/pipeline_riscv_cpu/sim/rtl/ID_EX.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ID_EX.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@i@d_@e@x
+vIF
+R1
+!i10b 1
+!s100 l=gFV9`M3A<A5`4bRjdX10
+IEQGBHXj3VA03nTz5OB[0f3
+R2
+R0
+w1711184704
+8G:/download/pipeline_riscv_cpu/sim/rtl/IF.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/IF.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@i@f
+vIF_ID
+R1
+!i10b 1
+!s100 QkOV2QilF@lM1ES[kmih01
+IX8?KWVOdX]iZzCKoXUn=01
+R2
+R0
+w1711185112
+8G:/download/pipeline_riscv_cpu/sim/rtl/IF_ID.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/IF_ID.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@i@f_@i@d
+vMEM
+R1
+!i10b 1
+!s100 0VS8HijHdnBfRLSlYOeBA3
+IPiEZbRYk6RcIgabPnkZg[0
+R2
+R0
+w1711184807
+8G:/download/pipeline_riscv_cpu/sim/rtl/MEM.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/MEM.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@m@e@m
+vMEM_WB
+R1
+!i10b 1
+!s100 6[fYkhM@cGOokOzjWYI`13
+Imd^k^^TF;fhG]T:@`BQe81
+R2
+R0
+w1711185129
+8G:/download/pipeline_riscv_cpu/sim/rtl/MEM_WB.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/MEM_WB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@m@e@m_@w@b
+vMultiplier
+R1
+!i10b 1
+!s100 cV`k5L8Rb9KKmQXZ0^K8S1
+I`:eGEnGmcW7aHh2Xj0CKZ0
+R2
+R0
+w1711185180
+8G:/download/pipeline_riscv_cpu/sim/rtl/Multiplier.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/Multiplier.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@multiplier
+vPC
+R1
+!i10b 1
+!s100 nY@U_h12Z:A[fiMhRzX]A3
+IRGA6[5kAjJ`b0J_NzR;6U3
+R2
+R0
+w1711185205
+8G:/download/pipeline_riscv_cpu/sim/rtl/PC.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/PC.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@p@c
+vRAM
+R1
+!i10b 1
+!s100 1<ejOhXaRYXT3HLX;5PX63
+I:5Cba5eUd7EdJ<^_3@W=C0
+R2
+R0
+w1711208219
+8G:/download/pipeline_riscv_cpu/sim/rtl/RAM.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/RAM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@r@a@m
+vREGS
+R1
+!i10b 1
+!s100 FYgi`ObRj6dnekB0dIR:b0
+IRn9:CXWazMFRmW=58i>QP0
+R2
+R0
+w1711185166
+8G:/download/pipeline_riscv_cpu/sim/rtl/REGS.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/REGS.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@r@e@g@s
+vRISCV_SOC
+R1
+!i10b 1
+!s100 Rd^GVSg7XmDdU6[Fj5Oio0
+I;I6lmTSOC2o2>53]AoYdX3
+R2
+R0
+w1711184877
+8G:/download/pipeline_riscv_cpu/sim/rtl/RISCV_SOC.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/RISCV_SOC.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@r@i@s@c@v_@s@o@c
+vROM
+R1
+!i10b 1
+!s100 eQN=>6n=<m_60=bG2`R@i1
+I`iB>[MGCUAmgWbcH4E@bL2
+R2
+R0
+w1711208206
+8G:/download/pipeline_riscv_cpu/sim/rtl/ROM.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ROM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@r@o@m
+vtb
+R1
+!i10b 1
+!s100 Z2GMgFi6`z<iHM<Xg3>^j0
+INV_TSc?4c^8]l:`_]:h_81
+R2
+R0
+w1710399876
+8G:/download/pipeline_riscv_cpu/sim/rtl/tb.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+vTOP_RISCV
+R1
+!i10b 1
+!s100 IDfhXnz5Xl^Vn^;]<5_6i2
+IoOLMGMooWVZEa7m<7>j5Q0
+R2
+R0
+w1711184763
+8G:/download/pipeline_riscv_cpu/sim/rtl/TOP_RISCV.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/TOP_RISCV.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@t@o@p_@r@i@s@c@v
+vWB
+R1
+!i10b 1
+!s100 =^<NnH3<>0n>Z_1E_Fo1J1
+IdDbN3B8eo=_a780bz<zGj2
+R2
+R0
+w1711185222
+8G:/download/pipeline_riscv_cpu/sim/rtl/WB.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/WB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R7
+R5
+!i113 1
+R6
+n@w@b
+vysyx_22050698_AXI4_Lite
+Z8 !s110 1710384745
+!i10b 1
+!s100 S:B4gnizNPl66n`E@FVOS0
+I5X^6d3^zIIP@j0X?ZYzej2
+R2
+R0
+w1702991562
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_AXI4_Lite.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_AXI4_Lite.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1710384745.000000
+Z10 !s107 G:\download\pipeline_riscv_cpu\sim\rtl\defines.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_WB.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_TOP_RISCV.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ROM.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_RISCV_SOC.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_REGS.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_RAM.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_PC.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_Multiplier.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_MEM_WB.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_MEM.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_IF_ID.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ID_EX.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ID.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ICache.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_EX_MEM.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_EX.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_Divider.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_DFF_SET.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CTRL.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CSR_REGS.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CLINT.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CHECK.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_AXI4_Lite.v|G:/download/pipeline_riscv_cpu/sim/rtl/tb.v|G:/download/pipeline_riscv_cpu/sim/rtl/defines.v|
+Z11 !s90 G:/download/pipeline_riscv_cpu/sim/rtl/defines.v|G:/download/pipeline_riscv_cpu/sim/rtl/tb.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_AXI4_Lite.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CHECK.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CLINT.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CSR_REGS.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CTRL.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_DFF_SET.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_Divider.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_EX.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_EX_MEM.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ICache.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ID.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ID_EX.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_IF_ID.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_MEM.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_MEM_WB.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_Multiplier.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_PC.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_RAM.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_REGS.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_RISCV_SOC.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ROM.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_TOP_RISCV.v|G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_WB.v|
+!i113 1
+R6
+nysyx_22050698_@a@x@i4_@lite
+vysyx_22050698_CHECK
+R8
+!i10b 1
+!s100 kWRRPUJSFVk^B56mQBWP:3
+IQ5Y6Rn5Z6Pz=Ci@EUiN5]3
+R2
+R0
+w1675692867
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CHECK.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CHECK.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@c@h@e@c@k
+vysyx_22050698_CLINT
+R8
+!i10b 1
+!s100 IL?ocamFB9oed=7Mo[]J]0
+If[mES5W4TOm4zCVITi4Hi1
+R2
+R0
+w1677906772
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CLINT.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CLINT.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@c@l@i@n@t
+vysyx_22050698_CSR_REGS
+R8
+!i10b 1
+!s100 G^Fi10FQBi<zDXOKLYoL;1
+IX0XFM`CC0Bc@70D:O6Y_83
+R2
+R0
+w1677859619
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CSR_REGS.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CSR_REGS.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@c@s@r_@r@e@g@s
+vysyx_22050698_CTRL
+R8
+!i10b 1
+!s100 ShNoJ1l9A@=1?Yn]jQ5J:0
+IOPDd_DBT?81ldDHU=Q3P72
+R2
+R0
+w1674013185
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CTRL.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_CTRL.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@c@t@r@l
+vysyx_22050698_DFF_SET
+R8
+!i10b 1
+!s100 B^aHh8;LGI8icK03>hgk32
+IzciI9zk;FglHIc^20cEYY0
+R2
+R0
+w1673355170
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_DFF_SET.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_DFF_SET.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@d@f@f_@s@e@t
+vysyx_22050698_Divider
+R8
+!i10b 1
+!s100 AT@oEXoijRR8:PlU@KODP1
+IiU^fU8ZIoJ[3;X;Xz7DE@2
+R2
+R0
+w1701743590
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_Divider.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_Divider.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@divider
+vysyx_22050698_EX
+R8
+!i10b 1
+!s100 klQ[X@UXSVX[bhmVgzAJl2
+IB[@l6_;]^lVBIInaCKTEM2
+R2
+R0
+w1702785122
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_EX.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_EX.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@e@x
+vysyx_22050698_EX_MEM
+R8
+!i10b 1
+!s100 ?3CXA5=VfmgXX@GDRnO[K2
+IhEgik:h7lX?YJiRe55a@[1
+R2
+R0
+w1673670531
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_EX_MEM.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_EX_MEM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@e@x_@m@e@m
+vysyx_22050698_ICache
+R8
+!i10b 1
+!s100 2?VNaLzVK0WRTckOig[D11
+IQW0beKo>01I9W1d8hHnf`2
+R2
+R0
+w1703040045
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ICache.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ICache.v
+L0 8
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@i@cache
+vysyx_22050698_ID
+R8
+!i10b 1
+!s100 nkzS7JCaXU0aRjYVS=W>12
+I0_Zd^0`N9W9Hb=nXBF_3C0
+R2
+R0
+w1702784630
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ID.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ID.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@i@d
+vysyx_22050698_ID_EX
+R8
+!i10b 1
+!s100 _R3R2YRPfb:^zjJ<M=SG02
+IVWXz9kaTEGXmzF?o9^9X`1
+R2
+R0
+w1673355214
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ID_EX.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ID_EX.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@i@d_@e@x
+vysyx_22050698_IF
+!s110 1702786495
+!i10b 1
+!s100 A^L7XDJfNZjiN>n2Tg7cj3
+ID>YRABJb?g=j7VZ:dzOFd0
+R2
+R0
+w1673350566
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_IF.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_IF.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1702786495.000000
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_IF.v|
+!s90 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_IF.v|
+!i113 1
+R6
+nysyx_22050698_@i@f
+vysyx_22050698_IF_ID
+R8
+!i10b 1
+!s100 9;8Y9E:dB<;a1g4=G798:1
+IZRCn6^Y@h@Y8jeYlOzgE_0
+R2
+R0
+w1677685931
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_IF_ID.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_IF_ID.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@i@f_@i@d
+vysyx_22050698_MEM
+R8
+!i10b 1
+!s100 cS@YEP<A>UgHTV7d[fRBJ3
+IgjLQ@ZCj@b4;VbAmh5jDH2
+R2
+R0
+w1677993110
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_MEM.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_MEM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@m@e@m
+vysyx_22050698_MEM_WB
+R8
+!i10b 1
+!s100 7g6MfENVh9:k`KdB[o2Rj0
+I2YdfJlTkQMiz1[1lo5>O<2
+R2
+R0
+w1673358612
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_MEM_WB.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_MEM_WB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@m@e@m_@w@b
+vysyx_22050698_Multiplier
+R8
+!i10b 1
+!s100 BhX<a`e1AgmD^[H?Gc4dZ2
+IAh1keN@[C>a?K0@W8n@`61
+R2
+R0
+w1701766134
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_Multiplier.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_Multiplier.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@multiplier
+vysyx_22050698_PC
+R8
+!i10b 1
+!s100 @L126iUl;>CjzJK][4I1N2
+I^J;`=G6gi24K_SPb@bC@_1
+R2
+R0
+w1703039823
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_PC.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_PC.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@p@c
+vysyx_22050698_RAM
+R8
+!i10b 1
+!s100 =[e[ceAdVm@Yb57CH;R<93
+IOJAFOk_JFIn40ZXj4V6aD0
+R2
+R0
+w1703045417
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_RAM.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_RAM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@r@a@m
+vysyx_22050698_REGS
+R8
+!i10b 1
+!s100 0n;c6EjGZPALVUVK9]Nbm1
+If]83YmW]kSGIR:bYD7_Na3
+R2
+R0
+w1673598614
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_REGS.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_REGS.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@r@e@g@s
+vysyx_22050698_RISCV_SOC
+R8
+!i10b 1
+!s100 _Xb^6:S0aj8Ng8dTkf?i_2
+INlinRO14kI9l<Z6kFIleI3
+R2
+R0
+w1703040359
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_RISCV_SOC.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_RISCV_SOC.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@r@i@s@c@v_@s@o@c
+vysyx_22050698_ROM
+R8
+!i10b 1
+!s100 U6[P8_?436gS::[_J2ag>0
+IcD^870LfMcgCaS=EGiaCb2
+R2
+R0
+w1702991567
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ROM.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_ROM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@r@o@m
+vysyx_22050698_TOP_RISCV
+R8
+!i10b 1
+!s100 YOH[3I_82]GP0BNKNjzkk1
+In14S;;kAT@U_KM1j;XII^1
+R2
+R0
+w1703040403
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_TOP_RISCV.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_TOP_RISCV.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@t@o@p_@r@i@s@c@v
+vysyx_22050698_WB
+R8
+!i10b 1
+!s100 ?<iW2Lb9]N=J:AJA4W[H;0
+IiKl3E?:=@??HaYAZ9V1W60
+R2
+R0
+w1672651020
+8G:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_WB.v
+FG:/download/pipeline_riscv_cpu/sim/rtl/ysyx_22050698_WB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R6
+nysyx_22050698_@w@b

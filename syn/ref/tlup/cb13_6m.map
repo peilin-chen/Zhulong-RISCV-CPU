@@ -1,0 +1,27 @@
+conducting_layers
+
+*runset layers in hercules CONNECT      physical layers in ITF file
+*(database layer)  			(grd layer)
+      
+  poly                                  poly
+  metal1				cm
+  metal2				cm2
+  metal3				cm3
+  metal4				cm4
+  metal5				cm5
+  metal6				cm6
+
+via_layers
+  via1					via1
+  via2					via2
+  via3					via3
+  via4					via4
+  via5					via5
+
+
+marker_layers
+
+
+remove_layers
+
+

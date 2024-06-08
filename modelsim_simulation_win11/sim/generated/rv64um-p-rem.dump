@@ -1,0 +1,109 @@
+
+generated/rv64um-p-rem:     file format elf64-littleriscv
+
+
+Disassembly of section .text.init:
+
+0000000000000000 <_start>:
+   0:	00000d13          	li	s10,0
+   4:	00000d93          	li	s11,0
+
+0000000000000008 <test_2>:
+   8:	01400093          	li	ra,20
+   c:	00600113          	li	sp,6
+  10:	0220ef33          	rem	t5,ra,sp
+  14:	00200e93          	li	t4,2
+  18:	00200193          	li	gp,2
+  1c:	0ddf1c63          	bne	t5,t4,f4 <fail>
+
+0000000000000020 <test_3>:
+  20:	fec00093          	li	ra,-20
+  24:	00600113          	li	sp,6
+  28:	0220ef33          	rem	t5,ra,sp
+  2c:	ffe00e93          	li	t4,-2
+  30:	00300193          	li	gp,3
+  34:	0ddf1063          	bne	t5,t4,f4 <fail>
+
+0000000000000038 <test_4>:
+  38:	01400093          	li	ra,20
+  3c:	ffa00113          	li	sp,-6
+  40:	0220ef33          	rem	t5,ra,sp
+  44:	00200e93          	li	t4,2
+  48:	00400193          	li	gp,4
+  4c:	0bdf1463          	bne	t5,t4,f4 <fail>
+
+0000000000000050 <test_5>:
+  50:	fec00093          	li	ra,-20
+  54:	ffa00113          	li	sp,-6
+  58:	0220ef33          	rem	t5,ra,sp
+  5c:	ffe00e93          	li	t4,-2
+  60:	00500193          	li	gp,5
+  64:	09df1863          	bne	t5,t4,f4 <fail>
+
+0000000000000068 <test_6>:
+  68:	fff0009b          	addiw	ra,zero,-1
+  6c:	03f09093          	slli	ra,ra,0x3f
+  70:	00100113          	li	sp,1
+  74:	0220ef33          	rem	t5,ra,sp
+  78:	00000e93          	li	t4,0
+  7c:	00600193          	li	gp,6
+  80:	07df1a63          	bne	t5,t4,f4 <fail>
+
+0000000000000084 <test_7>:
+  84:	fff0009b          	addiw	ra,zero,-1
+  88:	03f09093          	slli	ra,ra,0x3f
+  8c:	fff00113          	li	sp,-1
+  90:	0220ef33          	rem	t5,ra,sp
+  94:	00000e93          	li	t4,0
+  98:	00700193          	li	gp,7
+  9c:	05df1c63          	bne	t5,t4,f4 <fail>
+
+00000000000000a0 <test_8>:
+  a0:	fff0009b          	addiw	ra,zero,-1
+  a4:	03f09093          	slli	ra,ra,0x3f
+  a8:	00000113          	li	sp,0
+  ac:	0220ef33          	rem	t5,ra,sp
+  b0:	fff00e9b          	addiw	t4,zero,-1
+  b4:	03fe9e93          	slli	t4,t4,0x3f
+  b8:	00800193          	li	gp,8
+  bc:	03df1c63          	bne	t5,t4,f4 <fail>
+
+00000000000000c0 <test_9>:
+  c0:	00100093          	li	ra,1
+  c4:	00000113          	li	sp,0
+  c8:	0220ef33          	rem	t5,ra,sp
+  cc:	00100e93          	li	t4,1
+  d0:	00900193          	li	gp,9
+  d4:	03df1063          	bne	t5,t4,f4 <fail>
+
+00000000000000d8 <test_10>:
+  d8:	00000093          	li	ra,0
+  dc:	00000113          	li	sp,0
+  e0:	0220ef33          	rem	t5,ra,sp
+  e4:	00000e93          	li	t4,0
+  e8:	00a00193          	li	gp,10
+  ec:	01df1463          	bne	t5,t4,f4 <fail>
+  f0:	00301863          	bne	zero,gp,100 <pass>
+
+00000000000000f4 <fail>:
+  f4:	00100d13          	li	s10,1
+  f8:	00000d93          	li	s11,0
+
+00000000000000fc <loop_fail>:
+  fc:	0000006f          	j	fc <loop_fail>
+
+0000000000000100 <pass>:
+ 100:	00100d13          	li	s10,1
+ 104:	00100d93          	li	s11,1
+
+0000000000000108 <loop_pass>:
+ 108:	0000006f          	j	108 <loop_pass>
+	...
+
+Disassembly of section .tohost:
+
+0000000000000180 <tohost>:
+	...
+
+00000000000001c0 <fromhost>:
+	...

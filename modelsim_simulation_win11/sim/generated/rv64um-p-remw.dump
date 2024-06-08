@@ -1,0 +1,113 @@
+
+generated/rv64um-p-remw:     file format elf64-littleriscv
+
+
+Disassembly of section .text.init:
+
+0000000000000000 <_start>:
+   0:	00000d13          	li	s10,0
+   4:	00000d93          	li	s11,0
+
+0000000000000008 <test_2>:
+   8:	01400093          	li	ra,20
+   c:	00600113          	li	sp,6
+  10:	0220ef3b          	remw	t5,ra,sp
+  14:	00200e93          	li	t4,2
+  18:	00200193          	li	gp,2
+  1c:	0fdf1063          	bne	t5,t4,fc <fail>
+
+0000000000000020 <test_3>:
+  20:	fec00093          	li	ra,-20
+  24:	00600113          	li	sp,6
+  28:	0220ef3b          	remw	t5,ra,sp
+  2c:	ffe00e93          	li	t4,-2
+  30:	00300193          	li	gp,3
+  34:	0ddf1463          	bne	t5,t4,fc <fail>
+
+0000000000000038 <test_4>:
+  38:	01400093          	li	ra,20
+  3c:	ffa00113          	li	sp,-6
+  40:	0220ef3b          	remw	t5,ra,sp
+  44:	00200e93          	li	t4,2
+  48:	00400193          	li	gp,4
+  4c:	0bdf1863          	bne	t5,t4,fc <fail>
+
+0000000000000050 <test_5>:
+  50:	fec00093          	li	ra,-20
+  54:	ffa00113          	li	sp,-6
+  58:	0220ef3b          	remw	t5,ra,sp
+  5c:	ffe00e93          	li	t4,-2
+  60:	00500193          	li	gp,5
+  64:	09df1c63          	bne	t5,t4,fc <fail>
+
+0000000000000068 <test_6>:
+  68:	800000b7          	lui	ra,0x80000
+  6c:	00100113          	li	sp,1
+  70:	0220ef3b          	remw	t5,ra,sp
+  74:	00000e93          	li	t4,0
+  78:	00600193          	li	gp,6
+  7c:	09df1063          	bne	t5,t4,fc <fail>
+
+0000000000000080 <test_7>:
+  80:	800000b7          	lui	ra,0x80000
+  84:	fff00113          	li	sp,-1
+  88:	0220ef3b          	remw	t5,ra,sp
+  8c:	00000e93          	li	t4,0
+  90:	00700193          	li	gp,7
+  94:	07df1463          	bne	t5,t4,fc <fail>
+
+0000000000000098 <test_8>:
+  98:	800000b7          	lui	ra,0x80000
+  9c:	00000113          	li	sp,0
+  a0:	0220ef3b          	remw	t5,ra,sp
+  a4:	80000eb7          	lui	t4,0x80000
+  a8:	00800193          	li	gp,8
+  ac:	05df1863          	bne	t5,t4,fc <fail>
+
+00000000000000b0 <test_9>:
+  b0:	00100093          	li	ra,1
+  b4:	00000113          	li	sp,0
+  b8:	0220ef3b          	remw	t5,ra,sp
+  bc:	00100e93          	li	t4,1
+  c0:	00900193          	li	gp,9
+  c4:	03df1c63          	bne	t5,t4,fc <fail>
+
+00000000000000c8 <test_10>:
+  c8:	00000093          	li	ra,0
+  cc:	00000113          	li	sp,0
+  d0:	0220ef3b          	remw	t5,ra,sp
+  d4:	00000e93          	li	t4,0
+  d8:	00a00193          	li	gp,10
+  dc:	03df1063          	bne	t5,t4,fc <fail>
+
+00000000000000e0 <test_11>:
+  e0:	89700093          	li	ra,-1897
+  e4:	00000113          	li	sp,0
+  e8:	0220ef3b          	remw	t5,ra,sp
+  ec:	89700e93          	li	t4,-1897
+  f0:	00b00193          	li	gp,11
+  f4:	01df1463          	bne	t5,t4,fc <fail>
+  f8:	00301863          	bne	zero,gp,108 <pass>
+
+00000000000000fc <fail>:
+  fc:	00100d13          	li	s10,1
+ 100:	00000d93          	li	s11,0
+
+0000000000000104 <loop_fail>:
+ 104:	0000006f          	j	104 <loop_fail>
+
+0000000000000108 <pass>:
+ 108:	00100d13          	li	s10,1
+ 10c:	00100d93          	li	s11,1
+
+0000000000000110 <loop_pass>:
+ 110:	0000006f          	j	110 <loop_pass>
+	...
+
+Disassembly of section .tohost:
+
+0000000000000180 <tohost>:
+	...
+
+00000000000001c0 <fromhost>:
+	...

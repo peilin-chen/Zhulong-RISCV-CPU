@@ -1,0 +1,302 @@
+ 
+****************************************
+Report : cell
+Design : TOP_RISCV
+Version: K-2015.06
+Date   : Fri Apr  5 13:05:24 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+CHECK_inst                CHECK                           581.250000
+                                                                    h
+CLINT_inst                CLINT                           1127.500000
+                                                                    h, n
+CSR_REGS_inst             CSR_REGS                        4549.000000
+                                                                    h, n
+CTRL_inst                 CTRL                            77.250000 h
+Divider_inst              Divider                         6830.500000
+                                                                    h, n
+EX_MEM_inst               EX_MEM                          2501.000000
+                                                                    h, n
+EX_inst                   EX                              12868.000000
+                                                                    h, n
+ID_EX_inst                ID_EX                           5091.000000
+                                                                    h, n
+ID_inst                   ID                              4278.750000
+                                                                    h, n
+IF_ID_inst                IF_ID                           927.750000
+                                                                    h, n
+IF_inst                   IF                              200.000000
+                                                                    h
+MEM_WB_inst               MEM_WB                          655.750000
+                                                                    h, n
+MEM_inst                  MEM                             1734.000000
+                                                                    h
+Multiplier_inst           Multiplier                      7430.250000
+                                                                    h, n
+PC_inst                   PC                              1567.500000
+                                                                    h, n
+REGS_inst                 REGS                            40253.750000
+                                                                    h, n
+U1                        invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U2                        invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U6                        buffd7          cb13fs120_tsmc_max
+                                                          3.250000  
+U7                        bufbd3          cb13fs120_tsmc_max
+                                                          1.750000  
+U8                        clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U9                        inv0d1          cb13fs120_tsmc_max
+                                                          0.750000  
+U10                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U11                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U12                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U13                       bufbd2          cb13fs120_tsmc_max
+                                                          1.250000  
+U14                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U15                       bufbd2          cb13fs120_tsmc_max
+                                                          1.250000  
+U16                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U17                       inv0d2          cb13fs120_tsmc_max
+                                                          1.000000  
+U18                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U19                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U20                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U21                       bufbd2          cb13fs120_tsmc_max
+                                                          1.250000  
+U22                       bufbd2          cb13fs120_tsmc_max
+                                                          1.250000  
+U23                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U24                       bufbd2          cb13fs120_tsmc_max
+                                                          1.250000  
+U25                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U26                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U27                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U28                       inv0d1          cb13fs120_tsmc_max
+                                                          0.750000  
+U29                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U30                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U31                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U32                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U33                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U34                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U35                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U36                       inv0d4          cb13fs120_tsmc_max
+                                                          1.750000  
+U37                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U38                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U39                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U40                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U41                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U42                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U43                       invbd2          cb13fs120_tsmc_max
+                                                          1.000000  
+U44                       invbd7          cb13fs120_tsmc_max
+                                                          2.250000  
+U45                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U46                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U47                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U48                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U49                       bufbd7          cb13fs120_tsmc_max
+                                                          3.000000  
+U50                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U51                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U52                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U53                       bufbd2          cb13fs120_tsmc_max
+                                                          1.250000  
+U54                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U55                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U56                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U57                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U58                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U59                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U60                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U61                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U62                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U63                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U64                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U65                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U66                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U67                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U68                       clk2d2          cb13fs120_tsmc_max
+                                                          5.500000  
+U69                       invbd2          cb13fs120_tsmc_max
+                                                          1.000000  
+U70                       inv0d1          cb13fs120_tsmc_max
+                                                          0.750000  
+U71                       inv0d1          cb13fs120_tsmc_max
+                                                          0.750000  
+U72                       inv0d1          cb13fs120_tsmc_max
+                                                          0.750000  
+U73                       inv0d1          cb13fs120_tsmc_max
+                                                          0.750000  
+U74                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U75                       bufbd1          cb13fs120_tsmc_max
+                                                          1.000000  
+U76                       inv0d1          cb13fs120_tsmc_max
+                                                          0.750000  
+U77                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U78                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U79                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U80                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U81                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U82                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U83                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U84                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U85                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U86                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U87                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U88                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U89                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U90                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U91                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U92                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U93                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U94                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U95                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U96                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U97                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U98                       invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U99                       invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U100                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U101                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U102                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U103                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U104                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U105                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U106                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U107                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U108                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U109                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U110                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U111                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U112                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U113                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U114                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U115                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U116                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U117                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U118                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U119                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U120                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U121                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U122                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U123                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U124                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U125                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U126                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+U127                      invbd4          cb13fs120_tsmc_max
+                                                          1.750000  
+U128                      invbdk          cb13fs120_tsmc_max
+                                                          5.500000  
+WB_inst                   WB                              71.250000 h
+--------------------------------------------------------------------------------
+Total 142 cells                                           91177.000000
+1

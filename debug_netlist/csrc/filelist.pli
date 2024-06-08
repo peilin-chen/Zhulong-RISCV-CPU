@@ -1,0 +1,3 @@
+PLI_STUB_OBJS += _vcs_pli_stub_.o
+_vcs_pli_stub_.o: _vcs_pli_stub_.c
+	@$(CC)  -pipe -fPIC    -I/opt/Synopsys/VCS2014/include  -fPIC -c -o _vcs_pli_stub_.o _vcs_pli_stub_.c

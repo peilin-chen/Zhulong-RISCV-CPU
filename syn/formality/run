@@ -1,0 +1,5 @@
+#!/bin/csh -f
+#csh run
+fm_shell -file fm.tcl
+
+

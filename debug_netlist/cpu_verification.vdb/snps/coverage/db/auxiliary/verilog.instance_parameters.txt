@@ -1,0 +1,8 @@
+RISCV_SOC.DCache_inst.IDLE0
+RISCV_SOC.DCache_inst.WriteBack3
+RISCV_SOC.DCache_inst.CompareTag1
+RISCV_SOC.DCache_inst.Allocate2
+RISCV_SOC.ICache_inst.IDLE0
+RISCV_SOC.ICache_inst.WriteBack3
+RISCV_SOC.ICache_inst.CompareTag1
+RISCV_SOC.ICache_inst.Allocate2

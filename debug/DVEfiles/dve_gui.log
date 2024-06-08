@@ -1,0 +1,41 @@
+The file 'cpu_verification.vpd' was opened successfully.
+Warning: [DVDP402] 
+None of the children of the object 'RISCV_SOC.TOP_RISCV_inst.REGS_inst.regs[31:0][63:0]' were dumped.
+Warning: [DVDP402] 
+None of the children of the object 'RISCV_SOC.TOP_RISCV_inst.REGS_inst.regs[31:0][63:0]' were dumped.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.

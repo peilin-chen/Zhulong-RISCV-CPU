@@ -1,0 +1,33 @@
+sidCmdLineBehaviorAnalysisOpt -incr -clockSkew 0 -loopUnroll 0 -bboxEmptyModule 0  -cellModel 0 -bboxIgnoreProtected 0 
+debImport "+v2k" "-sverilog" "-top" "RISCV_SOC" "-f" "../scripts/FileList.f"
+debLoadSimResult /home/IC/Desktop/risc_cpu/debug/RISCV_SOC.fsdb
+wvCreateWindow
+verdiDockWidgetDisplay -dock widgetDock_WelcomePage
+verdiWindowResize -win $_Verdi_1 -2 "25" "1918" "802"
+verdiSetPrefEnv -bDisplayWelcome "off"
+verdiSetPrefEnv -bDisplayWelcome "on"
+verdiSetPrefEnv -bDisplayWelcome "off"
+verdiSetPrefEnv -bDisplayWelcome "on"
+verdiDockWidgetHide -dock widgetDock_WelcomePage
+verdiWindowResize -win $_Verdi_1 -2 "25" "1918" "802"
+srcDeselectAll -win $_nTrace1
+srcHBSelect "RISCV_SOC.TOP_RISCV_inst.REGS_inst" -win $_nTrace1
+srcHBSelect "RISCV_SOC.TOP_RISCV_inst.REGS_inst" -win $_nTrace1
+srcHBSelect "RISCV_SOC.TOP_RISCV_inst.REGS_inst" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+wvSetCursor -win $_nWave2 211834.391155
+wvSetCursor -win $_nWave2 111557.756289
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/RISCV_SOC"
+wvGetSignalSetScope -win $_nWave2 "/RISCV_SOC/TOP_RISCV_inst"
+wvGetSignalSetScope -win $_nWave2 "/RISCV_SOC/TOP_RISCV_inst/REGS_inst"
+wvGetSignalSetScope -win $_nWave2 "/RISCV_SOC/TOP_RISCV_inst/WB_inst"
+wvGetSignalSetScope -win $_nWave2 "/RISCV_SOC/TOP_RISCV_inst/REGS_inst"
+wvGetSignalClose -win $_nWave2
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/RISCV_SOC"
+wvGetSignalSetScope -win $_nWave2 "/RISCV_SOC/TOP_RISCV_inst"
+wvGetSignalSetScope -win $_nWave2 "/RISCV_SOC/TOP_RISCV_inst/REGS_inst"
+wvGetSignalScopeHistory -win $_nWave2 -backward
+wvGetSignalScopeHistory -win $_nWave2 -forward
+debExit

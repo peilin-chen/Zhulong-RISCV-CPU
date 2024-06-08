@@ -1,0 +1,37 @@
+1
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/accum.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/adr.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/alu.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/clk_gen.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/counter.v'
+1
+1
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/datactl.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/register.v'
+1
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/machine.v'
+0
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/machine.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/machinectl.v'
+0
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/machinectl.v'
+1
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/machine.v'
+0
+/home/eda/synopsys/dc/O-2018.06-SP1
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/machine.v'
+0
+false
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/machine.v'
+1
+1
+1
+1
+1
+1
+
+Received Signal 1 from: PID=199630 (UID=1034)
+
+
+Process terminated by hangup.
+

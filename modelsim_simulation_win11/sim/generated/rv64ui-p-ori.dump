@@ -1,0 +1,181 @@
+
+generated/rv64ui-p-ori:     file format elf64-littleriscv
+
+
+Disassembly of section .text.init:
+
+0000000000000000 <_start>:
+   0:	00000d13          	li	s10,0
+   4:	00000d93          	li	s11,0
+
+0000000000000008 <test_2>:
+   8:	ff0100b7          	lui	ra,0xff010
+   c:	f000809b          	addiw	ra,ra,-256
+  10:	f0f0ef13          	ori	t5,ra,-241
+  14:	f0f00e93          	li	t4,-241
+  18:	00200193          	li	gp,2
+  1c:	1ddf1c63          	bne	t5,t4,1f4 <fail>
+
+0000000000000020 <test_3>:
+  20:	0ff010b7          	lui	ra,0xff01
+  24:	ff00809b          	addiw	ra,ra,-16
+  28:	0f00ef13          	ori	t5,ra,240
+  2c:	0ff01eb7          	lui	t4,0xff01
+  30:	ff0e8e9b          	addiw	t4,t4,-16
+  34:	00300193          	li	gp,3
+  38:	1bdf1e63          	bne	t5,t4,1f4 <fail>
+
+000000000000003c <test_4>:
+  3c:	00ff00b7          	lui	ra,0xff0
+  40:	0ff0809b          	addiw	ra,ra,255
+  44:	70f0ef13          	ori	t5,ra,1807
+  48:	00ff0eb7          	lui	t4,0xff0
+  4c:	7ffe8e9b          	addiw	t4,t4,2047
+  50:	00400193          	li	gp,4
+  54:	1bdf1063          	bne	t5,t4,1f4 <fail>
+
+0000000000000058 <test_5>:
+  58:	f00ff0b7          	lui	ra,0xf00ff
+  5c:	00f0809b          	addiw	ra,ra,15
+  60:	0f00ef13          	ori	t5,ra,240
+  64:	f00ffeb7          	lui	t4,0xf00ff
+  68:	0ffe8e9b          	addiw	t4,t4,255
+  6c:	00500193          	li	gp,5
+  70:	19df1263          	bne	t5,t4,1f4 <fail>
+
+0000000000000074 <test_6>:
+  74:	000100b7          	lui	ra,0x10
+  78:	f010809b          	addiw	ra,ra,-255
+  7c:	01009093          	slli	ra,ra,0x10
+  80:	f0008093          	addi	ra,ra,-256 # ff00 <begin_signature+0xef00>
+  84:	0f00e093          	ori	ra,ra,240
+  88:	00010eb7          	lui	t4,0x10
+  8c:	f01e8e9b          	addiw	t4,t4,-255
+  90:	010e9e93          	slli	t4,t4,0x10
+  94:	ff0e8e93          	addi	t4,t4,-16 # fff0 <begin_signature+0xeff0>
+  98:	00600193          	li	gp,6
+  9c:	15d09c63          	bne	ra,t4,1f4 <fail>
+
+00000000000000a0 <test_7>:
+  a0:	00000213          	li	tp,0
+  a4:	0ff010b7          	lui	ra,0xff01
+  a8:	ff00809b          	addiw	ra,ra,-16
+  ac:	0f00ef13          	ori	t5,ra,240
+  b0:	000f0313          	mv	t1,t5
+  b4:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+  b8:	00200293          	li	t0,2
+  bc:	fe5214e3          	bne	tp,t0,a4 <test_7+0x4>
+  c0:	0ff01eb7          	lui	t4,0xff01
+  c4:	ff0e8e9b          	addiw	t4,t4,-16
+  c8:	00700193          	li	gp,7
+  cc:	13d31463          	bne	t1,t4,1f4 <fail>
+
+00000000000000d0 <test_8>:
+  d0:	00000213          	li	tp,0
+  d4:	00ff00b7          	lui	ra,0xff0
+  d8:	0ff0809b          	addiw	ra,ra,255
+  dc:	70f0ef13          	ori	t5,ra,1807
+  e0:	00000013          	nop
+  e4:	000f0313          	mv	t1,t5
+  e8:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+  ec:	00200293          	li	t0,2
+  f0:	fe5212e3          	bne	tp,t0,d4 <test_8+0x4>
+  f4:	00ff0eb7          	lui	t4,0xff0
+  f8:	7ffe8e9b          	addiw	t4,t4,2047
+  fc:	00800193          	li	gp,8
+ 100:	0fd31a63          	bne	t1,t4,1f4 <fail>
+
+0000000000000104 <test_9>:
+ 104:	00000213          	li	tp,0
+ 108:	f00ff0b7          	lui	ra,0xf00ff
+ 10c:	00f0809b          	addiw	ra,ra,15
+ 110:	0f00ef13          	ori	t5,ra,240
+ 114:	00000013          	nop
+ 118:	00000013          	nop
+ 11c:	000f0313          	mv	t1,t5
+ 120:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+ 124:	00200293          	li	t0,2
+ 128:	fe5210e3          	bne	tp,t0,108 <test_9+0x4>
+ 12c:	f00ffeb7          	lui	t4,0xf00ff
+ 130:	0ffe8e9b          	addiw	t4,t4,255
+ 134:	00900193          	li	gp,9
+ 138:	0bd31e63          	bne	t1,t4,1f4 <fail>
+
+000000000000013c <test_10>:
+ 13c:	00000213          	li	tp,0
+ 140:	0ff010b7          	lui	ra,0xff01
+ 144:	ff00809b          	addiw	ra,ra,-16
+ 148:	0f00ef13          	ori	t5,ra,240
+ 14c:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+ 150:	00200293          	li	t0,2
+ 154:	fe5216e3          	bne	tp,t0,140 <test_10+0x4>
+ 158:	0ff01eb7          	lui	t4,0xff01
+ 15c:	ff0e8e9b          	addiw	t4,t4,-16
+ 160:	00a00193          	li	gp,10
+ 164:	09df1863          	bne	t5,t4,1f4 <fail>
+
+0000000000000168 <test_11>:
+ 168:	00000213          	li	tp,0
+ 16c:	00ff00b7          	lui	ra,0xff0
+ 170:	0ff0809b          	addiw	ra,ra,255
+ 174:	00000013          	nop
+ 178:	f0f0ef13          	ori	t5,ra,-241
+ 17c:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+ 180:	00200293          	li	t0,2
+ 184:	fe5214e3          	bne	tp,t0,16c <test_11+0x4>
+ 188:	fff00e93          	li	t4,-1
+ 18c:	00b00193          	li	gp,11
+ 190:	07df1263          	bne	t5,t4,1f4 <fail>
+
+0000000000000194 <test_12>:
+ 194:	00000213          	li	tp,0
+ 198:	f00ff0b7          	lui	ra,0xf00ff
+ 19c:	00f0809b          	addiw	ra,ra,15
+ 1a0:	00000013          	nop
+ 1a4:	00000013          	nop
+ 1a8:	0f00ef13          	ori	t5,ra,240
+ 1ac:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+ 1b0:	00200293          	li	t0,2
+ 1b4:	fe5212e3          	bne	tp,t0,198 <test_12+0x4>
+ 1b8:	f00ffeb7          	lui	t4,0xf00ff
+ 1bc:	0ffe8e9b          	addiw	t4,t4,255
+ 1c0:	00c00193          	li	gp,12
+ 1c4:	03df1863          	bne	t5,t4,1f4 <fail>
+
+00000000000001c8 <test_13>:
+ 1c8:	0f006093          	ori	ra,zero,240
+ 1cc:	0f000e93          	li	t4,240
+ 1d0:	00d00193          	li	gp,13
+ 1d4:	03d09063          	bne	ra,t4,1f4 <fail>
+
+00000000000001d8 <test_14>:
+ 1d8:	00ff00b7          	lui	ra,0xff0
+ 1dc:	0ff0809b          	addiw	ra,ra,255
+ 1e0:	70f0e013          	ori	zero,ra,1807
+ 1e4:	00000e93          	li	t4,0
+ 1e8:	00e00193          	li	gp,14
+ 1ec:	01d01463          	bne	zero,t4,1f4 <fail>
+ 1f0:	00301863          	bne	zero,gp,200 <pass>
+
+00000000000001f4 <fail>:
+ 1f4:	00100d13          	li	s10,1
+ 1f8:	00000d93          	li	s11,0
+
+00000000000001fc <loop_fail>:
+ 1fc:	0000006f          	j	1fc <loop_fail>
+
+0000000000000200 <pass>:
+ 200:	00100d13          	li	s10,1
+ 204:	00100d93          	li	s11,1
+
+0000000000000208 <loop_pass>:
+ 208:	0000006f          	j	208 <loop_pass>
+	...
+
+Disassembly of section .tohost:
+
+0000000000000280 <tohost>:
+	...
+
+00000000000002c0 <fromhost>:
+	...

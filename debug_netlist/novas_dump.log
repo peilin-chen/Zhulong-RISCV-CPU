@@ -1,0 +1,243 @@
+[MHPI_DL_ERROR]./cpu_verification: undefined symbol: mhpi_skipFileReset
+[MHPI_DL_ERROR]./cpu_verification: undefined symbol: mhpi_addCheckpointFileCB
+ANF: vcsd_get_spice_hier_by_vpi(dlerror='./cpu_verification: undefined symbol: vcsd_get_spice_hier_by_vpi')
+ANF: tf_register_processrestart(dlerror='./cpu_verification: undefined symbol: tf_register_processrestart')
+ANF: vcsd_has_any_dynamic_dim(dlerror='./cpu_verification: undefined symbol: vcsd_has_any_dynamic_dim')
+ANF: vcsd_is_low_power_assertion_checker(dlerror='./cpu_verification: undefined symbol: vcsd_is_low_power_assertion_checker')
+ANF: vcsd_get_power_scope_name(dlerror='./cpu_verification: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_dump_network(dlerror='./cpu_verification: undefined symbol: vcsd_dump_network')
+ANF: vcsd_register_openSignatureData(dlerror='./cpu_verification: undefined symbol: vcsd_register_openSignatureData')
+ANF: vcsd_flush_SignatureData(dlerror='./cpu_verification: undefined symbol: vcsd_flush_SignatureData')
+ANF: vcsd_close_SignatureData(dlerror='./cpu_verification: undefined symbol: vcsd_close_SignatureData')
+ANF: vcsd_node_check_initial_force(dlerror='./cpu_verification: undefined symbol: vcsd_node_check_initial_force')
+ANF: vcsd_node_check_callback(dlerror='./cpu_verification: undefined symbol: vcsd_node_check_callback')
+ANF: vcsd_node_register_callback(dlerror='./cpu_verification: undefined symbol: vcsd_node_register_callback')
+ANF: vcsd_node_remove_callback(dlerror='./cpu_verification: undefined symbol: vcsd_node_remove_callback')
+ANF: vcsd_node_varInfo(dlerror='./cpu_verification: undefined symbol: vcsd_node_varInfo')
+ANF: vcsd_node_Ei_Cn_Fn(dlerror='./cpu_verification: undefined symbol: vcsd_node_Ei_Cn_Fn')
+ANF: vcsd_get_max_Fn(dlerror='./cpu_verification: undefined symbol: vcsd_get_max_Fn')
+ANF: vcsd_node_value_pointer(dlerror='./cpu_verification: undefined symbol: vcsd_node_value_pointer')
+ANF: vcsd_free_value_pointer(dlerror='./cpu_verification: undefined symbol: vcsd_free_value_pointer')
+ANF: vcsd_value_pointer_to_fhdb_value(dlerror='./cpu_verification: undefined symbol: vcsd_value_pointer_to_fhdb_value')
+ANF: vcsd_remove_all_callback(dlerror='./cpu_verification: undefined symbol: vcsd_remove_all_callback')
+ANF: vcsd_check_secondary_initDeposit(dlerror='./cpu_verification: undefined symbol: vcsd_check_secondary_initDeposit')
+ANF: vcsd_register_forceVcsBoundary(dlerror='./cpu_verification: undefined symbol: vcsd_register_forceVcsBoundary')
+ANF: vcsd_register_forceSecondary(dlerror='./cpu_verification: undefined symbol: vcsd_register_forceSecondary')
+ANF: vcsd_register_dumpRoot(dlerror='./cpu_verification: undefined symbol: vcsd_register_dumpRoot')
+ANF: vcsd_register_addNewMaster(dlerror='./cpu_verification: undefined symbol: vcsd_register_addNewMaster')
+ANF: vcsd_register_assignSlaveToNewMaster(dlerror='./cpu_verification: undefined symbol: vcsd_register_assignSlaveToNewMaster')
+ANF: vcsd_register_1st_rfn_cbk(dlerror='./cpu_verification: undefined symbol: vcsd_register_1st_rfn_cbk')
+ANF: vcsd_register_2nd_rfn_cbk(dlerror='./cpu_verification: undefined symbol: vcsd_register_2nd_rfn_cbk')
+ANF: vcsd_is_boundary(dlerror='./cpu_verification: undefined symbol: vcsd_is_boundary')
+ANF: vcsd_register_1st_non_network(dlerror='./cpu_verification: undefined symbol: vcsd_register_1st_non_network')
+ANF: vcsd_register_1st_primary_master(dlerror='./cpu_verification: undefined symbol: vcsd_register_1st_primary_master')
+ANF: vcsd_register_1st_primary_slave(dlerror='./cpu_verification: undefined symbol: vcsd_register_1st_primary_slave')
+ANF: vcsd_register_1st_secondary_master_confirm(dlerror='./cpu_verification: undefined symbol: vcsd_register_1st_secondary_master_confirm')
+ANF: vcsd_register_1st_secondary_master_defer(dlerror='./cpu_verification: undefined symbol: vcsd_register_1st_secondary_master_defer')
+ANF: vcsd_register_1st_secondary_slave_masterConfirmedSecondary(dlerror='./cpu_verification: undefined symbol: vcsd_register_1st_secondary_slave_masterConfirmedSecondary')
+ANF: vcsd_register_1st_secondary_slave_masterDeferredSecondary(dlerror='./cpu_verification: undefined symbol: vcsd_register_1st_secondary_slave_masterDeferredSecondary')
+ANF: vcsd_dump_var_vpdg(dlerror='./cpu_verification: undefined symbol: vcsd_dump_var_vpdg')
+ANF: vcsd_register_2nd_secondary_master_remainSecondary(dlerror='./cpu_verification: undefined symbol: vcsd_register_2nd_secondary_master_remainSecondary')
+ANF: vcsd_register_2nd_secondary_master_becomePrimary(dlerror='./cpu_verification: undefined symbol: vcsd_register_2nd_secondary_master_becomePrimary')
+ANF: vcsd_second_traverse(dlerror='./cpu_verification: undefined symbol: vcsd_second_traverse')
+ANF: vcsd_begin_no_value_var_info(dlerror='./cpu_verification: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info(dlerror='./cpu_verification: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_get_value_ptr(dlerror='./cpu_verification: undefined symbol: vcsd_get_value_ptr')
+ANF: vcsd_get_value_type_from_value_ptr(dlerror='./cpu_verification: undefined symbol: vcsd_get_value_type_from_value_ptr')
+ANF: vcsd_mem_value_pointer_to_fhdb_value(dlerror='./cpu_verification: undefined symbol: vcsd_mem_value_pointer_to_fhdb_value')
+ANF: vcsd_is_nettype_array_value_ptr(dlerror='./cpu_verification: undefined symbol: vcsd_is_nettype_array_value_ptr')
+ANF: vcs_get_v2v_id_for_verdi(dlerror='./cpu_verification: undefined symbol: vcs_get_v2v_id_for_verdi')
+ANF: scsd_xprop_is_enabled(dlerror='./cpu_verification: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted(dlerror='./cpu_verification: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue(dlerror='./cpu_verification: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue(dlerror='./cpu_verification: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue(dlerror='./cpu_verification: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: msvEnableDumpingMode(dlerror='./cpu_verification: undefined symbol: msvEnableDumpingMode')
+ANF: msvIsSpiceEngineReady(dlerror='./cpu_verification: undefined symbol: msvIsSpiceEngineReady')
+ANF: msvSetAddProbeCallback(dlerror='./cpu_verification: undefined symbol: msvSetAddProbeCallback')
+ANF: msvGetInstHandle(dlerror='./cpu_verification: undefined symbol: msvGetInstHandle')
+ANF: msvGetProbeByInst(dlerror='./cpu_verification: undefined symbol: msvGetProbeByInst')
+ANF: msvGetSigHandle(dlerror='./cpu_verification: undefined symbol: msvGetSigHandle')
+ANF: msvGetProbeBySig(dlerror='./cpu_verification: undefined symbol: msvGetProbeBySig')
+ANF: msvGetProbeInfo(dlerror='./cpu_verification: undefined symbol: msvGetProbeInfo')
+ANF: msvRelease(dlerror='./cpu_verification: undefined symbol: msvRelease')
+ANF: msvSetVcCallbackFunc(dlerror='./cpu_verification: undefined symbol: msvSetVcCallbackFunc')
+ANF: msvCheckVcCallback(dlerror='./cpu_verification: undefined symbol: msvCheckVcCallback')
+ANF: msvAddVcCallback(dlerror='./cpu_verification: undefined symbol: msvAddVcCallback')
+ANF: msvRemoveVcCallback(dlerror='./cpu_verification: undefined symbol: msvRemoveVcCallback')
+ANF: msvGetLatestValue(dlerror='./cpu_verification: undefined symbol: msvGetLatestValue')
+ANF: msvSetEndofSimCallback(dlerror='./cpu_verification: undefined symbol: msvSetEndofSimCallback')
+ANF: PI_ace_get_output_time_unit(dlerror='./cpu_verification: undefined symbol: PI_ace_get_output_time_unit')
+ANF: PI_ace_sim_sync(dlerror='./cpu_verification: undefined symbol: PI_ace_sim_sync')
+Chronologic Simulation VCS Release I-2014.03_Full64
+Linux 2.6.32-573.el6.x86_64 #1 SMP Wed Jul 1 18:23:37 EDT 2015 x86_64
+CPU cores: 2
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		10240 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		1024
+memorylocked	64 kbytes
+maxproc			1024
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+DESKTOP_SESSION=gnome
+QTDIR=/usr/lib64/qt-3.3
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/IC/.gtkrc-1.2-gnome2
+XAUTHORITY=/var/run/gdm/auth-for-IC-B83iBI/database
+GDMSESSION=gnome
+XMODIFIERS=@im=ibus
+GDM_LANG=en_US.UTF-8
+SHELL=/bin/bash
+Verdi_HOME=/opt/Synopsys/Verdi2015
+_=/usr/bin/make
+Laker_HOME=/opt/Synopsys/Laker_OA2015
+HISTCONTROL=ignoredups
+SNPSLMD_LICENSE_FILE=27000@IC:/opt/Synopsys/VCS2014/flexlm//license.dat
+USERNAME=IC
+GNOME_KEYRING_SOCKET=/tmp/keyring-Ru8sAe/socket
+StarRC_HOME=/opt/Synopsys/StarRC2015
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+ORBIT_SOCKETDIR=/tmp/orbit-IC
+PATH=/opt/KeySight/ADS2015/bin:/opt/Concept/Symutils/linux23.x86_64:/opt/Concept/SpiceVision:/opt/Concept/SGvision:/opt/Concept/RTLvision:/opt/Concept/Gatevision:/opt/Mentor/Calibre2015/ixl_cal_2015.4_16.11/bin:/opt/Mentor/Tessent2013//bin:/opt/Mentor/ModelSim/modeltech/linux:/opt/Cadence/INNOVUS15/bin:/opt/Cadence/RC11/bin:/opt/Cadence/Incisive14//tools/bin:/opt/Cadence/MMSIM15/tools/spectre/bin:/opt/Cadence/MMSIM15/tools/dfII/bin:/opt/Cadence/MMSIM15/tools/bin:/opt/Cadence/MMSIM15/bin:/opt/Cadence/IC617/tools/plot/bin:/opt/Cadence/IC617/tools/iccraft/bin:/opt/Cadence/IC617/tools/dracula/bin:/opt/Cadence/IC617/tools/dfII/bin:/opt/Cadence/IC617/tools/bin:/opt/Cadence/IC617/share/bin:/opt/Synopsys/Verdi2015/bin:/opt/Synopsys/VCS2014/bin:/opt/Synopsys/Synplify2015/bin:/opt/Synopsys/StarRC2015/bin:/opt/Synopsys/PrimeTime2015/bin:/opt/Synopsys/Laker_OA2015/bin:/opt/Synopsys/ICC2016/bin:/opt/Synopsys/Hspice2016/hspice/bin:/opt/Synopsys/Formality2016/bin:/opt/Synopsys/SCL11.11/linux64/bin:/opt/KeySight/ADS2015/bin:/opt/Concept/Symutils/linux23.x86_64:/opt/Concept/SpiceVision:/opt/Concept/SGvision:/opt/Concept/RTLvision:/opt/Concept/Gatevision:/opt/Mentor/Calibre2015/ixl_cal_2015.4_16.11/bin:/opt/Mentor/Tessent2013//bin:/opt/Mentor/ModelSim/modeltech/linux:/opt/Cadence/INNOVUS15/bin:/opt/Cadence/RC11/bin:/opt/Cadence/Incisive14//tools/bin:/opt/Cadence/MMSIM15/tools/spectre/bin:/opt/Cadence/MMSIM15/tools/dfII/bin:/opt/Cadence/MMSIM15/tools/bin:/opt/Cadence/MMSIM15/bin:/opt/Cadence/IC617/tools/plot/bin:/opt/Cadence/IC617/tools/iccraft/bin:/opt/Cadence/IC617/tools/dracula/bin:/opt/Cadence/IC617/tools/dfII/bin:/opt/Cadence/IC617/tools/bin:/opt/Cadence/IC617/share/bin:/opt/Synopsys/Verdi2015/bin:/opt/Synopsys/VCS2014/bin:/opt/Synopsys/Synplify2015/bin:/opt/Synopsys/StarRC2015/bin:/opt/Synopsys/PrimeTime2015/bin:/opt/Synopsys/Laker_OA2015/bin:/opt/Synopsys/ICC2016/bin:/opt/Synopsys/Hspice2016/hspice/bin:/opt/Synopsys/Formality2016/bin:/opt/Synopsys/SCL11.11/linux64/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/IC/bin
+LM_LICENSE_FILE=/opt/Synopsys/License/License.dat
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3253,unix/unix:/tmp/.ICE-unix/3253
+Encounter_HOME=/opt/Cadence/INNOVUS15
+Incisive_HOME=/opt/Cadence/Incisive14/
+WINDOWID=52428804
+ICC_HOME=/opt/Synopsys/ICC2016
+MMSIM_HOME=/opt/Cadence/MMSIM15
+CDS_AUTO_64BIT=ALL
+CALIBRE_2013_4_ALLOW_IXL_ON_RHEL6=101010
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+SSH_AUTH_SOCK=/tmp/keyring-Ru8sAe/socket.ssh
+OA_HOME=/opt/Cadence/IC617/oa_v22.50.043
+DISPLAY=:0.0
+Synplify_HOME=/opt/Synopsys/Synplify2015
+MGC_HOME=/opt/Mentor/Calibre2015/ixl_cal_2015.4_16.11
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+HOME=/home/IC
+VCS_HOME=/opt/Synopsys/VCS2014
+PWD=/home/IC/Desktop/risc_cpu/debug_netlist
+DFT_HOME=/opt/Mentor/Tessent2013/
+CALIBRE_HOME=/opt/Mentor/Calibre2015/ixl_cal_2015.4_16.11
+G_BROKEN_FILENAMES=1
+MGLS_LICENSE_FILE=/opt/Mentor/License/License.dat
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-HPDLPCqtTh,guid=0e07f9cfce69946a6b44cbe900000012
+LD_LIBRARY_PATH=/opt/KeySight/ADS2015/lib/linux_x86_64:/opt/KeySight/ADS2015/adsptolemy/lib.linux_x86_64:/opt/KeySight/ADS2015/lib/linux_x86:/opt/KeySight/ADS2015/adsptolemy/lib.linux_x86:/opt/KeySight/ADS2015/lib/linux_x86_64:/opt/KeySight/ADS2015/adsptolemy/lib.linux_x86_64:/opt/KeySight/ADS2015/lib/linux_x86:/opt/KeySight/ADS2015/adsptolemy/lib.linux_x86:
+XDG_SESSION_COOKIE=a0bfd28e837df0a07240a6770000000b-1712282727.121963-479965931
+LOGNAME=IC
+Formality_HOME=/opt/Synopsys/Formality2016
+GDM_KEYBOARD_LAYOUT=us
+CDS_LIC_FILE=/opt/Cadence/License/License.dat
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+HOSTNAME=IC
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+COLORTERM=gnome-terminal
+Mentor_Dir=/opt/Mentor
+QT_IM_MODULE=ibus
+SHLVL=2
+USER=IC
+QTLIB=/usr/lib64/qt-3.3/lib
+GNOME_KEYRING_PID=3241
+CDS_LOAD_ENV=CSF
+OLDPWD=/home/IC/Desktop/risc_cpu
+CVS_RSH=ssh
+IMSETTINGS_MODULE=IBus
+MAKEFLAGS=
+MFLAGS=
+MAIL=/var/spool/mail/IC
+Cadence_Dir=/opt/Cadence
+ADS_HOME=/opt/KeySight/ADS2015
+Concept_dir=/opt/Concept
+Hspice_HOME=/opt/Synopsys/Hspice2016
+NOVAS_HOME=/opt/Synopsys/Verdi2015
+RC_HOME=/opt/Cadence/RC11
+SCL_HOME=/opt/Synopsys/SCL11.11
+HISTSIZE=1000
+Virtuoso_HOME=/opt/Cadence/IC617
+CDS_Netlisting_Mode=Digital
+WINDOWPATH=1
+PrimeTime_HOME=/opt/Synopsys/PrimeTime2015
+Synopsys_Dir=/opt/Synopsys
+QTINC=/usr/lib64/qt-3.3/include
+MDS_HOME=/opt/Mentor/ModelSim/modeltech/bin:/opt/Cadence/INNOVUS15/bin:/opt/Cadence/RC11/bin:/opt/Cadence/Incisive14//tools/bin:/opt/Cadence/MMSIM15/tools/spectre/bin:/opt/Cadence/MMSIM15/tools/dfII/bin:/opt/Cadence/MMSIM15/tools/bin:/opt/Cadence/MMSIM15/bin:/opt/Cadence/IC617/tools/plot/bin:/opt/Cadence/IC617/tools/iccraft/bin:/opt/Cadence/IC617/tools/dracula/bin:/opt/Cadence/IC617/tools/dfII/bin:/opt/Cadence/IC617/tools/bin:/opt/Cadence/IC617/share/bin:/opt/Synopsys/Verdi2015/bin:/opt/Synopsys/VCS2014/bin:/opt/Synopsys/Synplify2015/bin:/opt/Synopsys/StarRC2015/bin:/opt/Synopsys/PrimeTime2015/bin:/opt/Synopsys/Laker_OA2015/bin:/opt/Synopsys/ICC2016/bin:/opt/Synopsys/Hspice2016/hspice/bin:/opt/Synopsys/Formality2016/bin:/opt/Synopsys/SCL11.11/linux64/bin:/opt/KeySight/ADS2015/bin:/opt/Concept/Symutils/linux23.x86_64:/opt/Concept/SpiceVision:/opt/Concept/SGvision:/opt/Concept/RTLvision:/opt/Concept/Gatevision:/opt/Mentor/Calibre2015/ixl_cal_2015.4_16.11/bin:/opt/Mentor/Tessent2013//bin:/opt/Mentor/ModelSim/modeltech/linux:/opt/Cadence/INNOVUS15/bin:/opt/Cadence/RC11/bin:/opt/Cadence/Incisive14//tools/bin:/opt/Cadence/MMSIM15/tools/spectre/bin:/opt/Cadence/MMSIM15/tools/dfII/bin:/opt/Cadence/MMSIM15/tools/bin:/opt/Cadence/MMSIM15/bin:/opt/Cadence/IC617/tools/plot/bin:/opt/Cadence/IC617/tools/iccraft/bin:/opt/Cadence/IC617/tools/dracula/bin:/opt/Cadence/IC617/tools/dfII/bin:/opt/Cadence/IC617/tools/bin:/opt/Cadence/IC617/share/bin:/opt/Synopsys/Verdi2015/bin:/opt/Synopsys/VCS2014/bin:/opt/Synopsys/Synplify2015/bin:/opt/Synopsys/StarRC2015/bin:/opt/Synopsys/PrimeTime2015/bin:/opt/Synopsys/Laker_OA2015/bin:/opt/Synopsys/ICC2016/bin:/opt/Synopsys/Hspice2016/hspice/bin:/opt/Synopsys/Formality2016/bin:/opt/Synopsys/SCL11.11/linux64/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/IC/bin
+LANG=en_US.UTF-8
+TERM=xterm
+AGILEESOFD_LICENSE_FILE=/opt/KeySight/ADS2015/License/license.lic
+MAKELEVEL=1
+VCS_PATHMAP_PRELOAD_DONE=1
+LC_ALL=C
+DVE=/opt/Synopsys/VCS2014/gui/dve
+TCLLIBPATH=/tmp/auxx/tcllib/lib/tcl8.4
+SPECMAN_OUTPUT_TO_TTY=1
+Runtime command line arguments:
+argv[0]=./cpu_verification
+argv[1]=-l
+argv[2]=cpu_verification.log
+argv[3]=+vpdfile+cpu_verification.vpd
+argv[4]=-cm
+argv[5]=line+cond+fsm+tgl
+187 profile - 100
+          CPU/Mem usage: 0.130 sys,  0.480 user,  233.03M sys,  0.00M vm
+188 VC callback profile - scalar:0 vector:0
+189 Fri Apr  5 12:59:08 2024
+190 pliAppInit
+191 *Verdi3* : Enable Parallel Dumping.
+192 [MHPI_DL_ERROR]./cpu_verification: undefined symbol: mhpi_skipFileReset
+193 [MHPI_DL_ERROR]./cpu_verification: undefined symbol: mhpi_addCheckpointFileCB
+194 pliAppMiscSet: New Sim Round
+195 pliEntryInit
+196 LIBSSCORE=found /opt/Synopsys/Verdi2015/share/PLI/lib/LINUXAMD64/libsscore_vcs201403.so through $NOVAS_HOME setting.
+197 FSDB Dumper for VCS, Release Verdi3_K-2015.09-SP1-1, Linux x86_64/64bit, 01/21/2016
+198 (C) 1996 - 2016 by Synopsys, Inc.
+199 sps_call_fsdbDumpfile at 0 : ../src/RISCV_SOC.v(322)
+200 argv[0]: RISCV_SOC.fsdb
+201 *Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+202 *Verdi3* : Create FSDB file 'RISCV_SOC.fsdb'
+203 sps_call_fsdbDumpvars at 0 : ../src/RISCV_SOC.v(323)
+204 argv[0]: 0
+205 argv[1]: (handle)0x62dca78 RISCV_SOC
+206 *Verdi3* : Begin traversing the scope (RISCV_SOC), layer (0).
+207 Cell instance `RISCV_SOC.TOP_RISCV_inst.U5'.
+208 *Verdi3* : End of traversing.
+209 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.260 sys,  1.320 user,  389.52M sys,  0.00M vm
+                   incr: 0.130 sys,  0.840 user,  14.63M sys,  0.00M vm
+                   accu: 0.130 sys,  0.840 user,  14.63M sys,  0.00M vm
+              accu incr: 0.130 sys,  0.840 user,  14.63M sys,  0.00M vm
+
+          Count usage: 164925 var,  70197 idcode,  70197 callback
+                 incr: 164925 var,  70197 idcode,  70197 callback
+                 accu: 164925 var,  70197 idcode,  70197 callback
+            accu incr: 164925 var,  70197 idcode,  70197 callback
+210 VC callback profile - scalar:0 vector:0
+211 Fri Apr  5 12:59:09 2024
+212 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.280 sys,  1.820 user,  393.73M sys,  0.00M vm
+                   incr: 0.020 sys,  0.500 user,  4.21M sys,  0.00M vm
+                   accu: 0.150 sys,  1.340 user,  18.84M sys,  0.00M vm
+              accu incr: 0.020 sys,  0.500 user,  4.21M sys,  0.00M vm
+
+          Count usage: 164925 var,  70197 idcode,  70197 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 164925 var,  70197 idcode,  70197 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+213 VC callback profile - scalar:164404 vector:521
+214 Fri Apr  5 12:59:09 2024
+215 sps_call_fsdbDumpon at 0 : ../src/RISCV_SOC.v(324)
+216 *Verdi3* : fsdbDumpon - All FSDB files at 0 ps.
+217 End of simulation at 6945000
+218 VC callback profile - scalar:13710145 vector:81617
+219 Fri Apr  5 13:00:54 2024
+220 Parallel profile    -  Flush:4 ProduceWait:0 ConsumerWait:65 BlockUsed:65
+221                        ProduceTime:3.170114076 ConsumerTime:0.415593114
+222 SimExit
+223 Sim process exit

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE cov SYSTEM "ucdb_srcinfo.dtd">
+  <srcinfo name="/home/IC/Desktop/risc_cpu/debug"  >
+    <ucapi_version  major_ver="13"  minor_ver="1"  patch_str="I-2014.03"  />
+      <fileinfo name="../src/RISCV_SOC.v"  id="26"  />
+      <fileinfo name="../src/ID.v"  id="11"  />
+      <fileinfo name="../src/DFF_SET.v"  id="7"  />
+      <fileinfo name="../src/CLINT.v"  id="3"  />
+      <fileinfo name="../src/TOP_RISCV.v"  id="0"  />
+      <fileinfo name="../src/ID_EX.v"  id="12"  />
+      <fileinfo name="../src/AXI4_Lite.v"  id="21"  />
+      <fileinfo name="../src/WB.v"  id="20"  />
+      <fileinfo name="../src/REGS.v"  id="19"  />
+      <fileinfo name="../src/ROM.v"  id="24"  />
+      <fileinfo name="../src/EX_MEM.v"  id="10"  />
+      <fileinfo name="../src/CTRL.v"  id="6"  />
+      <fileinfo name="../src/CSR_REGS.v"  id="5"  />
+      <fileinfo name="../src/IF.v"  id="13"  />
+      <fileinfo name="../src/defines.v"  id="1"  />
+      <fileinfo name="../src/IF_ID.v"  id="14"  />
+      <fileinfo name="../src/Multiplier.v"  id="17"  />
+      <fileinfo name="../src/RAM.v"  id="25"  />
+      <fileinfo name="../src/DCache.v"  id="22"  />
+      <fileinfo name="../src/EX.v"  id="9"  />
+      <fileinfo name="../src/PC.v"  id="18"  />
+      <fileinfo name="../src/MEM_WB.v"  id="16"  />
+      <fileinfo name="../src/MEM.v"  id="15"  />
+      <fileinfo name="/home/IC/Desktop/risc_cpu/src/defines.v"  id="4"  />
+      <fileinfo name="../src/ICache.v"  id="23"  />
+      <fileinfo name="../src/CHECK.v"  id="2"  />
+      <fileinfo name="../src/Divider.v"  id="8"  />
+    </srcinfo>

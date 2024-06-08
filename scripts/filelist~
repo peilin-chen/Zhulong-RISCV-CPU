@@ -1,0 +1,10 @@
+../src/cpu.v
+../src/accum.v
+../src/adr.v
+../src/clk_gen.v
+../src/datactl.v
+../src/machine.v
+../src/register.v
+../src/alu.v
+../src/counter.v
+../src/machinectl.v

@@ -1,0 +1,1131 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dG:/verilog_project/pipeline_riscv_cpu
+vAXI4_Lite
+Z0 !s110 1716709950
+!i10b 1
+!s100 R62GU<BG3;no2X;23g`2G0
+IAO<SUI92@mHz3RbUPlKm92
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dG:/download/pipeline_riscv_cpu/tb
+w1711184899
+8G:/download/pipeline_riscv_cpu/rtl/AXI4_Lite.v
+FG:/download/pipeline_riscv_cpu/rtl/AXI4_Lite.v
+L0 1
+Z3 OP;L;10.6c;65
+r1
+!s85 0
+31
+Z4 !s108 1716709950.000000
+!s107 G:/download/pipeline_riscv_cpu/rtl/AXI4_Lite.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/AXI4_Lite.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@a@x@i4_@lite
+vCHECK
+Z7 !s110 1716709949
+!i10b 1
+!s100 `m?16eN2ePV6WD[zmIA@d3
+I<AWIKa@?81>?aOoE_4j7M2
+R1
+R2
+w1711184921
+8G:/download/pipeline_riscv_cpu/rtl/CHECK.v
+FG:/download/pipeline_riscv_cpu/rtl/CHECK.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1716709949.000000
+!s107 G:/download/pipeline_riscv_cpu/rtl/CHECK.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/CHECK.v|
+!i113 1
+R5
+R6
+n@c@h@e@c@k
+vCLINT
+R7
+!i10b 1
+!s100 4BUG9zJDN7`9B_Uh:mV;>3
+I5O0:XRe31IjMZb0[6YWY40
+R1
+R2
+w1711184939
+8G:/download/pipeline_riscv_cpu/rtl/CLINT.v
+FG:/download/pipeline_riscv_cpu/rtl/CLINT.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/CLINT.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/CLINT.v|
+!i113 1
+R5
+R6
+n@c@l@i@n@t
+vCSR_REGS
+R7
+!i10b 1
+!s100 OHbOXMz6dNJY8KkB2<YQX1
+ISHkIU]1U0=7DE_NR]0MRN1
+R1
+R2
+w1711184959
+8G:/download/pipeline_riscv_cpu/rtl/CSR_REGS.v
+FG:/download/pipeline_riscv_cpu/rtl/CSR_REGS.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/CSR_REGS.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/CSR_REGS.v|
+!i113 1
+R5
+R6
+n@c@s@r_@r@e@g@s
+vCTRL
+R7
+!i10b 1
+!s100 UncVjAZYagD=9;EL1nG7G3
+Io4h[XQa0FD51^3mA15jQV1
+R1
+R2
+w1711184978
+8G:/download/pipeline_riscv_cpu/rtl/CTRL.v
+FG:/download/pipeline_riscv_cpu/rtl/CTRL.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:/download/pipeline_riscv_cpu/rtl/CTRL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/CTRL.v|
+!i113 1
+R5
+R6
+n@c@t@r@l
+vDCache
+R0
+!i10b 1
+!s100 :?2:;e:VJBcbeoKEalE@C1
+ILVn>3i?G8YzTElWL75_dY0
+R1
+R2
+w1711538649
+8G:/download/pipeline_riscv_cpu/rtl/DCache.v
+FG:/download/pipeline_riscv_cpu/rtl/DCache.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 G:/download/pipeline_riscv_cpu/rtl/DCache.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/DCache.v|
+!i113 1
+R5
+R6
+n@d@cache
+vDFF_SET
+R0
+!i10b 1
+!s100 @zUcgnzX[GRmG0lU3[KOz0
+I2<4XKTdcA93e]T@Yi^jCT1
+R1
+R2
+w1711185259
+8G:/download/pipeline_riscv_cpu/utils/DFF_SET.v
+FG:/download/pipeline_riscv_cpu/utils/DFF_SET.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 G:/download/pipeline_riscv_cpu/utils/DFF_SET.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/utils/DFF_SET.v|
+!i113 1
+R5
+R6
+n@d@f@f_@s@e@t
+vDivider
+R7
+!i10b 1
+!s100 L143k@_iZW_al_EnmFITn2
+IM=liC6O]I3`XGZ[JzFW>R3
+R1
+R2
+w1711184990
+8G:/download/pipeline_riscv_cpu/rtl/Divider.v
+FG:/download/pipeline_riscv_cpu/rtl/Divider.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:/download/pipeline_riscv_cpu/rtl/Divider.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/Divider.v|
+!i113 1
+R5
+R6
+n@divider
+vEX
+R0
+!i10b 1
+!s100 9g7NlPmJiIVme<FaJP9cO0
+ImEAD6<hdeTJhL]A5CmXK=1
+R1
+R2
+w1711184650
+8G:/download/pipeline_riscv_cpu/rtl/EX.v
+FG:/download/pipeline_riscv_cpu/rtl/EX.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/EX.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/EX.v|
+!i113 1
+R5
+R6
+n@e@x
+vEX_MEM
+R7
+!i10b 1
+!s100 @JnaYl^L;QS<bMAh1EMhz0
+I21FkK_aIJbDi>1@fRKBV^0
+R1
+R2
+w1711185083
+8G:/download/pipeline_riscv_cpu/rtl/EX_MEM.v
+FG:/download/pipeline_riscv_cpu/rtl/EX_MEM.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/EX_MEM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/EX_MEM.v|
+!i113 1
+R5
+R6
+n@e@x_@m@e@m
+vICache
+R0
+!i10b 1
+!s100 ]lXV=:lFcl_XM3Qakz5Oe3
+I85^W[<E^:zlga;6F8f6=F0
+R1
+R2
+w1711538635
+8G:/download/pipeline_riscv_cpu/rtl/ICache.v
+FG:/download/pipeline_riscv_cpu/rtl/ICache.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 G:/download/pipeline_riscv_cpu/rtl/ICache.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ICache.v|
+!i113 1
+R5
+R6
+n@i@cache
+vID
+R7
+!i10b 1
+!s100 cklPejZ_g`7d^Dz2m1<nz3
+IR4YVU>oSbNbaQ`egmQMJo3
+R1
+R2
+w1711185142
+8G:/download/pipeline_riscv_cpu/rtl/ID.v
+FG:/download/pipeline_riscv_cpu/rtl/ID.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/ID.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ID.v|
+!i113 1
+R5
+R6
+n@i@d
+vID_EX
+R7
+!i10b 1
+!s100 :bV1jJLPoliZ1o@aVoo2<2
+I3cEKf]0dIBeePkS^:PWA;1
+R1
+R2
+w1711185055
+8G:/download/pipeline_riscv_cpu/rtl/ID_EX.v
+FG:/download/pipeline_riscv_cpu/rtl/ID_EX.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/ID_EX.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ID_EX.v|
+!i113 1
+R5
+R6
+n@i@d_@e@x
+vIF
+R0
+!i10b 1
+!s100 C@59Y4ofnPCTSfgG59HC70
+I]KTa82NlSK5B[9>A8D9WB1
+R1
+R2
+w1711184704
+8G:/download/pipeline_riscv_cpu/rtl/IF.v
+FG:/download/pipeline_riscv_cpu/rtl/IF.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 G:/download/pipeline_riscv_cpu/rtl/IF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/IF.v|
+!i113 1
+R5
+R6
+n@i@f
+vIF_ID
+R7
+!i10b 1
+!s100 QPkF2<a@4`AAh3=NY8Xj=3
+IT1n3Oeb02j=QmLZh]WN]l3
+R1
+R2
+w1711185112
+8G:/download/pipeline_riscv_cpu/rtl/IF_ID.v
+FG:/download/pipeline_riscv_cpu/rtl/IF_ID.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/IF_ID.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/IF_ID.v|
+!i113 1
+R5
+R6
+n@i@f_@i@d
+vMEM
+R0
+!i10b 1
+!s100 mD1HB_0PnW=5Pz4DZo2fB3
+IzTXJPS>Y<?OC;XNGLZCA=0
+R1
+R2
+w1711184807
+8G:/download/pipeline_riscv_cpu/rtl/MEM.v
+FG:/download/pipeline_riscv_cpu/rtl/MEM.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/MEM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/MEM.v|
+!i113 1
+R5
+R6
+n@m@e@m
+vMEM_WB
+R7
+!i10b 1
+!s100 S6<97LE?<YQ<LjzAPdVZM3
+IbkMbg9C^YK55C5:fTH7363
+R1
+R2
+w1711185129
+8G:/download/pipeline_riscv_cpu/rtl/MEM_WB.v
+FG:/download/pipeline_riscv_cpu/rtl/MEM_WB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:/download/pipeline_riscv_cpu/rtl/MEM_WB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/MEM_WB.v|
+!i113 1
+R5
+R6
+n@m@e@m_@w@b
+vMultiplier
+R7
+!i10b 1
+!s100 @j5oD6gcL2=j6m@j=a[FN0
+If^?TOcVAA7]291no9]8:@1
+R1
+R2
+w1711185180
+8G:/download/pipeline_riscv_cpu/rtl/Multiplier.v
+FG:/download/pipeline_riscv_cpu/rtl/Multiplier.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:/download/pipeline_riscv_cpu/rtl/Multiplier.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/Multiplier.v|
+!i113 1
+R5
+R6
+n@multiplier
+vPC
+R7
+!i10b 1
+!s100 R=gDYnZKD[^7ziM9kEUW01
+IP?NNjmEHOU96LWcf0BK4[2
+R1
+R2
+w1711185205
+8G:/download/pipeline_riscv_cpu/rtl/PC.v
+FG:/download/pipeline_riscv_cpu/rtl/PC.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:/download/pipeline_riscv_cpu/rtl/PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/PC.v|
+!i113 1
+R5
+R6
+n@p@c
+vRAM
+R0
+!i10b 1
+!s100 SWV55ioDj<n1954j=_R2B1
+IanU8Hk<09VnG^cacCAaOI1
+R1
+R2
+w1711208219
+8G:/download/pipeline_riscv_cpu/rtl/RAM.v
+FG:/download/pipeline_riscv_cpu/rtl/RAM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 G:/download/pipeline_riscv_cpu/rtl/RAM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/RAM.v|
+!i113 1
+R5
+R6
+n@r@a@m
+vREGS
+R7
+!i10b 1
+!s100 h`cfV];bFE^KGN2?jooVk2
+INbZ<U@d=1bGH:nF?`eEaZ0
+R1
+R2
+w1711185166
+8G:/download/pipeline_riscv_cpu/rtl/REGS.v
+FG:/download/pipeline_riscv_cpu/rtl/REGS.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:/download/pipeline_riscv_cpu/rtl/REGS.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/REGS.v|
+!i113 1
+R5
+R6
+n@r@e@g@s
+vRISCV_SOC
+R0
+!i10b 1
+!s100 lk5]ihiOA2?nG1N^]Cz]i2
+IP9:EASnn5^U6^ICFflX]81
+R1
+R2
+w1711184877
+8G:/download/pipeline_riscv_cpu/tb/RISCV_SOC.v
+FG:/download/pipeline_riscv_cpu/tb/RISCV_SOC.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 G:/download/pipeline_riscv_cpu/tb/RISCV_SOC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/tb/RISCV_SOC.v|
+!i113 1
+R5
+R6
+n@r@i@s@c@v_@s@o@c
+vROM
+!s110 1716709948
+!i10b 1
+!s100 j5GoU57llS0>`lG0TW8bG3
+I8eX_H;O3RfKeTPg?jX@c31
+R1
+R2
+w1711208206
+8G:/download/pipeline_riscv_cpu/rtl/ROM.v
+FG:/download/pipeline_riscv_cpu/rtl/ROM.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1716709948.000000
+!s107 G:/download/pipeline_riscv_cpu/rtl/ROM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ROM.v|
+!i113 1
+R5
+R6
+n@r@o@m
+vtb
+R0
+!i10b 1
+!s100 K92b^LeGEDiP_7P`CQSM_1
+IUo]L8M6ZE4:zAJ0g[@]`e3
+R1
+R2
+w1716709888
+8G:/download/pipeline_riscv_cpu/tb/tb.v
+FG:/download/pipeline_riscv_cpu/tb/tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 G:/download/pipeline_riscv_cpu/tb/tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/tb/tb.v|
+!i113 1
+R5
+R6
+vTOP_RISCV
+R0
+!i10b 1
+!s100 F>`QSW_ZCihB<GR>B8?eR2
+I5=0:4JRfgbW_>F]Ek^cf_2
+R1
+R2
+w1711184763
+8G:/download/pipeline_riscv_cpu/rtl/TOP_RISCV.v
+FG:/download/pipeline_riscv_cpu/rtl/TOP_RISCV.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 G:/download/pipeline_riscv_cpu/rtl/TOP_RISCV.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/TOP_RISCV.v|
+!i113 1
+R5
+R6
+n@t@o@p_@r@i@s@c@v
+vWB
+R7
+!i10b 1
+!s100 :MDWlM`>JFGK5A>h<f5h@1
+IS7;_TH9^jkYo1gU=eF:@b2
+R1
+R2
+w1711185222
+8G:/download/pipeline_riscv_cpu/rtl/WB.v
+FG:/download/pipeline_riscv_cpu/rtl/WB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 G:/download/pipeline_riscv_cpu/rtl/WB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/WB.v|
+!i113 1
+R5
+R6
+n@w@b
+vysyx_22050698_AXI4_Lite
+Z9 !s110 1711184417
+!i10b 1
+!s100 n:Plh88HoA6hfm:R11Qz`3
+IR`7TOZ<?A?8Q`Vo;1T?bV0
+R1
+R2
+w1710427694
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_AXI4_Lite.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_AXI4_Lite.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z10 !s108 1711184417.000000
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_AXI4_Lite.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_AXI4_Lite.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@a@x@i4_@lite
+vysyx_22050698_CHECK
+R9
+!i10b 1
+!s100 8?Z_8H=aRKl@:9<zeSVaN2
+I?BXL;K9FCi_W8FmRg01ki1
+R1
+R2
+w1710422249
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CHECK.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CHECK.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CHECK.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CHECK.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@c@h@e@c@k
+vysyx_22050698_CLINT
+R9
+!i10b 1
+!s100 XRUmgej4M5AQ[C_>Wb:LN2
+IMfTfW[KB@J_I]7eo_EXUX2
+R1
+R2
+w1677906772
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CLINT.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CLINT.v
+L0 3
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CLINT.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CLINT.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@c@l@i@n@t
+vysyx_22050698_CSR_REGS
+R9
+!i10b 1
+!s100 T?R;fSKX9o_ZW;_[7_L0d1
+I97M=a6hJbkf1<A?97Vh3H1
+R1
+R2
+w1677859619
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CSR_REGS.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CSR_REGS.v
+L0 3
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CSR_REGS.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CSR_REGS.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@c@s@r_@r@e@g@s
+vysyx_22050698_CTRL
+R9
+!i10b 1
+!s100 ^;Vj>4Qib6kGoY2H4M7JI2
+IHhn0V3aacQ7I<Z:ITU:UM0
+R1
+R2
+w1710488407
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CTRL.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CTRL.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CTRL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_CTRL.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@c@t@r@l
+vysyx_22050698_DCache
+Z11 !s110 1711184418
+!i10b 1
+!s100 kYz_PiACiAWl3ZGg0O9kK2
+IB9^TkSElSPlkoXNYhC5fV3
+R1
+R2
+w1710925234
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_DCache.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_DCache.v
+L0 8
+R3
+r1
+!s85 0
+31
+Z12 !s108 1711184418.000000
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_DCache.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_DCache.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@d@cache
+vysyx_22050698_DFF_SET
+R11
+!i10b 1
+!s100 5[JfC<AKnf>DP<bKBNlIP3
+I?ak=2]W>;]mm:bmDK;jiI0
+R1
+R2
+w1710470964
+8G:/download/pipeline_riscv_cpu/utils/ysyx_22050698_DFF_SET.v
+FG:/download/pipeline_riscv_cpu/utils/ysyx_22050698_DFF_SET.v
+L0 1
+R3
+r1
+!s85 0
+31
+R12
+!s107 G:/download/pipeline_riscv_cpu/utils/ysyx_22050698_DFF_SET.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/utils/ysyx_22050698_DFF_SET.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@d@f@f_@s@e@t
+vysyx_22050698_Divider
+R9
+!i10b 1
+!s100 YP1Afn=X]eANPIdk3DNC03
+IB]bUGlfgER0WBjmZcaGFQ3
+R1
+R2
+w1701743590
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_Divider.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_Divider.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_Divider.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_Divider.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@divider
+vysyx_22050698_EX
+R9
+!i10b 1
+!s100 O_k@=F@=:39zQ4YLGWC?m0
+InCGXD72;[:>DF5_GIzFl;1
+R1
+R2
+w1710506777
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_EX.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_EX.v
+L0 3
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_EX.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_EX.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@e@x
+vysyx_22050698_EX_MEM
+R11
+!i10b 1
+!s100 YEk?`L`N]m>CB;[5aeaeN2
+I5Zn<^R@3X?Z5^LkRX<U2<2
+R1
+R2
+w1710488415
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_EX_MEM.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_EX_MEM.v
+L0 4
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_EX_MEM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_EX_MEM.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@e@x_@m@e@m
+vysyx_22050698_ICache
+R11
+!i10b 1
+!s100 >Se<PmXQZezHNkkgi@l8W2
+Iz5b<fP_8YQ@n?40^=VZH[1
+R1
+R2
+w1710582685
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ICache.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ICache.v
+L0 9
+R3
+r1
+!s85 0
+31
+R12
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ICache.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ICache.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@i@cache
+vysyx_22050698_ID
+R9
+!i10b 1
+!s100 aY^z<8TFV:iECazjKGK291
+IKdN@mX2jiQZc@KYGaYCRY2
+R1
+R2
+w1710505575
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ID.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ID.v
+L0 3
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ID.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ID.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@i@d
+vysyx_22050698_ID_EX
+R11
+!i10b 1
+!s100 i?8FmIEYPhfakL1LjMjQW3
+I<UEzlok5KGDXN@ZJAC;E63
+R1
+R2
+w1710421705
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ID_EX.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ID_EX.v
+L0 3
+R3
+r1
+!s85 0
+31
+R12
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ID_EX.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ID_EX.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@i@d_@e@x
+vysyx_22050698_IF
+R11
+!i10b 1
+!s100 SnTC]bL`9Kg^5OkhbeUD82
+IoM93^3[V:[h[`aH9dK`:L2
+R1
+R2
+w1710507104
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_IF.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_IF.v
+L0 1
+R3
+r1
+!s85 0
+31
+R12
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_IF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_IF.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@i@f
+vysyx_22050698_IF_ID
+R9
+!i10b 1
+!s100 DzHUTJ;^LBWNG3GKgKA;:0
+IoZ56m]hIgPFffo[Nf=X`n0
+R1
+R2
+w1710486654
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_IF_ID.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_IF_ID.v
+L0 3
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_IF_ID.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_IF_ID.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@i@f_@i@d
+vysyx_22050698_MEM
+R9
+!i10b 1
+!s100 73B4DffdT^Lb`O74a6`kh0
+IS8aJlc9Qmm66B5Uf7R9;92
+R1
+R2
+w1710944916
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_MEM.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_MEM.v
+L0 3
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:\download\pipeline_riscv_cpu\rtl\defines.v|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_MEM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_MEM.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@m@e@m
+vysyx_22050698_MEM_WB
+R11
+!i10b 1
+!s100 KC_fd2>j8Id6kmAedHT[A2
+In;I]k9QWJ9=T=<cf`hkZ92
+R1
+R2
+w1673358612
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_MEM_WB.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_MEM_WB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R12
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_MEM_WB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_MEM_WB.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@m@e@m_@w@b
+vysyx_22050698_Multiplier
+!s110 1711184416
+!i10b 1
+!s100 g^@>XD?;22ei1=X1bTO_e2
+IiLKzn8FTaNj8L0mX[MQ_m2
+R1
+R2
+w1710519414
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_Multiplier.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_Multiplier.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1711184416.000000
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_Multiplier.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_Multiplier.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@multiplier
+vysyx_22050698_PC
+R9
+!i10b 1
+!s100 ;9Oe=76ieQZo?:5[:RcoU0
+IfSiLJETZP_SWL1BWf1RCV3
+R1
+R2
+w1710495368
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_PC.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_PC.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_PC.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@p@c
+vysyx_22050698_RAM
+R9
+!i10b 1
+!s100 JO>WPA=ab<>_`hXUbIQ:51
+IaM=NL<W6oT>gLEli6:M0Y2
+R1
+R2
+w1710512905
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_RAM.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_RAM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_RAM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_RAM.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@r@a@m
+vysyx_22050698_REGS
+R11
+!i10b 1
+!s100 4Pzd2K<A76kYPV0UDW^3J1
+Id?CXSbh2X7ji_2:mSgR<d0
+R1
+R2
+w1673598614
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_REGS.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_REGS.v
+L0 1
+R3
+r1
+!s85 0
+31
+R12
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_REGS.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_REGS.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@r@e@g@s
+vysyx_22050698_RISCV_SOC
+R11
+!i10b 1
+!s100 9c_[hDc7<o7ZZMVP9VS=01
+I3Se`iZ1nK>X`Sd_8UM3T41
+R1
+R2
+w1710495941
+8G:/download/pipeline_riscv_cpu/tb/ysyx_22050698_RISCV_SOC.v
+FG:/download/pipeline_riscv_cpu/tb/ysyx_22050698_RISCV_SOC.v
+L0 1
+R3
+r1
+!s85 0
+31
+R12
+!s107 G:/download/pipeline_riscv_cpu/tb/ysyx_22050698_RISCV_SOC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/tb/ysyx_22050698_RISCV_SOC.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@r@i@s@c@v_@s@o@c
+vysyx_22050698_ROM
+R9
+!i10b 1
+!s100 ^P8zI0d7=]QCmc=XJXh152
+I0CVGRE53Y;36^hz2QMN4l0
+R1
+R2
+w1710426942
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ROM.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ROM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ROM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_ROM.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@r@o@m
+vysyx_22050698_TOP_RISCV
+R9
+!i10b 1
+!s100 9`gP:jY[oK41fYm3[WS8O1
+Im`:2iB>3l9e0N]alaO:l]1
+R1
+R2
+w1710495876
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_TOP_RISCV.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_TOP_RISCV.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_TOP_RISCV.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_TOP_RISCV.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@t@o@p_@r@i@s@c@v
+vysyx_22050698_WB
+R11
+!i10b 1
+!s100 DG[:AdMih_ejWI`fnV[=g1
+IamRcd;2P7foAceDTA>[ad1
+R1
+R2
+w1672651020
+8G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_WB.v
+FG:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_WB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R12
+!s107 G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_WB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/download/pipeline_riscv_cpu/rtl/ysyx_22050698_WB.v|
+!i113 1
+R5
+R6
+nysyx_22050698_@w@b

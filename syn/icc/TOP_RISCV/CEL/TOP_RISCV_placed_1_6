@@ -1,0 +1,6 @@
+set_object_boundary -boundary {  { 244.9300 893.7550 } { 504.0500 893.7550 } { 504.0500 664.9750 } { 244.9300 664.9750 } } [get_plan_groups { Divider_inst } ]
+set_object_boundary -boundary {  { 244.9300 664.9750 } { 504.0500 664.9750 } { 504.0500 421.4350 } { 244.9300 421.4350 } } [get_plan_groups { Multiplier_inst } ]
+set_object_boundary -boundary {  { 10.0000 893.7550 } { 244.9300 893.7550 } { 244.9300 421.4350 } { 10.0000 421.4350 } } [get_plan_groups { EX_inst } ]
+set_object_boundary -boundary {  { 413.4400 421.4350 } { 504.0500 421.4350 } { 504.0500 11.8450 } { 413.4400 11.8450 } } [get_plan_groups { ID_inst } ]
+set_object_boundary -boundary {  { 504.0500 893.7550 } { 897.6500 893.7550 } { 897.6500 11.8450 } { 504.0500 11.8450 } } [get_plan_groups { REGS_inst } ]
+

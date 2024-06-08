@@ -1,0 +1,1847 @@
+                                        
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+                                        
+                 Version K-2015.06 for linux64 - May 28, 2015 
+                                        
+                    Copyright (c) 1988 - 2015 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/IC/.synopsys_dv_prefs.tcl
+################################################################# 
+#    setup global variables
+################################################################# 
+set	ProjHomePath /home/IC/Desktop/risc_cpu
+/home/IC/Desktop/risc_cpu
+set DesignTopName TOP_RISCV
+TOP_RISCV
+#################################################################
+#   BEGIN PROJECT COMMON VARIABLES SETTING
+#################################################################
+set ProjRTLPath     /home/IC/Desktop/risc_cpu/src
+/home/IC/Desktop/risc_cpu/src
+set ProjSYNPath     /home/IC/Desktop/risc_cpu/syn
+/home/IC/Desktop/risc_cpu/syn
+set	DesignWarePath	/opt/Synopsys/Synplify2015/libraries/syn
+/opt/Synopsys/Synplify2015/libraries/syn
+#####################################################
+#set	TestReadySyn	true
+set	ClockGatingSyn	false
+false
+set 	hdlin_work_directory 			../temp/
+Information: Variable 'hdlin_work_directory' is obsolete and is being ignored. (INFO-100)
+../temp/
+define_design_lib DEFAULT -path 		../temp/
+1
+######################################################
+#    SYNTHESIS LIBRARY VARIABLES DEFINE
+######################################################
+#set target_library      "../lib/scc28nhkcp_hsc35p140_rvt_ss_v0p81_125c_basic.db"
+#set target_library "/home/IC/Desktop/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_dlvl_ff0p85v25c_i0p85v.db"
+#set target_library "/opt/Foundary_Library/TSMC90/fe_TSMCHOME_tpdn90g2_130a/digital/Front_End/timing_power/tpdn90g2_130a/tpdn90g2bc.db"
+#set target_library "/home/IC/Desktop/smic180/digital/sc/synopsys/fast.db"
+set target_library /home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db
+/home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db
+set synthetic_library [list                   dw_foundation.sldb ]
+dw_foundation.sldb
+set link_library [list * /home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db]
+* /home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db
+#################################################################
+#    read in project verilog source code
+#################################################################
+set RTLFileList [exec cat ../../scripts/filelist]
+../src/TOP_RISCV.v
+../src/defines.v
+../src/CHECK.v
+../src/CLINT.v
+../src/CSR_REGS.v
+../src/CTRL.v
+../src/DFF_SET.v
+../src/Divider.v
+../src/EX.v
+../src/EX_MEM.v
+../src/ID.v
+../src/ID_EX.v
+../src/IF.v
+../src/IF_ID.v
+../src/MEM.v
+../src/MEM_WB.v
+../src/Multiplier.v
+../src/PC.v
+../src/REGS.v
+../src/WB.v
+foreach rtlfile $RTLFileList {
+      			analyze -f sverilog  ../../src/$rtlfile
+ 	}
+Running PRESTO HDLC
+Compiling source file ../../src/../src/TOP_RISCV.v
+Presto compilation completed successfully.
+Loading db file '/home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db'
+Running PRESTO HDLC
+Compiling source file ../../src/../src/defines.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/CHECK.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/CLINT.v
+Opening include file /home/IC/Desktop/risc_cpu/src/defines.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/CSR_REGS.v
+Opening include file /home/IC/Desktop/risc_cpu/src/defines.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/CTRL.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/DFF_SET.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/Divider.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/EX.v
+Opening include file /home/IC/Desktop/risc_cpu/src/defines.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/EX_MEM.v
+Opening include file /home/IC/Desktop/risc_cpu/src/defines.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/ID.v
+Opening include file /home/IC/Desktop/risc_cpu/src/defines.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/ID_EX.v
+Opening include file /home/IC/Desktop/risc_cpu/src/defines.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/IF.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/IF_ID.v
+Opening include file /home/IC/Desktop/risc_cpu/src/defines.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/MEM.v
+Opening include file /home/IC/Desktop/risc_cpu/src/defines.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/MEM_WB.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/Multiplier.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/PC.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/REGS.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../../src/../src/WB.v
+Presto compilation completed successfully.
+elaborate $DesignTopName 
+Loading db file '/opt/Synopsys/Synplify2015/libraries/syn/gtech.db'
+Loading db file '/opt/Synopsys/Synplify2015/libraries/syn/standard.sldb'
+  Loading link library 'cb13fs120_tsmc_max'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Loading db file '/opt/Synopsys/Synplify2015/libraries/syn/dw_foundation.sldb'
+Elaborated 1 design.
+Current design is now 'TOP_RISCV'.
+Information: Building the design 'Multiplier'. (HDL-193)
+
+Inferred memory devices in process
+	in routine Multiplier line 25 in file
+		'../../src/../src/Multiplier.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   mult_valid_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Multiplier line 38 in file
+		'../../src/../src/Multiplier.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     busy_o_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Multiplier line 66 in file
+		'../../src/../src/Multiplier.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  multiplicand_reg   | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Multiplier line 79 in file
+		'../../src/../src/Multiplier.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   multiplier_reg    | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Multiplier line 98 in file
+		'../../src/../src/Multiplier.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  product_temp_reg   | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Multiplier line 113 in file
+		'../../src/../src/Multiplier.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| product_signbit_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Divider'. (HDL-193)
+
+Statistics for case statements in always block at line 39 in file
+	'../../src/../src/Divider.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            53            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine Divider line 39 in file
+		'../../src/../src/Divider.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     busy_o_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     counter_reg     | Flip-flop |   7   |  Y  | N  | N  | N  | N  | N  | N  |
+|   dividend_t_reg    | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|    divider_t_reg    | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|     temp_a_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     temp_b_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     finish_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      sign_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     sign_y_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'CHECK'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'PC'. (HDL-193)
+
+Inferred memory devices in process
+	in routine PC line 14 in file
+		'../../src/../src/PC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      pc_o_reg       | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'IF'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'IF_ID'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ID'. (HDL-193)
+Warning:  ../../src/../src/ID.v:94: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../src/../src/ID.v:228: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../src/../src/ID.v:262: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../src/../src/ID.v:262: 'Case' statement is full and has only one nontrivial branch; it will be inlined. (ELAB-335)
+
+Statistics for case statements in always block at line 77 in file
+	'../../src/../src/ID.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            83            |    auto/auto     |
+|            94            |    auto/auto     |
+|           128            |    auto/auto     |
+|           162            |    auto/auto     |
+|           228            |    auto/auto     |
+|           362            |    auto/auto     |
+|           395            |    auto/auto     |
+|           423            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine ID line 77 in file
+		'../../src/../src/ID.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|   rs2_addr_o_reg    | Latch |   5   |  Y  | N  | N  | N  | -  | -  | -  |
+|      op1_o_reg      | Latch |  64   |  Y  | N  | N  | N  | -  | -  | -  |
+|      op2_o_reg      | Latch |  64   |  Y  | N  | N  | N  | -  | -  | -  |
+|    rd_addr_o_reg    | Latch |   5   |  Y  | N  | N  | N  | -  | -  | -  |
+|   base_addr_o_reg   | Latch |  64   |  Y  | N  | N  | N  | -  | -  | -  |
+|  addr_offset_o_reg  | Latch |  64   |  Y  | N  | N  | N  | -  | -  | -  |
+|     reg_wen_reg     | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|   rs1_addr_o_reg    | Latch |   5   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Information: Building the design 'REGS'. (HDL-193)
+
+Inferred memory devices in process
+	in routine REGS line 45 in file
+		'../../src/../src/REGS.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      regs_reg       | Flip-flop | 2048  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|     REGS/30      |   32   |   64    |      5       | N  |
+|     REGS/42      |   32   |   64    |      5       | N  |
+===========================================================
+Presto compilation completed successfully.
+Information: Building the design 'ID_EX'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'EX'. (HDL-193)
+Warning:  ../../src/../src/EX.v:362: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../src/../src/EX.v:810: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 349 in file
+	'../../src/../src/EX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           350            |    auto/auto     |
+|           362            |    auto/auto     |
+|           661            |    auto/auto     |
+|           710            |    auto/auto     |
+|           751            |    auto/auto     |
+|           810            |    auto/auto     |
+|           948            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine EX line 211 in file
+		'../../src/../src/EX.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+| div_dividend_o_reg  | Latch |  64   |  Y  | N  | N  | N  | -  | -  | -  |
+|  div_divisor_o_reg  | Latch |  64   |  Y  | N  | N  | N  | -  | -  | -  |
+|    div_op_o_reg     | Latch |  10   |  Y  | N  | N  | N  | -  | -  | -  |
+|  div_reg_waddr_reg  | Latch |   5   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine EX line 285 in file
+		'../../src/../src/EX.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|   mult_op1_o_reg    | Latch |  64   |  Y  | N  | N  | N  | -  | -  | -  |
+|   mult_op2_o_reg    | Latch |  64   |  Y  | N  | N  | N  | -  | -  | -  |
+|    mult_op_o_reg    | Latch |  10   |  Y  | N  | N  | N  | -  | -  | -  |
+| mult_reg_waddr_reg  | Latch |   5   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Information: Building the design 'CTRL'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'EX_MEM'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'MEM'. (HDL-193)
+
+Statistics for case statements in always block at line 47 in file
+	'../../src/../src/MEM.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            48            |    auto/auto     |
+|            55            |    auto/auto     |
+|            66            |    auto/auto     |
+|            79            |    auto/auto     |
+|            99            |    auto/auto     |
+|           137            |    auto/auto     |
+|           154            |    auto/auto     |
+|           170            |    auto/auto     |
+|           192            |    auto/auto     |
+|           226            |    auto/auto     |
+|           260            |    auto/auto     |
+|           282            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'MEM_WB'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'WB'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CSR_REGS'. (HDL-193)
+
+Statistics for case statements in always block at line 52 in file
+	'../../src/../src/CSR_REGS.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            64            |    auto/auto     |
+|            89            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 117 in file
+	'../../src/../src/CSR_REGS.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           123            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 157 in file
+	'../../src/../src/CSR_REGS.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           163            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CSR_REGS line 52 in file
+		'../../src/../src/CSR_REGS.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    mscratch_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|      mtvec_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|     mcause_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|      mepc_reg       | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mie_reg       | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|     mstatus_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'CLINT'. (HDL-193)
+
+Statistics for case statements in always block at line 73 in file
+	'../../src/../src/CLINT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            81            |    auto/auto     |
+|            91            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 127 in file
+	'../../src/../src/CLINT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           135            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 170 in file
+	'../../src/../src/CLINT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           177            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CLINT line 73 in file
+		'../../src/../src/CLINT.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    inst_addr_reg    | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|    csr_state_reg    | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|      cause_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine CLINT line 127 in file
+		'../../src/../src/CLINT.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     data_o_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|      we_o_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     waddr_o_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine CLINT line 170 in file
+		'../../src/../src/CLINT.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   int_addr_o_reg    | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|  int_assert_o_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'DFF_SET' instantiated from design 'PC' with
+	the parameters "DW=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine DFF_SET_DW64 line 15 in file
+		'../../src/../src/DFF_SET.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     data_o_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'DFF_SET' instantiated from design 'IF_ID' with
+	the parameters "DW=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine DFF_SET_DW32 line 15 in file
+		'../../src/../src/DFF_SET.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     data_o_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'DFF_SET' instantiated from design 'ID_EX' with
+	the parameters "DW=5". (HDL-193)
+
+Inferred memory devices in process
+	in routine DFF_SET_DW5 line 15 in file
+		'../../src/../src/DFF_SET.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     data_o_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'DFF_SET' instantiated from design 'ID_EX' with
+	the parameters "DW=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine DFF_SET_DW1 line 15 in file
+		'../../src/../src/DFF_SET.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     data_o_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1
+current_design 	$DesignTopName
+Current design is 'TOP_RISCV'.
+{TOP_RISCV}
+link
+
+  Linking design 'TOP_RISCV'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (22 designs)              /home/IC/Desktop/risc_cpu/syn/exec/TOP_RISCV.db, etc
+  cb13fs120_tsmc_max (library) /home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db
+
+1
+uniquify
+Information: Uniquified 13 instances of design 'DFF_SET_DW64'. (OPT-1056)
+Information: Uniquified 5 instances of design 'DFF_SET_DW32'. (OPT-1056)
+Information: Uniquified 3 instances of design 'DFF_SET_DW5'. (OPT-1056)
+Information: Uniquified 8 instances of design 'DFF_SET_DW1'. (OPT-1056)
+1
+set_svf ../work/$DesignTopName.svf
+1
+#################################################################
+#    constant 
+#################################################################
+create_clock -name clk [get_port clk] -period  5.0 -waveform {0 2.5}
+1
+set_clock_uncertainty -setup 0.25  [get_clocks clk]
+1
+set_clock_uncertainty -hold  0.15  [get_clocks clk]
+1
+set_dont_touch_network		   [get_clocks clk]
+1
+#	set_ideal_network 		   [get_ports clk]
+#	set_drive 		     0     [get_ports clk]
+#################################################################
+#    input_delay output_delay and  load
+#################################################################
+set   CLK_NAME	     clk  
+clk
+set   ALL_IN_EXCEPT_CLK [remove_from_collection [all_inputs] [get_ports "$CLK_NAME"]]
+{rst if_icache_data_read[31] if_icache_data_read[30] if_icache_data_read[29] if_icache_data_read[28] if_icache_data_read[27] if_icache_data_read[26] if_icache_data_read[25] if_icache_data_read[24] if_icache_data_read[23] if_icache_data_read[22] if_icache_data_read[21] if_icache_data_read[20] if_icache_data_read[19] if_icache_data_read[18] if_icache_data_read[17] if_icache_data_read[16] if_icache_data_read[15] if_icache_data_read[14] if_icache_data_read[13] if_icache_data_read[12] if_icache_data_read[11] if_icache_data_read[10] if_icache_data_read[9] if_icache_data_read[8] if_icache_data_read[7] if_icache_data_read[6] if_icache_data_read[5] if_icache_data_read[4] if_icache_data_read[3] if_icache_data_read[2] if_icache_data_read[1] if_icache_data_read[0] if_icache_ready if_icache_hit mem_dcache_data_read[63] mem_dcache_data_read[62] mem_dcache_data_read[61] mem_dcache_data_read[60] mem_dcache_data_read[59] mem_dcache_data_read[58] mem_dcache_data_read[57] mem_dcache_data_read[56] mem_dcache_data_read[55] mem_dcache_data_read[54] mem_dcache_data_read[53] mem_dcache_data_read[52] mem_dcache_data_read[51] mem_dcache_data_read[50] mem_dcache_data_read[49] mem_dcache_data_read[48] mem_dcache_data_read[47] mem_dcache_data_read[46] mem_dcache_data_read[45] mem_dcache_data_read[44] mem_dcache_data_read[43] mem_dcache_data_read[42] mem_dcache_data_read[41] mem_dcache_data_read[40] mem_dcache_data_read[39] mem_dcache_data_read[38] mem_dcache_data_read[37] mem_dcache_data_read[36] mem_dcache_data_read[35] mem_dcache_data_read[34] mem_dcache_data_read[33] mem_dcache_data_read[32] mem_dcache_data_read[31] mem_dcache_data_read[30] mem_dcache_data_read[29] mem_dcache_data_read[28] mem_dcache_data_read[27] mem_dcache_data_read[26] mem_dcache_data_read[25] mem_dcache_data_read[24] mem_dcache_data_read[23] mem_dcache_data_read[22] mem_dcache_data_read[21] mem_dcache_data_read[20] mem_dcache_data_read[19] mem_dcache_data_read[18] mem_dcache_data_read[17] mem_dcache_data_read[16] mem_dcache_data_read[15] mem_dcache_data_read[14] mem_dcache_data_read[13] mem_dcache_data_read[12] mem_dcache_data_read[11] mem_dcache_data_read[10] mem_dcache_data_read[9] mem_dcache_data_read[8] mem_dcache_data_read[7] mem_dcache_data_read[6] mem_dcache_data_read[5] mem_dcache_data_read[4] mem_dcache_data_read[3] mem_dcache_data_read[2] mem_dcache_data_read[1] mem_dcache_data_read[0] mem_dcache_ready ...}
+set_input_delay        1.5   -clock  $CLK_NAME     $ALL_IN_EXCEPT_CLK
+1
+set_output_delay       0.75  -clock $CLK_NAME [all_outputs]
+1
+set_load       1     [all_inputs]
+1
+set_load       1     [all_outputs]
+1
+set_load  -min 0.5   [all_inputs]
+1
+set_load  -min 0.5   [all_outputs]    
+1
+###########################################################
+# Set DRC constraint
+###########################################################
+set_max_transition 	0.2 	[current_design]
+Current design is 'TOP_RISCV'.
+1
+#set_max_fanout 		20 	[current_design]
+set_max_capacitance 	2	[current_design]
+Current design is 'TOP_RISCV'.
+1
+set verilogout_no_tri true
+true
+set_fix_multiple_port_nets -all  -buffer_constants
+1
+set_auto_disable_drc_nets -clock true -constant true
+1
+current_design	$DesignTopName
+Current design is 'TOP_RISCV'.
+{TOP_RISCV}
+link
+
+  Linking design 'TOP_RISCV'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (47 designs)              /home/IC/Desktop/risc_cpu/syn/exec/TOP_RISCV.db, etc
+  cb13fs120_tsmc_max (library) /home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db
+
+1
+echo "set cost priority open pandora box"
+set cost priority open pandora box
+compile	 -map high
+Warning: The following synthetic libraries should be added to 
+	the list of link libraries: 
+	'dw_foundation.sldb'. (UISN-26)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | K-2015.06-DWBB_201506.0 |     *     |
+| Licensed DW Building Blocks        | K-2015.06-DWBB_201506.0 |     *     |
+============================================================================
+
+
+Information: There are 2600 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'CLINT'
+Information: The register 'csr_state_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'csr_state_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[63]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[61]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[60]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[59]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[58]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[57]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[56]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[55]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[54]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[53]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[52]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[51]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[50]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[49]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[48]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[47]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[46]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[45]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[44]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[43]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[42]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[41]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[40]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[39]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[38]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[37]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[36]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[35]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[34]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[33]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[32]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cause_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[63]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[61]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[60]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[59]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[58]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[57]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[56]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[55]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[54]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[53]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[52]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[51]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[50]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[49]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[48]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[47]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[46]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[45]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[44]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[43]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[42]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[41]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[40]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[39]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[38]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[37]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[36]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[35]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[34]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[33]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[32]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'waddr_o_reg[0]' is a constant and will be removed. (OPT-1206)
+  Processing 'CSR_REGS'
+Information: Added key list 'DesignWare' to design 'CSR_REGS'. (DDB-72)
+  Processing 'WB'
+  Processing 'DFF_SET_DW1_0'
+  Processing 'DFF_SET_DW64_0'
+  Processing 'DFF_SET_DW5_0'
+  Processing 'MEM_WB'
+  Processing 'MEM'
+  Processing 'DFF_SET_DW32_0'
+  Processing 'EX_MEM'
+  Processing 'CTRL'
+  Processing 'EX'
+  Processing 'ID_EX'
+  Processing 'REGS'
+Information: Added key list 'DesignWare' to design 'REGS'. (DDB-72)
+  Processing 'ID'
+  Processing 'IF_ID'
+  Processing 'IF'
+  Processing 'PC'
+  Processing 'CHECK'
+Information: Added key list 'DesignWare' to design 'CHECK'. (DDB-72)
+  Processing 'Divider'
+Information: The register 'temp_b_reg[63]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[61]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[60]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[59]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[58]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[57]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[56]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[55]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[54]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[53]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[52]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[51]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[50]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[49]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[48]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[47]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[46]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[45]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[44]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[43]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[42]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[41]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[40]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[39]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[38]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[37]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[36]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[35]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[34]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[33]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[32]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_b_reg[0]' is a constant and will be removed. (OPT-1206)
+  Processing 'Multiplier'
+  Processing 'TOP_RISCV'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+Information: The register 'CLINT_inst/inst_addr_reg[3]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[0]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[1]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[2]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[4]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[5]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[6]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[7]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[8]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[9]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[10]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[11]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[12]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[13]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[14]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[15]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[16]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[17]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[18]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[19]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[20]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[21]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[22]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[23]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[24]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[25]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[26]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[27]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[28]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[29]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[30]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[31]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[32]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[33]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[34]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[35]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[36]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[37]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[38]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[39]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[40]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[41]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[42]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[43]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[44]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[45]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[46]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[47]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[48]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[49]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[50]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[51]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[52]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[53]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[54]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[55]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[56]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[57]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[58]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[59]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[60]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[61]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[62]' will be removed. (OPT-1207)
+Information: The register 'CLINT_inst/inst_addr_reg[63]' will be removed. (OPT-1207)
+  Mapping 'DW_leftsh'
+Information: Added key list 'DesignWare' to design 'EX'. (DDB-72)
+  Mapping 'DW_leftsh'
+  Mapping 'DW_rightsh'
+  Processing 'EX_DW01_add_0'
+  Mapping 'DW_rightsh'
+  Mapping 'DW_leftsh'
+  Processing 'EX_DW01_sub_0'
+  Processing 'EX_DW01_add_1'
+  Mapping 'EX_DW_cmp_0'
+  Mapping 'DW_rightsh'
+  Mapping 'DW_rightsh'
+  Processing 'EX_DW01_cmp6_0'
+  Processing 'ID_DW01_add_0'
+  Processing 'ID_DW01_add_1'
+  Processing 'PC_DW01_add_0'
+  Mapping 'Divider_DW_cmp_0'
+  Processing 'Divider_DW01_sub_0'
+  Processing 'Divider_DW01_sub_1'
+  Processing 'Divider_DW01_sub_2'
+  Processing 'Divider_DW01_sub_3'
+  Processing 'Divider_DW01_inc_0'
+  Processing 'Multiplier_DW01_sub_0'
+  Processing 'Multiplier_DW01_sub_1'
+  Processing 'Multiplier_DW01_add_0'
+  Processing 'Multiplier_DW01_inc_0'
+  Processing 'Multiplier_DW01_inc_1'
+  Processing 'Multiplier_DW01_inc_2'
+  Processing 'Divider_DW01_inc_1'
+  Processing 'Divider_DW01_sub_4'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:40   86875.3     20.00   39532.7    7918.6                          
+    0:00:40   86875.3     20.00   39532.7    7918.6                          
+    0:00:42   97741.8      9.63    8044.5    2089.8                          
+    0:00:50   98583.8      1.45     381.3     574.5 Divider_inst/*cell*116339/U4/S
+    0:00:50   98573.1      1.45     380.9     562.1 Divider_inst/*cell*116339/U528/ZN
+    0:00:50   98538.6      1.45     380.9     536.8 Divider_inst/*cell*116339/U220/ZN
+    0:00:51   98509.5      1.45     380.9     520.7 Divider_inst/*cell*116339/U312/ZN
+    0:00:51   98469.0      1.45     380.9     516.6 Divider_inst/*cell*116339/U567/ZN
+    0:00:51   98431.2      1.45     380.9     514.6 Divider_inst/*cell*116339/*cell*116618/ZN
+    0:00:51   98390.2      1.45     380.9     514.1 Divider_inst/*cell*116339/*cell*116531/ZN
+    0:00:51   98346.7      1.45     380.9     513.5 Divider_inst/*cell*116339/*cell*116587/ZN
+    0:00:51   98320.3      1.45     380.9     513.1 Divider_inst/*cell*116339/*cell*116420/ZN
+    0:00:51   98311.1      1.45     380.9     512.7 Divider_inst/*cell*116339/*cell*116474/ZN
+    0:00:51   98291.9      1.45     380.9     512.3 Divider_inst/*cell*116339/U539/ZN
+    0:00:51   98266.5      1.45     380.9     511.6 Divider_inst/*cell*116339/*cell*116779/ZN
+    0:00:51   98247.3      1.45     380.9     511.3 Divider_inst/*cell*116339/U537/ZN
+    0:00:51   98238.1      1.45     380.9     510.8 Divider_inst/*cell*116339/U544/ZN
+    0:00:51   98225.1      1.45     380.9     510.7 Divider_inst/*cell*116339/*cell*116543/ZN
+    0:00:51   98212.7      1.45     380.9     510.6 Divider_inst/*cell*116339/*cell*116906/ZN
+    0:00:51   98190.9      1.45     380.9     510.2 Divider_inst/*cell*116339/*cell*116446/ZN
+    0:00:51   98178.7      1.45     380.9     510.2 Divider_inst/*cell*116339/*cell*116473/ZN
+    0:00:51   98163.4      1.45     380.9     509.9 Divider_inst/*cell*116339/*cell*116451/ZN
+    0:00:51   98141.5      1.45     380.9     509.5 Divider_inst/*cell*116339/*cell*116586/ZN
+    0:00:51   98119.7      1.45     380.9     509.5 Divider_inst/*cell*116339/*cell*116879/ZN
+    0:00:51   98095.8      1.45     380.9     508.3 Divider_inst/*cell*116339/*cell*117054/ZN
+    0:00:51   98092.3      1.45     380.9     508.1 Divider_inst/*cell*116339/U520/ZN
+    0:00:51   98073.6      1.45     380.9     507.4 Divider_inst/*cell*116339/U515/ZN
+    0:00:51   98061.1      1.45     380.9     507.4 Divider_inst/*cell*116339/*cell*117029/ZN
+    0:00:51   98052.8      1.45     380.9     507.4 Divider_inst/*cell*116339/*cell*116591/ZN
+    0:00:51   98043.3      1.45     380.9     507.1 Divider_inst/*cell*116339/U514/ZN
+Information: The register 'CLINT_inst/csr_state_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'CLINT_inst/waddr_o_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'CLINT_inst/waddr_o_reg[1]' is a constant and will be removed. (OPT-1206)
+    0:00:57  103548.9      1.49     395.5     460.3                          
+    0:00:57  103651.7      1.54     397.3     464.1                          
+    0:00:57  103651.7      1.54     397.3     464.1                          
+    0:00:57  103650.5      1.53     397.0     464.1                          
+    0:00:57  103650.5      1.53     397.0     464.1                          
+    0:01:03   83304.2      1.70     367.4     365.0                          
+    0:01:04   82100.8      1.62     361.0     360.1                          
+    0:01:05   82131.8      1.60     342.4     359.6                          
+    0:01:05   82125.0      1.60     344.5     359.4                          
+    0:01:06   82132.2      1.57     342.9     359.2                          
+    0:01:06   82132.4      1.58     344.0     359.2                          
+    0:01:06   82157.3      1.55     341.9     359.0                          
+    0:01:07   82155.5      1.53     342.9     359.0                          
+    0:01:07   82159.3      1.53     341.4     358.9                          
+    0:01:07   82161.1      1.51     342.4     358.9                          
+    0:01:07   82161.1      1.51     342.4     358.9                          
+    0:01:07   82184.6      1.49     341.1     358.8                          
+    0:01:08   82184.6      1.49     341.1     358.8                          
+    0:01:08   81906.4      1.49     341.1     358.8                          
+    0:01:08   81906.4      1.49     341.1     358.8                          
+    0:01:15   84458.3      1.63     428.7     297.6                          
+    0:01:22   86186.3      1.68     464.0     263.5                          
+    0:01:25   86633.2      1.67     467.0     246.1                          
+    0:01:28   87611.2      1.67     467.5     233.1                          
+    0:01:29   87836.8      1.67     467.6     224.0                          
+    0:01:31   88252.5      1.67     467.4     215.7                          
+    0:01:33   89209.1      1.67     467.4     207.1                          
+    0:01:34   89832.7      1.67     467.4     199.2                          
+    0:01:36   90090.1      1.67     467.4     194.2                          
+    0:01:37   90291.4      1.67     467.4     189.2                          
+    0:01:37   90373.1      1.67     467.4     186.1                          
+    0:01:37   90510.4      1.67     467.4     183.3                          
+    0:01:37   90510.4      1.67     467.4     183.3                          
+    0:01:38   91439.0      1.51     471.3     184.7 ID_EX_inst/dff12/data_o_reg[26]/D
+    0:01:38   91445.3      1.47     470.7     184.8                          
+    0:01:39   91454.0      1.45     470.4     184.8                          
+    0:01:39   91455.4      1.42     469.7     185.1                          
+    0:01:39   91465.6      1.41     469.5     185.1                          
+    0:01:39   91484.1      1.40     468.8     185.3                          
+    0:01:39   91502.5      1.39     468.7     185.4                          
+    0:01:39   91532.8      1.37     468.4     187.7                          
+    0:01:39   91554.6      1.36     468.1     188.8                          
+    0:01:39   91583.5      1.35     467.9     189.2                          
+    0:01:40   91613.8      1.34     467.5     189.5                          
+    0:01:40   91632.9      1.33     467.0     189.7                          
+    0:01:40   91626.6      1.31     466.5     190.8                          
+    0:01:40   91642.1      1.30     466.4     191.4                          
+    0:01:40   91654.5      1.29     466.0     191.6                          
+    0:01:40   91664.1      1.27     465.5     191.8                          
+    0:01:40   91673.8      1.27     465.6     192.2                          
+    0:01:41   91692.8      1.26     465.3     192.5                          
+    0:01:41   91710.8      1.24     464.9     192.7                          
+    0:01:41   91709.7      1.24     464.8     192.4                          
+    0:01:41   91732.5      1.24     464.7     192.5                          
+    0:01:41   91743.0      1.23     464.6     192.8                          
+    0:01:41   91747.9      1.23     464.4     192.8                          
+    0:01:41   91762.1      1.22     464.9     192.7                          
+    0:01:41   91777.3      1.22     464.8     192.8                          
+    0:01:41   91776.3      1.20     463.8     193.0                          
+    0:01:42   91792.5      1.18     464.0     193.1                          
+    0:01:42   91813.6      1.17     464.1     193.1                          
+    0:01:42   91833.4      1.16     463.8     194.1                          
+    0:01:42   91853.0      1.15     471.0     194.1                          
+    0:01:42   91870.5      1.14     470.6     193.8                          
+    0:01:42   91869.0      1.12     470.4     194.8                          
+    0:01:42   91884.9      1.12     470.2     195.1                          
+    0:01:43   91896.0      1.11     470.0     195.6                          
+    0:01:43   91895.8      1.11     470.0     195.6                          
+    0:01:43   91900.0      1.11     469.9     195.8                          
+    0:01:43   91904.8      1.11     469.9     195.6                          
+    0:01:43   91907.0      1.11     469.6     195.6                          
+    0:01:43   91922.1      1.11     469.5     195.6                          
+    0:01:43   91933.5      1.11     469.5     196.8                          
+    0:01:43   91934.8      1.11     469.6     196.8                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:43   91934.8      1.11     469.6     196.8                          
+    0:01:43   91941.5      1.10     469.4     196.8 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:44   91964.5      1.09     469.2     198.2 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:44   91998.9      1.09     464.6     198.4 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:44   91994.0      1.08     464.3     198.2 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:44   92016.9      1.08     464.2     198.2 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:01:44   92036.6      1.07     464.0     198.5 ID_EX_inst/dff12/data_o_reg[26]/D
+    0:01:44   92024.3      1.06     463.6     199.1 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:45   92026.6      1.05     463.4     199.4 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:45   92034.5      1.05     463.3     199.1 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:45   92051.1      1.04     463.3     199.3 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:45   92067.6      1.04     463.2     199.3 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:45   92074.2      1.04     463.0     199.2 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:45   92065.2      1.03     462.8     199.1 ID_EX_inst/dff12/data_o_reg[26]/D
+    0:01:45   92075.1      1.03     462.5     199.1 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:45   92070.2      1.02     462.4     199.2 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:46   92059.6      1.01     462.3     199.4 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:46   92076.3      1.00     462.1     199.4 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:46   92078.1      1.00     462.0     199.4 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:46   92082.4      0.99     461.9     199.4 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:01:46   92082.9      0.99     461.9     199.4 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:46   92103.9      0.99     461.7     199.5 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:46   92106.2      0.98     460.5     199.5 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:46   92122.1      0.98     460.4     200.0 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:47   92121.0      0.97     460.3     199.8 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:47   92135.9      0.96     460.3     199.7 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:47   92150.1      0.96     460.2     200.0 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:47   92185.2      0.96     449.6     127.0 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:47   92198.0      0.95     450.5     126.8 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:47   92218.6      0.95     450.5     127.1 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:47   92232.7      0.94     450.4     127.1 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:48   92235.2      0.94     450.3     127.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:48   92236.2      0.94     450.2     127.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:48   92239.6      0.93     450.2     127.2 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:48   92240.9      0.93     450.1     127.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:48   92265.3      0.91     448.4     127.7 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:01:49   92254.5      0.89     447.8     130.3 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:49   92274.2      0.88     447.7     130.8 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:01:49   92290.2      0.87     447.1     131.3 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:49   92287.6      0.87     447.0     131.4 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:01:49   92282.4      0.87     446.9     131.4 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:49   92283.2      0.86     446.9     131.4 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:49   92280.4      0.86     446.8     131.9 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:50   92277.6      0.86     446.7     131.5 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:01:50   92289.7      0.85     446.6     131.5 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:50   92288.5      0.85     446.6     131.5 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:01:50   92298.8      0.85     445.0     131.6 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:50   92311.4      0.84     444.8     131.7 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:01:50   92323.4      0.84     444.8     132.3 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:50   92329.8      0.84     445.6     132.9 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:51   92338.5      0.83     444.5     133.1 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:51   92335.8      0.83     444.4     132.8 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:51   92348.4      0.83     444.3     133.0 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:51   92351.3      0.82     444.2     132.9 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:51   92361.5      0.82     444.1     133.0 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:51   92363.9      0.82     444.1     132.9 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:51   92376.4      0.82     444.0     132.8 ID_EX_inst/dff12/data_o_reg[23]/D
+    0:01:51   92392.3      0.81     444.1     132.7 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:51   92415.1      0.81     443.9     132.7 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:52   92430.1      0.80     443.7     133.0 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:01:52   92435.9      0.80     443.4     133.4 ID_EX_inst/dff12/data_o_reg[20]/D
+    0:01:52   92447.2      0.79     443.3     133.7 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:52   92455.7      0.79     443.2     133.7 ID_EX_inst/dff12/data_o_reg[20]/D
+    0:01:52   92448.3      0.78     443.1     133.7 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:52   92459.9      0.78     443.0     133.8 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:53   92459.4      0.78     443.1     133.7 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:53   92466.5      0.77     443.0     133.8 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:53   92463.4      0.77     442.8     134.3 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:53   92465.3      0.76     442.7     134.4 ID_EX_inst/dff12/data_o_reg[19]/D
+    0:01:53   92485.4      0.76     442.7     134.5 ID_EX_inst/dff12/data_o_reg[19]/D
+    0:01:53   92503.6      0.76     442.4     134.4 ID_EX_inst/dff12/data_o_reg[23]/D
+    0:01:54   92522.9      0.75     442.1     134.5 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:54   92548.1      0.74     442.0     136.8 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:01:54   92556.9      0.73     431.8     136.8 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:01:54   92555.0      0.73     431.7     136.6 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:01:54   92563.3      0.73     431.6     136.6 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:01:54   92561.5      0.72     422.5     137.0 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:01:55   92572.7      0.71     422.3     136.9 ID_EX_inst/dff12/data_o_reg[19]/D
+    0:01:55   92575.7      0.71     422.2     136.9 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:01:55   92575.9      0.71     416.0     136.7 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:01:55   92595.4      0.70     415.9     136.7 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:55   92607.7      0.70     392.8     136.9 ID_EX_inst/dff12/data_o_reg[9]/D
+    0:01:55   92612.0      0.70     393.7     137.8 ID_EX_inst/dff12/data_o_reg[19]/D
+    0:01:55   92625.3      0.69     393.7     137.9 ID_EX_inst/dff12/data_o_reg[19]/D
+    0:01:56   92627.6      0.69     393.8     138.0 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:56   92629.8      0.68     390.2     138.0 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:01:56   92641.3      0.68     390.1     138.0 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:01:56   92645.3      0.67     390.1     138.0 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:56   92651.6      0.67     390.0     138.2 ID_EX_inst/dff12/data_o_reg[19]/D
+    0:01:56   92657.0      0.67     390.0     138.3 ID_EX_inst/dff12/data_o_reg[19]/D
+    0:01:56   92658.2      0.67     390.0     138.4 ID_EX_inst/dff12/data_o_reg[19]/D
+    0:01:56   92656.4      0.67     389.9     138.4 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:01:56   92676.7      0.66     389.6     138.5 ID_EX_inst/dff12/data_o_reg[19]/D
+    0:01:57   92691.4      0.66     370.0     138.8 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:57   92721.6      0.64     369.7     138.8 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:01:57   92721.7      0.63     369.3     139.1 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:01:57   92724.9      0.63     369.2     138.8 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:57   92742.2      0.62     369.1     137.5 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:01:57   92758.3      0.62     362.2     137.3 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:58   92762.8      0.62     359.0     137.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:01:58   92780.1      0.61     358.9     137.2 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:01:58   92809.8      0.61     359.3     137.4 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:01:58   92811.6      0.60     359.1     137.6 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:01:58   92813.7      0.60     359.1     137.6 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:01:58   92819.0      0.60     359.0     137.7 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:58   92819.7      0.60     358.9     137.9 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:58   92809.5      0.59     339.3     137.8 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:59   92819.1      0.59     339.3     137.5 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:59   92817.3      0.58     338.8     137.5 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:01:59   92816.5      0.58     338.7     137.4 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:59   92827.2      0.57     338.4     137.7 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:01:59   92835.7      0.57     338.4     137.6 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:01:59   92855.4      0.57     338.3     137.6 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:02:00   92873.1      0.57     338.2     137.5 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:02:00   92869.6      0.55     332.3     137.6 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:00   92878.5      0.55     332.3     137.4 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:00   92862.7      0.55     331.9     137.8 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:00   92871.4      0.54     331.9     137.9 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:00   92884.2      0.54     331.8     137.9 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:00   92880.7      0.54     331.8     138.4 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:01   92887.6      0.53     325.1     138.6 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:01   92878.8      0.52     324.9     138.6 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:01   92880.2      0.52     327.2     137.3 ID_EX_inst/dff12/data_o_reg[9]/D
+    0:02:01   92876.2      0.52     327.1     137.4 ID_EX_inst/dff12/data_o_reg[9]/D
+    0:02:01   92880.1      0.52     327.1     137.4 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:01   92895.4      0.51     327.6     137.1 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:01   92887.1      0.51     318.2     137.7 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:02   92886.9      0.51     318.2     137.9 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:02   92903.2      0.51     318.2     137.9 ID_EX_inst/dff12/data_o_reg[10]/D
+    0:02:02   92914.8      0.51     318.1     138.1 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:02   92923.1      0.50     318.0     138.3 ID_EX_inst/dff12/data_o_reg[13]/D
+    0:02:02   92941.3      0.50     318.0     138.7 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:02   92955.2      0.50     318.1     138.7 ID_EX_inst/dff12/data_o_reg[13]/D
+    0:02:03   92960.1      0.49     306.6     138.5 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:03   92968.3      0.49     301.9     138.6 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:03   92982.9      0.49     301.8     138.8 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:03   92982.0      0.48     301.7     138.8 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:03   92999.6      0.48     301.6     138.8 ID_EX_inst/dff12/data_o_reg[9]/D
+    0:02:03   93012.5      0.48     282.9     138.8 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:03   93014.4      0.47     282.8     138.7 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:03   93023.2      0.47     282.7     138.7 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:03   93026.2      0.47     282.7     138.8 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:04   93028.2      0.47     282.7     138.9 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:04   93020.2      0.47     282.6     138.9 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:04   93035.4      0.47     282.6     138.6 ID_EX_inst/dff12/data_o_reg[26]/D
+    0:02:04   93034.4      0.47     282.5     138.6 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:04   93052.6      0.46     282.3     138.5 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:04   93070.2      0.45     267.4     139.2 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:05   93071.6      0.44     267.3     139.2 ID_EX_inst/dff12/data_o_reg[14]/D
+    0:02:05   93084.9      0.44     267.3     139.2 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:05   93087.1      0.43     248.7     139.5 ID_EX_inst/dff12/data_o_reg[15]/D
+    0:02:05   93101.1      0.43     248.6     139.6 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:05   93114.8      0.43     248.4     139.1 ID_EX_inst/dff12/data_o_reg[17]/D
+    0:02:05   93119.7      0.42     248.4     139.0 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:02:05   93126.5      0.42     248.4     139.3 ID_EX_inst/dff12/data_o_reg[15]/D
+    0:02:05   93134.3      0.42     248.3     139.3 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:02:06   93132.9      0.42     248.5     139.3 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:06   93149.3      0.42     218.9     140.1 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:02:06   93152.6      0.41     218.7     140.0 ID_EX_inst/dff12/data_o_reg[15]/D
+    0:02:06   93162.7      0.41     218.6     139.9 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:06   93171.5      0.40     218.5     139.9 ID_EX_inst/dff12/data_o_reg[11]/D
+    0:02:07   93169.4      0.39     218.4     140.0 ID_EX_inst/dff12/data_o_reg[16]/D
+    0:02:07   93158.7      0.39     218.4     140.2 ID_EX_inst/dff12/data_o_reg[16]/D
+    0:02:07   93166.4      0.39     218.4     140.2 ID_EX_inst/dff12/data_o_reg[16]/D
+    0:02:07   93166.6      0.38     218.3     140.2 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:07   93173.4      0.38     218.3     140.2 ID_EX_inst/dff12/data_o_reg[18]/D
+    0:02:07   93190.9      0.37     202.0     140.6 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:07   93209.7      0.37     202.0     141.4 ID_EX_inst/dff12/data_o_reg[23]/D
+    0:02:07   93218.4      0.37     201.9     142.2 ID_EX_inst/dff12/data_o_reg[23]/D
+    0:02:08   93216.8      0.36     201.9     142.0 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:08   93221.5      0.36     201.9     141.9 ID_EX_inst/dff12/data_o_reg[15]/D
+    0:02:08   93232.7      0.36     201.8     141.7 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:08   93233.3      0.36     201.8     141.8 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:08   93239.4      0.36     201.8     141.9 ID_EX_inst/dff12/data_o_reg[27]/D
+    0:02:08   93252.5      0.36     201.7     142.1 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:08   93251.8      0.36     201.7     142.2 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:08   93256.5      0.35     203.9     142.1 ID_EX_inst/dff4/data_o_reg[21]/D
+    0:02:09   93267.1      0.35     203.9     143.3 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:09   93275.9      0.35     203.8     143.3 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:09   93289.1      0.35     198.7     143.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:09   93312.6      0.34     198.8     143.2 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:09   93310.1      0.34     198.7     143.2 ID_EX_inst/dff12/data_o_reg[27]/D
+    0:02:09   93308.0      0.34     199.5     143.3 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:09   93321.6      0.34     199.4     143.2 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:09   93322.9      0.34     191.5     143.4 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:09   93329.7      0.34     191.5     143.2 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:10   93328.9      0.33     191.5     143.3 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:10   93341.0      0.33     191.4     143.6 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:10   93342.8      0.33     191.4     143.2 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:10   93344.8      0.33     191.3     143.2 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:10   93339.3      0.33     191.3     143.3 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:10   93350.2      0.33     191.3     143.2 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:10   93358.9      0.33     188.6     143.2 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:10   93354.3      0.33     188.6     142.9 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:10   93356.0      0.32     188.6     142.9 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:11   93358.7      0.32     188.6     143.0 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:11   93363.5      0.32     188.6     141.7 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:11   93364.9      0.32     184.5     141.4 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:11   93373.2      0.32     184.5     141.4 ID_EX_inst/dff12/data_o_reg[13]/D
+    0:02:11   93378.5      0.32     182.2     141.4 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:11   93391.4      0.32     179.2     142.7 ID_EX_inst/dff12/data_o_reg[9]/D
+    0:02:11   93409.4      0.32     178.9     142.5 ID_EX_inst/dff12/data_o_reg[27]/D
+    0:02:12   93415.3      0.31     166.4     142.6 ID_EX_inst/dff12/data_o_reg[14]/D
+    0:02:12   93415.2      0.31     166.4     142.6 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:12   93424.7      0.31     166.9     142.7 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:12   93421.2      0.30     166.9     143.0 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:12   93425.8      0.30     166.8     143.0 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:12   93437.3      0.30     166.8     142.9 ID_EX_inst/dff12/data_o_reg[27]/D
+    0:02:13   93440.5      0.30     158.9     142.9 ID_EX_inst/dff12/data_o_reg[14]/D
+    0:02:13   93449.5      0.29     158.9     142.9 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:13   93451.5      0.29     158.8     143.0 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:13   93456.2      0.29     155.0     143.2 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:13   93472.0      0.28     154.9     143.5 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:13   93479.1      0.28     154.9     144.5 ID_EX_inst/dff12/data_o_reg[14]/D
+    0:02:13   93492.4      0.28     154.8     144.5 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:13   93488.5      0.28     154.8     144.4 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:14   93483.9      0.28     146.8     144.4 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:14   93500.7      0.28     146.8     144.5 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:14   93495.2      0.27     146.8     144.5 ID_EX_inst/dff12/data_o_reg[26]/D
+    0:02:14   93490.4      0.27     146.8     144.5 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:14   93488.2      0.27     146.6     144.4 ID_EX_inst/dff12/data_o_reg[14]/D
+    0:02:14   93495.0      0.27     146.5     145.0 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:14   93498.2      0.26     136.3     145.7 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:15   93506.9      0.26     136.2     145.4 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:15   93518.5      0.25     136.1     145.5 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:15   93529.7      0.25     136.1     145.7 ID_EX_inst/dff12/data_o_reg[26]/D
+    0:02:15   93556.4      0.25     136.0     146.5 ID_EX_inst/dff12/data_o_reg[26]/D
+    0:02:15   93556.9      0.25     132.9     146.5 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:15   93577.7      0.25     132.7     146.7 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:15   93583.0      0.24     126.2     146.7 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:15   93587.7      0.24     126.2     146.7 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:15   93602.9      0.24     126.1     146.9 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:16   93611.1      0.23     126.1     146.8 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:16   93625.2      0.23     126.1     146.8 ID_EX_inst/dff12/data_o_reg[15]/D
+    0:02:16   93633.2      0.23     126.1     147.2 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:16   93631.8      0.23     124.9     147.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:16   93643.9      0.23     124.9     147.2 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:16   93644.7      0.23     121.3     147.2 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:16   93659.5      0.23     121.3     147.2 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:16   93653.0      0.22     121.2     147.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:16   93678.9      0.22     121.2     147.2 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:16   93689.7      0.22     120.8     147.1 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:16   93704.9      0.22     120.7     148.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:17   93702.4      0.22     120.7     148.3 ID_EX_inst/dff12/data_o_reg[15]/D
+    0:02:17   93705.5      0.21     119.0     148.2 ID_EX_inst/dff12/data_o_reg[15]/D
+    0:02:17   93714.4      0.21     118.9     147.0 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:17   93729.3      0.21     118.8     147.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:17   93719.4      0.21     117.2     146.9 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:17   93727.0      0.20     117.6     147.5 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:17   93734.9      0.20     114.3     147.4 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:17   93737.5      0.20     114.3     147.4 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:18   93748.8      0.20     107.2     147.5 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:18   93760.9      0.20     107.2     147.6 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:18   93764.3      0.20     106.9     147.7 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:18   93771.4      0.20     106.8     147.9 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:18   93772.4      0.20     108.3     147.0 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:18   93784.0      0.19     108.2     147.0 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:18   93784.2      0.19     108.3     147.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:18   93786.0      0.19     108.2     147.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:19   93794.5      0.19     107.4     147.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:19   93810.3      0.19      98.9     147.5 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:19   93821.0      0.19      98.9     147.6 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:19   93823.4      0.19      98.9     147.6 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:19   93831.4      0.18      98.8     147.6 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:19   93829.9      0.18      98.8     147.6 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:19   93838.9      0.18      98.8     147.6 ID_EX_inst/dff12/data_o_reg[16]/D
+    0:02:19   93844.6      0.18      98.8     147.6 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:19   93849.1      0.18      98.8     147.6 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:19   93853.8      0.18      98.7     147.6 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:20   93846.2      0.17      93.4     147.6 ID_EX_inst/dff12/data_o_reg[3]/D
+    0:02:20   93851.1      0.17      93.4     147.6 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:02:20   93851.2      0.17      93.2     147.5 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:20   93850.7      0.17      90.5     147.5 ID_EX_inst/dff12/data_o_reg[16]/D
+    0:02:20   93852.2      0.17      90.4     147.5 ID_EX_inst/dff12/data_o_reg[16]/D
+    0:02:20   93863.4      0.17      90.3     147.5 ID_EX_inst/dff12/data_o_reg[16]/D
+    0:02:20   93863.5      0.16      84.1     147.6 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:20   93868.3      0.16      84.0     147.5 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:02:21   93876.8      0.15      84.0     146.8 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:21   93866.7      0.15      81.8     146.9 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:21   93883.1      0.15      77.2     146.9 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:21   93886.5      0.14      77.2     147.0 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:21   93896.9      0.14      77.2     147.1 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:21   93889.6      0.14      68.4     147.1 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:21   93892.7      0.14      68.3     147.0 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:21   93891.3      0.14      68.3     147.1 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:22   93908.3      0.13      58.2     147.0 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:22   93911.7      0.13      58.2     147.0 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:22   93930.5      0.13      58.1     146.9 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:22   93943.4      0.13      58.1     147.0 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:22   93939.8      0.12      58.0     147.0 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:22   93940.8      0.12      57.8     147.2 ID_EX_inst/dff12/data_o_reg[12]/D
+    0:02:22   93937.3      0.11      52.7     147.9 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:22   93935.7      0.11      52.6     147.3 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:22   93969.4      0.11      52.0     148.0 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:23   93969.4      0.11      52.0     148.0 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:23   93963.6      0.11      51.8     148.7 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:23   93951.3      0.11      47.6     148.9 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:23   93952.8      0.11      47.5     148.9 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:23   93970.5      0.10      47.6     148.7 PC_inst/pc_o_reg[9]/D    
+    0:02:23   93975.5      0.10      46.8     148.9 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:23   93984.0      0.10      44.9     148.9 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:23   93981.9      0.10      44.9     148.9 ID_EX_inst/dff12/data_o_reg[13]/D
+    0:02:24   93986.0      0.10      43.9     149.0 ID_EX_inst/dff12/data_o_reg[13]/D
+    0:02:24   94004.0      0.09      43.1     148.9 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:24   94021.8      0.09      43.0     148.9 ID_EX_inst/dff12/data_o_reg[28]/D
+    0:02:24   94032.4      0.09       1.8     148.8 ID_EX_inst/dff4/data_o_reg[4]/D
+    0:02:24   94033.1      0.09       1.7     148.8 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:24   94025.6      0.09       1.7     148.8 ID_EX_inst/dff12/data_o_reg[13]/D
+    0:02:24   94031.6      0.09       1.7     148.2 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:24   94047.1      0.08       1.7     148.2 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:25   94054.8      0.08       1.7     148.4 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:25   94055.1      0.08       1.7     148.4 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:25   94065.8      0.08       1.7     148.4 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:25   94089.6      0.08       1.6     148.5 ID_EX_inst/dff12/data_o_reg[26]/D
+    0:02:25   94097.1      0.08       1.6     148.4 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:25   94079.5      0.08       1.5     148.2 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:25   94081.5      0.07       1.5     148.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:25   94084.5      0.07       1.5     148.4 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:26   94093.7      0.07       1.5     148.2 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:26   94100.0      0.07       1.4     148.2 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:26   94092.8      0.07       1.2     147.8 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:26   94095.0      0.07       1.2     148.0 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:26   94094.3      0.07       1.2     147.9 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:26   94098.1      0.06       1.2     147.9 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:26   94104.8      0.06       1.2     148.0 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:26   94095.2      0.06       1.1     148.0 ID_EX_inst/dff12/data_o_reg[13]/D
+    0:02:26   94098.1      0.06       1.1     148.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:26   94099.0      0.06       1.1     148.2 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:26   94105.0      0.06       1.0     148.1 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:27   94116.0      0.06       0.9     148.0 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:27   94119.2      0.06       0.9     148.0 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:02:27   94127.8      0.05       0.9     148.0 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:27   94128.1      0.05       0.9     148.1 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:27   94127.3      0.05       0.9     148.1 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:27   94123.0      0.05       0.9     148.5 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:27   94126.5      0.04       0.8     148.6 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:27   94139.5      0.04       0.8     148.6 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:27   94132.5      0.04       4.9     148.5 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:28   94135.9      0.04       4.8     148.6 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:28   94143.8      0.04       4.8     148.4 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:28   94140.3      0.03       4.7     148.7 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:28   94146.2      0.03       4.7     148.7 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:28   94150.6      0.03       4.7     148.8 ID_EX_inst/dff12/data_o_reg[30]/D
+    0:02:28   94158.5      0.03       1.0     148.7 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:28   94169.4      0.03       1.0     148.6 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:28   94161.0      0.03       1.0     149.1 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:29   94174.7      0.03       1.0     149.1 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:29   94172.4      0.02       0.9     148.5 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:29   94186.3      0.02       0.9     148.5 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:29   94179.7      0.02       0.9     148.1 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:02:29   94185.4      0.02       0.8     148.3 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:29   94189.1      0.02       0.8     148.3 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:29   94189.9      0.02       0.8     148.3 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:29   94186.2      0.02       0.4     148.2 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:30   94195.7      0.02       0.4     147.8 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:30   94189.2      0.01       0.3     147.4 ID_EX_inst/dff12/data_o_reg[20]/D
+    0:02:30   94186.3      0.01       0.3     147.4 ID_EX_inst/dff12/data_o_reg[20]/D
+    0:02:30   94191.4      0.01       0.3     147.5 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:30   94204.7      0.00       0.2     147.3 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:30   94207.1      0.00       0.2     147.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:30   94206.0      0.00       0.0     147.1 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:30   94210.8      0.00       0.0     147.1 ID_EX_inst/dff12/data_o_reg[7]/D
+    0:02:31   94211.7      0.00       0.0     147.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:31   94215.5      0.00       0.0     147.1                          
+    0:02:32   94164.2      0.00       0.0     155.6                          
+
+
+  Beginning Design Rule Fixing  (max_transition)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:02:32   94164.2      0.00       0.0     155.6                          
+    0:02:32   94252.9      0.00       0.0     130.7 MEM_inst/dcache_req_addr[8]
+    0:02:33   94281.8      0.00       0.0     106.1 EX_inst/net125312        
+    0:02:33   94312.3      0.00       0.0     100.1 EX_inst/add_112/n392     
+    0:02:33   94372.4      0.00       0.0      96.3 EX_inst/net120812        
+    0:02:33   94410.9      0.00       0.0      94.0 EX_inst/sub_113/n462     
+    0:02:33   94409.6      0.00       0.0      93.3 MEM_inst/net158606       
+    0:02:33   94410.3      0.00       0.0      92.9 EX_inst/add_112/n296     
+    0:02:33   94488.1      0.00       0.0      91.2 MEM_inst/net120216       
+    0:02:33   94540.9      0.00       0.0      90.5 EX_inst/sub_113/n405     
+    0:02:33   94577.0      0.00       0.0      89.9 REGS_inst/C4357/net33873 
+    0:02:34   95163.5      0.00       0.0      88.8 REGS_inst/C4357/net33741 
+    0:02:35   95551.1      0.00       0.0      87.9 REGS_inst/C4356/net38319 
+    0:02:35   95652.0      0.00       0.0      87.7 REGS_inst/C4356/net38395 
+    0:02:36   95858.7      0.00       0.0      87.3 REGS_inst/C4357/net33817 
+    0:02:37   96120.9      0.00       0.0      86.7 REGS_inst/C4357/net33894 
+    0:02:39   96311.1      0.00       0.0      86.2 REGS_inst/C4357/net33665 
+    0:02:39   96533.9      0.00       0.0      85.8 REGS_inst/C4356/net38239 
+    0:02:40   97033.1      0.00       0.0      84.8 REGS_inst/C4357/net33783 
+    0:02:41   97531.3      0.00       0.0      83.7 Multiplier_inst/sub_add_126_b0/n169
+    0:02:42   97532.1      0.00       0.0      83.6 ID_inst/add_203/n232     
+    0:02:42   97557.3      0.00       0.0      82.6 ID_EX_inst/dff4/data_o[9]
+    0:02:42   97586.9      0.00       0.0      81.4 EX_inst/op1_i_or_op2_i[1]
+    0:02:43   97612.1      0.00       0.0      80.4 REGS_inst/C4357/net124716
+    0:02:43   97591.3      0.00       0.0      79.3 EX_inst/net121854        
+    0:02:43   97596.8      0.00       0.0      78.8 EX_inst/net121802        
+    0:02:43   97604.2      0.00       0.0      78.2 MEM_inst/N771            
+    0:02:43   97630.6      0.00       0.0      77.9 EX_inst/sub_113/n450     
+    0:02:43   97642.8      0.00       0.0      77.2 ID_inst/add_203/n200     
+    0:02:44   97629.3      0.00       0.0      77.1 EX_inst/net121480        
+    0:02:44   97631.3      0.00       0.0      76.6 REGS_inst/n133           
+    0:02:44   97940.9      0.00       0.0      67.5 REGS_inst/C4356/net38383 
+    0:02:45   99654.0      0.00       0.0      64.5 REGS_inst/C4357/net33873 
+    0:02:46  101541.1      0.00       0.0      61.5 REGS_inst/C4357/net33861 
+    0:02:46  103525.5      0.00       0.0      60.2 REGS_inst/C4357/net33735 
+    0:02:47  105368.1      0.00       0.0      59.0 REGS_inst/C4357/net33780 
+    0:02:48  107201.8      0.00       0.0      56.6 REGS_inst/C4357/net33870 
+    0:02:48  108798.4      0.00       0.0      53.3 REGS_inst/C4356/net38283 
+    0:02:49  110111.1      0.00       0.0      50.7 REGS_inst/C4356/net124372
+    0:02:49  111414.4      0.00       0.0      48.1 REGS_inst/C4356/net38237 
+    0:02:50  112682.7      0.00       0.0      45.3 REGS_inst/C4356/net38270 
+    0:02:51  114384.4      0.00       0.0      42.4 EX_inst/net128666        
+    0:02:52  115753.3      0.00       0.0      39.8 REGS_inst/C4356/net38288 
+    0:02:52  117365.4      0.00       0.0      37.4 REGS_inst/C4356/net38318 
+    0:02:53  117903.0      0.00       0.0      34.9 REGS_inst/C4357/net124694
+    0:02:53  117910.2      0.00       0.0      33.1 EX_inst/sub_113/n462     
+    0:02:53  117931.8      0.00       0.0      32.2 EX_inst/net121042        
+    0:02:53  117940.8      0.00       0.0      31.2 REGS_inst/C4357/net124766
+    0:02:54  117935.1      0.00       0.0      30.5 EX_inst/r398/n271        
+    0:02:54  117960.7      0.00       0.0      29.1 REGS_inst/net194190      
+    0:02:54  118000.1      0.00       0.0      26.7 REGS_inst/C4357/net124776
+    0:02:55  118008.3      0.00       0.0      24.9 REGS_inst/C4357/net124570
+    0:02:55  117975.7      0.00       0.0      24.7 EX_inst/add_112/net173364
+    0:02:55  117989.8      0.00       0.0      24.7 EX_inst/net121503        
+    0:02:55  117996.8      0.00       0.0      24.4 EX_inst/rd_data_o[42]    
+    0:02:55  117990.3      0.00       0.0      23.9 ID_inst/inst_o[8]        
+    0:02:55  117984.8      0.00       0.0      23.2 EX_inst/sub_113/n464     
+    0:02:55  117977.7      0.00       0.0      23.0 Multiplier_inst/net63822 
+    0:02:55  117985.7      0.00       0.0      22.5 MEM_inst/N803            
+    0:02:56  117991.9      0.00       0.0      22.0 ID_inst/add_203/n18      
+    0:02:56  117953.8      0.00       0.0      21.7 EX_inst/net89587         
+    0:02:56  117952.0      0.00       0.0      21.6 EX_inst/r398/n102        
+    0:02:56  117943.6      0.00       0.0      21.5 EX_inst/net89489         
+    0:02:57  117938.5      0.00       0.0      21.5 EX_inst/net121060        
+    0:02:57  117939.8      0.00       0.0      21.5 REGS_inst/net195567      
+    0:02:57  117945.4      0.00       0.0      21.3 ID_inst/add_203/n230     
+    0:02:58  118013.7      0.20       4.3      20.1 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:02:58  118024.8      0.19       4.2      20.1 ID_EX_inst/dff12/data_o_reg[20]/D
+    0:02:58  118018.8      0.17       3.8      20.1 ID_EX_inst/dff12/data_o_reg[8]/D
+    0:02:59  118033.9      0.14       2.8      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:59  118039.5      0.12       2.5      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:59  118042.5      0.11       2.2      20.1 ID_EX_inst/dff12/data_o_reg[20]/D
+    0:02:59  118049.5      0.11       2.1      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:02:59  118054.4      0.10       2.0      20.1 ID_EX_inst/dff12/data_o_reg[20]/D
+    0:03:00  118062.7      0.10       1.9      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:00  118063.7      0.09       1.7      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:00  118082.1      0.09       1.7      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:00  118088.2      0.08       1.6      20.1 ID_EX_inst/dff12/data_o_reg[20]/D
+    0:03:00  118104.0      0.08       1.5      20.1 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:03:00  118119.6      0.07       1.3      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:00  118146.8      0.07       1.3      20.1 ID_EX_inst/dff12/data_o_reg[20]/D
+    0:03:00  118175.4      0.06       1.3      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:01  118189.3      0.06       1.2      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:01  118190.6      0.06       1.2      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:01  118200.0      0.06       1.1      20.1 ID_EX_inst/dff12/data_o_reg[20]/D
+    0:03:01  118210.3      0.05       1.0      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:01  118221.5      0.05       1.0      20.1 ID_EX_inst/dff12/data_o_reg[20]/D
+    0:03:01  118229.1      0.05       0.9      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:01  118232.6      0.05       0.8      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:02  118239.3      0.04       0.7      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:02  118242.0      0.04       0.6      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:02  118237.1      0.04       0.5      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:02  118230.7      0.04       0.5      20.1 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:03:02  118235.8      0.03       0.5      20.1 ID_EX_inst/dff12/data_o_reg[27]/D
+    0:03:02  118235.9      0.03       0.4      20.1 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:03:02  118236.9      0.03       0.4      20.1 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:03:03  118239.2      0.03       0.4      20.1 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:03:03  118239.7      0.02       0.3      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:03  118237.9      0.02       0.3      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:03  118239.3      0.02       0.3      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:03  118233.4      0.02       0.3      20.1 ID_EX_inst/dff12/data_o_reg[22]/D
+    0:03:03  118246.4      0.02       0.3      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:03  118248.6      0.02       0.3      20.1 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:03:03  118258.2      0.02       0.2      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:03  118254.0      0.02       0.2      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:03  118252.7      0.02       0.2      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:03  118268.9      0.02       0.2      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:04  118274.7      0.01       0.1      20.1 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:03:04  118279.6      0.01       0.1      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:04  118279.8      0.01       0.1      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:04  118277.3      0.01       0.1      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:04  118284.5      0.00       0.0      20.1 ID_EX_inst/dff12/data_o_reg[29]/D
+    0:03:04  118279.0      0.00       0.0      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:04  118271.8      0.00       0.0      20.1 ID_EX_inst/dff12/data_o_reg[8]/D
+    0:03:05  118269.8      0.00       0.0      20.1 EX_inst/net121480        
+    0:03:05  118270.9      0.00       0.0      20.1 EX_inst/net121503        
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:03:05  118270.9      0.00       0.0      20.1                          
+    0:03:05  118270.9      0.00       0.0      20.1                          
+    0:03:23  113574.4      0.08       3.0      20.1                          
+    0:03:32  112351.8      0.06       2.8      20.1                          
+    0:03:33  112088.8      0.05       3.1      20.1                          
+    0:03:34  111944.9      0.05       2.7      20.1                          
+    0:03:34  111820.4      0.06       2.6      20.1                          
+    0:03:35  111707.5      0.06       2.6      20.1                          
+    0:03:36  111631.1      0.06       2.7      20.1                          
+    0:03:37  111564.8      0.06       2.7      20.1                          
+    0:03:37  111478.3      0.06       2.7      20.1                          
+    0:03:38  111402.2      0.06       2.7      20.1                          
+    0:03:39  111323.8      0.06       2.7      20.1                          
+    0:03:40  111248.5      0.06       2.7      20.1                          
+    0:03:40  111187.6      0.06       2.7      20.1                          
+    0:03:41  111116.9      0.06       2.7      20.1                          
+    0:03:41  111034.0      0.06       2.7      20.1                          
+    0:03:43  110981.4      0.06       2.7      20.1                          
+    0:03:43  110981.4      0.06       2.7      20.1                          
+    0:03:43  110995.5      0.01       0.4      20.1 ID_EX_inst/dff12/data_o_reg[25]/D
+    0:03:44  110994.3      0.01       0.3      20.1                          
+    0:03:44  111007.8      0.00       0.0      20.1                          
+    0:03:44  111005.8      0.00       0.0      20.1                          
+    0:03:44  111005.8      0.00       0.0      20.1                          
+    0:03:45  109948.3      0.13      11.6      20.1                          
+    0:03:46  109757.5      0.14      13.6      20.1                          
+    0:03:46  109696.0      0.14      12.2      20.1                          
+    0:03:46  109693.3      0.14      12.2      20.1                          
+    0:03:46  109692.3      0.14      12.2      20.1                          
+    0:03:46  109692.3      0.14      12.2      20.1                          
+    0:03:46  109692.3      0.14      12.2      20.1                          
+    0:03:46  109692.3      0.14      12.2      20.1                          
+    0:03:46  109721.1      0.04       1.9      20.1 Multiplier_inst/product_temp_reg[127]/D
+    0:03:47  109735.8      0.03       1.0      20.1 ID_EX_inst/dff12/data_o_reg[21]/D
+    0:03:47  109751.3      0.02       0.9      20.1 ID_EX_inst/dff12/data_o_reg[24]/D
+    0:03:47  109774.8      0.02       0.8      20.1 ID_EX_inst/dff12/data_o_reg[8]/D
+    0:03:47  109788.4      0.02       0.2      20.1                          
+    0:03:48  109788.9      0.01       0.2      20.1                          
+    0:03:48  109790.2      0.01       0.1      20.1                          
+    0:03:48  109801.0      0.01       0.1      20.1                          
+    0:03:48  109803.9      0.01       0.1      20.1                          
+    0:03:48  109810.4      0.01       0.1      20.1                          
+    0:03:48  109821.4      0.00       0.0      20.1                          
+    0:03:48  109830.2      0.00       0.0      20.1                          
+    0:03:49  110015.5      0.00       0.0      20.1                          
+Loading db file '/home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'TOP_RISCV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'ID_EX_inst/dff9/clk': 4299 load(s), 1 driver(s)
+1
+compile	 -inc
+Warning: The following synthetic libraries should be added to 
+	the list of link libraries: 
+	'dw_foundation.sldb'. (UISN-26)
+
+Information: There are 3255 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Medium effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+  Mapping 'Multiplier_DW01_inc_2'
+  Mapping 'Multiplier_DW01_sub_0'
+  Mapping 'Multiplier_DW01_sub_1'
+  Mapping 'Multiplier_DW01_add_0'
+  Selecting implementations
+  Mapping 'Divider_DW01_sub_0'
+  Mapping 'Divider_DW01_sub_1'
+  Mapping 'Divider_DW01_sub_4'
+  Selecting implementations
+  Mapping 'Divider_DW_cmp_1'
+  Mapping 'PC_DW01_add_0'
+  Mapping 'ID_DW01_add_0'
+  Mapping 'ID_DW01_add_1'
+  Mapping 'EX_DW_cmp_0'
+  Mapping 'EX_DW01_sub_0'
+  Mapping 'EX_DW01_add_0'
+  Mapping 'EX_DW01_add_1'
+  Mapping 'EX_DW01_cmp6_0'
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:10  109699.4      0.00       0.0      32.5                          
+    0:00:12  110036.9      0.00       0.0      32.6                          
+    0:00:13  110021.2      0.00       0.0      32.8                          
+
+
+  Beginning Design Rule Fixing  (max_transition)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:13  110021.2      0.00       0.0      32.8                          
+    0:00:13  110082.4      0.00       0.0      28.2 Divider_inst/sub_1_root_add_105/n308
+    0:00:13  110106.7      0.00       0.0      25.9 CLINT_inst/N501          
+    0:00:14  110180.8      0.00       0.0      23.1 Divider_inst/n57         
+    0:00:14  110201.8      0.00       0.0      21.4 Divider_inst/temp_a[124] 
+    0:00:14  110219.3      0.00       0.0      20.9 CSR_REGS_inst/clint_csr_mepc[43]
+    0:00:14  110209.5      0.00       0.0      20.3 Divider_inst/sub_1_root_add_105/n341
+    0:00:15  110199.5      0.00       0.0      20.8                          
+    0:00:15  110383.9      0.00       0.0      20.1                          
+Loading db file '/home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'TOP_RISCV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'EX_MEM_inst/dff5/clk': 4299 load(s), 1 driver(s)
+1
+#################################################################
+#    set library and synthesis variables
+#################################################################
+write 		-f verilog	-hier 	-output ../work/$DesignTopName.v
+Writing verilog file '/home/IC/Desktop/risc_cpu/syn/work/TOP_RISCV.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 1 nets to module Divider using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 166 nets to module TOP_RISCV using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+write_sdc  					../work/$DesignTopName.sdc
+1
+write_sdf					../work/$DesignTopName.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/IC/Desktop/risc_cpu/syn/work/TOP_RISCV.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+Warning: Design 'TOP_RISCV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+1
+write_scan_def -out                             ../work/$DesignTopName.def
+Error: Current design TOP_RISCV does not have any CTL model attached. ScanDEF generation cannot proceed.
+0
+write -f ddc -hierarchy -output                 ../work/$DesignTopName.ddc
+Writing ddc file '../work/TOP_RISCV.ddc'.
+1
+set_svf -off
+1
+#	report_constraint -all 
+report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TOP_RISCV
+Version: K-2015.06
+Date   : Fri Apr  5 13:05:24 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: cb13fs120_tsmc_max   Library: cb13fs120_tsmc_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: Multiplier_inst/multiplier_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Multiplier_inst/product_temp_reg[127]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP_RISCV          140000                cb13fs120_tsmc_max
+  Multiplier         8000                  cb13fs120_tsmc_max
+  Multiplier_DW01_add_1
+                     8000                  cb13fs120_tsmc_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Multiplier_inst/multiplier_reg[0]/CP (dfnrq2)           0.00 #     0.00 r
+  Multiplier_inst/multiplier_reg[0]/Q (dfnrq2)            0.32       0.32 f
+  Multiplier_inst/U136/ZN (inv0d1)                        0.06       0.37 r
+  Multiplier_inst/U401/Z (bufbd1)                         0.12       0.50 r
+  Multiplier_inst/U390/Z (bufbd1)                         0.13       0.63 r
+  Multiplier_inst/U20/Z (buffd3)                          0.18       0.80 r
+  Multiplier_inst/U288/ZN (nr02d1)                        0.25       1.05 f
+  Multiplier_inst/add_104/B[30] (Multiplier_DW01_add_1)
+                                                          0.00       1.05 f
+  Multiplier_inst/add_104/U1293/ZN (nr02d1)               0.21       1.26 r
+  Multiplier_inst/add_104/U1353/ZN (nr02d1)               0.24       1.49 f
+  Multiplier_inst/add_104/U1507/ZN (aoi21d1)              0.23       1.72 r
+  Multiplier_inst/add_104/U810/ZN (oai21d1)               0.21       1.93 f
+  Multiplier_inst/add_104/U1420/ZN (aoi21d1)              0.19       2.13 r
+  Multiplier_inst/add_104/U806/ZN (oai21d1)               0.25       2.38 f
+  Multiplier_inst/add_104/U1508/ZN (aoi21d1)              0.24       2.62 r
+  Multiplier_inst/add_104/U10/ZN (oai21d1)                0.23       2.85 f
+  Multiplier_inst/add_104/U1258/CO (ad01d2)               0.24       3.09 f
+  Multiplier_inst/add_104/U1247/CO (ad01d2)               0.24       3.32 f
+  Multiplier_inst/add_104/U1243/CO (ad01d2)               0.24       3.56 f
+  Multiplier_inst/add_104/U1241/CO (ad01d2)               0.24       3.80 f
+  Multiplier_inst/add_104/U1249/CO (ad01d2)               0.24       4.03 f
+  Multiplier_inst/add_104/U1077/CO (ad01d1)               0.23       4.26 f
+  Multiplier_inst/add_104/U1577/ZN (xn02d1)               0.22       4.47 f
+  Multiplier_inst/add_104/SUM[127] (Multiplier_DW01_add_1)
+                                                          0.00       4.47 f
+  Multiplier_inst/U1262/Z (aor22d1)                       0.19       4.66 f
+  Multiplier_inst/product_temp_reg[127]/D (dfnrn1)        0.00       4.66 f
+  data arrival time                                                  4.66
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.25       4.75
+  Multiplier_inst/product_temp_reg[127]/CP (dfnrn1)       0.00       4.75 r
+  library setup time                                     -0.09       4.66
+  data required time                                                 4.66
+  --------------------------------------------------------------------------
+  data required time                                                 4.66
+  data arrival time                                                 -4.66
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+#################################################################
+#    set library and synthesis variables
+#################################################################
+redirect [file join ../rpts reportdesign.rpt] 		{ report_design }
+redirect [file join ../rpts reportcell.rpt]    		{ report_cell   }
+redirect [file join ../rpts reportarea.rpt]    		{ report_area   }
+redirect [file join ../rpts reportQOR.rpt]     		{ report_qor    }
+redirect [file join ../rpts reportcheckdesign.rpt]  	{ check_design  }
+redirect [file join ../rpts reporttiming.rpt]    	{ check_timing  }
+redirect [file join ../rpts reportpower.rpt]    	{ report_power  }
+redirect [file join ../rpts reportconstraint.rpt]       { report_constraint -all_violators}
+redirect [file join ../rpts reporttimingmax.rpt]        { report_timing -delay_type max   }
+redirect [file join ../rpts reporttimingmin.rpt]    	{ report_timing -delay_type min   }
+###############################################################
+#    end 
+#################################################################
+dc_shell> exit 
+
+Memory usage for main task 299 Mbytes.
+Memory usage for this session 299 Mbytes.
+CPU usage for this session 250 seconds ( 0.07 hours ).
+
+Thank you...

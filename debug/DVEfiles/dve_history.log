@@ -1,0 +1,116 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file cpu_verification.vpd}}
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/Top/Desktop/advanced_adder/DVEfiles/dve_checkpoint_6250_1.tcl}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1917
+gui_set_state_value -category Layout -key child_console_size_y -value 176
+gui_set_state_value -category Layout -key child_data_size_x -value 243
+gui_set_state_value -category Layout -key child_data_size_y -value 550
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 171
+gui_set_state_value -category Layout -key child_hier_size_y -value 550
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 1506
+gui_set_state_value -category Layout -key child_source_size_y -value 545
+gui_set_state_value -category Layout -key child_wave_colname -value 228
+gui_set_state_value -category Layout -key child_wave_colvalue -value 228
+gui_set_state_value -category Layout -key child_wave_left -value 460
+gui_set_state_value -category Layout -key child_wave_right -value 1385
+gui_set_state_value -category Layout -key main_pos_x -value 4
+gui_set_state_value -category Layout -key main_pos_y -value 77
+gui_set_state_value -category Layout -key main_size_x -value 1921
+gui_set_state_value -category Layout -key main_size_y -value 878
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1855
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 717
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 44
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 51
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1894
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 848
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file cpu_verification.vpd
+gui_list_expand -id  Hier.1   RISCV_SOC
+gui_list_expand -id  Hier.1   RISCV_SOC.TOP_RISCV_inst
+gui_list_select -id Hier.1 -current_item_name RISCV_SOC.TOP_RISCV_inst.REGS_inst -current_item_type Scope  -selected  { RISCV_SOC.TOP_RISCV_inst.REGS_inst   }
+gui_list_select_all -id Data.1
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { {RISCV_SOC.TOP_RISCV_inst.REGS_inst.reg_waddr_i[4:0]} {RISCV_SOC.TOP_RISCV_inst.REGS_inst.reg_wdata_i[63:0]} RISCV_SOC.TOP_RISCV_inst.REGS_inst.reg_wen RISCV_SOC.TOP_RISCV_inst.REGS_inst.clk RISCV_SOC.TOP_RISCV_inst.REGS_inst.rst {RISCV_SOC.TOP_RISCV_inst.REGS_inst.reg1_raddr_i[4:0]} {RISCV_SOC.TOP_RISCV_inst.REGS_inst.reg2_raddr_i[4:0]} {RISCV_SOC.TOP_RISCV_inst.REGS_inst.reg1_rdata_o[63:0]} {RISCV_SOC.TOP_RISCV_inst.REGS_inst.reg2_rdata_o[63:0]} {RISCV_SOC.TOP_RISCV_inst.REGS_inst.i[31:0]} {RISCV_SOC.TOP_RISCV_inst.REGS_inst.regs[31:0][63:0]} } -insertionbar
+gui_marker_move -id  Wave.1 C1 140
+gui_list_expand -id  Wave.1   {RISCV_SOC.TOP_RISCV_inst.REGS_inst.regs[31:0][63:0]}
+gui_list_collapse -id  Wave.1   {RISCV_SOC.TOP_RISCV_inst.REGS_inst.regs[31:0][63:0]}
+gui_list_expand -id  Wave.1   {RISCV_SOC.TOP_RISCV_inst.REGS_inst.regs[31:0][63:0]}
+gui_marker_move -id  Wave.1 C1 124
+gui_marker_move -id  Wave.1 C1 63
+gui_marker_move -id  Wave.1 C1 39
+gui_marker_move -id  Wave.1 C1 122
+gui_marker_move -id  Wave.1 C1 202
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 178
+gui_marker_move -id  Wave.1 C1 98
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 1695000
+gui_marker_move -id  Wave.1 C1 1418117
+gui_marker_move -id  Wave.1 C1 1630000
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 1900000
+gui_wv_scroll_hslidermove -id  Wave.1 110
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 192
+gui_wv_scroll_hslidermove -id  Wave.1 384
+gui_wv_scroll_hslidermove -id  Wave.1 576
+gui_wv_scroll_hslidermove -id  Wave.1 768
+gui_wv_scroll_hslidermove -id  Wave.1 960
+gui_wv_scroll_hslidermove -id  Wave.1 1152
+gui_wv_scroll_hslidermove -id  Wave.1 1288
+gui_wv_scroll_hslidermove -id  Wave.1 1288
+gui_wv_scroll_hslidermove -id  Wave.1 1288
+gui_wv_scroll_hslidermove -id  Wave.1 1288
+gui_wv_scroll_hslidermove -id  Wave.1 1288
+gui_wv_scroll_hslidermove -id  Wave.1 1288
+gui_wv_scroll_hslidermove -id  Wave.1 1096
+gui_wv_scroll_hslidermove -id  Wave.1 904
+gui_marker_move -id  Wave.1 C1 3440000
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 1288
+gui_wv_scroll_hslidermove -id  Wave.1 1288
+gui_wv_scroll_hslidermove -id  Wave.1 1288
+gui_marker_move -id  Wave.1 C1 4500000
+gui_wv_scroll_hslidermove -id  Wave.1 1288
+gui_wv_scroll_hslidermove -id  Wave.1 1096
+gui_wv_scroll_hslidermove -id  Wave.1 904
+gui_wv_scroll_hslidermove -id  Wave.1 712
+gui_wv_scroll_hslidermove -id  Wave.1 904
+gui_wv_scroll_hslidermove -id  Wave.1 1096
+gui_wv_scroll_hslidermove -id  Wave.1 1288
+gui_marker_move -id  Wave.1 C1 4360000
+gui_marker_move -id  Wave.1 C1 4215000
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 4290748
+gui_marker_move -id  Wave.1 C1 4340000
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 4370000
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 4390170
+gui_list_select -id Wave.1 -selected  { RISCV_SOC.TOP_RISCV_inst.REGS_inst.clk   }
+gui_marker_move -id  Wave.1 C1 4279969
+gui_close_window -window TopLevel.2

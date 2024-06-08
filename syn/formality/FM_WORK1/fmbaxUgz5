@@ -1,0 +1,23 @@
+false
+1
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/accum.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/adr.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/alu.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/clk_gen.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/counter.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/datactl.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/machine.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/machinectl.v'
+Loading verilog file '/home1/chengjinhui/risc_cpu/src/register.v'
+1
+1
+1
+1
+1
+1
+
+Received Signal 1 from: PID=285454 (UID=1034)
+
+
+Process terminated by hangup.
+

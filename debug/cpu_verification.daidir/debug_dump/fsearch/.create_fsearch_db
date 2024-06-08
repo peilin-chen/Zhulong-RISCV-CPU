@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/opt/Synopsys/VCS2014/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/opt/Synopsys/VCS2014/amd64/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/opt/Synopsys/VCS2014/amd64/lib:/opt/Synopsys/VCS2014/amd64/lib/pylib27
+export LD_LIBRARY_PATH
+/opt/Synopsys/VCS2014/amd64/bin/vcsfind_create_index.exe  -z  cpu_verification.daidir/debug_dump/fsearch/idents_EXAZ5g.xml.gz  -o cpu_verification.daidir/debug_dump/fsearch/fsearch.db_tmp
+\mv cpu_verification.daidir/debug_dump/fsearch/fsearch.db_tmp cpu_verification.daidir/debug_dump/fsearch/fsearch.db

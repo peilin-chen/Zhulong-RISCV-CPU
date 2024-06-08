@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TOP_RISCV
+Version: K-2015.06
+Date   : Fri Apr  5 13:05:28 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: cb13fs120_tsmc_max   Library: cb13fs120_tsmc_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: Multiplier_inst/multiplier_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Multiplier_inst/product_temp_reg[127]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP_RISCV          140000                cb13fs120_tsmc_max
+  Multiplier         8000                  cb13fs120_tsmc_max
+  Multiplier_DW01_add_1
+                     8000                  cb13fs120_tsmc_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Multiplier_inst/multiplier_reg[0]/CP (dfnrq2)           0.00 #     0.00 r
+  Multiplier_inst/multiplier_reg[0]/Q (dfnrq2)            0.32       0.32 f
+  Multiplier_inst/U136/ZN (inv0d1)                        0.06       0.37 r
+  Multiplier_inst/U401/Z (bufbd1)                         0.12       0.50 r
+  Multiplier_inst/U390/Z (bufbd1)                         0.13       0.63 r
+  Multiplier_inst/U20/Z (buffd3)                          0.18       0.80 r
+  Multiplier_inst/U288/ZN (nr02d1)                        0.25       1.05 f
+  Multiplier_inst/add_104/B[30] (Multiplier_DW01_add_1)
+                                                          0.00       1.05 f
+  Multiplier_inst/add_104/U1293/ZN (nr02d1)               0.21       1.26 r
+  Multiplier_inst/add_104/U1353/ZN (nr02d1)               0.24       1.49 f
+  Multiplier_inst/add_104/U1507/ZN (aoi21d1)              0.23       1.72 r
+  Multiplier_inst/add_104/U810/ZN (oai21d1)               0.21       1.93 f
+  Multiplier_inst/add_104/U1420/ZN (aoi21d1)              0.19       2.13 r
+  Multiplier_inst/add_104/U806/ZN (oai21d1)               0.25       2.38 f
+  Multiplier_inst/add_104/U1508/ZN (aoi21d1)              0.24       2.62 r
+  Multiplier_inst/add_104/U10/ZN (oai21d1)                0.23       2.85 f
+  Multiplier_inst/add_104/U1258/CO (ad01d2)               0.24       3.09 f
+  Multiplier_inst/add_104/U1247/CO (ad01d2)               0.24       3.32 f
+  Multiplier_inst/add_104/U1243/CO (ad01d2)               0.24       3.56 f
+  Multiplier_inst/add_104/U1241/CO (ad01d2)               0.24       3.80 f
+  Multiplier_inst/add_104/U1249/CO (ad01d2)               0.24       4.03 f
+  Multiplier_inst/add_104/U1077/CO (ad01d1)               0.23       4.26 f
+  Multiplier_inst/add_104/U1577/ZN (xn02d1)               0.22       4.47 f
+  Multiplier_inst/add_104/SUM[127] (Multiplier_DW01_add_1)
+                                                          0.00       4.47 f
+  Multiplier_inst/U1262/Z (aor22d1)                       0.19       4.66 f
+  Multiplier_inst/product_temp_reg[127]/D (dfnrn1)        0.00       4.66 f
+  data arrival time                                                  4.66
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.25       4.75
+  Multiplier_inst/product_temp_reg[127]/CP (dfnrn1)       0.00       4.75 r
+  library setup time                                     -0.09       4.66
+  data required time                                                 4.66
+  --------------------------------------------------------------------------
+  data required time                                                 4.66
+  data arrival time                                                 -4.66
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

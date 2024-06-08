@@ -1,0 +1,68 @@
+@verdi rc file Version 1.0
+[General]
+VerdiVersion = Verdi3_K-2015.09-SP1-1
+[KeyNote]
+Line1 = Automatic Backup 0
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+[hb]
+postSimFile = /home/IC/Desktop/risc_cpu/debug/RISCV_SOC.fsdb
+syncTime = 0
+viewport = 0 25 1918 802 628 448 189 1916
+activeNode = "RISCV_SOC"
+activeScope = "RISCV_SOC"
+activeFile = "../src/RISCV_SOC.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 1
+baMode = False
+srcLineNum = True
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "RISCV_SOC"
+multipleSelection = 1 1 2 0 0
+sdfCheckUndef = FALSE
+[hb.sourceTab.1]
+scope = RISCV_SOC
+File = /home/IC/Desktop/risc_cpu/src/RISCV_SOC.v
+Line = 2
+[imp.design1]
+dbEnum =  oh
+invokeDir = /home/IC/Desktop/risc_cpu/debug
+design = DebussyLib
+hostCommand = hostCommand +v2k -sverilog -top RISCV_SOC -f ../scripts/FileList.f
+topName = RISCV_SOC
+[nMemoryManager]
+FsdbFile = /home/IC/Desktop/risc_cpu/debug/RISCV_SOC.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 28 1918 166 100 65
+SessionFile = /home/IC/Desktop/risc_cpu/debug/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSync = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE

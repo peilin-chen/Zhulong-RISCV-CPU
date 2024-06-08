@@ -1,0 +1,24 @@
+-------------------------------------------------------
+
+PrimeTime save_session README file
+
+-------------------------------------------------------
+
+PrimeTime Version: 
+	K-2015.06 for linux64 -- May 21, 2015
+Save Session Date:
+	Fri Apr  5 10:20:55 2024
+ 
+-------------------------------------------------------
+
+Command log of this session is saved in "cmd_log".
+If the saved session is moved to a different location, 
+    please update the paths in the cmd_log file accordingly, 
+    in order to use the GCA in-design flow.
+-------------------------------------------------------
+
+Current Design: TOP_RISCV
+
+Technology librares referenced by this session:
+/home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db     sc_max.db
+-------------------------------------------------------

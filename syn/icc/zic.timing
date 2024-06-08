@@ -1,0 +1,236 @@
+Warning: Timer is in zero interconnect delay mode. (TIM-177)
+Information: Updating design information... (UID-85)
+Warning: Design 'TOP_RISCV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TOP_RISCV
+Version: L-2016.03-SP1
+Date   : Fri Apr  5 10:22:55 2024
+****************************************
+
+ z Timer is in zero interconnect delay mode.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: cb13fs120_tsmc_max   Library: cb13fs120_tsmc_max
+
+  Startpoint: mem_dcache_data_read[32]
+              (input port clocked by clk)
+  Endpoint: mem_dcache_data_write[32]
+            (output port clocked by clk)
+  Path Group: COMBO
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.50       1.50 f
+  mem_dcache_data_read[32] (in)                           0.00 z     1.50 f
+  MEM_inst/dcache_data_read[32] (MEM)                     0.00 z     1.50 f
+  MEM_inst/U394/CN (clk2d2)                               0.36 z     1.86 r
+  MEM_inst/U396/ZN (nr02d0)                               0.09 z     1.95 f
+  MEM_inst/U133/Z (or02d1)                                0.13 z     2.08 f
+  MEM_inst/U397/ZN (nr02d4)                               0.22 z     2.30 r
+  MEM_inst/U392/ZN (invbdk)                               0.23 z     2.53 f
+  MEM_inst/dcache_data_write[32] (MEM)                    0.00 z     2.53 f
+  mem_dcache_data_write[32] (out)                         0.00 z     2.53 f
+  data arrival time                                                  2.53
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.25       4.75
+  output external delay                                  -0.75       4.00
+  data required time                                                 4.00
+  --------------------------------------------------------------------------
+  data required time                                                 4.00
+  data arrival time                                                 -2.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.47
+
+
+  Startpoint: mem_dcache_ready
+              (input port clocked by clk)
+  Endpoint: ID_EX_inst/dff12/data_o_reg[25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUTS
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.50       1.50 f
+  mem_dcache_ready (in)                                   0.00 z     1.50 f
+  MEM_inst/dcache_ready (MEM)                             0.00 z     1.50 f
+  MEM_inst/U575/ZN (invbdk)                               0.01 z     1.51 r
+  MEM_inst/U160/Z (bufbd7)                                0.10 z     1.61 r
+  MEM_inst/U226/Z (buffd7)                                0.11 z     1.73 r
+  MEM_inst/U222/ZN (invbd7)                               0.04 z     1.76 f
+  MEM_inst/U269/ZN (nd02d2)                               0.05 z     1.82 r
+  MEM_inst/U231/ZN (invbd2)                               0.05 z     1.86 f
+  MEM_inst/U258/ZN (aoi2222d2)                            0.20 z     2.07 r
+  MEM_inst/U229/ZN (nd02d2)                               0.04 z     2.11 f
+  MEM_inst/U228/Z (an02d2)                                0.10 z     2.21 f
+  MEM_inst/U262/ZN (aon211d4)                             0.26 z     2.47 r
+  MEM_inst/U4/ZN (oai211d2)                               0.29 z     2.76 f
+  MEM_inst/rd_data_o[22] (MEM)                            0.00 z     2.76 f
+  CHECK_inst/mem_rd_data_i[22] (CHECK)                    0.00 z     2.76 f
+  CHECK_inst/U119/ZN (nd02d1)                             0.05 z     2.80 r
+  CHECK_inst/U121/ZN (nd02d1)                             0.06 z     2.86 f
+  CHECK_inst/rs1_data_o[22] (CHECK)                       0.00 z     2.86 f
+  ID_inst/chack_rs1_data_i[22] (ID)                       0.00 z     2.86 f
+  ID_inst/U335/Z (aor22d4)                                0.27 z     3.13 f
+  ID_inst/add_138/A[22] (ID_DW01_add_7)                   0.00 z     3.13 f
+  ID_inst/add_138/U521/ZN (nd02d2)                        0.06 z     3.19 r
+  ID_inst/add_138/U95/ZN (oai21d1)                        0.23 z     3.42 f
+  ID_inst/add_138/U451/Z (an12d2)                         0.18 z     3.60 r
+  ID_inst/add_138/U754/ZN (nd02d2)                        0.05 z     3.65 f
+  ID_inst/add_138/U782/ZN (aoi21d1)                       0.21 z     3.86 r
+  ID_inst/add_138/U343/ZN (oai21d1)                       0.23 z     4.09 f
+  ID_inst/add_138/U569/ZN (nd02d2)                        0.05 z     4.14 r
+  ID_inst/add_138/U568/ZN (nd02d2)                        0.04 z     4.18 f
+  ID_inst/add_138/SUM[25] (ID_DW01_add_7)                 0.00 z     4.18 f
+  ID_inst/U1030/Z (aor22d1)                               0.18 z     4.37 f
+  ID_inst/id_axi_araddr[25] (ID)                          0.00 z     4.37 f
+  ID_EX_inst/id_axi_araddr_i[25] (ID_EX)                  0.00 z     4.37 f
+  ID_EX_inst/dff12/data_i[25] (DFF_SET_DW32_2)            0.00 z     4.37 f
+  ID_EX_inst/dff12/U71/ZN (nd02d1)                        0.04 z     4.41 r
+  ID_EX_inst/dff12/U72/ZN (nd03d0)                        0.08 z     4.49 f
+  ID_EX_inst/dff12/data_o_reg[25]/D (dfnrn1)              0.00 z     4.49 f
+  data arrival time                                                  4.49
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.25       4.75
+  ID_EX_inst/dff12/data_o_reg[25]/CP (dfnrn1)             0.00       4.75 r
+  library setup time                                     -0.09       4.66
+  data required time                                                 4.66
+  --------------------------------------------------------------------------
+  data required time                                                 4.66
+  data arrival time                                                 -4.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.17
+
+
+  Startpoint: ID_EX_inst/dff4/data_o_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cpu_jump (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_EX_inst/dff4/data_o_reg[2]/CP (dfnrb1)               0.00 #     0.00 r
+  ID_EX_inst/dff4/data_o_reg[2]/QN (dfnrb1)               0.27 z     0.27 f
+  ID_EX_inst/dff4/U35/ZN (invbd2)                         0.05 z     0.32 r
+  ID_EX_inst/dff4/data_o[2] (DFF_SET_DW64_8)              0.00 z     0.32 r
+  ID_EX_inst/op2_o[2] (ID_EX)                             0.00 z     0.32 r
+  EX_inst/op2_i[2] (EX)                                   0.00 z     0.32 r
+  EX_inst/U507/ZN (invbd2)                                0.06 z     0.38 f
+  EX_inst/U91/Z (buffd7)                                  0.15 z     0.53 f
+  EX_inst/U1384/ZN (invbd2)                               0.07 z     0.60 r
+  EX_inst/r398/B[2] (EX_DW01_cmp6_1)                      0.00 z     0.60 r
+  EX_inst/r398/U472/ZN (inv0d1)                           0.08 z     0.67 f
+  EX_inst/r398/U339/ZN (xn02d1)                           0.17 z     0.84 r
+  EX_inst/r398/U432/ZN (nr02d1)                           0.19 z     1.03 f
+  EX_inst/r398/U510/ZN (aoi21d1)                          0.22 z     1.25 r
+  EX_inst/r398/U229/ZN (oai21d1)                          0.20 z     1.45 f
+  EX_inst/r398/U413/Z (aor21d1)                           0.15 z     1.60 f
+  EX_inst/r398/U412/Z (aor21d1)                           0.15 z     1.75 f
+  EX_inst/r398/U422/ZN (aoi21d4)                          0.22 z     1.98 r
+  EX_inst/r398/LT (EX_DW01_cmp6_1)                        0.00 z     1.98 r
+  EX_inst/U305/ZN (invbd2)                                0.04 z     2.01 f
+  EX_inst/U1481/ZN (nd02d2)                               0.03 z     2.05 r
+  EX_inst/U1163/ZN (nd02d1)                               0.06 z     2.11 f
+  EX_inst/U1915/ZN (nd12d1)                               0.04 z     2.15 r
+  EX_inst/U3552/ZN (nd03d0)                               0.08 z     2.23 f
+  EX_inst/U1386/Z (aor211d1)                              0.26 z     2.49 f
+  EX_inst/jump_en_o (EX)                                  0.00 z     2.49 f
+  U24/Z (bufbd2)                                          0.10 z     2.59 f
+  CTRL_inst/jump_en_i (CTRL)                              0.00 z     2.59 f
+  CTRL_inst/U5/Z (buffd1)                                 0.08 z     2.67 f
+  CTRL_inst/U4/ZN (inv0d1)                                0.03 z     2.70 r
+  CTRL_inst/U3/ZN (inv0d1)                                0.10 z     2.80 f
+  CTRL_inst/jump_en_o (CTRL)                              0.00 z     2.80 f
+  U27/ZN (invbd4)                                         0.09 z     2.89 r
+  U29/ZN (invbdk)                                         0.23 z     3.12 f
+  cpu_jump (out)                                          0.00 z     3.12 f
+  data arrival time                                                  3.12
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.25       4.75
+  output external delay                                  -0.75       4.00
+  data required time                                                 4.00
+  --------------------------------------------------------------------------
+  data required time                                                 4.00
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.88
+
+
+  Startpoint: ID_EX_inst/dff7/data_o_reg[6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: PC_inst/pc_o_reg[63]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_EX_inst/dff7/data_o_reg[6]/CP (dfnrq1)               0.00 #     0.00 r
+  ID_EX_inst/dff7/data_o_reg[6]/Q (dfnrq1)                0.32 z     0.32 f
+  ID_EX_inst/dff7/data_o[6] (DFF_SET_DW64_7)              0.00 z     0.32 f
+  ID_EX_inst/base_addr_o[6] (ID_EX)                       0.00 z     0.32 f
+  EX_inst/base_addr_i[6] (EX)                             0.00 z     0.32 f
+  EX_inst/add_119/A[6] (EX_DW01_add_3)                    0.00 z     0.32 f
+  EX_inst/add_119/U545/ZN (nr02d1)                        0.20 z     0.52 r
+  EX_inst/add_119/U542/ZN (nr02d1)                        0.22 z     0.74 f
+  EX_inst/add_119/U675/ZN (aoi21d1)                       0.22 z     0.96 r
+  EX_inst/add_119/U458/ZN (oai21d1)                       0.23 z     1.19 f
+  EX_inst/add_119/U644/ZN (aoi21d1)                       0.23 z     1.42 r
+  EX_inst/add_119/U248/ZN (oai21d1)                       0.24 z     1.65 f
+  EX_inst/add_119/U752/Z (aor21d1)                        0.18 z     1.84 f
+  EX_inst/add_119/U9/CO (ad01d1)                          0.24 z     2.07 f
+  EX_inst/add_119/U8/CO (ad01d1)                          0.24 z     2.32 f
+  EX_inst/add_119/U7/CO (ad01d1)                          0.24 z     2.56 f
+  EX_inst/add_119/U6/CO (ad01d1)                          0.24 z     2.80 f
+  EX_inst/add_119/U5/CO (ad01d1)                          0.24 z     3.04 f
+  EX_inst/add_119/U4/CO (ad01d1)                          0.24 z     3.29 f
+  EX_inst/add_119/U3/CO (ad01d1)                          0.23 z     3.51 f
+  EX_inst/add_119/U750/ZN (xn02d1)                        0.23 z     3.74 f
+  EX_inst/add_119/SUM[63] (EX_DW01_add_3)                 0.00 z     3.74 f
+  EX_inst/U3218/Z (an02d1)                                0.11 z     3.85 f
+  EX_inst/U4155/Z (aor222d1)                              0.23 z     4.08 f
+  EX_inst/jump_addr_o[63] (EX)                            0.00 z     4.08 f
+  CTRL_inst/jump_addr_i[63] (CTRL)                        0.00 z     4.08 f
+  CTRL_inst/U13/Z (bufbd1)                                0.09 z     4.17 f
+  CTRL_inst/jump_addr_o[63] (CTRL)                        0.00 z     4.17 f
+  PC_inst/jump_addr_i[63] (PC)                            0.00 z     4.17 f
+  PC_inst/U39/Z (aor222d1)                                0.32 z     4.49 f
+  PC_inst/pc_o_reg[63]/D (dfnrq1)                         0.00 z     4.49 f
+  data arrival time                                                  4.49
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.25       4.75
+  PC_inst/pc_o_reg[63]/CP (dfnrq1)                        0.00       4.75 r
+  library setup time                                     -0.08       4.67
+  data required time                                                 4.67
+  --------------------------------------------------------------------------
+  data required time                                                 4.67
+  data arrival time                                                 -4.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.18
+
+
+1

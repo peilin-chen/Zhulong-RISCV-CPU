@@ -1,0 +1,4210 @@
+feedth
+ VDD 16
+ VSS 32
+tap
+ VDD 16
+ VSS 32
+feedth3
+ VDD 16
+ VSS 32
+feedth9
+ VDD 16
+ VSS 32
+mx08d4
+ I5 1
+ I6 1
+ I7 1
+ I4 1
+ S1 1
+ S2 1
+ VDD 16
+ VSS 32
+ Z 2
+ S0 1
+ I1 1
+ I0 1
+ I2 1
+ I3 1
+mx08d2
+ I5 1
+ I6 1
+ I7 1
+ I4 1
+ S1 1
+ S2 1
+ VDD 16
+ VSS 32
+ Z 2
+ S0 1
+ I1 1
+ I0 1
+ I2 1
+ I3 1
+mx08d1
+ I5 1
+ I6 1
+ I7 1
+ VDD 16
+ VSS 32
+ S0 1
+ I4 1
+ S1 1
+ S2 1
+ Z 2
+ I3 1
+ I1 1
+ I2 1
+ I0 1
+xr03da
+ A2 1
+ A3 1
+ A1 1
+ Z 2
+ VDD 16
+ VSS 32
+xr03d7
+ A2 1
+ A3 1
+ A1 1
+ VDD 16
+ VSS 32
+ Z 2
+xr02da
+ A1 1
+ A2 1
+ Z 2
+ VSS 32
+ VDD 16
+xr02d7
+ A1 1
+ A2 1
+ VSS 32
+ VDD 16
+ Z 2
+xn02da
+ A1 1
+ A2 1
+ VDD 16
+ VSS 32
+ ZN 2
+xn02d7
+ A2 1
+ VSS 32
+ VDD 16
+ ZN 2
+ A1 1
+su01d4
+ CI 1
+ B 1
+ A 1
+ VDD 16
+ VSS 32
+ S 2
+ CO 2
+srlab4
+ SN 1025
+ RN 1025
+ VDD 16
+ VSS 32
+ Q 2
+ QN 2
+slnlq4
+ D 2049
+ SC 16385
+ SD 32769
+ Q 2
+ VDD 16
+ VSS 32
+ SO 65538
+ EN 65
+slnlq2
+ D 2049
+ SC 16385
+ SD 32769
+ VDD 16
+ VSS 32
+ Q 2
+ SO 65538
+ EN 65
+slnlq1
+ D 2049
+ SC 16385
+ SD 32769
+ VDD 16
+ VSS 32
+ Q 2
+ SO 65538
+ EN 65
+slnln4
+ D 2049
+ SC 16385
+ SD 32769
+ SO 65538
+ VDD 16
+ VSS 32
+ QN 2
+ EN 65
+slnln2
+ D 2049
+ SC 16385
+ SD 32769
+ QN 2
+ SO 65538
+ VDD 16
+ VSS 32
+ EN 65
+slnln1
+ D 2049
+ SC 16385
+ SD 32769
+ QN 2
+ SO 65538
+ VDD 16
+ VSS 32
+ EN 65
+slnlb4
+ D 2049
+ SC 16385
+ SD 32769
+ VDD 16
+ VSS 32
+ Q 2
+ SO 65538
+ QN 2
+ EN 65
+slnlb2
+ D 2049
+ SC 16385
+ SD 32769
+ QN 2
+ VDD 16
+ VSS 32
+ SO 65538
+ Q 2
+ EN 65
+slnlb1
+ D 2049
+ SC 16385
+ SD 32769
+ VDD 16
+ VSS 32
+ QN 2
+ Q 2
+ SO 65538
+ EN 65
+slnht4
+ D 2049
+ SC 16385
+ SD 32769
+ E 65
+ VDD 16
+ VSS 32
+ OE 262145
+ SO 65538
+ Z 10
+slnht2
+ D 2049
+ SC 16385
+ SD 32769
+ E 65
+ SO 65538
+ VDD 16
+ VSS 32
+ OE 262145
+ Z 10
+slnht1
+ D 2049
+ SC 16385
+ SD 32769
+ E 65
+ SO 65538
+ Z 10
+ OE 262145
+ VDD 16
+ VSS 32
+slnhq4
+ D 2049
+ SC 16385
+ SD 32769
+ E 65
+ Q 2
+ VDD 16
+ VSS 32
+ SO 65538
+slnhq2
+ D 2049
+ SC 16385
+ SD 32769
+ E 65
+ VDD 16
+ VSS 32
+ Q 2
+ SO 65538
+slnhq1
+ D 2049
+ SC 16385
+ SD 32769
+ E 65
+ VDD 16
+ VSS 32
+ Q 2
+ SO 65538
+slnhn4
+ D 2049
+ SC 16385
+ SD 32769
+ E 65
+ SO 65538
+ VDD 16
+ VSS 32
+ QN 2
+slnhn2
+ D 2049
+ SC 16385
+ SD 32769
+ E 65
+ QN 2
+ SO 65538
+ VDD 16
+ VSS 32
+slnhn1
+ D 2049
+ SC 16385
+ SD 32769
+ E 65
+ QN 2
+ SO 65538
+ VDD 16
+ VSS 32
+slnhb4
+ D 2049
+ SC 16385
+ SD 32769
+ E 65
+ VDD 16
+ VSS 32
+ Q 2
+ SO 65538
+ QN 2
+slnhb2
+ D 2049
+ SC 16385
+ SD 32769
+ E 65
+ QN 2
+ VDD 16
+ VSS 32
+ SO 65538
+ Q 2
+slnhb1
+ D 2049
+ SC 16385
+ SD 32769
+ E 65
+ VDD 16
+ VSS 32
+ QN 2
+ Q 2
+ SO 65538
+slclq4
+ D 2049
+ SC 16385
+ CDN 1025
+ SD 32769
+ VDD 16
+ VSS 32
+ SO 65538
+ EN 65
+ Q 2
+slclq2
+ D 2049
+ SC 16385
+ CDN 1025
+ SD 32769
+ EN 65
+ VDD 16
+ VSS 32
+ Q 2
+ SO 65538
+slclq1
+ D 2049
+ SC 16385
+ CDN 1025
+ SD 32769
+ SO 65538
+ Q 2
+ EN 65
+ VDD 16
+ VSS 32
+slchq4
+ D 2049
+ SC 16385
+ CDN 1025
+ SD 32769
+ E 65
+ VDD 16
+ VSS 32
+ Q 2
+ SO 65538
+slchq2
+ D 2049
+ SC 16385
+ CDN 1025
+ SD 32769
+ VDD 16
+ VSS 32
+ Q 2
+ SO 65538
+ E 65
+slchq1
+ D 2049
+ SC 16385
+ CDN 1025
+ SD 32769
+ SO 65538
+ Q 2
+ E 65
+ VDD 16
+ VSS 32
+slbhb4
+ D 2049
+ E 65
+ SC 16385
+ CDN 1025
+ SD 32769
+ QN 2
+ SDN 1025
+ SO 65538
+ VDD 16
+ VSS 32
+ Q 2
+slbhb2
+ VDD 16
+ VSS 32
+ D 2049
+ E 65
+ SC 16385
+ CDN 1025
+ SD 32769
+ QN 2
+ SDN 1025
+ SO 65538
+ Q 2
+slbhb1
+ D 2049
+ E 65
+ SC 16385
+ CDN 1025
+ SD 32769
+ QN 2
+ SO 65538
+ Q 2
+ SDN 1025
+ VDD 16
+ VSS 32
+skbrb4
+ J 2049
+ KZ 2049
+ SC 16385
+ SDN 1025
+ CDN 1025
+ SD 32769
+ CP 65
+ VSS 32
+ VDD 16
+ QN 69634
+ Q 69634
+skbrb2
+ J 2049
+ SC 16385
+ QN 69634
+ SDN 1025
+ CDN 1025
+ SD 32769
+ CP 65
+ VSS 32
+ VDD 16
+ Q 69634
+ KZ 2049
+skbrb1
+ J 2049
+ KZ 2049
+ SC 16385
+ Q 69634
+ QN 69634
+ VSS 32
+ VDD 16
+ SDN 1025
+ CDN 1025
+ SD 32769
+ CP 65
+seprq4
+ ENN 2049
+ SD 32769
+ SC 16385
+ SDN 1025
+ D 2049
+ VSS 32
+ VDD 16
+ CP 65
+ Q 69634
+sepfq4
+ ENN 2049
+ SD 32769
+ CPN 65
+ SC 16385
+ SDN 1025
+ D 2049
+ VSS 32
+ VDD 16
+ Q 69634
+sepfq2
+ ENN 2049
+ SD 32769
+ CPN 65
+ SC 16385
+ SDN 1025
+ D 2049
+ VSS 32
+ VDD 16
+ Q 69634
+sepfq1
+ ENN 2049
+ SD 32769
+ CPN 65
+ SC 16385
+ SDN 1025
+ D 2049
+ VSS 32
+ VDD 16
+ Q 69634
+senrq4
+ Q 69634
+ VSS 32
+ VDD 16
+ SD 32769
+ ENN 2049
+ D 2049
+ CP 65
+ SC 16385
+senrb4
+ SD 32769
+ ENN 2049
+ D 2049
+ CP 65
+ VSS 32
+ VDD 16
+ QN 69634
+ Q 69634
+ SC 16385
+senrb2
+ SD 32769
+ ENN 2049
+ D 2049
+ CP 65
+ VDD 16
+ VSS 32
+ QN 69634
+ Q 69634
+ SC 16385
+senrb1
+ SC 16385
+ SD 32769
+ ENN 2049
+ D 2049
+ CP 65
+ VSS 32
+ VDD 16
+ QN 69634
+ Q 69634
+secrq4
+ ENN 2049
+ SD 32769
+ SC 16385
+ D 2049
+ CP 65
+ CDN 1025
+ VSS 32
+ VDD 16
+ Q 69634
+secfq4
+ D 2049
+ ENN 2049
+ SD 32769
+ CPN 65
+ CDN 1025
+ SC 16385
+ VDD 16
+ VSS 32
+ Q 69634
+secfq2
+ SC 16385
+ VDD 16
+ VSS 32
+ D 2049
+ CDN 1025
+ ENN 2049
+ SD 32769
+ Q 69634
+ CPN 65
+secfq1
+ Q 69634
+ D 2049
+ VDD 16
+ VSS 32
+ ENN 2049
+ SD 32769
+ CPN 65
+ CDN 1025
+ SC 16385
+sdprb4
+ D 2049
+ SC 16385
+ SD 32769
+ CP 65
+ SDN 1025
+ VDD 16
+ VSS 32
+ QN 69634
+ Q 69634
+sdpfb4
+ D 2049
+ SC 16385
+ SD 32769
+ CPN 65
+ VDD 16
+ VSS 32
+ SDN 1025
+ QN 69634
+ Q 69634
+sdpfb2
+ D 2049
+ SC 16385
+ SD 32769
+ CPN 65
+ SDN 1025
+ QN 69634
+ Q 69634
+ VDD 16
+ VSS 32
+sdpfb1
+ D 2049
+ SC 16385
+ SD 32769
+ CPN 65
+ SDN 1025
+ QN 69634
+ Q 69634
+ VDD 16
+ VSS 32
+sdnrq4
+ D 2049
+ SC 16385
+ CP 65
+ SD 32769
+ Q 69634
+ VDD 16
+ VSS 32
+sdnrn4
+ D 2049
+ SC 16385
+ CP 65
+ SD 32769
+ VDD 16
+ VSS 32
+ QN 69634
+sdnrb4
+ D 2049
+ SC 16385
+ CP 65
+ SD 32769
+ Q 69634
+ QN 69634
+ VDD 16
+ VSS 32
+sdnfb4
+ D 2049
+ SC 16385
+ SD 32769
+ Q 69634
+ QN 69634
+ VDD 16
+ VSS 32
+ CPN 65
+sdnfb2
+ D 2049
+ SC 16385
+ SD 32769
+ CPN 65
+ VDD 16
+ VSS 32
+ Q 69634
+ QN 69634
+sdnfb1
+ D 2049
+ SC 16385
+ SD 32769
+ CPN 65
+ VDD 16
+ VSS 32
+ Q 69634
+ QN 69634
+sdcrq4
+ D 2049
+ SC 16385
+ CP 65
+ SD 32769
+ VDD 16
+ VSS 32
+ CDN 1025
+ Q 69634
+sdcrn4
+ D 2049
+ SC 16385
+ CP 65
+ SD 32769
+ VDD 16
+ VSS 32
+ CDN 1025
+ QN 69634
+sdcrb4
+ D 2049
+ SC 16385
+ CP 65
+ SD 32769
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 69634
+ QN 69634
+sdcfq4
+ D 2049
+ SC 16385
+ SD 32769
+ CPN 65
+ Q 69634
+ VDD 16
+ VSS 32
+ CDN 1025
+sdcfb4
+ D 2049
+ SC 16385
+ SD 32769
+ CPN 65
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 69634
+ QN 69634
+sdcfb2
+ D 2049
+ SC 16385
+ SD 32769
+ CPN 65
+ CDN 1025
+ VDD 16
+ VSS 32
+ QN 69634
+ Q 69634
+sdcfb1
+ D 2049
+ SC 16385
+ SD 32769
+ CPN 65
+ CDN 1025
+ Q 69634
+ QN 69634
+ VDD 16
+ VSS 32
+sdbrb4
+ D 2049
+ SC 16385
+ SD 32769
+ CP 65
+ SDN 1025
+ QN 69634
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 69634
+sdbfb4
+ D 2049
+ SC 16385
+ SD 32769
+ SDN 1025
+ QN 69634
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 69634
+ CPN 65
+sdbfb2
+ D 2049
+ SC 16385
+ SD 32769
+ SDN 1025
+ QN 69634
+ CDN 1025
+ CPN 65
+ Q 69634
+ VDD 16
+ VSS 32
+sdbfb1
+ D 2049
+ SC 16385
+ SD 32769
+ SDN 1025
+ QN 69634
+ CDN 1025
+ CPN 65
+ Q 69634
+ VDD 16
+ VSS 32
+or04da
+ A1 1
+ A4 1
+ Z 2
+ VDD 16
+ VSS 32
+ A3 1
+ A2 1
+or04d7
+ A1 1
+ A4 1
+ Z 2
+ VDD 16
+ VSS 32
+ A3 1
+ A2 1
+or03da
+ A1 1
+ VDD 16
+ VSS 32
+ Z 2
+ A3 1
+ A2 1
+or03d7
+ Z 2
+ VDD 16
+ VSS 32
+ A3 1
+ A1 1
+ A2 1
+or02da
+ A2 1
+ A1 1
+ Z 2
+ VDD 16
+ VSS 32
+or02d7
+ A2 1
+ A1 1
+ Z 2
+ VDD 16
+ VSS 32
+nr04da
+ A4 1
+ A3 1
+ A2 1
+ A1 1
+ ZN 2
+ VDD 16
+ VSS 32
+nr04d7
+ A4 1
+ A3 1
+ A2 1
+ A1 1
+ ZN 2
+ VDD 16
+ VSS 32
+nr03da
+ A3 1
+ A1 1
+ A2 1
+ ZN 2
+ VDD 16
+ VSS 32
+nr03d7
+ A3 1
+ A1 1
+ A2 1
+ ZN 2
+ VDD 16
+ VSS 32
+nr02da
+ A2 1
+ A1 1
+ ZN 2
+ VDD 16
+ VSS 32
+nr02d7
+ ZN 2
+ A2 1
+ A1 1
+ VDD 16
+ VSS 32
+nd04da
+ A4 1
+ ZN 2
+ A3 1
+ A1 1
+ A2 1
+ VDD 16
+ VSS 32
+nd04d7
+ A4 1
+ ZN 2
+ A3 1
+ A1 1
+ A2 1
+ VSS 32
+ VDD 16
+nd03da
+ A2 1
+ ZN 2
+ VSS 32
+ VDD 16
+ A3 1
+ A1 1
+nd03d7
+ VSS 32
+ VDD 16
+ ZN 2
+ A1 1
+ A2 1
+ A3 1
+nd02da
+ A1 1
+ A2 1
+ ZN 2
+ VDD 16
+ VSS 32
+nd02d7
+ A1 1
+ A2 1
+ ZN 2
+ VDD 16
+ VSS 32
+mffnrb4
+ ENN 2049
+ D 2049
+ CP 65
+ VSS 32
+ VDD 16
+ Q 4098
+ QN 4098
+lanlq4
+ D 2049
+ EN 65
+ Q 4098
+ VDD 16
+ VSS 32
+lanln4
+ D 2049
+ EN 65
+ VSS 32
+ VDD 16
+ QN 4098
+lanlb4
+ D 2049
+ EN 65
+ VSS 32
+ VDD 16
+ QN 4098
+ Q 4098
+lanht4
+ E 65
+ D 2049
+ OE 262145
+ Z 4106
+ VSS 32
+ VDD 16
+lanhq4
+ E 65
+ VDD 16
+ VSS 32
+ D 2049
+ Q 4098
+lanhn4
+ E 65
+ D 2049
+ VSS 32
+ VDD 16
+ QN 4098
+lanhb4
+ E 65
+ D 2049
+ VSS 32
+ VDD 16
+ Q 4098
+ QN 4098
+laclq4
+ D 2049
+ CDN 1025
+ EN 65
+ VDD 16
+ VSS 32
+ Q 4098
+lachq4
+ D 2049
+ CDN 1025
+ E 65
+ VDD 16
+ VSS 32
+ Q 4098
+labhb4
+ D 2049
+ CDN 1025
+ E 65
+ SDN 1025
+ QN 4098
+ VSS 32
+ VDD 16
+ Q 4098
+jkbrb4
+ J 2049
+ KZ 2049
+ CP 65
+ SDN 1025
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 4098
+ QN 4098
+invbdk
+ I 1
+ ZN 2
+ VDD 16
+ VSS 32
+invbdf
+ I 1
+ ZN 2
+ VDD 16
+ VSS 32
+invbda
+ I 1
+ ZN 2
+ VDD 16
+ VSS 32
+invbd7
+ I 1
+ VDD 16
+ VSS 32
+ ZN 2
+gcnrnna
+ GCLK 2
+ VDD 16
+ VSS 32
+ CLK 1
+ EN 1
+gcnrnn7
+ GCLK 2
+ CLK 1
+ EN 1
+ VDD 16
+ VSS 32
+gcnrnn4
+ VDD 16
+ VSS 32
+ GCLK 2
+ EN 1
+ CLK 1
+gcnrnn2
+ VDD 16
+ VSS 32
+ CLK 1
+ GCLK 2
+ EN 1
+gcnrnn1
+ VDD 16
+ VSS 32
+ EN 1
+ GCLK 2
+ CLK 1
+gcnfnna
+ VDD 16
+ VSS 32
+ CLK 1
+ EN 1
+ GCLK 2
+gcnfnn7
+ VDD 16
+ VSS 32
+ GCLK 2
+ EN 1
+ CLK 1
+gcnfnn4
+ VDD 16
+ VSS 32
+ GCLK 2
+ CLK 1
+ EN 1
+gcnfnn2
+ VDD 16
+ VSS 32
+ CLK 1
+ EN 1
+ GCLK 2
+gcnfnn1
+ VDD 16
+ VSS 32
+ GCLK 2
+ CLK 1
+ EN 1
+gclrsna
+ SE 1
+ EN 2049
+ VDD 16
+ VSS 32
+ GCLK 2
+ CLK 65
+gclrsn7
+ SE 1
+ VDD 16
+ GCLK 2
+ EN 2049
+ VSS 32
+ CLK 65
+gclrsn4
+ SE 1
+ VDD 16
+ VSS 32
+ EN 2049
+ CLK 65
+ GCLK 2
+gclrsn2
+ VDD 16
+ VSS 32
+ GCLK 2
+ SE 1
+ EN 2049
+ CLK 65
+gclrsn1
+ SE 1
+ VDD 16
+ GCLK 2
+ VSS 32
+ EN 2049
+ CLK 65
+gclfsna
+ SE 1
+ EN 2049
+ CLK 65
+ VDD 16
+ VSS 32
+ GCLK 2
+gclfsn7
+ SE 1
+ EN 2049
+ CLK 65
+ VDD 16
+ VSS 32
+ GCLK 2
+gclfsn4
+ SE 1
+ VDD 16
+ VSS 32
+ EN 2049
+ CLK 65
+ GCLK 2
+gclfsn2
+ SE 1
+ VDD 16
+ VSS 32
+ EN 2049
+ CLK 65
+ GCLK 2
+gclfsn1
+ SE 1
+ EN 2049
+ CLK 65
+ GCLK 2
+ VDD 16
+ VSS 32
+dl04d4
+ I 1
+ VDD 16
+ VSS 32
+ Z 2
+dl04d2
+ I 1
+ Z 2
+ VDD 16
+ VSS 32
+dl03d4
+ I 1
+ VDD 16
+ VSS 32
+ Z 2
+dl03d2
+ I 1
+ VDD 16
+ VSS 32
+ Z 2
+dl02d4
+ I 1
+ VDD 16
+ VSS 32
+ Z 2
+dl02d2
+ I 1
+ Z 2
+ VDD 16
+ VSS 32
+dl01d4
+ I 1
+ Z 2
+ VDD 16
+ VSS 32
+dl01d2
+ I 1
+ Z 2
+ VDD 16
+ VSS 32
+dfprb4
+ D 2049
+ QN 4098
+ Q 4098
+ VDD 16
+ VSS 32
+ CP 65
+ SDN 1025
+dfpfb4
+ CPN 65
+ D 2049
+ SDN 1025
+ QN 4098
+ Q 4098
+ VDD 16
+ VSS 32
+dfnrq4
+ D 2049
+ CP 65
+ VDD 16
+ VSS 32
+ Q 4098
+dfnrn4
+ D 2049
+ CP 65
+ VDD 16
+ VSS 32
+ QN 4098
+dfnrb4
+ D 2049
+ CP 65
+ VDD 16
+ VSS 32
+ Q 4098
+ QN 4098
+dfnfb4
+ D 2049
+ VDD 16
+ VSS 32
+ Q 4098
+ QN 4098
+ CPN 65
+dfcrq4
+ D 2049
+ CDN 1025
+ CP 65
+ VDD 16
+ VSS 32
+ Q 4098
+dfcrn4
+ D 2049
+ QN 4098
+ CDN 1025
+ CP 65
+ VDD 16
+ VSS 32
+dfcrb4
+ D 2049
+ VDD 16
+ VSS 32
+ QN 4098
+ Q 4098
+ CDN 1025
+ CP 65
+dfcfq4
+ D 2049
+ CPN 65
+ CDN 1025
+ Q 4098
+ VDD 16
+ VSS 32
+dfcfb4
+ D 2049
+ CPN 65
+ VDD 16
+ VSS 32
+ QN 4098
+ Q 4098
+ CDN 1025
+dfbrb4
+ CP 65
+ SDN 1025
+ D 2049
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 4098
+ QN 4098
+dfbfb4
+ CPN 65
+ SDN 1025
+ D 2049
+ CDN 1025
+ QN 4098
+ VDD 16
+ VSS 32
+ Q 4098
+deprq4
+ D 2049
+ ENN 2049
+ CP 65
+ SDN 1025
+ VDD 16
+ VSS 32
+ Q 4098
+depfq4
+ D 2049
+ SDN 1025
+ Q 4098
+ CPN 65
+ ENN 2049
+ VDD 16
+ VSS 32
+denrq4
+ D 2049
+ ENN 2049
+ CP 65
+ VSS 32
+ VDD 16
+ Q 4098
+decrq4
+ D 2049
+ CP 65
+ ENN 2049
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 4098
+decfq4
+ D 2049
+ ENN 2049
+ CPN 65
+ Q 4098
+ VSS 32
+ VDD 16
+ CDN 1025
+cg01d4
+ A 1
+ CI 1
+ B 1
+ CO 2
+ VDD 16
+ VSS 32
+buffd4
+ I 1
+ VSS 32
+ VDD 16
+ Z 2
+buffd2
+ I 1
+ Z 2
+ VDD 16
+ VSS 32
+bufbdk
+ I 1
+ VDD 16
+ VSS 32
+ Z 2
+bufbdf
+ Z 2
+ VDD 16
+ VSS 32
+ I 1
+bufbd4
+ I 1
+ Z 2
+ VSS 32
+ VDD 16
+bufbd2
+ I 1
+ VDD 16
+ VSS 32
+ Z 2
+an04da
+ A4 1
+ A3 1
+ A2 1
+ Z 2
+ A1 1
+ VDD 16
+ VSS 32
+an04d7
+ A4 1
+ A3 1
+ A1 1
+ VDD 16
+ VSS 32
+ A2 1
+ Z 2
+an03da
+ A2 1
+ A1 1
+ A3 1
+ Z 2
+ VSS 32
+ VDD 16
+an03d7
+ A2 1
+ A1 1
+ A3 1
+ VDD 16
+ VSS 32
+ Z 2
+an02da
+ A2 1
+ A1 1
+ Z 2
+ VDD 16
+ VSS 32
+an02d7
+ A2 1
+ A1 1
+ VDD 16
+ VSS 32
+ Z 2
+ah01d4
+ A 1
+ B 1
+ CO 2
+ S 2
+ VDD 16
+ VSS 32
+adp1d4
+ VSS 32
+ VDD 16
+ P 2
+ CI 1
+ B 1
+ CO 2
+ S 2
+ A 1
+ad01d4
+ A 1
+ B 1
+ CI 1
+ CO 2
+ VDD 16
+ VSS 32
+ S 2
+adiode
+ I 1
+ VDD 16
+ VSS 32
+cload1
+ VDD 16
+ VSS 32
+ I 1
+bh01d1
+ VDD 16
+ VSS 32
+ I 4
+xr03d4
+ A2 1
+ A3 1
+ VDD 16
+ VSS 32
+ A1 1
+ Z 2
+xr03d2
+ A2 1
+ A3 1
+ VDD 16
+ VSS 32
+ Z 2
+ A1 1
+xr03d1
+ A2 1
+ A3 1
+ A1 1
+ Z 2
+ VDD 16
+ VSS 32
+xr02d4
+ A1 1
+ A2 1
+ VDD 16
+ VSS 32
+ Z 2
+xr02d2
+ A1 1
+ VDD 16
+ VSS 32
+ Z 2
+ A2 1
+xr02d1
+ VDD 16
+ VSS 32
+ A1 1
+ Z 2
+ A2 1
+xn02d4
+ ZN 2
+ VDD 16
+ VSS 32
+ A1 1
+ A2 1
+xn02d2
+ A2 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A1 1
+xn02d1
+ A2 1
+ VDD 16
+ VSS 32
+ ZN 2
+ A1 1
+su01d2
+ CO 2
+ S 2
+ VDD 16
+ CI 1
+ B 1
+ A 1
+ VSS 32
+su01d1
+ VDD 16
+ VSS 32
+ A 1
+ CI 1
+ B 1
+ CO 2
+ S 2
+su01d0
+ VDD 16
+ VSS 32
+ A 1
+ CI 1
+ B 1
+ CO 2
+ S 2
+srlab2
+ VDD 16
+ VSS 32
+ SN 1025
+ RN 1025
+ Q 2
+ QN 2
+srlab1
+ SN 1025
+ RN 1025
+ Q 2
+ VDD 16
+ VSS 32
+ QN 2
+seprq2
+ SC 16385
+ SD 32769
+ ENN 2049
+ D 2049
+ CP 65
+ SDN 1025
+ Q 69634
+ VDD 16
+ VSS 32
+seprq1
+ SC 16385
+ SD 32769
+ ENN 2049
+ D 2049
+ CP 65
+ SDN 1025
+ VDD 16
+ VSS 32
+ Q 69634
+senrq2
+ SC 16385
+ ENN 2049
+ D 2049
+ CP 65
+ SD 32769
+ Q 69634
+ VSS 32
+ VDD 16
+senrq1
+ SC 16385
+ ENN 2049
+ D 2049
+ CP 65
+ SD 32769
+ VSS 32
+ VDD 16
+ Q 69634
+secrq2
+ SC 16385
+ SD 32769
+ ENN 2049
+ D 2049
+ CP 65
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 69634
+secrq1
+ SC 16385
+ SD 32769
+ ENN 2049
+ D 2049
+ CP 65
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 69634
+sdprb2
+ D 2049
+ SC 16385
+ SD 32769
+ CP 65
+ QN 69634
+ SDN 1025
+ VDD 16
+ VSS 32
+ Q 69634
+sdprb1
+ D 2049
+ SC 16385
+ SD 32769
+ CP 65
+ QN 69634
+ SDN 1025
+ Q 69634
+ VDD 16
+ VSS 32
+sdnrq2
+ CP 65
+ VDD 16
+ VSS 32
+ D 2049
+ SC 16385
+ SD 32769
+ Q 69634
+sdnrq1
+ SC 16385
+ CP 65
+ VDD 16
+ VSS 32
+ SD 32769
+ D 2049
+ Q 69634
+sdnrn2
+ SC 16385
+ QN 69634
+ CP 65
+ SD 32769
+ D 2049
+ VDD 16
+ VSS 32
+sdnrn1
+ SC 16385
+ QN 69634
+ CP 65
+ VDD 16
+ VSS 32
+ SD 32769
+ D 2049
+sdnrb2
+ D 2049
+ SC 16385
+ SD 32769
+ CP 65
+ VSS 32
+ VDD 16
+ Q 69634
+ QN 69634
+sdnrb1
+ D 2049
+ SC 16385
+ SD 32769
+ Q 69634
+ QN 69634
+ VSS 32
+ VDD 16
+ CP 65
+sdcrq2
+ D 2049
+ SC 16385
+ CP 65
+ SD 32769
+ CDN 1025
+ Q 69634
+ VDD 16
+ VSS 32
+sdcrq1
+ D 2049
+ SC 16385
+ CP 65
+ SD 32769
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 69634
+sdcrn2
+ D 2049
+ SC 16385
+ CP 65
+ SD 32769
+ CDN 1025
+ QN 69634
+ VDD 16
+ VSS 32
+sdcrn1
+ D 2049
+ SC 16385
+ CP 65
+ SD 32769
+ CDN 1025
+ VDD 16
+ VSS 32
+ QN 69634
+sdcrb2
+ D 2049
+ SC 16385
+ CP 65
+ SD 32769
+ CDN 1025
+ Q 69634
+ VDD 16
+ VSS 32
+ QN 69634
+sdcrb1
+ D 2049
+ SC 16385
+ CP 65
+ SD 32769
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 69634
+ QN 69634
+sdcfq2
+ D 2049
+ SC 16385
+ SD 32769
+ CDN 1025
+ Q 69634
+ CPN 65
+ VDD 16
+ VSS 32
+sdcfq1
+ D 2049
+ SC 16385
+ SD 32769
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 69634
+ CPN 65
+sdbrb2
+ D 2049
+ SC 16385
+ SD 32769
+ CP 65
+ SDN 1025
+ QN 69634
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 69634
+sdbrb1
+ D 2049
+ SC 16385
+ SD 32769
+ CP 65
+ SDN 1025
+ QN 69634
+ Q 69634
+ VDD 16
+ VSS 32
+ CDN 1025
+ora31d4
+ A 1
+ Z 2
+ B3 1
+ VSS 32
+ VDD 16
+ B1 1
+ B2 1
+ora31d2
+ B3 1
+ B2 1
+ B1 1
+ A 1
+ Z 2
+ VSS 32
+ VDD 16
+ora31d1
+ VSS 32
+ VDD 16
+ Z 2
+ B3 1
+ B1 1
+ A 1
+ B2 1
+ora311d4
+ A 1
+ B 1
+ C1 1
+ C2 1
+ C3 1
+ VDD 16
+ VSS 32
+ Z 2
+ora311d2
+ A 1
+ B 1
+ C1 1
+ C2 1
+ C3 1
+ Z 2
+ VDD 16
+ VSS 32
+ora311d1
+ A 1
+ B 1
+ C1 1
+ C2 1
+ C3 1
+ VDD 16
+ VSS 32
+ Z 2
+ora21d4
+ B1 1
+ B2 1
+ A 1
+ Z 2
+ VDD 16
+ VSS 32
+ora21d2
+ B1 1
+ B2 1
+ A 1
+ Z 2
+ VDD 16
+ VSS 32
+ora21d1
+ VDD 16
+ VSS 32
+ B1 1
+ B2 1
+ A 1
+ Z 2
+ora211d4
+ C1 1
+ B 1
+ A 1
+ C2 1
+ Z 2
+ VDD 16
+ VSS 32
+ora211d2
+ C1 1
+ B 1
+ A 1
+ C2 1
+ Z 2
+ VDD 16
+ VSS 32
+ora211d1
+ C1 1
+ VDD 16
+ VSS 32
+ B 1
+ A 1
+ C2 1
+ Z 2
+or04d4
+ A1 1
+ A2 1
+ A4 1
+ A3 1
+ VDD 16
+ VSS 32
+ Z 2
+or04d2
+ A1 1
+ A2 1
+ A4 1
+ A3 1
+ Z 2
+ VDD 16
+ VSS 32
+or04d1
+ VDD 16
+ VSS 32
+ A1 1
+ A2 1
+ A4 1
+ A3 1
+ Z 2
+or04d0
+ VDD 16
+ VSS 32
+ A1 1
+ A2 1
+ A4 1
+ A3 1
+ Z 2
+or03d4
+ A2 1
+ Z 2
+ A3 1
+ VDD 16
+ VSS 32
+ A1 1
+or03d2
+ A1 1
+ A2 1
+ A3 1
+ Z 2
+ VDD 16
+ VSS 32
+or03d1
+ A1 1
+ A2 1
+ A3 1
+ Z 2
+ VDD 16
+ VSS 32
+or03d0
+ A1 1
+ A2 1
+ A3 1
+ Z 2
+ VDD 16
+ VSS 32
+or02d4
+ A2 1
+ A1 1
+ VDD 16
+ VSS 32
+ Z 2
+or02d2
+ A1 1
+ Z 2
+ VDD 16
+ VSS 32
+ A2 1
+or02d1
+ VDD 16
+ VSS 32
+ A2 1
+ A1 1
+ Z 2
+or02d0
+ VDD 16
+ VSS 32
+ A2 1
+ A1 1
+ Z 2
+oan211d4
+ C1 1
+ C2 1
+ B 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A 1
+oan211d2
+ C1 1
+ C2 1
+ B 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+oan211d1
+ C1 1
+ C2 1
+ B 1
+ VDD 16
+ VSS 32
+ ZN 2
+ A 1
+oaim3m11d4
+ C2 1
+ C1 1
+ C3 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A 1
+ B 1
+oaim3m11d2
+ C2 1
+ C1 1
+ C3 1
+ A 1
+ VDD 16
+ VSS 32
+ ZN 2
+ B 1
+oaim3m11d1
+ C2 1
+ C1 1
+ C3 1
+ A 1
+ B 1
+ VDD 16
+ VSS 32
+ ZN 2
+oaim31d4
+ B1 1
+ B2 1
+ B3 1
+ VDD 16
+ VSS 32
+ A 1
+ ZN 2
+oaim31d2
+ ZN 2
+ VDD 16
+ VSS 32
+ B2 1
+ B1 1
+ A 1
+ B3 1
+oaim31d1
+ B1 1
+ B2 1
+ B3 1
+ A 1
+ VDD 16
+ VSS 32
+ ZN 2
+oaim311d4
+ B 1
+ C3 1
+ C1 1
+ C2 1
+ VDD 16
+ VSS 32
+ A 1
+ ZN 2
+oaim311d2
+ B 1
+ C3 1
+ C1 1
+ C2 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+oaim311d1
+ B 1
+ C3 1
+ C1 1
+ C2 1
+ A 1
+ VDD 16
+ VSS 32
+ ZN 2
+oaim2m11d4
+ C1 1
+ A 1
+ B 1
+ VDD 16
+ VSS 32
+ ZN 2
+ C2 1
+oaim2m11d2
+ C2 1
+ C1 1
+ A 1
+ B 1
+ VDD 16
+ VSS 32
+ ZN 2
+oaim2m11d1
+ C2 1
+ C1 1
+ A 1
+ B 1
+ VDD 16
+ VSS 32
+ ZN 2
+oaim22d4
+ A1 1
+ B1 1
+ B2 1
+ A2 1
+ ZN 2
+ VDD 16
+ VSS 32
+oaim22d2
+ A1 1
+ B1 1
+ B2 1
+ ZN 2
+ A2 1
+ VDD 16
+ VSS 32
+oaim22d1
+ A1 1
+ B1 1
+ B2 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A2 1
+oaim21d4
+ B1 1
+ B2 1
+ ZN 2
+ A 1
+ VDD 16
+ VSS 32
+oaim21d2
+ B1 1
+ B2 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A 1
+oaim21d1
+ B1 1
+ B2 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A 1
+oaim211d4
+ B 1
+ C2 1
+ ZN 2
+ A 1
+ C1 1
+ VDD 16
+ VSS 32
+oaim211d2
+ B 1
+ C2 1
+ C1 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A 1
+oaim211d1
+ B 1
+ C2 1
+ C1 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A 1
+oai322d4
+ C3 1
+ C2 1
+ C1 1
+ B1 1
+ VDD 16
+ VSS 32
+ A2 1
+ A1 1
+ B2 1
+ ZN 2
+oai322d2
+ C3 1
+ C2 1
+ C1 1
+ B1 1
+ B2 1
+ ZN 2
+ A1 1
+ A2 1
+ VDD 16
+ VSS 32
+oai322d1
+ C3 1
+ C2 1
+ C1 1
+ B1 1
+ B2 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A1 1
+ A2 1
+oai321d4
+ C3 1
+ C2 1
+ B2 1
+ B1 1
+ VDD 16
+ VSS 32
+ A 1
+ C1 1
+ ZN 2
+oai321d2
+ C3 1
+ C2 1
+ B2 1
+ ZN 2
+ A 1
+ B1 1
+ C1 1
+ VDD 16
+ VSS 32
+oai321d1
+ C3 1
+ C2 1
+ B2 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A 1
+ B1 1
+ C1 1
+oai31d4
+ B3 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A 1
+ B2 1
+ B1 1
+oai31d2
+ B2 1
+ B3 1
+ B1 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+oai31d1
+ B2 1
+ B3 1
+ B1 1
+ A 1
+ VDD 16
+ VSS 32
+ ZN 2
+oai311d4
+ C2 1
+ C1 1
+ C3 1
+ VDD 16
+ VSS 32
+ A 1
+ B 1
+ ZN 2
+oai311d2
+ C2 1
+ C1 1
+ C3 1
+ A 1
+ B 1
+ ZN 2
+ VDD 16
+ VSS 32
+oai311d1
+ C2 1
+ C1 1
+ C3 1
+ A 1
+ B 1
+ ZN 2
+ VDD 16
+ VSS 32
+oai22d4
+ A2 1
+ B1 1
+ A1 1
+ B2 1
+ VDD 16
+ VSS 32
+ ZN 2
+oai22d2
+ A2 1
+ B1 1
+ A1 1
+ B2 1
+ ZN 2
+ VDD 16
+ VSS 32
+oai22d1
+ A2 1
+ B1 1
+ A1 1
+ B2 1
+ VDD 16
+ VSS 32
+ ZN 2
+oai222d4
+ B1 1
+ B2 1
+ A1 1
+ C1 1
+ C2 1
+ VDD 16
+ VSS 32
+ A2 1
+ ZN 2
+oai222d2
+ B1 1
+ B2 1
+ A1 1
+ A2 1
+ C1 1
+ C2 1
+ ZN 2
+ VDD 16
+ VSS 32
+oai222d1
+ B1 1
+ B2 1
+ A1 1
+ A2 1
+ C1 1
+ C2 1
+ VDD 16
+ VSS 32
+ ZN 2
+oai2222d4
+ C2 1
+ C1 1
+ D1 1
+ D2 1
+ A1 1
+ B1 1
+ A2 1
+ B2 1
+ ZN 2
+ VSS 32
+ VDD 16
+oai2222d2
+ C2 1
+ C1 1
+ D1 1
+ ZN 2
+ D2 1
+ VSS 32
+ VDD 16
+ A1 1
+ B1 1
+ A2 1
+ B2 1
+oai2222d1
+ C2 1
+ C1 1
+ D1 1
+ A1 1
+ A2 1
+ VSS 32
+ VDD 16
+ B2 1
+ B1 1
+ ZN 2
+ D2 1
+oai221d4
+ C1 1
+ C2 1
+ B1 1
+ B2 1
+ A 1
+ VDD 16
+ VSS 32
+ ZN 2
+oai221d2
+ C1 1
+ C2 1
+ B1 1
+ B2 1
+ A 1
+ ZN 2
+ VSS 32
+ VDD 16
+oai221d1
+ C1 1
+ C2 1
+ B1 1
+ B2 1
+ A 1
+ VSS 32
+ VDD 16
+ ZN 2
+oai21d4
+ B1 1
+ A 1
+ B2 1
+ VDD 16
+ VSS 32
+ ZN 2
+oai21d2
+ B2 1
+ B1 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+oai21d1
+ B1 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A 1
+ B2 1
+oai211d4
+ C2 1
+ C1 1
+ B 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+oai211d2
+ C2 1
+ C1 1
+ B 1
+ ZN 2
+ A 1
+ VDD 16
+ VSS 32
+oai211d1
+ C2 1
+ C1 1
+ B 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A 1
+nr23d4
+ A3 1
+ A1 1
+ A2 1
+ VDD 16
+ VSS 32
+ ZN 2
+nr23d2
+ A3 1
+ A1 1
+ A2 1
+ ZN 2
+ VDD 16
+ VSS 32
+nr23d1
+ A3 1
+ A1 1
+ A2 1
+ ZN 2
+ VDD 16
+ VSS 32
+nr13d4
+ A2 1
+ A1 1
+ A3 1
+ VDD 16
+ VSS 32
+ ZN 2
+nr13d2
+ ZN 2
+ A2 1
+ A1 1
+ A3 1
+ VDD 16
+ VSS 32
+nr13d1
+ A1 1
+ A2 1
+ A3 1
+ ZN 2
+ VDD 16
+ VSS 32
+nr04d4
+ A4 1
+ A3 1
+ VDD 16
+ VSS 32
+ A2 1
+ A1 1
+ ZN 2
+nr04d2
+ ZN 2
+ A4 1
+ A3 1
+ A2 1
+ A1 1
+ VDD 16
+ VSS 32
+nr04d1
+ ZN 2
+ A4 1
+ A3 1
+ A2 1
+ A1 1
+ VDD 16
+ VSS 32
+nr04d0
+ VDD 16
+ VSS 32
+ ZN 2
+ A1 1
+ A2 1
+ A3 1
+ A4 1
+nr03d4
+ A3 1
+ VDD 16
+ VSS 32
+ A1 1
+ A2 1
+ ZN 2
+nr03d2
+ A2 1
+ ZN 2
+ VDD 16
+ VSS 32
+ A1 1
+ A3 1
+nr03d1
+ VDD 16
+ VSS 32
+ ZN 2
+ A2 1
+ A1 1
+ A3 1
+nr03d0
+ ZN 2
+ A2 1
+ VDD 16
+ VSS 32
+ A1 1
+ A3 1
+nr02d4
+ ZN 2
+ A2 1
+ A1 1
+ VDD 16
+ VSS 32
+nr02d2
+ VDD 16
+ VSS 32
+ A2 1
+ A1 1
+ ZN 2
+nr02d1
+ A2 1
+ VDD 16
+ VSS 32
+ A1 1
+ ZN 2
+nr02d0
+ VDD 16
+ VSS 32
+ ZN 2
+ A1 1
+ A2 1
+nd23d4
+ A3 1
+ A2 1
+ A1 1
+ ZN 2
+ VDD 16
+ VSS 32
+nd23d2
+ A3 1
+ VDD 16
+ VSS 32
+ A2 1
+ A1 1
+ ZN 2
+nd23d1
+ A3 1
+ A2 1
+ A1 1
+ VDD 16
+ VSS 32
+ ZN 2
+nd13d4
+ A1 1
+ A3 1
+ A2 1
+ VDD 16
+ VSS 32
+ ZN 2
+nd13d2
+ A1 1
+ A2 1
+ A3 1
+ VDD 16
+ VSS 32
+ ZN 2
+nd13d1
+ A1 1
+ A2 1
+ A3 1
+ VDD 16
+ VSS 32
+ ZN 2
+nd12d4
+ ZN 2
+ A2 1
+ VDD 16
+ VSS 32
+ A1 1
+nd12d2
+ VDD 16
+ VSS 32
+ A2 1
+ ZN 2
+ A1 1
+nd12d1
+ A1 1
+ A2 1
+ VDD 16
+ VSS 32
+ ZN 2
+nd12d0
+ VDD 16
+ VSS 32
+ ZN 2
+ A1 1
+ A2 1
+nd04d4
+ A4 1
+ VDD 16
+ VSS 32
+ ZN 2
+ A3 1
+ A1 1
+ A2 1
+nd04d2
+ ZN 2
+ VDD 16
+ VSS 32
+ A4 1
+ A1 1
+ A3 1
+ A2 1
+nd04d1
+ VDD 16
+ VSS 32
+ A4 1
+ A2 1
+ A1 1
+ ZN 2
+ A3 1
+nd04d0
+ VDD 16
+ VSS 32
+ A3 1
+ A2 1
+ A4 1
+ A1 1
+ ZN 2
+nd03d4
+ A2 1
+ VSS 32
+ VDD 16
+ ZN 2
+ A3 1
+ A1 1
+nd03d2
+ VSS 32
+ VDD 16
+ ZN 2
+ A2 1
+ A3 1
+ A1 1
+nd03d1
+ VDD 16
+ VSS 32
+ A2 1
+ A1 1
+ A3 1
+ ZN 2
+nd03d0
+ ZN 2
+ VDD 16
+ VSS 32
+ A2 1
+ A1 1
+ A3 1
+nd02d4
+ A1 1
+ A2 1
+ VDD 16
+ VSS 32
+ ZN 2
+nd02d2
+ VDD 16
+ VSS 32
+ A2 1
+ ZN 2
+ A1 1
+nd02d1
+ VDD 16
+ VSS 32
+ A1 1
+ ZN 2
+ A2 1
+nd02d0
+ VDD 16
+ A1 1
+ A2 1
+ ZN 2
+ VSS 32
+mx04d4
+ I2 1
+ I1 1
+ S0 1
+ I0 1
+ I3 1
+ VDD 16
+ VSS 32
+ Z 2
+ S1 1
+mx04d2
+ I2 1
+ I1 1
+ S0 1
+ I0 1
+ Z 2
+ VDD 16
+ VSS 32
+ I3 1
+ S1 1
+mx04d1
+ I2 1
+ I1 1
+ S0 1
+ I0 1
+ Z 2
+ VDD 16
+ VSS 32
+ I3 1
+ S1 1
+mx04d0
+ I2 1
+ I1 1
+ I0 1
+ VDD 16
+ VSS 32
+ Z 2
+ S1 1
+ I3 1
+ S0 1
+mx02d4
+ S 1
+ I1 1
+ I0 1
+ VDD 16
+ VSS 32
+ Z 2
+mx02d2
+ S 1
+ I1 1
+ I0 1
+ Z 2
+ VDD 16
+ VSS 32
+mx02d1
+ S 1
+ I1 1
+ VDD 16
+ VSS 32
+ I0 1
+ Z 2
+mx02d0
+ S 1
+ I1 1
+ VDD 16
+ VSS 32
+ I0 1
+ Z 2
+mi02d4
+ I0 1
+ I1 1
+ S 1
+ ZN 2
+ VDD 16
+ VSS 32
+mi02d2
+ I0 1
+ I1 1
+ S 1
+ VDD 16
+ VSS 32
+ ZN 2
+mi02d1
+ I0 1
+ ZN 2
+ I1 1
+ S 1
+ VDD 16
+ VSS 32
+mi02d0
+ I0 1
+ ZN 2
+ S 1
+ I1 1
+ VDD 16
+ VSS 32
+mffnrb2
+ ENN 2049
+ D 2049
+ CP 65
+ QN 4098
+ Q 4098
+ VDD 16
+ VSS 32
+mffnrb1
+ ENN 2049
+ D 2049
+ CP 65
+ VDD 16
+ VSS 32
+ Q 4098
+ QN 4098
+lanlq2
+ D 2049
+ EN 65
+ VDD 16
+ VSS 32
+ Q 4098
+lanlq1
+ D 2049
+ VDD 16
+ VSS 32
+ Q 4098
+ EN 65
+lanln2
+ D 2049
+ QN 4098
+ EN 65
+ VSS 32
+ VDD 16
+lanln1
+ VSS 32
+ VDD 16
+ D 2049
+ QN 4098
+ EN 65
+lanlb2
+ D 2049
+ Q 4098
+ VSS 32
+ VDD 16
+ EN 65
+ QN 4098
+lanlb1
+ D 2049
+ VSS 32
+ VDD 16
+ QN 4098
+ EN 65
+ Q 4098
+lanht2
+ E 65
+ D 2049
+ OE 262145
+ VSS 32
+ VDD 16
+ Z 4106
+lanht1
+ E 65
+ D 2049
+ OE 262145
+ Z 4106
+ VSS 32
+ VDD 16
+lanhq2
+ E 65
+ D 2049
+ VDD 16
+ VSS 32
+ Q 4098
+lanhq1
+ D 2049
+ VDD 16
+ VSS 32
+ Q 4098
+ E 65
+lanhn2
+ E 65
+ D 2049
+ QN 4098
+ VSS 32
+ VDD 16
+lanhn1
+ E 65
+ VSS 32
+ VDD 16
+ D 2049
+ QN 4098
+lanhb2
+ E 65
+ D 2049
+ Q 4098
+ VSS 32
+ VDD 16
+ QN 4098
+lanhb1
+ E 65
+ D 2049
+ VSS 32
+ VDD 16
+ Q 4098
+ QN 4098
+laclq2
+ D 2049
+ CDN 1025
+ EN 65
+ VDD 16
+ VSS 32
+ Q 4098
+laclq1
+ D 2049
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 4098
+ EN 65
+lachq2
+ D 2049
+ CDN 1025
+ E 65
+ VDD 16
+ VSS 32
+ Q 4098
+lachq1
+ D 2049
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 4098
+ E 65
+labhb2
+ D 2049
+ CDN 1025
+ E 65
+ SDN 1025
+ VDD 16
+ VSS 32
+ QN 4098
+ Q 4098
+labhb1
+ D 2049
+ CDN 1025
+ E 65
+ SDN 1025
+ Q 4098
+ VDD 16
+ VSS 32
+ QN 4098
+jkbrb2
+ J 2049
+ KZ 2049
+ CP 65
+ SDN 1025
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 4098
+ QN 4098
+jkbrb1
+ VDD 16
+ VSS 32
+ J 2049
+ KZ 2049
+ CP 65
+ QN 4098
+ Q 4098
+ SDN 1025
+ CDN 1025
+invtda
+ I 1
+ EN 262145
+ ZN 10
+ VDD 16
+ VSS 32
+invtd7
+ EN 262145
+ I 1
+ VDD 16
+ VSS 32
+ ZN 10
+invtd4
+ EN 262145
+ ZN 10
+ VDD 16
+ VSS 32
+ I 1
+invtd2
+ EN 262145
+ I 1
+ VDD 16
+ VSS 32
+ ZN 10
+invtd1
+ VDD 16
+ VSS 32
+ EN 262145
+ I 1
+ ZN 10
+invbd4
+ I 1
+ ZN 2
+ VDD 16
+ VSS 32
+invbd2
+ ZN 2
+ I 1
+ VDD 16
+ VSS 32
+inv0da
+ I 1
+ ZN 2
+ VDD 16
+ VSS 32
+inv0d7
+ I 1
+ VDD 16
+ VSS 32
+ ZN 2
+inv0d4
+ I 1
+ ZN 2
+ VDD 16
+ VSS 32
+inv0d2
+ ZN 2
+ I 1
+ VDD 16
+ VSS 32
+inv0d1
+ VDD 16
+ VSS 32
+ I 1
+ ZN 2
+inv0d0
+ VDD 16
+ VSS 32
+ I 1
+ ZN 2
+dl04d1
+ I 1
+ Z 2
+ VDD 16
+ VSS 32
+dl03d1
+ I 1
+ Z 2
+ VDD 16
+ VSS 32
+dl02d1
+ I 1
+ Z 2
+ VDD 16
+ VSS 32
+dl01d1
+ I 1
+ Z 2
+ VDD 16
+ VSS 32
+dfprb2
+ D 2049
+ QN 4098
+ VDD 16
+ VSS 32
+ SDN 1025
+ Q 4098
+ CP 65
+dfprb1
+ D 2049
+ QN 4098
+ SDN 1025
+ CP 65
+ VDD 16
+ VSS 32
+ Q 4098
+dfpfb2
+ CPN 65
+ D 2049
+ QN 4098
+ VDD 16
+ VSS 32
+ SDN 1025
+ Q 4098
+dfpfb1
+ CPN 65
+ D 2049
+ QN 4098
+ Q 4098
+ VDD 16
+ VSS 32
+ SDN 1025
+dfnrq2
+ D 2049
+ CP 65
+ VDD 16
+ VSS 32
+ Q 4098
+dfnrq1
+ D 2049
+ CP 65
+ Q 4098
+ VDD 16
+ VSS 32
+dfnrn2
+ D 2049
+ CP 65
+ VDD 16
+ VSS 32
+ QN 4098
+dfnrn1
+ D 2049
+ CP 65
+ QN 4098
+ VDD 16
+ VSS 32
+dfnrb2
+ D 2049
+ Q 4098
+ VDD 16
+ VSS 32
+ QN 4098
+ CP 65
+dfnrb1
+ D 2049
+ VDD 16
+ VSS 32
+ QN 4098
+ CP 65
+ Q 4098
+dfnfb2
+ CPN 65
+ D 2049
+ Q 4098
+ VDD 16
+ VSS 32
+ QN 4098
+dfnfb1
+ CPN 65
+ D 2049
+ VDD 16
+ VSS 32
+ QN 4098
+ Q 4098
+dfcrq2
+ CP 65
+ D 2049
+ CDN 1025
+ Q 4098
+ VDD 16
+ VSS 32
+dfcrq1
+ CP 65
+ D 2049
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 4098
+dfcrn2
+ CP 65
+ D 2049
+ CDN 1025
+ QN 4098
+ VDD 16
+ VSS 32
+dfcrn1
+ CP 65
+ D 2049
+ CDN 1025
+ VDD 16
+ VSS 32
+ QN 4098
+dfcrb2
+ CP 65
+ D 2049
+ CDN 1025
+ VDD 16
+ QN 4098
+ Q 4098
+ VSS 32
+dfcrb1
+ CP 65
+ D 2049
+ CDN 1025
+ QN 4098
+ Q 4098
+ VSS 32
+ VDD 16
+dfcfq2
+ D 2049
+ CDN 1025
+ Q 4098
+ VDD 16
+ VSS 32
+ CPN 65
+dfcfq1
+ D 2049
+ CDN 1025
+ Q 4098
+ CPN 65
+ VDD 16
+ VSS 32
+dfcfb2
+ D 2049
+ CPN 65
+ VDD 16
+ VSS 32
+ CDN 1025
+ QN 4098
+ Q 4098
+dfcfb1
+ CPN 65
+ D 2049
+ VDD 16
+ VSS 32
+ Q 4098
+ QN 4098
+ CDN 1025
+dfbrb2
+ CP 65
+ SDN 1025
+ VDD 16
+ VSS 32
+ D 2049
+ CDN 1025
+ Q 4098
+ QN 4098
+dfbrb1
+ CP 65
+ SDN 1025
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 4098
+ QN 4098
+ D 2049
+dfbfb2
+ CPN 65
+ SDN 1025
+ D 2049
+ QN 4098
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 4098
+dfbfb1
+ CPN 65
+ CDN 1025
+ VDD 16
+ VSS 32
+ Q 4098
+ QN 4098
+ SDN 1025
+ D 2049
+deprq2
+ D 2049
+ ENN 2049
+ CP 65
+ SDN 1025
+ Q 4098
+ VDD 16
+ VSS 32
+deprq1
+ D 2049
+ VDD 16
+ VSS 32
+ Q 4098
+ SDN 1025
+ CP 65
+ ENN 2049
+depfq2
+ D 2049
+ VDD 16
+ VSS 32
+ SDN 1025
+ Q 4098
+ CPN 65
+ ENN 2049
+depfq1
+ D 2049
+ ENN 2049
+ Q 4098
+ SDN 1025
+ VDD 16
+ VSS 32
+ CPN 65
+denrq2
+ D 2049
+ ENN 2049
+ VSS 32
+ VDD 16
+ Q 4098
+ CP 65
+denrq1
+ D 2049
+ ENN 2049
+ VDD 16
+ VSS 32
+ Q 4098
+ CP 65
+decrq2
+ D 2049
+ CP 65
+ ENN 2049
+ VDD 16
+ VSS 32
+ Q 4098
+ CDN 1025
+decrq1
+ D 2049
+ CP 65
+ ENN 2049
+ CDN 1025
+ Q 4098
+ VDD 16
+ VSS 32
+decfq2
+ D 2049
+ ENN 2049
+ CPN 65
+ VSS 32
+ VDD 16
+ Q 4098
+ CDN 1025
+decfq1
+ D 2049
+ ENN 2049
+ CPN 65
+ VSS 32
+ VDD 16
+ Q 4098
+ CDN 1025
+clk2d2
+ VDD 16
+ VSS 32
+ C 2
+ CN 2
+ CLK 1
+cg01d2
+ A 1
+ CI 1
+ B 1
+ CO 2
+ VDD 16
+ VSS 32
+cg01d1
+ A 1
+ CI 1
+ VDD 16
+ VSS 32
+ B 1
+ CO 2
+cg01d0
+ A 1
+ CI 1
+ VDD 16
+ VSS 32
+ B 1
+ CO 2
+buftda
+ Z 10
+ I 1
+ EN 262145
+ VDD 16
+ VSS 32
+buftd7
+ Z 10
+ I 1
+ EN 262145
+ VDD 16
+ VSS 32
+buftd4
+ Z 10
+ I 1
+ EN 262145
+ VDD 16
+ VSS 32
+buftd2
+ I 1
+ EN 262145
+ VDD 16
+ VSS 32
+ Z 10
+buftd1
+ I 1
+ EN 262145
+ VDD 16
+ VSS 32
+ Z 10
+buffda
+ I 1
+ Z 2
+ VDD 16
+ VSS 32
+buffd7
+ I 1
+ Z 2
+ VDD 16
+ VSS 32
+buffd3
+ VDD 16
+ VSS 32
+ I 1
+ Z 2
+buffd1
+ VDD 16
+ VSS 32
+ I 1
+ Z 2
+bufbda
+ I 1
+ Z 2
+ VDD 16
+ VSS 32
+bufbd7
+ Z 2
+ VDD 16
+ VSS 32
+ I 1
+bufbd3
+ VDD 16
+ VSS 32
+ I 1
+ Z 2
+bufbd1
+ VDD 16
+ VSS 32
+ I 1
+ Z 2
+aor31d4
+ A 1
+ B3 1
+ Z 2
+ VSS 32
+ VDD 16
+ B2 1
+ B1 1
+aor31d2
+ A 1
+ B2 1
+ VSS 32
+ VDD 16
+ B1 1
+ B3 1
+ Z 2
+aor31d1
+ Z 2
+ VSS 32
+ VDD 16
+ A 1
+ B1 1
+ B2 1
+ B3 1
+aor311d4
+ A 1
+ B 1
+ C1 1
+ C2 1
+ VSS 32
+ VDD 16
+ C3 1
+ Z 2
+aor311d2
+ Z 2
+ A 1
+ B 1
+ VSS 32
+ VDD 16
+ C3 1
+ C1 1
+ C2 1
+aor311d1
+ Z 2
+ A 1
+ VSS 32
+ VDD 16
+ C3 1
+ C2 1
+ C1 1
+ B 1
+aor22d4
+ B1 1
+ A1 1
+ B2 1
+ A2 1
+ VDD 16
+ VSS 32
+ Z 2
+aor22d2
+ B1 1
+ A1 1
+ B2 1
+ A2 1
+ VDD 16
+ VSS 32
+ Z 2
+aor22d1
+ B1 1
+ A1 1
+ B2 1
+ VDD 16
+ VSS 32
+ A2 1
+ Z 2
+aor222d4
+ C2 1
+ C1 1
+ B1 1
+ B2 1
+ A1 1
+ A2 1
+ VDD 16
+ VSS 32
+ Z 2
+aor222d2
+ C2 1
+ C1 1
+ B1 1
+ B2 1
+ A1 1
+ A2 1
+ Z 2
+ VDD 16
+ VSS 32
+aor222d1
+ VDD 16
+ VSS 32
+ C2 1
+ C1 1
+ Z 2
+ B1 1
+ B2 1
+ A1 1
+ A2 1
+aor221d4
+ A 1
+ C1 1
+ B2 1
+ B1 1
+ C2 1
+ VDD 16
+ VSS 32
+ Z 2
+aor221d2
+ A 1
+ Z 2
+ C1 1
+ B2 1
+ B1 1
+ C2 1
+ VSS 32
+ VDD 16
+aor221d1
+ A 1
+ Z 2
+ C1 1
+ B2 1
+ B1 1
+ C2 1
+ VSS 32
+ VDD 16
+aor21d4
+ B1 1
+ B2 1
+ VDD 16
+ VSS 32
+ Z 2
+ A 1
+aor21d2
+ Z 2
+ VDD 16
+ VSS 32
+ B2 1
+ B1 1
+ A 1
+aor21d1
+ VDD 16
+ VSS 32
+ Z 2
+ A 1
+ B1 1
+ B2 1
+aor211d4
+ A 1
+ C2 1
+ B 1
+ C1 1
+ VDD 16
+ VSS 32
+ Z 2
+aor211d2
+ A 1
+ C2 1
+ B 1
+ C1 1
+ VDD 16
+ VSS 32
+ Z 2
+aor211d1
+ A 1
+ C2 1
+ VDD 16
+ VSS 32
+ B 1
+ C1 1
+ Z 2
+aon211d4
+ B 1
+ A 1
+ C2 1
+ C1 1
+ VDD 16
+ VSS 32
+ ZN 2
+aon211d2
+ B 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+ C2 1
+ C1 1
+aon211d1
+ B 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+ C2 1
+ C1 1
+aoim3m11d4
+ B 1
+ C1 1
+ C3 1
+ C2 1
+ A 1
+ VSS 32
+ VDD 16
+ ZN 2
+aoim3m11d2
+ B 1
+ C1 1
+ C3 1
+ C2 1
+ A 1
+ ZN 2
+ VSS 32
+ VDD 16
+aoim3m11d1
+ B 1
+ C1 1
+ C3 1
+ C2 1
+ A 1
+ VSS 32
+ VDD 16
+ ZN 2
+aoim31d4
+ A 1
+ B3 1
+ B1 1
+ B2 1
+ VDD 16
+ VSS 32
+ ZN 2
+aoim31d2
+ A 1
+ B3 1
+ B1 1
+ B2 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoim31d1
+ A 1
+ B3 1
+ B1 1
+ B2 1
+ VDD 16
+ VSS 32
+ ZN 2
+aoim311d4
+ C2 1
+ C1 1
+ C3 1
+ A 1
+ B 1
+ VDD 16
+ VSS 32
+ ZN 2
+aoim311d2
+ C2 1
+ C1 1
+ C3 1
+ A 1
+ B 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoim311d1
+ C2 1
+ C1 1
+ C3 1
+ A 1
+ B 1
+ VDD 16
+ VSS 32
+ ZN 2
+aoim2m11d4
+ B 1
+ C1 1
+ C2 1
+ VDD 16
+ VSS 32
+ A 1
+ ZN 2
+aoim2m11d2
+ B 1
+ C1 1
+ C2 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoim2m11d1
+ B 1
+ C1 1
+ C2 1
+ A 1
+ VDD 16
+ VSS 32
+ ZN 2
+aoim22d4
+ A2 1
+ A1 1
+ B2 1
+ B1 1
+ Z 2
+ VSS 32
+ VDD 16
+aoim22d2
+ A2 1
+ A1 1
+ B2 1
+ B1 1
+ VSS 32
+ VDD 16
+ Z 2
+aoim22d1
+ VSS 32
+ VDD 16
+ Z 2
+ A2 1
+ A1 1
+ B2 1
+ B1 1
+aoim21d4
+ B2 1
+ B1 1
+ VDD 16
+ ZN 2
+ VSS 32
+ A 1
+aoim21d2
+ A 1
+ VDD 16
+ B2 1
+ ZN 2
+ VSS 32
+ B1 1
+aoim21d1
+ A 1
+ B2 1
+ B1 1
+ VDD 16
+ VSS 32
+ ZN 2
+aoim211d4
+ C2 1
+ B 1
+ C1 1
+ VDD 16
+ VSS 32
+ A 1
+ ZN 2
+aoim211d2
+ C2 1
+ B 1
+ A 1
+ C1 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoim211d1
+ C2 1
+ B 1
+ A 1
+ C1 1
+ VDD 16
+ VSS 32
+ ZN 2
+aoi322d4
+ C2 1
+ C1 1
+ B2 1
+ C3 1
+ B1 1
+ A2 1
+ A1 1
+ VSS 32
+ VDD 16
+ ZN 2
+aoi322d2
+ C2 1
+ C1 1
+ ZN 2
+ B2 1
+ C3 1
+ B1 1
+ A2 1
+ A1 1
+ VSS 32
+ VDD 16
+aoi322d1
+ C2 1
+ C1 1
+ C3 1
+ VSS 32
+ VDD 16
+ ZN 2
+ A2 1
+ A1 1
+ B1 1
+ B2 1
+aoi321d4
+ C3 1
+ C2 1
+ C1 1
+ B2 1
+ B1 1
+ A 1
+ VDD 16
+ VSS 32
+ ZN 2
+aoi321d2
+ C3 1
+ C2 1
+ C1 1
+ B2 1
+ B1 1
+ VSS 32
+ VDD 16
+ ZN 2
+ A 1
+aoi321d1
+ C3 1
+ C2 1
+ C1 1
+ B2 1
+ B1 1
+ A 1
+ VSS 32
+ VDD 16
+ ZN 2
+aoi31d4
+ B3 1
+ B2 1
+ A 1
+ B1 1
+ VDD 16
+ ZN 2
+ VSS 32
+aoi31d2
+ B3 1
+ A 1
+ B1 1
+ VDD 16
+ ZN 2
+ VSS 32
+ B2 1
+aoi31d1
+ B3 1
+ B2 1
+ A 1
+ B1 1
+ VDD 16
+ VSS 32
+ ZN 2
+aoi311d4
+ C2 1
+ B 1
+ A 1
+ C3 1
+ C1 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoi311d2
+ ZN 2
+ VDD 16
+ C2 1
+ B 1
+ A 1
+ C3 1
+ C1 1
+ VSS 32
+aoi311d1
+ C2 1
+ C1 1
+ C3 1
+ VDD 16
+ VSS 32
+ ZN 2
+ B 1
+ A 1
+aoi22d4
+ B2 1
+ B1 1
+ A1 1
+ A2 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoi22d2
+ B2 1
+ B1 1
+ A1 1
+ A2 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoi22d1
+ B2 1
+ B1 1
+ A1 1
+ A2 1
+ VDD 16
+ VSS 32
+ ZN 2
+aoi222d4
+ C2 1
+ C1 1
+ B1 1
+ B2 1
+ A2 1
+ A1 1
+ VDD 16
+ VSS 32
+ ZN 2
+aoi222d2
+ C2 1
+ C1 1
+ B1 1
+ B2 1
+ A2 1
+ A1 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoi222d1
+ C2 1
+ C1 1
+ B1 1
+ B2 1
+ A2 1
+ A1 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoi2222d4
+ D1 1
+ C2 1
+ D2 1
+ C1 1
+ A1 1
+ B2 1
+ B1 1
+ A2 1
+ ZN 2
+ VSS 32
+ VDD 16
+aoi2222d2
+ D1 1
+ C2 1
+ ZN 2
+ D2 1
+ C1 1
+ A2 1
+ B1 1
+ A1 1
+ B2 1
+ VSS 32
+ VDD 16
+aoi2222d1
+ D1 1
+ C2 1
+ ZN 2
+ B2 1
+ B1 1
+ A1 1
+ VSS 32
+ VDD 16
+ D2 1
+ C1 1
+ A2 1
+aoi221d4
+ C1 1
+ C2 1
+ B1 1
+ B2 1
+ A 1
+ VDD 16
+ VSS 32
+ ZN 2
+aoi221d2
+ C1 1
+ C2 1
+ B1 1
+ B2 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoi221d1
+ C1 1
+ C2 1
+ B1 1
+ B2 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoi21d4
+ B2 1
+ B1 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoi21d2
+ B2 1
+ B1 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoi21d1
+ B2 1
+ B1 1
+ A 1
+ VDD 16
+ ZN 2
+ VSS 32
+aoi211d4
+ A 1
+ VDD 16
+ VSS 32
+ ZN 2
+ C2 1
+ C1 1
+ B 1
+aoi211d2
+ C2 1
+ C1 1
+ B 1
+ A 1
+ ZN 2
+ VDD 16
+ VSS 32
+aoi211d1
+ C2 1
+ C1 1
+ B 1
+ VDD 16
+ VSS 32
+ A 1
+ ZN 2
+an12d4
+ A1 1
+ A2 1
+ Z 2
+ VDD 16
+ VSS 32
+an12d2
+ A1 1
+ A2 1
+ Z 2
+ VDD 16
+ VSS 32
+an12d1
+ A1 1
+ A2 1
+ VDD 16
+ VSS 32
+ Z 2
+an04d4
+ A4 1
+ A2 1
+ A3 1
+ A1 1
+ VDD 16
+ VSS 32
+ Z 2
+an04d2
+ A4 1
+ A2 1
+ Z 2
+ VDD 16
+ VSS 32
+ A3 1
+ A1 1
+an04d1
+ A4 1
+ A2 1
+ A3 1
+ A1 1
+ VDD 16
+ VSS 32
+ Z 2
+an04d0
+ A4 1
+ A2 1
+ A3 1
+ A1 1
+ VDD 16
+ VSS 32
+ Z 2
+an03d4
+ A1 1
+ Z 2
+ A2 1
+ VDD 16
+ VSS 32
+ A3 1
+an03d2
+ A3 1
+ A1 1
+ A2 1
+ VDD 16
+ VSS 32
+ Z 2
+an03d1
+ VDD 16
+ VSS 32
+ A3 1
+ A1 1
+ Z 2
+ A2 1
+an03d0
+ VDD 16
+ VSS 32
+ A3 1
+ A1 1
+ Z 2
+ A2 1
+an02d4
+ A2 1
+ A1 1
+ Z 2
+ VDD 16
+ VSS 32
+an02d2
+ VDD 16
+ VSS 32
+ A1 1
+ A2 1
+ Z 2
+an02d1
+ VDD 16
+ VSS 32
+ A1 1
+ A2 1
+ Z 2
+an02d0
+ VDD 16
+ VSS 32
+ A2 1
+ A1 1
+ Z 2
+ah01d2
+ S 2
+ CO 2
+ A 1
+ B 1
+ VDD 16
+ VSS 32
+ah01d1
+ S 2
+ B 1
+ VDD 16
+ VSS 32
+ CO 2
+ A 1
+ah01d0
+ A 1
+ VDD 16
+ VSS 32
+ CO 2
+ S 2
+ B 1
+adp1d2
+ CO 2
+ B 1
+ CI 1
+ A 1
+ P 2
+ S 2
+ VSS 32
+ VDD 16
+adp1d1
+ B 1
+ CO 2
+ A 1
+ P 2
+ VDD 16
+ VSS 32
+ CI 1
+ S 2
+adp1d0
+ B 1
+ CO 2
+ A 1
+ P 2
+ VDD 16
+ VSS 32
+ CI 1
+ S 2
+ad01d2
+ A 1
+ B 1
+ CI 1
+ CO 2
+ S 2
+ VDD 16
+ VSS 32
+ad01d1
+ A 1
+ B 1
+ CI 1
+ S 2
+ CO 2
+ VDD 16
+ VSS 32
+ad01d0
+ A 1
+ B 1
+ CI 1
+ CO 2
+ S 2
+ VDD 16
+ VSS 32

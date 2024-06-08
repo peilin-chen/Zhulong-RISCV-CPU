@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE cov SYSTEM "ucdb_srcinfo.dtd">
+  <srcinfo name="/home/IC/Desktop/risc_cpu/debug_netlist"  >
+    <ucapi_version  major_ver="13"  minor_ver="1"  patch_str="I-2014.03"  />
+      <fileinfo name="../src/DCache.v"  id="2"  />
+      <fileinfo name="../src/RISCV_SOC.v"  id="6"  />
+      <fileinfo name="../syn/work/TOP_RISCV.v"  id="0"  />
+      <fileinfo name="../src/ICache.v"  id="3"  />
+      <fileinfo name="../scc28nhkcp_hsc35p140_rvt.v"  id="7"  />
+      <fileinfo name="../src/ROM.v"  id="4"  />
+      <fileinfo name="../src/RAM.v"  id="5"  />
+      <fileinfo name="../src/AXI4_Lite.v"  id="1"  />
+    </srcinfo>

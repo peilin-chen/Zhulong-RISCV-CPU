@@ -1,0 +1,108 @@
+
+generated/rv64um-p-divuw:     file format elf64-littleriscv
+
+
+Disassembly of section .text.init:
+
+0000000000000000 <_start>:
+   0:	00000d13          	li	s10,0
+   4:	00000d93          	li	s11,0
+
+0000000000000008 <test_2>:
+   8:	01400093          	li	ra,20
+   c:	00600113          	li	sp,6
+  10:	0220df3b          	divuw	t5,ra,sp
+  14:	00300e93          	li	t4,3
+  18:	00200193          	li	gp,2
+  1c:	0ddf1a63          	bne	t5,t4,f0 <fail>
+
+0000000000000020 <test_3>:
+  20:	0010009b          	addiw	ra,zero,1
+  24:	02009093          	slli	ra,ra,0x20
+  28:	fec08093          	addi	ra,ra,-20
+  2c:	00600113          	li	sp,6
+  30:	0220df3b          	divuw	t5,ra,sp
+  34:	2aaabeb7          	lui	t4,0x2aaab
+  38:	aa7e8e9b          	addiw	t4,t4,-1369
+  3c:	00300193          	li	gp,3
+  40:	0bdf1863          	bne	t5,t4,f0 <fail>
+
+0000000000000044 <test_4>:
+  44:	01400093          	li	ra,20
+  48:	ffa00113          	li	sp,-6
+  4c:	0220df3b          	divuw	t5,ra,sp
+  50:	00000e93          	li	t4,0
+  54:	00400193          	li	gp,4
+  58:	09df1c63          	bne	t5,t4,f0 <fail>
+
+000000000000005c <test_5>:
+  5c:	fec00093          	li	ra,-20
+  60:	ffa00113          	li	sp,-6
+  64:	0220df3b          	divuw	t5,ra,sp
+  68:	00000e93          	li	t4,0
+  6c:	00500193          	li	gp,5
+  70:	09df1063          	bne	t5,t4,f0 <fail>
+
+0000000000000074 <test_6>:
+  74:	800000b7          	lui	ra,0x80000
+  78:	00100113          	li	sp,1
+  7c:	0220df3b          	divuw	t5,ra,sp
+  80:	80000eb7          	lui	t4,0x80000
+  84:	00600193          	li	gp,6
+  88:	07df1463          	bne	t5,t4,f0 <fail>
+
+000000000000008c <test_7>:
+  8c:	800000b7          	lui	ra,0x80000
+  90:	fff00113          	li	sp,-1
+  94:	0220df3b          	divuw	t5,ra,sp
+  98:	00000e93          	li	t4,0
+  9c:	00700193          	li	gp,7
+  a0:	05df1863          	bne	t5,t4,f0 <fail>
+
+00000000000000a4 <test_8>:
+  a4:	800000b7          	lui	ra,0x80000
+  a8:	00000113          	li	sp,0
+  ac:	0220df3b          	divuw	t5,ra,sp
+  b0:	fff00e93          	li	t4,-1
+  b4:	00800193          	li	gp,8
+  b8:	03df1c63          	bne	t5,t4,f0 <fail>
+
+00000000000000bc <test_9>:
+  bc:	00100093          	li	ra,1
+  c0:	00000113          	li	sp,0
+  c4:	0220df3b          	divuw	t5,ra,sp
+  c8:	fff00e93          	li	t4,-1
+  cc:	00900193          	li	gp,9
+  d0:	03df1063          	bne	t5,t4,f0 <fail>
+
+00000000000000d4 <test_10>:
+  d4:	00000093          	li	ra,0
+  d8:	00000113          	li	sp,0
+  dc:	0220df3b          	divuw	t5,ra,sp
+  e0:	fff00e93          	li	t4,-1
+  e4:	00a00193          	li	gp,10
+  e8:	01df1463          	bne	t5,t4,f0 <fail>
+  ec:	00301863          	bne	zero,gp,fc <pass>
+
+00000000000000f0 <fail>:
+  f0:	00100d13          	li	s10,1
+  f4:	00000d93          	li	s11,0
+
+00000000000000f8 <loop_fail>:
+  f8:	0000006f          	j	f8 <loop_fail>
+
+00000000000000fc <pass>:
+  fc:	00100d13          	li	s10,1
+ 100:	00100d93          	li	s11,1
+
+0000000000000104 <loop_pass>:
+ 104:	0000006f          	j	104 <loop_pass>
+	...
+
+Disassembly of section .tohost:
+
+0000000000000180 <tohost>:
+	...
+
+00000000000001c0 <fromhost>:
+	...

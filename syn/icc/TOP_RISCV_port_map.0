@@ -1,0 +1,456 @@
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_MEM_inst/dff2/hold_flag_i[1]   $svf_impl/TOP_RISCV/EX_MEM_inst/dff2/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_MEM_inst/dff3/hold_flag_i[1]   $svf_impl/TOP_RISCV/EX_MEM_inst/dff3/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_MEM_inst/dff4/hold_flag_i[1]   $svf_impl/TOP_RISCV/EX_MEM_inst/dff4/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_MEM_inst/dff5/hold_flag_i[1]   $svf_impl/TOP_RISCV/EX_MEM_inst/dff5/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_MEM_inst/dff6/hold_flag_i[1]   $svf_impl/TOP_RISCV/EX_MEM_inst/dff6/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_MEM_inst/dff7/hold_flag_i[1]   $svf_impl/TOP_RISCV/EX_MEM_inst/dff7/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_MEM_inst/dff8/hold_flag_i[1]   $svf_impl/TOP_RISCV/EX_MEM_inst/dff8/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_MEM_inst/dff9/hold_flag_i[1]   $svf_impl/TOP_RISCV/EX_MEM_inst/dff9/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_MEM_inst/dff1/hold_flag_i[1]   $svf_impl/TOP_RISCV/EX_MEM_inst/dff1/hold_flag_i[1]
+guide_constraints -body { EX_MEM_inst/dff8 } -equivalent { EX_MEM_inst/dff8/hold_flag_i[1]  ~ EX_MEM_inst/dff8/IN0 }
+guide_constraints -body { EX_MEM_inst/dff7 } -equivalent { EX_MEM_inst/dff7/hold_flag_i[1]  ~ EX_MEM_inst/dff7/IN0 }
+guide_constraints -body { EX_MEM_inst/dff6 } -equivalent { EX_MEM_inst/dff6/hold_flag_i[1]  ~ EX_MEM_inst/dff6/IN0 }
+guide_constraints -body { EX_MEM_inst/dff9 } -equivalent { EX_MEM_inst/dff9/hold_flag_i[1]  ~ EX_MEM_inst/dff9/IN0 }
+guide_constraints -body { EX_MEM_inst/dff2 } -equivalent { EX_MEM_inst/dff2/hold_flag_i[1]  ~ EX_MEM_inst/dff2/IN0 }
+guide_constraints -body { EX_MEM_inst/dff1 } -equivalent { EX_MEM_inst/dff1/hold_flag_i[1]  ~ EX_MEM_inst/dff1/IN0 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/CTRL_inst/hold_flag_o[0]   $svf_impl/TOP_RISCV/CTRL_inst/hold_flag_o[0]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff8/hold_flag_i[0]   $svf_impl/TOP_RISCV/ID_EX_inst/dff8/hold_flag_i[0]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff12/hold_flag_i[0]   $svf_impl/TOP_RISCV/ID_EX_inst/dff12/hold_flag_i[0]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff10/hold_flag_i[0]   $svf_impl/TOP_RISCV/ID_EX_inst/dff10/hold_flag_i[0]
+guide_constraints -body { ID_EX_inst/dff2 } -equivalent { ID_EX_inst/dff2/hold_flag_i[0]  ~ ID_EX_inst/dff2/IN0 }
+guide_constraints -body { ID_EX_inst } -equivalent { ID_EX_inst/hold_flag_i[0]  ~ ID_EX_inst/IN0 ~ ID_EX_inst/IN1 ~ ID_EX_inst/IN2 ~ ID_EX_inst/IN3 ~ ID_EX_inst/IN4 ~ ID_EX_inst/IN5 ~ ID_EX_inst/IN6 ~ ID_EX_inst/IN7 ~ ID_EX_inst/IN8 ~ ID_EX_inst/IN9 }
+guide_constraints -body { ID_EX_inst/dff4 } -equivalent { ID_EX_inst/dff4/hold_flag_i[0]  ~ ID_EX_inst/dff4/IN0 }
+guide_constraints -body { PC_inst/dff1 } -equivalent { PC_inst/dff1/hold_flag_i[0]  ~ PC_inst/dff1/IN0 }
+guide_constraints -body { PC_inst } -equivalent { PC_inst/hold_flag_i[0]  ~ PC_inst/IN0 }
+guide_constraints -body { ID_EX_inst/dff3 } -equivalent { ID_EX_inst/dff3/hold_flag_i[0]  ~ ID_EX_inst/dff3/IN0 }
+guide_constraints -body { IF_ID_inst/dff1 } -equivalent { IF_ID_inst/dff1/hold_flag_i[0]  ~ IF_ID_inst/dff1/IN0 }
+guide_constraints -body { IF_ID_inst } -equivalent { IF_ID_inst/hold_flag_i[0]  ~ IF_ID_inst/IN0 ~ IF_ID_inst/IN1 }
+guide_constraints -body { ID_EX_inst/dff1 } -equivalent { ID_EX_inst/dff1/hold_flag_i[0]  ~ ID_EX_inst/dff1/IN0 }
+guide_constraints -body { ID_EX_inst/dff7 } -equivalent { ID_EX_inst/dff7/hold_flag_i[0]  ~ ID_EX_inst/dff7/IN0 }
+guide_constraints -body { ID_EX_inst/dff5 } -equivalent { ID_EX_inst/dff5/hold_flag_i[0]  ~ ID_EX_inst/dff5/IN0 }
+guide_constraints -body { IF_ID_inst/dff2 } -equivalent { IF_ID_inst/dff2/hold_flag_i[0]  ~ IF_ID_inst/dff2/IN0 }
+guide_constraints -body { ID_EX_inst/dff11 } -equivalent { ID_EX_inst/dff11/hold_flag_i[0]  ~ ID_EX_inst/dff11/IN0 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/PC_inst/hold_flag_i[1]   $svf_impl/TOP_RISCV/PC_inst/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/PC_inst/dff1/hold_flag_i[1]   $svf_impl/TOP_RISCV/PC_inst/dff1/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/IF_ID_inst/hold_flag_i[1]   $svf_impl/TOP_RISCV/IF_ID_inst/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/IF_ID_inst/dff1/hold_flag_i[1]   $svf_impl/TOP_RISCV/IF_ID_inst/dff1/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/IF_ID_inst/dff2/hold_flag_i[1]   $svf_impl/TOP_RISCV/IF_ID_inst/dff2/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/hold_flag_i[1]   $svf_impl/TOP_RISCV/ID_EX_inst/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff9/hold_flag_i[1]   $svf_impl/TOP_RISCV/ID_EX_inst/dff9/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff14/hold_flag_i[1]   $svf_impl/TOP_RISCV/ID_EX_inst/dff14/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff1/hold_flag_i[1]   $svf_impl/TOP_RISCV/ID_EX_inst/dff1/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff2/hold_flag_i[1]   $svf_impl/TOP_RISCV/ID_EX_inst/dff2/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff13/hold_flag_i[1]   $svf_impl/TOP_RISCV/ID_EX_inst/dff13/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff5/hold_flag_i[1]   $svf_impl/TOP_RISCV/ID_EX_inst/dff5/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff6/hold_flag_i[1]   $svf_impl/TOP_RISCV/ID_EX_inst/dff6/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff7/hold_flag_i[1]   $svf_impl/TOP_RISCV/ID_EX_inst/dff7/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff11/hold_flag_i[1]   $svf_impl/TOP_RISCV/ID_EX_inst/dff11/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff3/hold_flag_i[1]   $svf_impl/TOP_RISCV/ID_EX_inst/dff3/hold_flag_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/hold_flag_i[1]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/hold_flag_i[1]
+guide_constraints -body { ID_EX_inst/dff2 } -equivalent { ID_EX_inst/dff2/hold_flag_i[1]  ~ ID_EX_inst/dff2/IN1 }
+guide_constraints -body { ID_EX_inst } -equivalent { ID_EX_inst/hold_flag_i[1]  ~ ID_EX_inst/IN10 ~ ID_EX_inst/IN11 ~ ID_EX_inst/IN12 ~ ID_EX_inst/IN13 ~ ID_EX_inst/IN14 ~ ID_EX_inst/IN15 ~ ID_EX_inst/IN16 ~ ID_EX_inst/IN17 ~ ID_EX_inst/IN18 ~ ID_EX_inst/IN19 }
+guide_constraints -body { ID_EX_inst/dff3 } -equivalent { ID_EX_inst/dff3/hold_flag_i[1]  ~ ID_EX_inst/dff3/IN1 }
+guide_constraints -body { ID_EX_inst/dff4 } -equivalent { ID_EX_inst/dff4/hold_flag_i[1]  ~ ID_EX_inst/dff4/IN1 }
+guide_constraints -body { PC_inst/dff1 } -equivalent { PC_inst/dff1/hold_flag_i[1]  ~ PC_inst/dff1/IN1 }
+guide_constraints -body { PC_inst } -equivalent { PC_inst/hold_flag_i[1]  ~ PC_inst/IN1 ~ PC_inst/IN2 }
+guide_constraints -body { IF_ID_inst/dff1 } -equivalent { IF_ID_inst/dff1/hold_flag_i[1]  ~ IF_ID_inst/dff1/IN1 }
+guide_constraints -body { IF_ID_inst } -equivalent { IF_ID_inst/hold_flag_i[1]  ~ IF_ID_inst/IN2 ~ IF_ID_inst/IN3 }
+guide_constraints -body { ID_EX_inst/dff1 } -equivalent { ID_EX_inst/dff1/hold_flag_i[1]  ~ ID_EX_inst/dff1/IN1 }
+guide_constraints -body { ID_EX_inst/dff7 } -equivalent { ID_EX_inst/dff7/hold_flag_i[1]  ~ ID_EX_inst/dff7/IN1 }
+guide_constraints -body { ID_EX_inst/dff5 } -equivalent { ID_EX_inst/dff5/hold_flag_i[1]  ~ ID_EX_inst/dff5/IN1 }
+guide_constraints -body { IF_ID_inst/dff2 } -equivalent { IF_ID_inst/dff2/hold_flag_i[1]  ~ IF_ID_inst/dff2/IN1 }
+guide_constraints -body { ID_EX_inst/dff11 } -equivalent { ID_EX_inst/dff11/hold_flag_i[1]  ~ ID_EX_inst/dff11/IN1 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[37]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[37]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[39]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[39]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[32]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[32]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[35]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[35]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[24]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[24]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[48]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[48]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[52]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[52]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[55]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[55]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[57]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[57]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[59]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[59]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[61]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[61]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[62]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[62]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[63]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[63]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[53]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[53]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[50]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[50]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[47]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[47]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[34]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[34]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[36]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[36]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[38]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[38]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[40]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[40]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[41]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[41]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[45]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[45]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[46]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[46]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[44]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[44]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[33]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[33]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/CHECK_inst/rs2_addr_i[0]   $svf_impl/TOP_RISCV/CHECK_inst/rs2_addr_i[0]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/REGS_inst/reg2_raddr_i[0]   $svf_impl/TOP_RISCV/REGS_inst/reg2_raddr_i[0]
+guide_constraints -body { CHECK_inst } -equivalent { CHECK_inst/rs2_addr_i[0]  ~ CHECK_inst/IN0 }
+guide_constraints -body { REGS_inst } -equivalent { REGS_inst/reg2_raddr_i[0]  ~ REGS_inst/IN0 ~ REGS_inst/IN1 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/CHECK_inst/rs2_addr_i[1]   $svf_impl/TOP_RISCV/CHECK_inst/rs2_addr_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/REGS_inst/reg2_raddr_i[1]   $svf_impl/TOP_RISCV/REGS_inst/reg2_raddr_i[1]
+guide_constraints -body { CHECK_inst } -equivalent { CHECK_inst/rs2_addr_i[1]  ~ CHECK_inst/IN1 }
+guide_constraints -body { REGS_inst } -equivalent { REGS_inst/reg2_raddr_i[1]  ~ REGS_inst/IN2 ~ REGS_inst/IN3 }
+guide_constraints -body { REGS_inst } -equivalent { REGS_inst/reg2_raddr_i[2]    REGS_inst/IN4 }
+guide_constraints -body { REGS_inst } -equivalent { REGS_inst/reg2_raddr_i[3]    REGS_inst/IN5 }
+guide_constraints -body { REGS_inst } -equivalent { REGS_inst/reg2_raddr_i[4]    REGS_inst/IN6 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/CHECK_inst/rs1_addr_i[0]   $svf_impl/TOP_RISCV/CHECK_inst/rs1_addr_i[0]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/REGS_inst/reg1_raddr_i[0]   $svf_impl/TOP_RISCV/REGS_inst/reg1_raddr_i[0]
+guide_constraints -body { CHECK_inst } -equivalent { CHECK_inst/rs1_addr_i[0]  ~ CHECK_inst/IN2 }
+guide_constraints -body { REGS_inst } -equivalent { REGS_inst/reg1_raddr_i[0]  ~ REGS_inst/IN7 ~ REGS_inst/IN8 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/CHECK_inst/rs1_addr_i[1]   $svf_impl/TOP_RISCV/CHECK_inst/rs1_addr_i[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/REGS_inst/reg1_raddr_i[1]   $svf_impl/TOP_RISCV/REGS_inst/reg1_raddr_i[1]
+guide_constraints -body { CHECK_inst } -equivalent { CHECK_inst/rs1_addr_i[1]  ~ CHECK_inst/IN3 }
+guide_constraints -body { REGS_inst } -equivalent { REGS_inst/reg1_raddr_i[1]  ~ REGS_inst/IN9 ~ REGS_inst/IN10 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/CHECK_inst/rs1_addr_i[2]   $svf_impl/TOP_RISCV/CHECK_inst/rs1_addr_i[2]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/REGS_inst/reg1_raddr_i[2]   $svf_impl/TOP_RISCV/REGS_inst/reg1_raddr_i[2]
+guide_constraints -body { CHECK_inst } -equivalent { CHECK_inst/rs1_addr_i[2]  ~ CHECK_inst/IN4 }
+guide_constraints -body { REGS_inst } -equivalent { REGS_inst/reg1_raddr_i[2]  ~ REGS_inst/IN11 ~ REGS_inst/IN12 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/CHECK_inst/rs1_addr_i[3]   $svf_impl/TOP_RISCV/CHECK_inst/rs1_addr_i[3]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/REGS_inst/reg1_raddr_i[3]   $svf_impl/TOP_RISCV/REGS_inst/reg1_raddr_i[3]
+guide_constraints -body { CHECK_inst } -equivalent { CHECK_inst/rs1_addr_i[3]  ~ CHECK_inst/IN5 }
+guide_constraints -body { REGS_inst } -equivalent { REGS_inst/reg1_raddr_i[3]  ~ REGS_inst/IN13 ~ REGS_inst/IN14 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/CHECK_inst/rs1_addr_i[4]   $svf_impl/TOP_RISCV/CHECK_inst/rs1_addr_i[4]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/REGS_inst/reg1_raddr_i[4]   $svf_impl/TOP_RISCV/REGS_inst/reg1_raddr_i[4]
+guide_constraints -body { CHECK_inst } -equivalent { CHECK_inst/rs1_addr_i[4]  ~ CHECK_inst/IN6 }
+guide_constraints -body { REGS_inst } -equivalent { REGS_inst/reg1_raddr_i[4]  ~ REGS_inst/IN15 ~ REGS_inst/IN16 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[16]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[16]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[18]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[18]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[22]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[22]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[26]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[26]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[28]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[28]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[30]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[30]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[20]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[20]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[13]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[13]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[11]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[11]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[9]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[9]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[7]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[7]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[5]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[5]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[3]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[3]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_data_write[0]   $svf_impl/TOP_RISCV/MEM_inst/dcache_data_write[0]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_req_addr[9]   $svf_impl/TOP_RISCV/MEM_inst/dcache_req_addr[9]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_req_addr[8]   $svf_impl/TOP_RISCV/MEM_inst/dcache_req_addr[8]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_req_addr[7]   $svf_impl/TOP_RISCV/MEM_inst/dcache_req_addr[7]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_req_addr[6]   $svf_impl/TOP_RISCV/MEM_inst/dcache_req_addr[6]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_req_addr[5]   $svf_impl/TOP_RISCV/MEM_inst/dcache_req_addr[5]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_req_addr[4]   $svf_impl/TOP_RISCV/MEM_inst/dcache_req_addr[4]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_req_addr[3]   $svf_impl/TOP_RISCV/MEM_inst/dcache_req_addr[3]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_req_addr[2]   $svf_impl/TOP_RISCV/MEM_inst/dcache_req_addr[2]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_req_addr[1]   $svf_impl/TOP_RISCV/MEM_inst/dcache_req_addr[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_req_addr[10]   $svf_impl/TOP_RISCV/MEM_inst/dcache_req_addr[10]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/MEM_inst/dcache_req_rw   $svf_impl/TOP_RISCV/MEM_inst/dcache_req_rw
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/op2_o[4]   $svf_impl/TOP_RISCV/EX_inst/op2_o[4]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/gte_104/A[115]   $svf_impl/TOP_RISCV/Divider_inst/gte_104/A[115]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/r391/B[50]   $svf_impl/TOP_RISCV/Divider_inst/r391/B[50]
+guide_constraints -body { Divider_inst/r391 } -equivalent { Divider_inst/r391/B[50]  ~ Divider_inst/r391/IN0 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/gte_104/A[105]   $svf_impl/TOP_RISCV/Divider_inst/gte_104/A[105]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/r391/B[40]   $svf_impl/TOP_RISCV/Divider_inst/r391/B[40]
+guide_constraints -body { Divider_inst/r391 } -equivalent { Divider_inst/r391/B[40]  ~ Divider_inst/r391/IN1 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/r391/B[4]   $svf_impl/TOP_RISCV/Divider_inst/r391/B[4]
+guide_constraints -body { Divider_inst/r391 } -equivalent { Divider_inst/r391/B[4]  ~ Divider_inst/r391/IN2 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_inst/add_138/B[8]   $svf_impl/TOP_RISCV/ID_inst/add_138/B[8]
+guide_constraints -body { ID_inst/add_138 } -equivalent { ID_inst/add_138/B[8]  ~ ID_inst/add_138/IN0 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[61]   $svf_impl/TOP_RISCV/EX_inst/r398/B[61]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[61]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[61]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[61]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[61]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[47]   $svf_impl/TOP_RISCV/EX_inst/r398/B[47]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[47]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[47]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[47]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[47]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[9]   $svf_impl/TOP_RISCV/EX_inst/r398/B[9]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[9]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[9]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[9]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[9]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_inst/add_138/B[9]   $svf_impl/TOP_RISCV/ID_inst/add_138/B[9]
+guide_constraints -body { ID_inst/add_138 } -equivalent { ID_inst/add_138/B[9]  ~ ID_inst/add_138/IN1 }
+guide_constraints -body { ID_inst/add_203 } -equivalent { ID_inst/add_203/B[11]    ID_inst/add_203/IN0 }
+guide_constraints -body { ID_inst } -equivalent { ID_inst/rom_inst_i[31]    ID_inst/IN0   ID_inst/IN1   ID_inst/IN2 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[38]   $svf_impl/TOP_RISCV/EX_inst/r398/B[38]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[38]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[38]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[38]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[38]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_inst/add_138/B[1]   $svf_impl/TOP_RISCV/ID_inst/add_138/B[1]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/inst_i[14]    EX_inst/IN2 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Multiplier_inst/r323/A[2]   $svf_impl/TOP_RISCV/Multiplier_inst/r323/A[2]
+guide_constraints -body { Multiplier_inst/r323 } -equivalent { Multiplier_inst/r323/A[2]  ~ Multiplier_inst/r323/IN0 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Multiplier_inst/r323/A[16]   $svf_impl/TOP_RISCV/Multiplier_inst/r323/A[16]
+guide_constraints -body { Multiplier_inst/r323 } -equivalent { Multiplier_inst/r323/A[16]  ~ Multiplier_inst/r323/IN1 }
+guide_constraints -body { Multiplier_inst/sub_add_126_b0 } -equivalent { Multiplier_inst/sub_add_126_b0/B[16]  ~ Multiplier_inst/sub_add_126_b0/IN0 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff1/data_o[13]   $svf_impl/TOP_RISCV/ID_EX_inst/dff1/data_o[13]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/inst_o[13]   $svf_impl/TOP_RISCV/ID_EX_inst/inst_o[13]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/inst_i[13]   $svf_impl/TOP_RISCV/EX_inst/inst_i[13]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Multiplier_inst/r323/A[8]   $svf_impl/TOP_RISCV/Multiplier_inst/r323/A[8]
+guide_constraints -body { Multiplier_inst/r323 } -equivalent { Multiplier_inst/r323/A[8]  ~ Multiplier_inst/r323/IN2 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Multiplier_inst/r323/A[10]   $svf_impl/TOP_RISCV/Multiplier_inst/r323/A[10]
+guide_constraints -body { Multiplier_inst/r323 } -equivalent { Multiplier_inst/r323/A[10]  ~ Multiplier_inst/r323/IN3 }
+guide_constraints -body { Multiplier_inst/sub_add_126_b0 } -equivalent { Multiplier_inst/sub_add_126_b0/B[10]  ~ Multiplier_inst/sub_add_126_b0/IN1 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[46]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[46]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[46]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[46]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[46]   $svf_impl/TOP_RISCV/EX_inst/r398/B[46]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[22]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[22]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[22]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[22]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[22]   $svf_impl/TOP_RISCV/EX_inst/r398/B[22]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[18]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[18]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[18]   $svf_impl/TOP_RISCV/EX_inst/r398/B[18]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[18]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[18]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Multiplier_inst/r323/A[12]   $svf_impl/TOP_RISCV/Multiplier_inst/r323/A[12]
+guide_constraints -body { Multiplier_inst/r323 } -equivalent { Multiplier_inst/r323/A[12]  ~ Multiplier_inst/r323/IN4 }
+guide_constraints -body { Multiplier_inst/sub_add_126_b0 } -equivalent { Multiplier_inst/sub_add_126_b0/B[12]  ~ Multiplier_inst/sub_add_126_b0/IN2 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[27]   $svf_impl/TOP_RISCV/EX_inst/r398/B[27]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[27]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[27]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[27]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[27]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[24]   $svf_impl/TOP_RISCV/EX_inst/r398/B[24]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[24]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[24]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[24]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[24]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[7]   $svf_impl/TOP_RISCV/EX_inst/r398/B[7]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[7]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[7]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[7]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[7]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Multiplier_inst/r323/A[20]   $svf_impl/TOP_RISCV/Multiplier_inst/r323/A[20]
+guide_constraints -body { Multiplier_inst/r323 } -equivalent { Multiplier_inst/r323/A[20]  ~ Multiplier_inst/r323/IN5 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[45]   $svf_impl/TOP_RISCV/EX_inst/r398/B[45]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[45]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[45]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[45]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[45]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[11]   $svf_impl/TOP_RISCV/EX_inst/r398/B[11]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[11]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[11]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[11]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[11]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[42]   $svf_impl/TOP_RISCV/EX_inst/r398/B[42]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[42]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[42]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[42]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[42]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[56]   $svf_impl/TOP_RISCV/EX_inst/r398/B[56]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[56]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[56]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[56]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[56]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[53]   $svf_impl/TOP_RISCV/EX_inst/r398/B[53]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[53]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[53]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[53]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[53]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[36]   $svf_impl/TOP_RISCV/EX_inst/r398/B[36]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[36]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[36]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[36]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[36]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Multiplier_inst/r323/A[18]   $svf_impl/TOP_RISCV/Multiplier_inst/r323/A[18]
+guide_constraints -body { Multiplier_inst/r323 } -equivalent { Multiplier_inst/r323/A[18]  ~ Multiplier_inst/r323/IN6 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[49]   $svf_impl/TOP_RISCV/EX_inst/r398/B[49]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[49]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[49]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[49]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[49]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/r391/B[14]   $svf_impl/TOP_RISCV/Divider_inst/r391/B[14]
+guide_constraints -body { Divider_inst/r391 } -equivalent { Divider_inst/r391/B[14]  ~ Divider_inst/r391/IN3 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/gte_104/A[113]   $svf_impl/TOP_RISCV/Divider_inst/gte_104/A[113]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/r391/B[48]   $svf_impl/TOP_RISCV/Divider_inst/r391/B[48]
+guide_constraints -body { Divider_inst/r391 } -equivalent { Divider_inst/r391/B[48]  ~ Divider_inst/r391/IN4 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[6]   $svf_impl/TOP_RISCV/EX_inst/r398/B[6]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[6]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[6]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[6]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[6]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[44]   $svf_impl/TOP_RISCV/EX_inst/r398/B[44]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[44]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[44]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[44]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[44]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[21]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[21]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[21]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[21]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[21]   $svf_impl/TOP_RISCV/EX_inst/r398/B[21]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[21]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[21]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[21]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[21]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/op2_i[21]  ~ EX_inst/IN3 ~ EX_inst/IN4 ~ EX_inst/IN5 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[14]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[14]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[14]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[14]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[14]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[14]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[14]   $svf_impl/TOP_RISCV/EX_inst/r398/B[14]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[14]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[14]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/op2_i[14]  ~ EX_inst/IN6 ~ EX_inst/IN7 ~ EX_inst/IN8 ~ EX_inst/IN9 }
+guide_constraints -body { EX_inst } -equivalent { EX_inst/inst_i[12]    EX_inst/IN10 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Multiplier_inst/r323/A[24]   $svf_impl/TOP_RISCV/Multiplier_inst/r323/A[24]
+guide_constraints -body { Multiplier_inst/r323 } -equivalent { Multiplier_inst/r323/A[24]  ~ Multiplier_inst/r323/IN7 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Multiplier_inst/r323/A[6]   $svf_impl/TOP_RISCV/Multiplier_inst/r323/A[6]
+guide_constraints -body { Multiplier_inst/r323 } -equivalent { Multiplier_inst/r323/A[6]  ~ Multiplier_inst/r323/IN8 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/gte_104/A[107]   $svf_impl/TOP_RISCV/Divider_inst/gte_104/A[107]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/r391/B[42]   $svf_impl/TOP_RISCV/Divider_inst/r391/B[42]
+guide_constraints -body { Divider_inst/r391 } -equivalent { Divider_inst/r391/B[42]  ~ Divider_inst/r391/IN5 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[12]   $svf_impl/TOP_RISCV/EX_inst/r398/B[12]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[12]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[12]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[12]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[12]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[13]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[13]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[13]   $svf_impl/TOP_RISCV/EX_inst/r398/B[13]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[13]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[13]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[43]   $svf_impl/TOP_RISCV/EX_inst/r398/B[43]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[43]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[43]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[43]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[43]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[57]   $svf_impl/TOP_RISCV/EX_inst/r398/B[57]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[57]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[57]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[57]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[57]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[23]   $svf_impl/TOP_RISCV/EX_inst/r398/B[23]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[23]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[23]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[23]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[23]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[25]   $svf_impl/TOP_RISCV/EX_inst/r398/B[25]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[25]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[25]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[25]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[25]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[50]   $svf_impl/TOP_RISCV/EX_inst/r398/B[50]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[50]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[50]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[50]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[50]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[10]   $svf_impl/TOP_RISCV/EX_inst/r398/B[10]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[10]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[10]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[10]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[10]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[39]   $svf_impl/TOP_RISCV/EX_inst/r398/B[39]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[39]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[39]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[39]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[39]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[8]   $svf_impl/TOP_RISCV/EX_inst/r398/B[8]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[8]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[8]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[8]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[8]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[34]   $svf_impl/TOP_RISCV/EX_inst/r398/B[34]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[34]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[34]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[34]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[34]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[20]   $svf_impl/TOP_RISCV/EX_inst/r398/B[20]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[20]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[20]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[20]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[20]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[48]   $svf_impl/TOP_RISCV/EX_inst/r398/B[48]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[48]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[48]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[48]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[48]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[35]   $svf_impl/TOP_RISCV/EX_inst/r398/B[35]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[35]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[35]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[35]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[35]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[41]   $svf_impl/TOP_RISCV/EX_inst/r398/B[41]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[41]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[41]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[41]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[41]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[60]   $svf_impl/TOP_RISCV/EX_inst/r398/B[60]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[60]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[60]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[60]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[60]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[63]   $svf_impl/TOP_RISCV/EX_inst/r398/B[63]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[63]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[63]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[16]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[16]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[16]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[16]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[16]   $svf_impl/TOP_RISCV/EX_inst/r398/B[16]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[16]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[16]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[16]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[16]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/op2_i[16]  ~ EX_inst/IN11 ~ EX_inst/IN12 ~ EX_inst/IN13 ~ EX_inst/IN14 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[15]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[15]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[15]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[15]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[15]   $svf_impl/TOP_RISCV/EX_inst/r398/B[15]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[15]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[15]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[15]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[15]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/op2_i[15]  ~ EX_inst/IN15 ~ EX_inst/IN16 ~ EX_inst/IN17 ~ EX_inst/IN18 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[19]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[19]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[19]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[19]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[19]   $svf_impl/TOP_RISCV/EX_inst/r398/B[19]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[19]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[19]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[19]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[19]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/op2_i[19]  ~ EX_inst/IN19 ~ EX_inst/IN20 ~ EX_inst/IN21 ~ EX_inst/IN22 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[37]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[37]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[37]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[37]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[37]   $svf_impl/TOP_RISCV/EX_inst/r398/B[37]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[37]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[37]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[37]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[37]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/op2_i[37]  ~ EX_inst/IN23 ~ EX_inst/IN24 ~ EX_inst/IN25 ~ EX_inst/IN26 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[55]   $svf_impl/TOP_RISCV/EX_inst/r398/B[55]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[55]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[55]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[55]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[55]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[31]   $svf_impl/TOP_RISCV/EX_inst/r398/B[31]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[31]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[31]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[31]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[31]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[26]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[26]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[26]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[26]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[26]   $svf_impl/TOP_RISCV/EX_inst/r398/B[26]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[26]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[26]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[26]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[26]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/op2_i[26]  ~ EX_inst/IN27 ~ EX_inst/IN28 ~ EX_inst/IN29 ~ EX_inst/IN30 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[40]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[40]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[40]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[40]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[40]   $svf_impl/TOP_RISCV/EX_inst/r398/B[40]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[40]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[40]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[40]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[40]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/op2_i[40]  ~ EX_inst/IN31 ~ EX_inst/IN32 ~ EX_inst/IN33 ~ EX_inst/IN34 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[52]   $svf_impl/TOP_RISCV/EX_inst/r398/B[52]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[52]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[52]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[52]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[52]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[33]   $svf_impl/TOP_RISCV/EX_inst/r398/B[33]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[33]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[33]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[33]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[33]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[30]   $svf_impl/TOP_RISCV/EX_inst/r398/B[30]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[30]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[30]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[30]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[30]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Multiplier_inst/r323/A[14]   $svf_impl/TOP_RISCV/Multiplier_inst/r323/A[14]
+guide_constraints -body { Multiplier_inst/r323 } -equivalent { Multiplier_inst/r323/A[14]  ~ Multiplier_inst/r323/IN9 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[62]   $svf_impl/TOP_RISCV/EX_inst/r398/B[62]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[62]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[62]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[62]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[62]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[54]   $svf_impl/TOP_RISCV/EX_inst/r398/B[54]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[54]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[54]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[54]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[54]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/gte_104/A[89]   $svf_impl/TOP_RISCV/Divider_inst/gte_104/A[89]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/r391/B[24]   $svf_impl/TOP_RISCV/Divider_inst/r391/B[24]
+guide_constraints -body { Divider_inst/r391 } -equivalent { Divider_inst/r391/B[24]  ~ Divider_inst/r391/IN6 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[59]   $svf_impl/TOP_RISCV/EX_inst/r398/B[59]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[59]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[59]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[59]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[59]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[32]   $svf_impl/TOP_RISCV/EX_inst/r398/B[32]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[32]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[32]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[32]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[32]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[17]   $svf_impl/TOP_RISCV/EX_inst/r398/B[17]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[17]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[17]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[17]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[17]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/gte_104/A[77]   $svf_impl/TOP_RISCV/Divider_inst/gte_104/A[77]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/r391/B[12]   $svf_impl/TOP_RISCV/Divider_inst/r391/B[12]
+guide_constraints -body { Divider_inst/r391 } -equivalent { Divider_inst/r391/B[12]  ~ Divider_inst/r391/IN7 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[1]   $svf_impl/TOP_RISCV/EX_inst/r398/B[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[1]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[1]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[1]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[58]   $svf_impl/TOP_RISCV/EX_inst/r398/B[58]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[58]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[58]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[58]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[58]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Multiplier_inst/r323/A[4]   $svf_impl/TOP_RISCV/Multiplier_inst/r323/A[4]
+guide_constraints -body { Multiplier_inst/r323 } -equivalent { Multiplier_inst/r323/A[4]  ~ Multiplier_inst/r323/IN10 }
+guide_constraints -body { Multiplier_inst/sub_add_126_b0 } -equivalent { Multiplier_inst/sub_add_126_b0/B[4]  ~ Multiplier_inst/sub_add_126_b0/IN3 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/A[63]   $svf_impl/TOP_RISCV/EX_inst/lt_100/A[63]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[0]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[0]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[0]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[0]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[0]   $svf_impl/TOP_RISCV/EX_inst/r398/B[0]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[0]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[0]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/op2_i[0]  ~ EX_inst/IN35 ~ EX_inst/IN36 ~ EX_inst/IN37 ~ EX_inst/IN38 }
+guide_constraints -body { EX_inst/sub_113 } -equivalent { EX_inst/sub_113/B[0]  ~ EX_inst/sub_113/IN0 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[51]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[51]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[51]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[51]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/op2_i[51]   $svf_impl/TOP_RISCV/EX_inst/op2_i[51]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[51]   $svf_impl/TOP_RISCV/EX_inst/r398/B[51]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[51]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[51]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[51]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[51]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[5]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[5]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[5]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[5]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[5]   $svf_impl/TOP_RISCV/EX_inst/r398/B[5]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[5]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[5]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[5]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[5]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/op2_i[5]  ~ EX_inst/IN39 ~ EX_inst/IN40 ~ EX_inst/IN41 ~ EX_inst/IN42 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[2]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[2]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[2]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[2]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[2]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[2]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[2]   $svf_impl/TOP_RISCV/EX_inst/r398/B[2]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[2]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[2]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/op2_i[2]  ~ EX_inst/IN43 ~ EX_inst/IN44 ~ EX_inst/IN45 ~ EX_inst/IN46 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[3]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[3]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[3]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[3]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[3]   $svf_impl/TOP_RISCV/EX_inst/r398/B[3]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[3]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[3]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[3]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[3]
+guide_constraints -body { EX_inst } -equivalent { EX_inst/op2_i[3]  ~ EX_inst/IN47 ~ EX_inst/IN48 }
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[28]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[28]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[28]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[28]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/op2_i[28]   $svf_impl/TOP_RISCV/EX_inst/op2_i[28]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[28]   $svf_impl/TOP_RISCV/EX_inst/r398/B[28]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[28]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[28]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[28]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[28]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff4/data_o[4]   $svf_impl/TOP_RISCV/ID_EX_inst/dff4/data_o[4]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op2_o[4]   $svf_impl/TOP_RISCV/ID_EX_inst/op2_o[4]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/op2_i[4]   $svf_impl/TOP_RISCV/EX_inst/op2_i[4]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/r398/B[4]   $svf_impl/TOP_RISCV/EX_inst/r398/B[4]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/lt_100/B[4]   $svf_impl/TOP_RISCV/EX_inst/lt_100/B[4]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/sub_113/B[4]   $svf_impl/TOP_RISCV/EX_inst/sub_113/B[4]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff3/data_o[7]   $svf_impl/TOP_RISCV/ID_EX_inst/dff3/data_o[7]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op1_o[7]   $svf_impl/TOP_RISCV/ID_EX_inst/op1_o[7]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/op1_i[7]   $svf_impl/TOP_RISCV/EX_inst/op1_i[7]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/dff3/data_o[3]   $svf_impl/TOP_RISCV/ID_EX_inst/dff3/data_o[3]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/ID_EX_inst/op1_o[3]   $svf_impl/TOP_RISCV/ID_EX_inst/op1_o[3]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/EX_inst/op1_i[3]   $svf_impl/TOP_RISCV/EX_inst/op1_i[3]
+set_user_match   -inverted   $svf_ref/TOP_RISCV/Divider_inst/rst   $svf_impl/TOP_RISCV/Divider_inst/rst
+set_user_match   -inverted   $svf_ref/TOP_RISCV/CLINT_inst/rst   $svf_impl/TOP_RISCV/CLINT_inst/rst
+set_user_match   -inverted   $svf_ref/TOP_RISCV/REGS_inst/rst   $svf_impl/TOP_RISCV/REGS_inst/rst
+guide_constraints -body { CLINT_inst } -equivalent { CLINT_inst/rst  ~ CLINT_inst/IN0 }
+guide_constraints -body { REGS_inst } -equivalent { REGS_inst/rst  ~ REGS_inst/IN17 ~ REGS_inst/IN18 }
+guide_constraints -body { Multiplier_inst } -equivalent { Multiplier_inst/rst  ~ Multiplier_inst/IN0   Multiplier_inst/IN1 }
+guide_constraints -body { Divider_inst } -equivalent { Divider_inst/rst  ~ Divider_inst/IN0 }
+guide_constraints -body { EX_MEM_inst } -equivalent { EX_MEM_inst/rst    EX_MEM_inst/IN9   EX_MEM_inst/IN10   EX_MEM_inst/IN11   EX_MEM_inst/IN12   EX_MEM_inst/IN13   EX_MEM_inst/IN14 }
+guide_constraints -body { ID_EX_inst } -equivalent { ID_EX_inst/rst    ID_EX_inst/IN96   ID_EX_inst/IN97   ID_EX_inst/IN98   ID_EX_inst/IN99   ID_EX_inst/IN100   ID_EX_inst/IN101   ID_EX_inst/IN102   ID_EX_inst/IN103   ID_EX_inst/IN104   ID_EX_inst/IN105   ID_EX_inst/IN106   ID_EX_inst/IN107 }
+
+#-------------------------------------------------------------------
+

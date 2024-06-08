@@ -1,0 +1,137 @@
+#@ # 
+#@ # Running fm_shell Version O-2018.06-SP3 for linux64 -- Nov  2, 2018
+#@ # Date:   Tue Jun 15 10:11:42 2021
+#@ # Run by: chengjinhui@EDA-Server
+#@ 
+
+source /home/eda/synopsys/fm/O-2018.06-SP3/admin/setup/.synopsys_fm.setup
+#@ # -- Starting source /home/eda/synopsys/fm/O-2018.06-SP3/admin/setup/.synopsys_fm.setup
+
+#@ #
+#@ # .synopsys_fm.setup: Initialization File for Formality
+#@ #
+#@ 
+#@ 
+#@ #
+#@ # Enable stack trace output on fatal.  Not available for all architectures.
+#@ #
+#@ if { $sh_arch == "sparc" || $sh_arch == "sparcOS5" ||      $sh_arch == "hp700" || $sh_arch == "hpux10" } {
+#@   set_unix_variable SYNOPSYS_TRACE ""
+#@ }
+#@ 
+#@ #
+#@ # Variable settings
+#@ #
+#@ set sh_new_variable_message true
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you uncomment the following command
+#@ # in order to set sh_command_abbrev_mode to the value "Command-Line-Only".
+#@ # Command abbreviation is intended as an interactive convenience.  Using
+#@ # abbreviations in scripts can cause commands to fail in subsequent releases.
+#@ # 
+#@ #set sh_command_abbrev_mode "Command-Line-Only"
+#@ 
+#@ #
+#@ # Some useful aliases
+#@ #
+#@ alias list_commands		help
+#@ 
+#@ #
+#@ # The alias of q to quit is commented out.  Remove the comment 
+#@ # character if you want this alias.  Some users find that having 
+#@ # this particular alias causes problems when mixed with page-mode
+#@ # for reports - an accidental repeated 'q' not only cancels the
+#@ # output but exits the tool.
+#@ #
+#@ #alias q quit
+#@ # -- End source /home/eda/synopsys/fm/O-2018.06-SP3/admin/setup/.synopsys_fm.setup
+
+set cdf_gen_file 287379.fm.cdf;
+source /home/eda/synopsys/fm/O-2018.06-SP3/auxx/gui/fm/.convertFmCmd2Tcl.tcl
+#@ # -- Starting source /home/eda/synopsys/fm/O-2018.06-SP3/auxx/gui/fm/.convertFmCmd2Tcl.tcl
+
+#@ 
+#@ ##--- Final output command definition file for "Formality Commands"
+#@ 
+#@ ## Guard
+#@ if {![info exists cdf_gen_file]} {
+#@   echo "Error: fm_shell cannot generate cdf file. Check if GUI version is compatible.";
+#@ }
+#@ set ::fmcdf    $cdf_gen_file
+#@ 
+#@ set ::fmgroup "Formality Commands"
+#@ set ::gpFile $::fmcdf.gpfile
+#@ 
+#@ # Get all groups
+#@ set result [help -groups > $::gpFile]
+#@ set fp [open $::gpFile r]
+#@ set ::gp_file_data [read $fp]
+#@ close $fp
+#@ 
+#@ ##-! Get each command
+#@ proc get_command_def _cmd {
+#@    set cmd [string trim $_cmd]
+#@    if { [string compare $cmd ""] != 0 } {
+#@       if { [string compare $cmd "_version"] != 0 } {
+#@       #echo "Definiton: $cmd"
+#@       set defn [get_defined_commands -detail $cmd]
+#@       #echo defn=$defn
+#@       puts  $::allCmds $defn
+#@       }
+#@    }
+#@ }
+#@ 
+#@ ##-! Generate cmds for a group
+#@ proc get_command_from_gp _group {
+#@    set group [string trim $_group]
+#@    set gcmdfile $::fmcdf.$group
+#@ 
+#@    ##========== or use redirect $gcmdfile {help "$group"}
+#@    set cresult [help "$group" > $gcmdfile]
+#@ 
+#@    ##==========
+#@    set pfi [open $gcmdfile "r"]
+#@    while {1 == 1} {
+#@     set cnt [gets $pfi row]
+#@     if {$cnt < 0} {break} ; ## Check if eof
+#@     set word [lindex [split $row "#"] 0]  ; # find_compare_points # comments...
+#@     #puts $allCmds $word
+#@     # strip header
+#@     set header "$group: "
+#@     if { $word != $header } {
+#@         get_command_def $word
+#@     }
+#@    }
+#@    close $pfi
+#@    ##==========
+#@ 
+#@    # Clean up
+#@    file delete -force  $gcmdfile
+#@ }
+#@ 
+#@ #-!  Process data file
+#@ #================================
+#@ set ::allCmds [open $::fmcdf "w"]
+#@ set gp [split $::gp_file_data "\n"]
+#@ foreach group $gp {
+#@      # do some line processing here
+#@     if { $group == $::fmgroup } {
+#@        # echo *** Generate cmd from group \"$group\"
+#@        get_command_from_gp $group
+#@     } else {
+#@        # echo Other cmd group $group
+#@     }
+#@ }
+#@ close $::allCmds
+#@ file delete -force  $::gpFile
+#@ # -- End source /home/eda/synopsys/fm/O-2018.06-SP3/auxx/gui/fm/.convertFmCmd2Tcl.tcl
+
+set hdlin_error_on_mismatch_message false
+set_svf -append { /home1/chengjinhui/risc_cpu/syn/work/cpu.svf } 
+read_verilog -container r -libname WORK -05 { /home1/chengjinhui/risc_cpu/src/accum.v /home1/chengjinhui/risc_cpu/src/adr.v /home1/chengjinhui/risc_cpu/src/alu.v /home1/chengjinhui/risc_cpu/src/clk_gen.v /home1/chengjinhui/risc_cpu/src/counter.v /home1/chengjinhui/risc_cpu/src/cpu.v /home1/chengjinhui/risc_cpu/src/datactl.v /home1/chengjinhui/risc_cpu/src/machine.v /home1/chengjinhui/risc_cpu/src/machinectl.v /home1/chengjinhui/risc_cpu/src/register.v } 
+read_db { /home1/chengjinhui/risc_cpu/syn/lib/scc28nhkcp_hsc35p140_rvt_ss_v0p81_125c_basic.db } 
+set_top r:/WORK/cpu 
+read_verilog -container i -libname WORK -05 { /home1/chengjinhui/risc_cpu/syn/work/cpu.v } 
+set_top i:/WORK/cpu 
+match 

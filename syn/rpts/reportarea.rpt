@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : TOP_RISCV
+Version: K-2015.06
+Date   : Fri Apr  5 13:05:25 2024
+****************************************
+
+Library(s) Used:
+
+    cb13fs120_tsmc_max (File: /home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db)
+
+Number of ports:                        14961
+Number of nets:                         58460
+Number of cells:                        44814
+Number of combinational cells:          39266
+Number of sequential cells:              5481
+Number of macros/black boxes:               0
+Number of buf/inv:                      12147
+Number of references:                      30
+
+Combinational area:              61548.750000
+Buf/Inv area:                    17549.500000
+Noncombinational area:           29628.250000
+Macro/Black Box area:                0.000000
+Net Interconnect area:           19206.931867
+
+Total cell area:                 91177.000000
+Total area:                     110383.931867
+1

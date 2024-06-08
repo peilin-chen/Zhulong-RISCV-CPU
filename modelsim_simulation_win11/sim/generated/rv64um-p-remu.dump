@@ -1,0 +1,110 @@
+
+generated/rv64um-p-remu:     file format elf64-littleriscv
+
+
+Disassembly of section .text.init:
+
+0000000000000000 <_start>:
+   0:	00000d13          	li	s10,0
+   4:	00000d93          	li	s11,0
+
+0000000000000008 <test_2>:
+   8:	01400093          	li	ra,20
+   c:	00600113          	li	sp,6
+  10:	0220ff33          	remu	t5,ra,sp
+  14:	00200e93          	li	t4,2
+  18:	00200193          	li	gp,2
+  1c:	0ddf1e63          	bne	t5,t4,f8 <fail>
+
+0000000000000020 <test_3>:
+  20:	fec00093          	li	ra,-20
+  24:	00600113          	li	sp,6
+  28:	0220ff33          	remu	t5,ra,sp
+  2c:	00200e93          	li	t4,2
+  30:	00300193          	li	gp,3
+  34:	0ddf1263          	bne	t5,t4,f8 <fail>
+
+0000000000000038 <test_4>:
+  38:	01400093          	li	ra,20
+  3c:	ffa00113          	li	sp,-6
+  40:	0220ff33          	remu	t5,ra,sp
+  44:	01400e93          	li	t4,20
+  48:	00400193          	li	gp,4
+  4c:	0bdf1663          	bne	t5,t4,f8 <fail>
+
+0000000000000050 <test_5>:
+  50:	fec00093          	li	ra,-20
+  54:	ffa00113          	li	sp,-6
+  58:	0220ff33          	remu	t5,ra,sp
+  5c:	fec00e93          	li	t4,-20
+  60:	00500193          	li	gp,5
+  64:	09df1a63          	bne	t5,t4,f8 <fail>
+
+0000000000000068 <test_6>:
+  68:	fff0009b          	addiw	ra,zero,-1
+  6c:	03f09093          	slli	ra,ra,0x3f
+  70:	00100113          	li	sp,1
+  74:	0220ff33          	remu	t5,ra,sp
+  78:	00000e93          	li	t4,0
+  7c:	00600193          	li	gp,6
+  80:	07df1c63          	bne	t5,t4,f8 <fail>
+
+0000000000000084 <test_7>:
+  84:	fff0009b          	addiw	ra,zero,-1
+  88:	03f09093          	slli	ra,ra,0x3f
+  8c:	fff00113          	li	sp,-1
+  90:	0220ff33          	remu	t5,ra,sp
+  94:	fff00e9b          	addiw	t4,zero,-1
+  98:	03fe9e93          	slli	t4,t4,0x3f
+  9c:	00700193          	li	gp,7
+  a0:	05df1c63          	bne	t5,t4,f8 <fail>
+
+00000000000000a4 <test_8>:
+  a4:	fff0009b          	addiw	ra,zero,-1
+  a8:	03f09093          	slli	ra,ra,0x3f
+  ac:	00000113          	li	sp,0
+  b0:	0220ff33          	remu	t5,ra,sp
+  b4:	fff00e9b          	addiw	t4,zero,-1
+  b8:	03fe9e93          	slli	t4,t4,0x3f
+  bc:	00800193          	li	gp,8
+  c0:	03df1c63          	bne	t5,t4,f8 <fail>
+
+00000000000000c4 <test_9>:
+  c4:	00100093          	li	ra,1
+  c8:	00000113          	li	sp,0
+  cc:	0220ff33          	remu	t5,ra,sp
+  d0:	00100e93          	li	t4,1
+  d4:	00900193          	li	gp,9
+  d8:	03df1063          	bne	t5,t4,f8 <fail>
+
+00000000000000dc <test_10>:
+  dc:	00000093          	li	ra,0
+  e0:	00000113          	li	sp,0
+  e4:	0220ff33          	remu	t5,ra,sp
+  e8:	00000e93          	li	t4,0
+  ec:	00a00193          	li	gp,10
+  f0:	01df1463          	bne	t5,t4,f8 <fail>
+  f4:	00301863          	bne	zero,gp,104 <pass>
+
+00000000000000f8 <fail>:
+  f8:	00100d13          	li	s10,1
+  fc:	00000d93          	li	s11,0
+
+0000000000000100 <loop_fail>:
+ 100:	0000006f          	j	100 <loop_fail>
+
+0000000000000104 <pass>:
+ 104:	00100d13          	li	s10,1
+ 108:	00100d93          	li	s11,1
+
+000000000000010c <loop_pass>:
+ 10c:	0000006f          	j	10c <loop_pass>
+	...
+
+Disassembly of section .tohost:
+
+0000000000000180 <tohost>:
+	...
+
+00000000000001c0 <fromhost>:
+	...

@@ -1,0 +1,15 @@
+#!/bin/csh -f
+
+set pathList = (logs work rpts temp)
+#echo "clear file"
+foreach name ($pathList)
+  if (  -d ../$name) then
+    /bin/rm -r  ../$name/*
+  else then
+    /bin/mkdir ../$name
+  endif
+end
+
+dc_shell-t -64bit  -f synthesis.tcl | tee ../logs/sythesis.log
+
+#echo "SYNTHESIS OVER"

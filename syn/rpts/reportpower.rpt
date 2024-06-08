@@ -1,0 +1,124 @@
+Loading db file '/home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : TOP_RISCV
+Version: K-2015.06
+Date   : Fri Apr  5 13:05:27 2024
+****************************************
+
+
+Library(s) Used:
+
+    cb13fs120_tsmc_max (File: /home/IC/Desktop/risc_cpu/syn/ref/db/sc_max.db)
+
+
+Operating Conditions: cb13fs120_tsmc_max   Library: cb13fs120_tsmc_max
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+TOP_RISCV              140000            cb13fs120_tsmc_max
+Multiplier             8000              cb13fs120_tsmc_max
+Divider                8000              cb13fs120_tsmc_max
+CHECK                  8000              cb13fs120_tsmc_max
+PC                     8000              cb13fs120_tsmc_max
+IF                     ForQA             cb13fs120_tsmc_max
+IF_ID                  8000              cb13fs120_tsmc_max
+ID                     8000              cb13fs120_tsmc_max
+REGS                   35000             cb13fs120_tsmc_max
+ID_EX                  8000              cb13fs120_tsmc_max
+EX                     16000             cb13fs120_tsmc_max
+CTRL                   ForQA             cb13fs120_tsmc_max
+EX_MEM                 8000              cb13fs120_tsmc_max
+MEM                    8000              cb13fs120_tsmc_max
+MEM_WB                 8000              cb13fs120_tsmc_max
+WB                     ForQA             cb13fs120_tsmc_max
+CSR_REGS               8000              cb13fs120_tsmc_max
+CLINT                  8000              cb13fs120_tsmc_max
+Multiplier_DW01_inc_0  ForQA             cb13fs120_tsmc_max
+Multiplier_DW01_inc_1  ForQA             cb13fs120_tsmc_max
+Multiplier_DW01_add_1  8000              cb13fs120_tsmc_max
+Multiplier_DW01_sub_3  8000              cb13fs120_tsmc_max
+Multiplier_DW01_sub_2  8000              cb13fs120_tsmc_max
+Multiplier_DW01_inc_3  8000              cb13fs120_tsmc_max
+Divider_DW_cmp_0       8000              cb13fs120_tsmc_max
+Divider_DW01_sub_2     8000              cb13fs120_tsmc_max
+Divider_DW01_sub_3     8000              cb13fs120_tsmc_max
+Divider_DW01_inc_0     ForQA             cb13fs120_tsmc_max
+DFF_SET_DW64_12        8000              cb13fs120_tsmc_max
+DFF_SET_DW64_11        8000              cb13fs120_tsmc_max
+DFF_SET_DW32_4         8000              cb13fs120_tsmc_max
+ID_DW01_add_6          8000              cb13fs120_tsmc_max
+ID_DW01_add_7          8000              cb13fs120_tsmc_max
+DFF_SET_DW32_3         8000              cb13fs120_tsmc_max
+DFF_SET_DW64_10        8000              cb13fs120_tsmc_max
+DFF_SET_DW64_9         8000              cb13fs120_tsmc_max
+DFF_SET_DW64_8         8000              cb13fs120_tsmc_max
+DFF_SET_DW5_2          ForQA             cb13fs120_tsmc_max
+DFF_SET_DW1_7          ForQA             cb13fs120_tsmc_max
+DFF_SET_DW64_7         8000              cb13fs120_tsmc_max
+DFF_SET_DW64_6         8000              cb13fs120_tsmc_max
+DFF_SET_DW1_6          ForQA             cb13fs120_tsmc_max
+DFF_SET_DW64_5         8000              cb13fs120_tsmc_max
+DFF_SET_DW64_4         8000              cb13fs120_tsmc_max
+DFF_SET_DW32_2         8000              cb13fs120_tsmc_max
+DFF_SET_DW1_5          ForQA             cb13fs120_tsmc_max
+DFF_SET_DW1_4          ForQA             cb13fs120_tsmc_max
+EX_DW01_cmp6_1         8000              cb13fs120_tsmc_max
+EX_DW01_add_3          8000              cb13fs120_tsmc_max
+EX_DW01_add_2          8000              cb13fs120_tsmc_max
+EX_DW01_sub_1          8000              cb13fs120_tsmc_max
+EX_DW_cmp_1            8000              cb13fs120_tsmc_max
+DFF_SET_DW5_1          ForQA             cb13fs120_tsmc_max
+DFF_SET_DW64_3         8000              cb13fs120_tsmc_max
+DFF_SET_DW1_3          ForQA             cb13fs120_tsmc_max
+DFF_SET_DW1_2          ForQA             cb13fs120_tsmc_max
+DFF_SET_DW32_1         8000              cb13fs120_tsmc_max
+DFF_SET_DW64_2         8000              cb13fs120_tsmc_max
+DFF_SET_DW32_0         8000              cb13fs120_tsmc_max
+DFF_SET_DW64_1         8000              cb13fs120_tsmc_max
+DFF_SET_DW5_0          ForQA             cb13fs120_tsmc_max
+DFF_SET_DW64_0         8000              cb13fs120_tsmc_max
+DFF_SET_DW1_0          ForQA             cb13fs120_tsmc_max
+DFF_SET_DW1_1          ForQA             cb13fs120_tsmc_max
+Divider_DW01_sub_0     8000              cb13fs120_tsmc_max
+Divider_DW01_sub_1     8000              cb13fs120_tsmc_max
+Divider_DW01_sub_4     8000              cb13fs120_tsmc_max
+PC_DW01_add_0          8000              cb13fs120_tsmc_max
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   1.0866 mW   (62%)
+  Net Switching Power  = 652.0021 uW   (38%)
+                         ---------
+Total Dynamic Power    =   1.7386 mW  (100%)
+
+Cell Leakage Power     = 581.7502 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       2.5514e-02        1.2215e-02        1.9294e+08            0.2307  (   9.94%)
+sequential     2.1842e-03        2.3018e-04        1.3732e+07        1.6147e-02  (   0.70%)
+combinational      1.0589            0.6395        3.7508e+08            2.0736  (  89.36%)
+--------------------------------------------------------------------------------------------------
+Total              1.0866 mW         0.6520 mW     5.8175e+08 pW         2.3204 mW
+1

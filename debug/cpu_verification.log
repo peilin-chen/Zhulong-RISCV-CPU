@@ -1,0 +1,37 @@
+Command: ./cpu_verification -l cpu_verification.log +vpdfile+cpu_verification.vpd -cm line+cond+fsm+tgl
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03_Full64; Runtime version I-2014.03_Full64;  Apr  5 12:58 2024
+Message: From $vcdpluson at time 0 in file ../src/RISCV_SOC.v line 336: [VCD+-SVFN]: 
+Setting VPD File by "+vpdfile+" switch to cpu_verification.vpd.
+
+*Verdi3* Loading libsscore_vcs201403.so
+*Verdi3* : Enable Parallel Dumping.
+FSDB Dumper for VCS, Release Verdi3_K-2015.09-SP1-1, Linux x86_64/64bit, 01/21/2016
+(C) 1996 - 2016 by Synopsys, Inc.
+*Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi3* : Create FSDB file 'RISCV_SOC.fsdb'
+*Verdi3* : Begin traversing the scope (RISCV_SOC), layer (0).
+*Verdi3* : End of traversing.
+*Verdi3* : fsdbDumpon - All FSDB files at 0 ps.
+VCD+ Writer I-2014.03_Full64 Copyright (c) 1991-2014 by Synopsys Inc.
+~~~~~~~~~~~~~~~~~~~ TEST_PASS ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~ #####     ##     ####    #### ~~~~~~~~~
+~~~~~~~~~ #    #   #  #   #       #     ~~~~~~~~~
+~~~~~~~~~ #    #  #    #   ####    #### ~~~~~~~~~
+~~~~~~~~~ #####   ######       #       #~~~~~~~~~
+~~~~~~~~~ #       #    #  #    #  #    #~~~~~~~~~
+~~~~~~~~~ #       #    #   ####    #### ~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$stop at time 6945000 Scope: RISCV_SOC File: ../src/RISCV_SOC.v Line: 316
+
+quit 
+ 
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 6945000 ps
+CPU Time:      0.150 seconds;       Data structure size:   0.1Mb
+Fri Apr  5 12:58:58 2024

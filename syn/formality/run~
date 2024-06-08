@@ -1,0 +1,5 @@
+#!/bin/csh -f
+#csh run
+pt_shell -f pt.tcl | tee primetime.log
+
+

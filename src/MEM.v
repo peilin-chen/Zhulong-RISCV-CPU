@@ -46,20 +46,20 @@ module MEM
 
 	always @(*) begin
 		case(opcode)
-			`ysyx_22050698_INST_TYPE_S:begin
+			`INST_TYPE_S:begin
 				rd_addr_o = 5'b0 ;
 				rd_wen_o  = 1'b0 ;
 				rd_data_o = 64'b0;
 				hold_flag_mem_o  = (dcache_hit == 1'b1 && dcache_ready== 1'b0) ? 1'b0:1'b1;
 				dcache_req_valid = (dcache_hit == 1'b0 && dcache_ready == 1'b1) ? 1'b0:1'b1;
 				case(funct3)
-					`ysyx_22050698_INST_SD:begin
+					`INST_SD:begin
 						dcache_req_rw     = 1'b1                 ;
 						dcache_req_addr   = id_axi_araddr_i[13:2];
 						//dcache_req_valid  = 1'b1                 ;
 						dcache_data_write = op2_i                ;
 					end
-					`ysyx_22050698_INST_SW:begin
+					`INST_SW:begin
 						dcache_req_rw     = 1'b1                 ;
 						dcache_req_addr   = id_axi_araddr_i[13:2];
 						//dcache_req_valid  = 1'b1                 ;
@@ -72,7 +72,7 @@ module MEM
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_SH:begin
+					`INST_SH:begin
 						dcache_req_rw     = 1'b1                 ;
 						dcache_req_addr   = id_axi_araddr_i[13:2];
 						//dcache_req_valid  = 1'b1                 ;
@@ -92,7 +92,7 @@ module MEM
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_SB:begin
+					`INST_SB:begin
 						dcache_req_rw     = 1'b1                 ;
 						dcache_req_addr   = id_axi_araddr_i[13:2];
 						//dcache_req_valid  = 1'b1                 ;
@@ -131,11 +131,11 @@ module MEM
 					end
 				endcase
 			end
-			`ysyx_22050698_INST_TYPE_L:begin
+			`INST_TYPE_L:begin
 				hold_flag_mem_o  = (dcache_hit == 1'b0 && dcache_ready == 1'b1) ? 1'b0:1'b1;
 				dcache_req_valid = (dcache_hit == 1'b0 && dcache_ready == 1'b1) ? 1'b0:1'b1;
 				case(funct3)
-					`ysyx_22050698_INST_LD:begin
+					`INST_LD:begin
 						dcache_req_rw     = 1'b0                 ;
 						dcache_req_addr   = id_axi_araddr_i[13:2];
 						//dcache_req_valid  = 1'b1                 ;
@@ -144,7 +144,7 @@ module MEM
 						rd_addr_o         = rd                   ;
 						rd_wen_o          = 1'b1                 ;
 					end
-					`ysyx_22050698_INST_LW:begin
+					`INST_LW:begin
 						dcache_req_rw     = 1'b0                 ;
 						dcache_req_addr   = id_axi_araddr_i[13:2];
 						//dcache_req_valid  = 1'b1                 ;
@@ -160,7 +160,7 @@ module MEM
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_LH:begin
+					`INST_LH:begin
 						dcache_req_rw     = 1'b0                 ;
 						dcache_req_addr   = id_axi_araddr_i[13:2];
 						//dcache_req_valid  = 1'b1                 ;
@@ -182,7 +182,7 @@ module MEM
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_LB:begin
+					`INST_LB:begin
 						dcache_req_rw     = 1'b0                 ;
 						dcache_req_addr   = id_axi_araddr_i[13:2];
 						//dcache_req_valid  = 1'b1                 ;
@@ -216,7 +216,7 @@ module MEM
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_LBU:begin
+					`INST_LBU:begin
 						dcache_req_rw     = 1'b0                 ;
 						dcache_req_addr   = id_axi_araddr_i[13:2];
 						//dcache_req_valid  = 1'b1                 ;
@@ -250,7 +250,7 @@ module MEM
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_LHU:begin
+					`INST_LHU:begin
 						dcache_req_rw     = 1'b0                 ;
 						dcache_req_addr   = id_axi_araddr_i[13:2];
 						//dcache_req_valid  = 1'b1                 ;
@@ -272,7 +272,7 @@ module MEM
 							end
 						endcase
 					end
-					`ysyx_22050698_INST_LWU:begin
+					`INST_LWU:begin
 						dcache_req_rw     = 1'b0                 ;
 						dcache_req_addr   = id_axi_araddr_i[13:2];
 						//dcache_req_valid  = 1'b1                 ;

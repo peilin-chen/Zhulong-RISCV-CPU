@@ -4,9 +4,11 @@ Zhulong CPU is a five-stage pipeline, in-order, single-issue, single-core proces
 
 The microarchitecture of Zhulong CPU:
 
-<p float="left">
-  <img src="/figures/zhulong_cpu_arch.png" alt="architecture" align="middle" width="65%">
+<p float="center">
+  <img src="/figures/zhulong_cpu_arch.png" alt="architecture" width="65%">
 </p>
+
+
 
 ## Directory structure
 ```

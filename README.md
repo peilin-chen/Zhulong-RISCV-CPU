@@ -18,6 +18,12 @@ Features:
 
 Use Synopsys's EDA tools for logic synthesis, static timing analysis, formal verification, and physical synthesis of Zhulong RISCV Core. It achieves a working frequency of **200MHz** on TSMC 130nm process, with a total power consumption and chip area of **26.6073mW** and **821967.86µm²** respectively.
 
+The schematic of Zhulong CPU:
+
+<p float="middle">
+  <img src="/figures/zhulong_cpu_schematic.png" alt="layout" width="100%">
+</p>
+
 The layout of Zhulong CPU:
 
 <p float="middle">

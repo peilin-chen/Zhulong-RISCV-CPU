@@ -81,7 +81,7 @@ module ID
 			csr_rdata_o = csr_rdata_i;
 			
 			case(opcode)
-				`ysyx_22050698_INST_TYPE_I:begin
+				`INST_TYPE_I:begin
 					base_addr_o         = 64'b0;
 					addr_offset_o       = 64'b0;
 					csr_raddr_o         = 64'b0;
@@ -92,7 +92,7 @@ module ID
 					read_ram            = 1'b0 ;
 					write_ram           = 1'b0 ;
 					case(funct3)
-						`ysyx_22050698_INST_ADDI,`ysyx_22050698_INST_SLTI,`ysyx_22050698_INST_SLTIU,`ysyx_22050698_INST_XORI,`ysyx_22050698_INST_ORI,`ysyx_22050698_INST_ANDI:begin
+						`INST_ADDI,`INST_SLTI,`INST_SLTIU,`INST_XORI,`INST_ORI,`INST_ANDI:begin
 							rs1_addr_o = rs1                ;
 							rs2_addr_o = 5'b0               ;
 							op1_o      = rs1_data_i         ;
@@ -100,7 +100,7 @@ module ID
 							rd_addr_o  = rd                 ;
 							reg_wen    = 1'b1               ;
 						end
-						`ysyx_22050698_INST_SLLI,`ysyx_22050698_INST_SRI:begin
+						`INST_SLLI,`INST_SRI:begin
 							rs1_addr_o = rs1          ;
 							rs2_addr_o = 5'b0         ;
 							op1_o      = rs1_data_i   ;
@@ -118,7 +118,7 @@ module ID
 						end
 					endcase
 				end
-				`ysyx_22050698_INST_TYPE_L:begin
+				`INST_TYPE_L:begin
 					csr_raddr_o         = 64'b0;
 					csr_waddr_o         = 64'b0;
 					csr_we_o            = 1'b0 ;
@@ -126,7 +126,7 @@ module ID
 					write_ram           = 1'b0 ;
 					//id_axi_arvalid_temp = 1'b1 ;
 					case(funct3)
-						`ysyx_22050698_INST_LB,`ysyx_22050698_INST_LH,`ysyx_22050698_INST_LW,`ysyx_22050698_INST_LD,`ysyx_22050698_INST_LBU,`ysyx_22050698_INST_LHU,`ysyx_22050698_INST_LWU:begin
+						`INST_LB,`INST_LH,`INST_LW,`INST_LD,`INST_LBU,`INST_LHU,`INST_LWU:begin
 							rs1_addr_o                = rs1                                    ;
 							rs2_addr_o                = 5'b0                                   ;
 							op1_o                     = 64'b0                                  ;
@@ -151,7 +151,7 @@ module ID
 						end
 					endcase
 				end
-				`ysyx_22050698_INST_TYPE_B:begin
+				`INST_TYPE_B:begin
 					csr_raddr_o         = 64'b0;
 					csr_waddr_o         = 64'b0;
 					csr_we_o            = 1'b0 ;
@@ -160,7 +160,7 @@ module ID
 					read_ram            = 1'b0 ;
 					write_ram           = 1'b0 ;
 					case(funct3)
-						`ysyx_22050698_INST_BEQ,`ysyx_22050698_INST_BNE,`ysyx_22050698_INST_BLT,`ysyx_22050698_INST_BGE,`ysyx_22050698_INST_BLTU,`ysyx_22050698_INST_BGEU:begin
+						`INST_BEQ,`INST_BNE,`INST_BLT,`INST_BGE,`INST_BLTU,`INST_BGEU:begin
 							rs1_addr_o    = rs1                                                                    ;
 							rs2_addr_o    = rs2                                                                    ;
 							op1_o         = rs1_data_i                                                             ;
@@ -182,7 +182,7 @@ module ID
 						end
 					endcase
 				end
-				`ysyx_22050698_INST_TYPE_S:begin
+				`INST_TYPE_S:begin
 					csr_raddr_o         = 64'b0;
 					csr_waddr_o         = 64'b0;
 					csr_we_o            = 1'b0 ;
@@ -191,7 +191,7 @@ module ID
 					//id_axi_arvalid_temp = 1'b0 ;
 					//id_axi_araddr       = 32'b0;
 					case(funct3)
-						`ysyx_22050698_INST_SW,`ysyx_22050698_INST_SH,`ysyx_22050698_INST_SB,`ysyx_22050698_INST_SD:begin
+						`INST_SW,`INST_SH,`INST_SB,`INST_SD:begin
 							rs1_addr_o                = rs1                                                       ;
 							rs2_addr_o                = rs2                                                       ;
 							op1_o                     = 64'b0                                                     ;
@@ -216,7 +216,7 @@ module ID
 						end
 					endcase
 				end
-				`ysyx_22050698_INST_TYPE_R_M:begin
+				`INST_TYPE_R_M:begin
 					csr_raddr_o         = 64'b0;
 					csr_waddr_o         = 64'b0;
 					csr_we_o            = 1'b0 ;
@@ -226,7 +226,7 @@ module ID
 					write_ram           = 1'b0 ;
 					if((funct7 == 7'b0000000) || (funct7 == 7'b0100000)) begin
 						case(funct3)
-							`ysyx_22050698_INST_ADD_SUB,`ysyx_22050698_INST_SLT,`ysyx_22050698_INST_SLTU,`ysyx_22050698_INST_XOR,`ysyx_22050698_INST_OR,`ysyx_22050698_INST_AND:begin
+							`INST_ADD_SUB,`INST_SLT,`INST_SLTU,`INST_XOR,`INST_OR,`INST_AND:begin
 								rs1_addr_o    = rs1       ;
 								rs2_addr_o    = rs2       ;
 								op1_o         = rs1_data_i;
@@ -236,7 +236,7 @@ module ID
 								base_addr_o   = 64'b0     ;
 								addr_offset_o = 64'b0     ;  
 							end
-							`ysyx_22050698_INST_SLL,`ysyx_22050698_INST_SR:begin
+							`INST_SLL,`INST_SR:begin
 								rs1_addr_o    = rs1                    ;
 								rs2_addr_o    = rs2                    ;
 								op1_o         = rs1_data_i             ;
@@ -260,7 +260,7 @@ module ID
 					end
 					else if(funct7 == 7'b0000001) begin
 						case(funct3)
-							`ysyx_22050698_INST_MUL,`ysyx_22050698_INST_MULH,`ysyx_22050698_INST_MULHSU,`ysyx_22050698_INST_MULHU,`ysyx_22050698_INST_DIV,`ysyx_22050698_INST_DIVU,`ysyx_22050698_INST_REM,`ysyx_22050698_INST_REMU:begin
+							`INST_MUL,`INST_MULH,`INST_MULHSU,`INST_MULHU,`INST_DIV,`INST_DIVU,`INST_REM,`INST_REMU:begin
 								rs1_addr_o    = rs1        ;
 								rs2_addr_o    = rs2        ;
 								op1_o         = rs1_data_i ;
@@ -283,7 +283,7 @@ module ID
 						endcase
 					end
 				end
-				`ysyx_22050698_INST_LUI:begin  
+				`INST_LUI:begin  
 					rs1_addr_o          = 5'b0                                  ;
 					rs2_addr_o          = 5'b0                                  ;
 					op1_o 	            = {{32{inst_i[31]}},inst_i[31:12],12'b0};
@@ -300,7 +300,7 @@ module ID
 					read_ram            = 1'b0                                  ;
 					write_ram           = 1'b0                                  ;
 				end
-				`ysyx_22050698_INST_JALR:begin
+				`INST_JALR:begin
 					rs1_addr_o          = rs1                ;
 					rs2_addr_o          = 5'b0               ;
 					op1_o 	            = inst_addr_i        ;
@@ -317,7 +317,7 @@ module ID
 					read_ram            = 1'b0               ;
 					write_ram           = 1'b0               ;
 				end
-				`ysyx_22050698_INST_AUIPC:begin  
+				`INST_AUIPC:begin  
 					rs1_addr_o          = 5'b0                                  ;
 					rs2_addr_o          = 5'b0                                  ;
 					op1_o 	            = {{32{inst_i[31]}},inst_i[31:12],12'b0};
@@ -334,7 +334,7 @@ module ID
 					read_ram            = 1'b0                                  ;
 					write_ram           = 1'b0                                  ;
 				end
-				`ysyx_22050698_INST_JAL:begin
+				`INST_JAL:begin
 					rs1_addr_o          = 5'b0                                                              ;
 					rs2_addr_o          = 5'b0                                                              ;
 					op1_o 	            = inst_addr_i                                                       ;
@@ -351,7 +351,7 @@ module ID
 					read_ram            = 1'b0                                                              ;
 					write_ram           = 1'b0                                                              ;
 				end
-				`ysyx_22050698_INST_TYPE_R_M_64W:begin
+				`INST_TYPE_R_M_64W:begin
 					csr_raddr_o         = 64'b0;
 					csr_waddr_o         = 64'b0;
 					csr_we_o            = 1'b0 ;
@@ -360,7 +360,7 @@ module ID
 					read_ram            = 1'b0 ;
 					write_ram           = 1'b0 ;
 					case(funct3)
-						`ysyx_22050698_INST_ADD_SUB_MULW,`ysyx_22050698_INST_SLLW,`ysyx_22050698_INST_SRW_DIVUW,`ysyx_22050698_INST_DIVW,`ysyx_22050698_INST_REMW,`ysyx_22050698_INST_REMUW:begin
+						`INST_ADD_SUB_MULW,`INST_SLLW,`INST_SRW_DIVUW,`INST_DIVW,`INST_REMW,`INST_REMUW:begin
 							rs1_addr_o = rs1           ;
 							rs2_addr_o = rs2           ;
 							op1_o      = rs1_data_i    ;
@@ -382,7 +382,7 @@ module ID
 						end
 					endcase
 				end
-				`ysyx_22050698_INST_TYPE_64IW:begin
+				`INST_TYPE_64IW:begin
 					base_addr_o         = 64'b0;
 					addr_offset_o       = 64'b0; 
 					csr_raddr_o         = 64'b0;
@@ -393,7 +393,7 @@ module ID
 					read_ram            = 1'b0 ;
 					write_ram           = 1'b0 ;
 					case(funct3)
-						`ysyx_22050698_INST_ADDIW,`ysyx_22050698_INST_SLLIW,`ysyx_22050698_INST_SRIW:begin
+						`INST_ADDIW,`INST_SLLIW,`INST_SRIW:begin
 							rs1_addr_o = rs1                ;
 							rs2_addr_o = 5'b0               ;
 							op1_o      = rs1_data_i         ;
@@ -411,7 +411,7 @@ module ID
 						end
 					endcase
 				end
-				`ysyx_22050698_INST_CSR:begin
+				`INST_CSR:begin
 					base_addr_o         = 64'b0                 ;
 					addr_offset_o       = 64'b0                 ;  
 					csr_raddr_o         = {52'h0, inst_i[31:20]};
@@ -421,7 +421,7 @@ module ID
 					read_ram            = 1'b0                  ;
 					write_ram           = 1'b0                  ;
 					case(funct3)
-						`ysyx_22050698_INST_CSRRW,`ysyx_22050698_INST_CSRRS,`ysyx_22050698_INST_CSRRC:begin
+						`INST_CSRRW,`INST_CSRRS,`INST_CSRRC:begin
 							rs1_addr_o = rs1       ;
 							rs2_addr_o = 5'b0      ;
 							op1_o      = rs1_data_i;
@@ -430,7 +430,7 @@ module ID
 							reg_wen    = 1'b1      ;
 							csr_we_o   = 1'b1      ;
 						end
-						`ysyx_22050698_INST_CSRRWI,`ysyx_22050698_INST_CSRRSI,`ysyx_22050698_INST_CSRRCI:begin
+						`INST_CSRRWI,`INST_CSRRSI,`INST_CSRRCI:begin
 							rs1_addr_o = 5'b0 ;
 							rs2_addr_o = 5'b0 ;
 							op1_o      = 64'b0;

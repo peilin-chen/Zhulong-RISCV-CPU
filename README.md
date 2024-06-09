@@ -1,6 +1,6 @@
 # Zhulong-RISCV-CPU
 
-Zhulong CPU is a five-stage pipeline, in-order, single-issue, single-core processor based on the RISC-V instruction set architecture.
+Zhulong (烛龙) CPU is a five-stage pipeline, in-order, single-issue, single-core, and 64-bit processor based on the RISC-V instruction set architecture.
 
 The microarchitecture of Zhulong CPU:
 

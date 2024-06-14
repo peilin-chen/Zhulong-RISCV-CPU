@@ -47,6 +47,8 @@ The layout of Zhulong CPU:
              |                             |--- tb
              |                             \--- utils
              |
+             |--- resources
+             |
              |--- scripts/
              |           |--- filelist
              |           |--- FileList_netlist.f
